@@ -1,0 +1,11 @@
+Command: <PROJECT_ROOT>/bch/sim/build/bch_base_enc_w512/simv +vcs+lic+wait +VEC_DIR=<PROJECT_ROOT>/bch/sim/vectors/bch_base/w512 -l <PROJECT_ROOT>/bch/sim/build/bch_base_enc_w512/run.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Nov  8 21:39 2026
+PASS BCH encoder K=4096 R=104 W=512 beats=9
+$finish called from file "<PROJECT_ROOT>/bch/sim/tb/study_bch_encoder_tb.sv", line 93.
+$finish at simulation time                54000
+           V C S   S i m u l a t i o n   R e p o r t
+Time: 54000 ps
+CPU Time:      0.400 seconds;       Data structure size:   0.0Mb
+Sun Nov  8 21:39:49 2026

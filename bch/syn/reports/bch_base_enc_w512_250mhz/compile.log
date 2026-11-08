@@ -1,0 +1,460 @@
+
+                           Design Compiler Graphical
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version Q-2019.12-SP5-5 for linux64 - Mar 21, 2021
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+set root $::env(HBF_FHT_ROOT)
+<ARCHIVED_SOURCE_ROOT>
+set top $::env(HBF_FHT_TOP)
+bch_base_enc_w512
+set profile $::env(HBF_FHT_PROFILE)
+bch_base
+set kind $::env(HBF_FHT_KIND)
+enc
+set variant $::env(HBF_FHT_VARIANT)
+replay
+set mhz $::env(HBF_FHT_CLOCK_MHZ)
+250
+set run_name "${top}_${mhz}mhz"
+bch_base_enc_w512_250mhz
+set report_dir "$root/syn/study_reports/$run_name"
+<ARCHIVED_SOURCE_ROOT>/syn/study_reports/bch_base_enc_w512_250mhz
+set result_dir "$root/syn/study_results/$run_name"
+<ARCHIVED_SOURCE_ROOT>/syn/study_results/bch_base_enc_w512_250mhz
+file mkdir $report_dir
+file mkdir $result_dir
+set_app_var search_path [list $root "$root/rtl"]
+<ARCHIVED_SOURCE_ROOT> <ARCHIVED_SOURCE_ROOT>/rtl
+set_app_var target_library [list $::env(HBF_ECC_TARGET_LIBRARY)]
+/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db
+set_app_var link_library [concat "*" $target_library]
+* /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db
+set sources [list]
+if {$kind == "enc"} {
+    if {$profile == "pbch_fht"} {
+        lappend sources "$root/rtl/pbch/fht_search.sv"                         "$root/rtl/pbch/probe_flags.sv"                         "$root/rtl/pbch/pbch_fht_enc.sv"
+    } else {
+        lappend sources "$root/rtl/bch/bch_enc.sv"
+    }
+} else {
+    lappend sources "$root/rtl/bch/bch_syndrome.sv"                     "$root/rtl/bch/bch_bm.sv"                     "$root/rtl/bch/bch_chien.sv"                     "$root/rtl/bch/bch_dec.sv"
+    if {$variant == "buffered"} {
+        lappend sources "$root/rtl/bch/codeword_replay_buffer.sv"                         "$root/rtl/bch/bch_dec_buffered.sv"
+    }
+    if {$profile == "pbch_fht"} {
+        lappend sources "$root/rtl/pbch/pbch_unmask.sv"                         "$root/rtl/pbch/pbch_dec_replay.sv"
+        if {$variant == "buffered"} {
+            lappend sources "$root/rtl/pbch/pbch_dec_buffered.sv"
+        }
+    }
+}
+<ARCHIVED_SOURCE_ROOT>/rtl/bch/bch_enc.sv
+lappend sources "$root/rtl/generated/study_wrappers/$top.sv"
+<ARCHIVED_SOURCE_ROOT>/rtl/bch/bch_enc.sv <ARCHIVED_SOURCE_ROOT>/rtl/generated/study_wrappers/bch_base_enc_w512.sv
+foreach source $sources {
+    if {[analyze -format sverilog -define SYNTHESIS $source] == 0} {
+        puts stderr "ANALYZE_FAILED $source"
+        exit 2
+    }
+}
+Running PRESTO HDLC
+Compiling source file <ARCHIVED_SOURCE_ROOT>/rtl/bch/bch_enc.sv
+Presto compilation completed successfully.
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db'
+Running PRESTO HDLC
+Compiling source file <ARCHIVED_SOURCE_ROOT>/rtl/generated/study_wrappers/bch_base_enc_w512.sv
+Presto compilation completed successfully.
+if {[elaborate $top] == 0} { puts stderr "ELABORATE_FAILED $top"; exit 3 }
+Loading db file '/usr/synopsys/syn/Q-2019.12-SP5-5/libraries/syn/gtech.db'
+Loading db file '/usr/synopsys/syn/Q-2019.12-SP5-5/libraries/syn/standard.sldb'
+  Loading link library 'um28nchslogl35hsl140f_ssgwc0p9v125c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (bch_base_enc_w512)
+Elaborated 1 design.
+Current design is now 'bch_base_enc_w512'.
+Information: Building the design 'bch_enc' instantiated from design 'bch_base_enc_w512' with
+	the parameters "K=4096,R=104,W=512,GENERATOR=105'h115f914e07b0c138741c5c4fb23". (HDL-193)
+Warning:  <ARCHIVED_SOURCE_ROOT>/rtl/bch/bch_enc.sv:84: unsigned to signed assignment occurs. (VER-318)
+Warning:  <ARCHIVED_SOURCE_ROOT>/rtl/bch/bch_enc.sv:85: signed to unsigned part selection occurs. (VER-318)
+Warning:  <ARCHIVED_SOURCE_ROOT>/rtl/bch/bch_enc.sv:88: signed to unsigned conversion occurs. (VER-318)
+Warning:  <ARCHIVED_SOURCE_ROOT>/rtl/bch/bch_enc.sv:89: signed to unsigned conversion occurs. (VER-318)
+Warning:  <ARCHIVED_SOURCE_ROOT>/rtl/bch/bch_enc.sv:115: unsigned to signed assignment occurs. (VER-318)
+Warning:  <ARCHIVED_SOURCE_ROOT>/rtl/bch/bch_enc.sv:116: signed to unsigned conversion occurs. (VER-318)
+Warning:  <ARCHIVED_SOURCE_ROOT>/rtl/bch/bch_enc.sv:127: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine bch_enc_4096_104_512 line 93 in file
+		'<ARCHIVED_SOURCE_ROOT>/rtl/bch/bch_enc.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     done_o_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     state_q_reg     | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   remainder_q_reg   | Flip-flop |  104  |  Y  | N  | Y  | N  | N  | N  | N  |
+|   info_seen_q_reg   | Flip-flop |  13   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  parity_seen_q_reg  | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bch_enc_4096_104_512)
+current_design $top
+Current design is 'bch_base_enc_w512'.
+{bch_base_enc_w512}
+if {[link] == 0} { puts stderr "LINK_FAILED $top"; exit 4 }
+
+  Linking design 'bch_base_enc_w512'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (2 designs)               <ARCHIVED_SOURCE_ROOT>/syn/study_work/bch_base_enc_w512_250mhz/bch_base_enc_w512.db, etc
+  um28nchslogl35hsl140f_ssgwc0p9v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db
+
+redirect "$report_dir/precheck.rpt" { check_design }
+set period [expr {1000.0 / double($mhz)}]
+4.0
+create_clock -name clk -period $period [get_ports clk]
+1
+set_clock_uncertainty 0.20 [get_clocks clk]
+1
+set_input_delay 0.40 -clock clk [remove_from_collection [all_inputs] [get_ports {clk reset_n}]]
+1
+set_output_delay 0.40 -clock clk [all_outputs]
+1
+set_false_path -from [get_ports reset_n]
+1
+set_max_area 0
+1
+compile_ultra -no_autoungroup
+Loading db file '/usr/synopsys/syn/Q-2019.12-SP5-5/libraries/syn/dw_foundation.sldb'
+Information: Failed to find dw_foundation.sldb in the user defined search_path, load it from 'Synopsys Root'. (UISN-70)
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing power optimization. (PWR-850)
+Analyzing: "/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db"
+Library analysis succeeded.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | Q-2019.12-DWBB_201912.5 |     *     |
+| Licensed DW Building Blocks        | Q-2019.12-DWBB_201912.5 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 413 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'bch_base_enc_w512'
+
+Loaded alib file './alib-52/um28nchslogl35hsl140f_ssgwc0p9v125c.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'bch_enc_4096_104_512'
+Information: Added key list 'DesignWare' to design 'bch_enc_4096_104_512'. (DDB-72)
+ Implement Synthetic for 'bch_enc_4096_104_512'.
+  Processing 'bch_base_enc_w512'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'STP_TIE1_1' in the library 'um28nchslogl35hsl140f_ssgwc0p9v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'STP_TIE0_1' in the library 'um28nchslogl35hsl140f_ssgwc0p9v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: The register 'core/parity_seen_q_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'core/parity_seen_q_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'core/parity_seen_q_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'core/parity_seen_q_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'core/parity_seen_q_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'core/parity_seen_q_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'core/parity_seen_q_reg[6]' is a constant and will be removed. (OPT-1206)
+
+Threshold voltage group cell usage:
+>> SVT35 100.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Updating design information... (UID-85)
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:04:17    9267.0      0.00       0.0       0.0                           193426.7656
+    0:04:18    9267.0      0.00       0.0       0.0                           193426.7656
+
+Threshold voltage group cell usage:
+>> SVT35 100.00%
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+Threshold voltage group cell usage:
+>> SVT35 100.00%
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+
+Threshold voltage group cell usage:
+>> SVT35 100.00%
+
+  Beginning Isolate Ports
+  -----------------------
+
+Threshold voltage group cell usage:
+>> SVT35 100.00%
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:04:23    8644.4      0.00       0.0       0.0                           160089.7188
+    0:04:23    8644.4      0.00       0.0       0.0                           160089.7188
+    0:04:23    8644.4      0.00       0.0       0.0                           160089.7188
+    0:04:23    8644.4      0.00       0.0       0.0                           160089.7188
+
+Threshold voltage group cell usage:
+>> SVT35 100.00%
+    0:04:26    8644.4      0.00       0.0       0.0                           160089.7188
+    0:04:26    8644.4      0.00       0.0       0.0                           160089.7188
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:04:30    8621.9      0.00       0.0       0.0                           158668.1250
+    0:04:30    8621.9      0.00       0.0       0.0                           158668.1250
+    0:04:30    8621.9      0.00       0.0       0.0                           158668.1250
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+
+
+  Beginning Design Rule Fixing  (min_capacitance)
+  ----------------------------
+
+                                  TOTAL
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+
+Threshold voltage group cell usage:
+>> SVT35 100.00%
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:04:32    8617.9      0.00       0.0       0.0                           155688.6875
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+    0:04:33    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:33    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:33    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:34    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:34    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:34    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:34    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:34    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:34    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:34    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:34    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:34    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:34    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:34    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:34    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:34    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:34    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:34    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:34    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:34    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:34    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:34    8635.9      0.00       0.0       0.0                           154914.7500
+
+                                  TOTAL
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:04:34    8635.9      0.00       0.0       0.0                           154914.7500
+    0:04:35    8635.9      0.00       0.0       0.0                           154910.5312
+    0:04:35    8635.9      0.00       0.0       0.0                           154910.5312
+    0:04:35    8635.9      0.00       0.0       0.0                           154910.5312
+    0:04:36    8635.9      0.00       0.0       0.0                           154910.5312
+    0:04:37    8635.9      0.00       0.0       0.0                           154910.5312
+    0:04:37    8635.9      0.00       0.0       0.0                           154910.5312
+    0:04:37    8635.9      0.00       0.0       0.0                           154910.5312
+    0:04:37    8635.9      0.00       0.0       0.0                           154910.5312
+    0:04:37    8635.9      0.00       0.0       0.0                           154910.5312
+    0:04:37    8635.9      0.00       0.0       0.0                           154910.5312
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+redirect "$report_dir/check_design.rpt" { check_design }
+redirect "$report_dir/area.rpt" { report_area -physical -hierarchy }
+redirect "$report_dir/area_hierarchy.rpt" { report_area -hierarchy }
+redirect "$report_dir/qor.rpt" { report_qor }
+redirect "$report_dir/timing_max.rpt" { report_timing -delay_type max -max_paths 20 -nworst 5 }
+redirect "$report_dir/references.rpt" { report_reference -hierarchy }
+set paths [get_timing_paths -delay_type max -max_paths 1]
+{path0}
+set slack [get_attribute $paths slack]
+2.1243
+set area_file [open "$report_dir/area.rpt" r]
+file10
+set area_text [read $area_file]
+
+****************************************
+Report : area
+Design : bch_base_enc_w512
+Version: Q-2019.12-SP5-5
+Date   : Fri Nov  6 03:03:19 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    um28nchslogl35hsl140f_ssgwc0p9v125c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db)
+
+Number of ports:                         2110
+Number of nets:                          9797
+Number of cells:                         8207
+Number of combinational cells:           8086
+Number of sequential cells:               120
+Number of macros/black boxes:               0
+Number of buf/inv:                       1152
+Number of references:                       1
+
+Combinational area:               8272.991858
+Buf/Inv area:                      387.743995
+Noncombinational area:             362.879992
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  8635.871850
+Total area:                 undefined
+
+The above information was reported from the logical library. The following are from the physical library:
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ----------------------------
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  --------------------
+bch_base_enc_w512                 8635.8718    100.0     0.0000     0.0000  0.0000  bch_base_enc_w512
+core                              8635.8718    100.0  8272.9919   362.8800  0.0000  bch_enc_4096_104_512
+--------------------------------  ---------  -------  ---------  ---------  ------  --------------------
+Total                                                 8272.9919   362.8800  0.0000
+
+1
+
+close $area_file
+set area ""
+regexp {Total cell area:[[:space:]]+([0-9.]+)} $area_text unused area
+1
+set status [open "$result_dir/status.txt" w]
+file10
+if {$slack >= 0.0} { puts $status "result=PASS" } else { puts $status "result=TIMING_FAIL" }
+puts $status "slack_ns=$slack"
+puts $status "area_um2=$area"
+puts $status "period_ns=$period"
+puts $status "top=$top"
+puts $status "library=$::env(HBF_ECC_TARGET_LIBRARY)"
+close $status
+quit
+
+Memory usage for this session 1549 Mbytes.
+Memory usage for this session including child processes 1943 Mbytes.
+CPU usage for this session 486 seconds ( 0.14 hours ).
+Elapsed time for this session 493 seconds ( 0.14 hours ).
+
+Thank you...

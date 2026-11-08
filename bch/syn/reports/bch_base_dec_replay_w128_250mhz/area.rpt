@@ -1,0 +1,51 @@
+
+****************************************
+Report : area
+Design : bch_base_dec_replay_w128
+Version: Q-2019.12-SP5-5
+Date   : Fri Nov  6 03:48:35 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'bch_base_dec_replay_w128' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    um28nchslogl35hsl140f_ssgwc0p9v125c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db)
+
+Number of ports:                         1944
+Number of nets:                         36986
+Number of cells:                        35052
+Number of combinational cells:          33756
+Number of sequential cells:              1292
+Number of macros/black boxes:               0
+Number of buf/inv:                       3063
+Number of references:                       1
+
+Combinational area:              35006.495344
+Buf/Inv area:                     1034.039986
+Noncombinational area:            3907.007909
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 38913.503253
+Total area:                 undefined
+
+The above information was reported from the logical library. The following are from the physical library:
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  -----------------------------
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  ---------------------------------------
+bch_base_dec_replay_w128          38913.5033    100.0      0.0000     0.0000  0.0000  bch_base_dec_replay_w128
+core                              38913.5033    100.0    151.3680   378.0000  0.0000  bch_dec_13_8_4096_4200_128_1_0_104_201b
+core/bm_lanes[0].bm_u              8900.8079     22.9   6793.0799  2107.7280  0.0000  bch_bm_13_8_201b
+core/chien_u                      22916.5435     58.9  22487.1355   429.4080  0.0000  bch_chien_13_8_4200_4096_128_0_104_201b
+core/syndrome_u                    6566.7839     16.9   5574.9119   991.8720  0.0000  bch_syndrome_13_8_4200_128_0_104_201b
+--------------------------------  ----------  -------  ----------  ---------  ------  ---------------------------------------
+Total                                                  35006.4953  3907.0079  0.0000
+
+1

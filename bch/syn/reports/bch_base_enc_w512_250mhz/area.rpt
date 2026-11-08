@@ -1,0 +1,47 @@
+
+****************************************
+Report : area
+Design : bch_base_enc_w512
+Version: Q-2019.12-SP5-5
+Date   : Fri Nov  6 03:03:19 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    um28nchslogl35hsl140f_ssgwc0p9v125c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db)
+
+Number of ports:                         2110
+Number of nets:                          9797
+Number of cells:                         8207
+Number of combinational cells:           8086
+Number of sequential cells:               120
+Number of macros/black boxes:               0
+Number of buf/inv:                       1152
+Number of references:                       1
+
+Combinational area:               8272.991858
+Buf/Inv area:                      387.743995
+Noncombinational area:             362.879992
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  8635.871850
+Total area:                 undefined
+
+The above information was reported from the logical library. The following are from the physical library:
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ----------------------------
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  --------------------
+bch_base_enc_w512                 8635.8718    100.0     0.0000     0.0000  0.0000  bch_base_enc_w512
+core                              8635.8718    100.0  8272.9919   362.8800  0.0000  bch_enc_4096_104_512
+--------------------------------  ---------  -------  ---------  ---------  ------  --------------------
+Total                                                 8272.9919   362.8800  0.0000
+
+1

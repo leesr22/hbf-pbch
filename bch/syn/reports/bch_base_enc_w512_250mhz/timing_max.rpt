@@ -1,0 +1,1156 @@
+
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 5
+        -max_paths 20
+Design : bch_base_enc_w512
+Version: Q-2019.12-SP5-5
+Date   : Fri Nov  6 03:03:20 2026
+****************************************
+
+Operating Conditions: SSGWC0P9V125C   Library: um28nchslogl35hsl140f_ssgwc0p9v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: in_bits_i[482]
+              (input port clocked by clk)
+  Endpoint: core/remainder_q_reg[79]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_base_enc_w512  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_enc_4096_104_512
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[482] (in)                                     0.00       0.40 r
+  core/in_bits_i[482] (bch_enc_4096_104_512)              0.00       0.40 r
+  core/U1874/X (STP_AO2BB2_0P5)                           0.04       0.44 r
+  core/U1875/X (STP_INV_S_0P65)                           0.04       0.47 f
+  core/U1876/X (STP_AOI22_0P5)                            0.05       0.52 r
+  core/U1877/X (STP_INV_S_0P65)                           0.04       0.56 f
+  core/U2550/X (STP_OAI22_0P5)                            0.05       0.61 r
+  core/U2551/X (STP_INV_S_0P65)                           0.03       0.64 f
+  core/U2552/X (STP_AOI22_0P5)                            0.05       0.68 r
+  core/U2553/X (STP_INV_S_0P65)                           0.02       0.71 f
+  core/U4104/X (STP_AOI22_0P5)                            0.04       0.74 r
+  core/U4108/X (STP_EO3_0P5)                              0.04       0.79 f
+  core/U4109/X (STP_EO3_0P5)                              0.09       0.88 f
+  core/U4110/X (STP_EO3_0P5)                              0.09       0.97 f
+  core/U4111/X (STP_EO3_0P5)                              0.09       1.06 f
+  core/U4112/X (STP_EO3_0P5)                              0.09       1.15 f
+  core/U4113/X (STP_EO3_0P5)                              0.09       1.24 f
+  core/U4114/X (STP_EO3_0P5)                              0.09       1.33 f
+  core/U4115/X (STP_EO3_0P5)                              0.09       1.42 f
+  core/U4116/X (STP_EO3_0P5)                              0.09       1.51 f
+  core/U4678/X (STP_NR2_G_0P5)                            0.07       1.58 r
+  core/U7419/X (STP_MUXI2_MG_0P5)                         0.03       1.61 f
+  core/U7420/X (STP_AO21B_1)                              0.01       1.63 r
+  core/remainder_q_reg[79]/D (STP_FDPRBQ_1)               0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.20       3.80
+  core/remainder_q_reg[79]/CK (STP_FDPRBQ_1)              0.00       3.80 r
+  library setup time                                     -0.05       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.12
+
+
+  Startpoint: in_bits_i[482]
+              (input port clocked by clk)
+  Endpoint: core/remainder_q_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_base_enc_w512  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_enc_4096_104_512
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[482] (in)                                     0.00       0.40 r
+  core/in_bits_i[482] (bch_enc_4096_104_512)              0.00       0.40 r
+  core/U1874/X (STP_AO2BB2_0P5)                           0.04       0.44 r
+  core/U1875/X (STP_INV_S_0P65)                           0.04       0.47 f
+  core/U1876/X (STP_AOI22_0P5)                            0.05       0.52 r
+  core/U1877/X (STP_INV_S_0P65)                           0.04       0.56 f
+  core/U2550/X (STP_OAI22_0P5)                            0.05       0.61 r
+  core/U2551/X (STP_INV_S_0P65)                           0.03       0.64 f
+  core/U2552/X (STP_AOI22_0P5)                            0.05       0.68 r
+  core/U2553/X (STP_INV_S_0P65)                           0.02       0.71 f
+  core/U4104/X (STP_AOI22_0P5)                            0.04       0.74 r
+  core/U4108/X (STP_EO3_0P5)                              0.04       0.79 f
+  core/U4109/X (STP_EO3_0P5)                              0.09       0.88 f
+  core/U4110/X (STP_EO3_0P5)                              0.09       0.97 f
+  core/U4111/X (STP_EO3_0P5)                              0.09       1.06 f
+  core/U4112/X (STP_EO3_0P5)                              0.09       1.15 f
+  core/U4113/X (STP_EO3_0P5)                              0.09       1.24 f
+  core/U4114/X (STP_EO3_0P5)                              0.09       1.33 f
+  core/U4115/X (STP_EO3_0P5)                              0.09       1.42 f
+  core/U4116/X (STP_EO3_0P5)                              0.09       1.51 f
+  core/U4678/X (STP_NR2_G_0P5)                            0.07       1.58 r
+  core/U5095/X (STP_MUXI2_MG_0P5)                         0.03       1.61 f
+  core/U5096/X (STP_AO21B_1)                              0.01       1.63 r
+  core/remainder_q_reg[14]/D (STP_FDPRBQ_1)               0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.20       3.80
+  core/remainder_q_reg[14]/CK (STP_FDPRBQ_1)              0.00       3.80 r
+  library setup time                                     -0.05       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.12
+
+
+  Startpoint: in_bits_i[482]
+              (input port clocked by clk)
+  Endpoint: core/remainder_q_reg[49]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_base_enc_w512  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_enc_4096_104_512
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[482] (in)                                     0.00       0.40 r
+  core/in_bits_i[482] (bch_enc_4096_104_512)              0.00       0.40 r
+  core/U1874/X (STP_AO2BB2_0P5)                           0.04       0.44 r
+  core/U1875/X (STP_INV_S_0P65)                           0.04       0.47 f
+  core/U1876/X (STP_AOI22_0P5)                            0.05       0.52 r
+  core/U1877/X (STP_INV_S_0P65)                           0.04       0.56 f
+  core/U2550/X (STP_OAI22_0P5)                            0.05       0.61 r
+  core/U2551/X (STP_INV_S_0P65)                           0.03       0.64 f
+  core/U2552/X (STP_AOI22_0P5)                            0.05       0.68 r
+  core/U2553/X (STP_INV_S_0P65)                           0.02       0.71 f
+  core/U4104/X (STP_AOI22_0P5)                            0.04       0.74 r
+  core/U4108/X (STP_EO3_0P5)                              0.04       0.79 f
+  core/U4109/X (STP_EO3_0P5)                              0.09       0.88 f
+  core/U4110/X (STP_EO3_0P5)                              0.09       0.97 f
+  core/U4111/X (STP_EO3_0P5)                              0.09       1.06 f
+  core/U4112/X (STP_EO3_0P5)                              0.09       1.15 f
+  core/U4113/X (STP_EO3_0P5)                              0.09       1.24 f
+  core/U4114/X (STP_EO3_0P5)                              0.09       1.33 f
+  core/U4115/X (STP_EO3_0P5)                              0.09       1.42 f
+  core/U4116/X (STP_EO3_0P5)                              0.09       1.51 f
+  core/U4678/X (STP_NR2_G_0P5)                            0.07       1.58 r
+  core/U6496/X (STP_MUXI2_MG_0P5)                         0.03       1.61 f
+  core/U6497/X (STP_AO21B_1)                              0.01       1.63 r
+  core/remainder_q_reg[49]/D (STP_FDPRBQ_1)               0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.20       3.80
+  core/remainder_q_reg[49]/CK (STP_FDPRBQ_1)              0.00       3.80 r
+  library setup time                                     -0.05       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.12
+
+
+  Startpoint: in_bits_i[482]
+              (input port clocked by clk)
+  Endpoint: core/remainder_q_reg[69]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_base_enc_w512  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_enc_4096_104_512
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[482] (in)                                     0.00       0.40 r
+  core/in_bits_i[482] (bch_enc_4096_104_512)              0.00       0.40 r
+  core/U1874/X (STP_AO2BB2_0P5)                           0.04       0.44 r
+  core/U1875/X (STP_INV_S_0P65)                           0.04       0.47 f
+  core/U1876/X (STP_AOI22_0P5)                            0.05       0.52 r
+  core/U1877/X (STP_INV_S_0P65)                           0.04       0.56 f
+  core/U2550/X (STP_OAI22_0P5)                            0.05       0.61 r
+  core/U2551/X (STP_INV_S_0P65)                           0.03       0.64 f
+  core/U2552/X (STP_AOI22_0P5)                            0.05       0.68 r
+  core/U2553/X (STP_INV_S_0P65)                           0.02       0.71 f
+  core/U4104/X (STP_AOI22_0P5)                            0.04       0.74 r
+  core/U4108/X (STP_EO3_0P5)                              0.04       0.79 f
+  core/U4109/X (STP_EO3_0P5)                              0.09       0.88 f
+  core/U4110/X (STP_EO3_0P5)                              0.09       0.97 f
+  core/U4111/X (STP_EO3_0P5)                              0.09       1.06 f
+  core/U4112/X (STP_EO3_0P5)                              0.09       1.15 f
+  core/U4113/X (STP_EO3_0P5)                              0.09       1.24 f
+  core/U4114/X (STP_EO3_0P5)                              0.09       1.33 f
+  core/U4115/X (STP_EO3_0P5)                              0.09       1.42 f
+  core/U4116/X (STP_EO3_0P5)                              0.09       1.51 f
+  core/U4678/X (STP_NR2_G_0P5)                            0.07       1.58 r
+  core/U7200/X (STP_MUXI2_MG_0P5)                         0.03       1.61 f
+  core/U7201/X (STP_AO21B_1)                              0.01       1.63 r
+  core/remainder_q_reg[69]/D (STP_FDPRBQ_1)               0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.20       3.80
+  core/remainder_q_reg[69]/CK (STP_FDPRBQ_1)              0.00       3.80 r
+  library setup time                                     -0.05       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.12
+
+
+  Startpoint: in_bits_i[482]
+              (input port clocked by clk)
+  Endpoint: core/remainder_q_reg[95]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_base_enc_w512  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_enc_4096_104_512
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[482] (in)                                     0.00       0.40 r
+  core/in_bits_i[482] (bch_enc_4096_104_512)              0.00       0.40 r
+  core/U1874/X (STP_AO2BB2_0P5)                           0.04       0.44 r
+  core/U1875/X (STP_INV_S_0P65)                           0.04       0.47 f
+  core/U1876/X (STP_AOI22_0P5)                            0.05       0.52 r
+  core/U1877/X (STP_INV_S_0P65)                           0.04       0.56 f
+  core/U2550/X (STP_OAI22_0P5)                            0.05       0.61 r
+  core/U2551/X (STP_INV_S_0P65)                           0.03       0.64 f
+  core/U2552/X (STP_AOI22_0P5)                            0.05       0.68 r
+  core/U2553/X (STP_INV_S_0P65)                           0.02       0.71 f
+  core/U4104/X (STP_AOI22_0P5)                            0.04       0.74 r
+  core/U4108/X (STP_EO3_0P5)                              0.04       0.79 f
+  core/U4109/X (STP_EO3_0P5)                              0.09       0.88 f
+  core/U4110/X (STP_EO3_0P5)                              0.09       0.97 f
+  core/U4111/X (STP_EO3_0P5)                              0.09       1.06 f
+  core/U4112/X (STP_EO3_0P5)                              0.09       1.15 f
+  core/U4113/X (STP_EO3_0P5)                              0.09       1.24 f
+  core/U4114/X (STP_EO3_0P5)                              0.09       1.33 f
+  core/U4115/X (STP_EO3_0P5)                              0.09       1.42 f
+  core/U4116/X (STP_EO3_0P5)                              0.09       1.51 f
+  core/U4678/X (STP_NR2_G_0P5)                            0.07       1.58 r
+  core/U7849/X (STP_MUXI2_MG_0P5)                         0.03       1.61 f
+  core/U7850/X (STP_AO21B_1)                              0.01       1.63 r
+  core/remainder_q_reg[95]/D (STP_FDPRBQ_1)               0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.20       3.80
+  core/remainder_q_reg[95]/CK (STP_FDPRBQ_1)              0.00       3.80 r
+  library setup time                                     -0.05       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.12
+
+
+  Startpoint: in_bits_i[482]
+              (input port clocked by clk)
+  Endpoint: core/remainder_q_reg[9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_base_enc_w512  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_enc_4096_104_512
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[482] (in)                                     0.00       0.40 r
+  core/in_bits_i[482] (bch_enc_4096_104_512)              0.00       0.40 r
+  core/U1874/X (STP_AO2BB2_0P5)                           0.04       0.44 r
+  core/U1875/X (STP_INV_S_0P65)                           0.04       0.47 f
+  core/U1876/X (STP_AOI22_0P5)                            0.05       0.52 r
+  core/U1877/X (STP_INV_S_0P65)                           0.04       0.56 f
+  core/U2550/X (STP_OAI22_0P5)                            0.05       0.61 r
+  core/U2551/X (STP_INV_S_0P65)                           0.03       0.64 f
+  core/U2552/X (STP_AOI22_0P5)                            0.05       0.68 r
+  core/U2553/X (STP_INV_S_0P65)                           0.02       0.71 f
+  core/U4104/X (STP_AOI22_0P5)                            0.04       0.74 r
+  core/U4108/X (STP_EO3_0P5)                              0.04       0.79 f
+  core/U4109/X (STP_EO3_0P5)                              0.09       0.88 f
+  core/U4110/X (STP_EO3_0P5)                              0.09       0.97 f
+  core/U4111/X (STP_EO3_0P5)                              0.09       1.06 f
+  core/U4112/X (STP_EO3_0P5)                              0.09       1.15 f
+  core/U4113/X (STP_EO3_0P5)                              0.09       1.24 f
+  core/U4114/X (STP_EO3_0P5)                              0.09       1.33 f
+  core/U4115/X (STP_EO3_0P5)                              0.09       1.42 f
+  core/U4116/X (STP_EO3_0P5)                              0.09       1.51 f
+  core/U4678/X (STP_NR2_G_0P5)                            0.07       1.58 r
+  core/U4756/X (STP_MUXI2_MG_0P5)                         0.03       1.61 f
+  core/U4757/X (STP_AO21B_1)                              0.01       1.63 r
+  core/remainder_q_reg[9]/D (STP_FDPRBQ_1)                0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.20       3.80
+  core/remainder_q_reg[9]/CK (STP_FDPRBQ_1)               0.00       3.80 r
+  library setup time                                     -0.05       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.12
+
+
+  Startpoint: in_bits_i[482]
+              (input port clocked by clk)
+  Endpoint: core/remainder_q_reg[12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_base_enc_w512  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_enc_4096_104_512
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[482] (in)                                     0.00       0.40 r
+  core/in_bits_i[482] (bch_enc_4096_104_512)              0.00       0.40 r
+  core/U1874/X (STP_AO2BB2_0P5)                           0.04       0.44 r
+  core/U1875/X (STP_INV_S_0P65)                           0.04       0.47 f
+  core/U1876/X (STP_AOI22_0P5)                            0.05       0.52 r
+  core/U1877/X (STP_INV_S_0P65)                           0.04       0.56 f
+  core/U2550/X (STP_OAI22_0P5)                            0.05       0.61 r
+  core/U2551/X (STP_INV_S_0P65)                           0.03       0.64 f
+  core/U2552/X (STP_AOI22_0P5)                            0.05       0.68 r
+  core/U2553/X (STP_INV_S_0P65)                           0.02       0.71 f
+  core/U4104/X (STP_AOI22_0P5)                            0.04       0.74 r
+  core/U4108/X (STP_EO3_0P5)                              0.04       0.79 f
+  core/U4109/X (STP_EO3_0P5)                              0.09       0.88 f
+  core/U4110/X (STP_EO3_0P5)                              0.09       0.97 f
+  core/U4111/X (STP_EO3_0P5)                              0.09       1.06 f
+  core/U4112/X (STP_EO3_0P5)                              0.09       1.15 f
+  core/U4113/X (STP_EO3_0P5)                              0.09       1.24 f
+  core/U4114/X (STP_EO3_0P5)                              0.09       1.33 f
+  core/U4115/X (STP_EO3_0P5)                              0.09       1.42 f
+  core/U4116/X (STP_EO3_0P5)                              0.09       1.51 f
+  core/U4678/X (STP_NR2_G_0P5)                            0.07       1.58 r
+  core/U4960/X (STP_MUXI2_MG_0P5)                         0.03       1.61 f
+  core/U4961/X (STP_AO21B_1)                              0.01       1.63 r
+  core/remainder_q_reg[12]/D (STP_FDPRBQ_1)               0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.20       3.80
+  core/remainder_q_reg[12]/CK (STP_FDPRBQ_1)              0.00       3.80 r
+  library setup time                                     -0.05       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.12
+
+
+  Startpoint: in_bits_i[482]
+              (input port clocked by clk)
+  Endpoint: core/remainder_q_reg[41]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_base_enc_w512  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_enc_4096_104_512
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[482] (in)                                     0.00       0.40 r
+  core/in_bits_i[482] (bch_enc_4096_104_512)              0.00       0.40 r
+  core/U1874/X (STP_AO2BB2_0P5)                           0.04       0.44 r
+  core/U1875/X (STP_INV_S_0P65)                           0.04       0.47 f
+  core/U1876/X (STP_AOI22_0P5)                            0.05       0.52 r
+  core/U1877/X (STP_INV_S_0P65)                           0.04       0.56 f
+  core/U2550/X (STP_OAI22_0P5)                            0.05       0.61 r
+  core/U2551/X (STP_INV_S_0P65)                           0.03       0.64 f
+  core/U2552/X (STP_AOI22_0P5)                            0.05       0.68 r
+  core/U2553/X (STP_INV_S_0P65)                           0.02       0.71 f
+  core/U4104/X (STP_AOI22_0P5)                            0.04       0.74 r
+  core/U4108/X (STP_EO3_0P5)                              0.04       0.79 f
+  core/U4109/X (STP_EO3_0P5)                              0.09       0.88 f
+  core/U4110/X (STP_EO3_0P5)                              0.09       0.97 f
+  core/U4111/X (STP_EO3_0P5)                              0.09       1.06 f
+  core/U4112/X (STP_EO3_0P5)                              0.09       1.15 f
+  core/U4113/X (STP_EO3_0P5)                              0.09       1.24 f
+  core/U4114/X (STP_EO3_0P5)                              0.09       1.33 f
+  core/U4115/X (STP_EO3_0P5)                              0.09       1.42 f
+  core/U4116/X (STP_EO3_0P5)                              0.09       1.51 f
+  core/U4678/X (STP_NR2_G_0P5)                            0.07       1.58 r
+  core/U6169/X (STP_MUXI2_MG_0P5)                         0.03       1.61 f
+  core/U6170/X (STP_AO21B_1)                              0.01       1.63 r
+  core/remainder_q_reg[41]/D (STP_FDPRBQ_1)               0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.20       3.80
+  core/remainder_q_reg[41]/CK (STP_FDPRBQ_1)              0.00       3.80 r
+  library setup time                                     -0.05       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.12
+
+
+  Startpoint: in_bits_i[482]
+              (input port clocked by clk)
+  Endpoint: core/remainder_q_reg[79]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_base_enc_w512  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_enc_4096_104_512
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[482] (in)                                     0.00       0.40 r
+  core/in_bits_i[482] (bch_enc_4096_104_512)              0.00       0.40 r
+  core/U1874/X (STP_AO2BB2_0P5)                           0.04       0.44 r
+  core/U1875/X (STP_INV_S_0P65)                           0.04       0.47 f
+  core/U1876/X (STP_AOI22_0P5)                            0.05       0.52 r
+  core/U1877/X (STP_INV_S_0P65)                           0.04       0.56 f
+  core/U2550/X (STP_OAI22_0P5)                            0.05       0.61 r
+  core/U2551/X (STP_INV_S_0P65)                           0.03       0.64 f
+  core/U2552/X (STP_AOI22_0P5)                            0.05       0.68 r
+  core/U2553/X (STP_INV_S_0P65)                           0.02       0.71 f
+  core/U4104/X (STP_AOI22_0P5)                            0.04       0.74 r
+  core/U4108/X (STP_EO3_0P5)                              0.04       0.79 f
+  core/U4109/X (STP_EO3_0P5)                              0.09       0.88 f
+  core/U4110/X (STP_EO3_0P5)                              0.09       0.97 f
+  core/U4111/X (STP_EO3_0P5)                              0.09       1.06 f
+  core/U4112/X (STP_EO3_0P5)                              0.09       1.15 f
+  core/U4113/X (STP_EO3_0P5)                              0.09       1.24 f
+  core/U4114/X (STP_EO3_0P5)                              0.09       1.33 f
+  core/U4115/X (STP_EO3_0P5)                              0.09       1.42 f
+  core/U4116/X (STP_EO3_0P5)                              0.09       1.51 f
+  core/U4678/X (STP_NR2_G_0P5)                            0.07       1.58 r
+  core/U7419/X (STP_MUXI2_MG_0P5)                         0.03       1.61 f
+  core/U7420/X (STP_AO21B_1)                              0.01       1.63 r
+  core/remainder_q_reg[79]/D (STP_FDPRBQ_1)               0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.20       3.80
+  core/remainder_q_reg[79]/CK (STP_FDPRBQ_1)              0.00       3.80 r
+  library setup time                                     -0.05       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.12
+
+
+  Startpoint: in_bits_i[482]
+              (input port clocked by clk)
+  Endpoint: core/remainder_q_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_base_enc_w512  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_enc_4096_104_512
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[482] (in)                                     0.00       0.40 r
+  core/in_bits_i[482] (bch_enc_4096_104_512)              0.00       0.40 r
+  core/U1874/X (STP_AO2BB2_0P5)                           0.04       0.44 r
+  core/U1875/X (STP_INV_S_0P65)                           0.04       0.47 f
+  core/U1876/X (STP_AOI22_0P5)                            0.05       0.52 r
+  core/U1877/X (STP_INV_S_0P65)                           0.04       0.56 f
+  core/U2550/X (STP_OAI22_0P5)                            0.05       0.61 r
+  core/U2551/X (STP_INV_S_0P65)                           0.03       0.64 f
+  core/U2552/X (STP_AOI22_0P5)                            0.05       0.68 r
+  core/U2553/X (STP_INV_S_0P65)                           0.02       0.71 f
+  core/U4104/X (STP_AOI22_0P5)                            0.04       0.74 r
+  core/U4108/X (STP_EO3_0P5)                              0.04       0.79 f
+  core/U4109/X (STP_EO3_0P5)                              0.09       0.88 f
+  core/U4110/X (STP_EO3_0P5)                              0.09       0.97 f
+  core/U4111/X (STP_EO3_0P5)                              0.09       1.06 f
+  core/U4112/X (STP_EO3_0P5)                              0.09       1.15 f
+  core/U4113/X (STP_EO3_0P5)                              0.09       1.24 f
+  core/U4114/X (STP_EO3_0P5)                              0.09       1.33 f
+  core/U4115/X (STP_EO3_0P5)                              0.09       1.42 f
+  core/U4116/X (STP_EO3_0P5)                              0.09       1.51 f
+  core/U4678/X (STP_NR2_G_0P5)                            0.07       1.58 r
+  core/U5095/X (STP_MUXI2_MG_0P5)                         0.03       1.61 f
+  core/U5096/X (STP_AO21B_1)                              0.01       1.63 r
+  core/remainder_q_reg[14]/D (STP_FDPRBQ_1)               0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.20       3.80
+  core/remainder_q_reg[14]/CK (STP_FDPRBQ_1)              0.00       3.80 r
+  library setup time                                     -0.05       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.12
+
+
+  Startpoint: in_bits_i[482]
+              (input port clocked by clk)
+  Endpoint: core/remainder_q_reg[49]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_base_enc_w512  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_enc_4096_104_512
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[482] (in)                                     0.00       0.40 r
+  core/in_bits_i[482] (bch_enc_4096_104_512)              0.00       0.40 r
+  core/U1874/X (STP_AO2BB2_0P5)                           0.04       0.44 r
+  core/U1875/X (STP_INV_S_0P65)                           0.04       0.47 f
+  core/U1876/X (STP_AOI22_0P5)                            0.05       0.52 r
+  core/U1877/X (STP_INV_S_0P65)                           0.04       0.56 f
+  core/U2550/X (STP_OAI22_0P5)                            0.05       0.61 r
+  core/U2551/X (STP_INV_S_0P65)                           0.03       0.64 f
+  core/U2552/X (STP_AOI22_0P5)                            0.05       0.68 r
+  core/U2553/X (STP_INV_S_0P65)                           0.02       0.71 f
+  core/U4104/X (STP_AOI22_0P5)                            0.04       0.74 r
+  core/U4108/X (STP_EO3_0P5)                              0.04       0.79 f
+  core/U4109/X (STP_EO3_0P5)                              0.09       0.88 f
+  core/U4110/X (STP_EO3_0P5)                              0.09       0.97 f
+  core/U4111/X (STP_EO3_0P5)                              0.09       1.06 f
+  core/U4112/X (STP_EO3_0P5)                              0.09       1.15 f
+  core/U4113/X (STP_EO3_0P5)                              0.09       1.24 f
+  core/U4114/X (STP_EO3_0P5)                              0.09       1.33 f
+  core/U4115/X (STP_EO3_0P5)                              0.09       1.42 f
+  core/U4116/X (STP_EO3_0P5)                              0.09       1.51 f
+  core/U4678/X (STP_NR2_G_0P5)                            0.07       1.58 r
+  core/U6496/X (STP_MUXI2_MG_0P5)                         0.03       1.61 f
+  core/U6497/X (STP_AO21B_1)                              0.01       1.63 r
+  core/remainder_q_reg[49]/D (STP_FDPRBQ_1)               0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.20       3.80
+  core/remainder_q_reg[49]/CK (STP_FDPRBQ_1)              0.00       3.80 r
+  library setup time                                     -0.05       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.12
+
+
+  Startpoint: in_bits_i[482]
+              (input port clocked by clk)
+  Endpoint: core/remainder_q_reg[69]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_base_enc_w512  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_enc_4096_104_512
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[482] (in)                                     0.00       0.40 r
+  core/in_bits_i[482] (bch_enc_4096_104_512)              0.00       0.40 r
+  core/U1874/X (STP_AO2BB2_0P5)                           0.04       0.44 r
+  core/U1875/X (STP_INV_S_0P65)                           0.04       0.47 f
+  core/U1876/X (STP_AOI22_0P5)                            0.05       0.52 r
+  core/U1877/X (STP_INV_S_0P65)                           0.04       0.56 f
+  core/U2550/X (STP_OAI22_0P5)                            0.05       0.61 r
+  core/U2551/X (STP_INV_S_0P65)                           0.03       0.64 f
+  core/U2552/X (STP_AOI22_0P5)                            0.05       0.68 r
+  core/U2553/X (STP_INV_S_0P65)                           0.02       0.71 f
+  core/U4104/X (STP_AOI22_0P5)                            0.04       0.74 r
+  core/U4108/X (STP_EO3_0P5)                              0.04       0.79 f
+  core/U4109/X (STP_EO3_0P5)                              0.09       0.88 f
+  core/U4110/X (STP_EO3_0P5)                              0.09       0.97 f
+  core/U4111/X (STP_EO3_0P5)                              0.09       1.06 f
+  core/U4112/X (STP_EO3_0P5)                              0.09       1.15 f
+  core/U4113/X (STP_EO3_0P5)                              0.09       1.24 f
+  core/U4114/X (STP_EO3_0P5)                              0.09       1.33 f
+  core/U4115/X (STP_EO3_0P5)                              0.09       1.42 f
+  core/U4116/X (STP_EO3_0P5)                              0.09       1.51 f
+  core/U4678/X (STP_NR2_G_0P5)                            0.07       1.58 r
+  core/U7200/X (STP_MUXI2_MG_0P5)                         0.03       1.61 f
+  core/U7201/X (STP_AO21B_1)                              0.01       1.63 r
+  core/remainder_q_reg[69]/D (STP_FDPRBQ_1)               0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.20       3.80
+  core/remainder_q_reg[69]/CK (STP_FDPRBQ_1)              0.00       3.80 r
+  library setup time                                     -0.05       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.12
+
+
+  Startpoint: in_bits_i[482]
+              (input port clocked by clk)
+  Endpoint: core/remainder_q_reg[95]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_base_enc_w512  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_enc_4096_104_512
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[482] (in)                                     0.00       0.40 r
+  core/in_bits_i[482] (bch_enc_4096_104_512)              0.00       0.40 r
+  core/U1874/X (STP_AO2BB2_0P5)                           0.04       0.44 r
+  core/U1875/X (STP_INV_S_0P65)                           0.04       0.47 f
+  core/U1876/X (STP_AOI22_0P5)                            0.05       0.52 r
+  core/U1877/X (STP_INV_S_0P65)                           0.04       0.56 f
+  core/U2550/X (STP_OAI22_0P5)                            0.05       0.61 r
+  core/U2551/X (STP_INV_S_0P65)                           0.03       0.64 f
+  core/U2552/X (STP_AOI22_0P5)                            0.05       0.68 r
+  core/U2553/X (STP_INV_S_0P65)                           0.02       0.71 f
+  core/U4104/X (STP_AOI22_0P5)                            0.04       0.74 r
+  core/U4108/X (STP_EO3_0P5)                              0.04       0.79 f
+  core/U4109/X (STP_EO3_0P5)                              0.09       0.88 f
+  core/U4110/X (STP_EO3_0P5)                              0.09       0.97 f
+  core/U4111/X (STP_EO3_0P5)                              0.09       1.06 f
+  core/U4112/X (STP_EO3_0P5)                              0.09       1.15 f
+  core/U4113/X (STP_EO3_0P5)                              0.09       1.24 f
+  core/U4114/X (STP_EO3_0P5)                              0.09       1.33 f
+  core/U4115/X (STP_EO3_0P5)                              0.09       1.42 f
+  core/U4116/X (STP_EO3_0P5)                              0.09       1.51 f
+  core/U4678/X (STP_NR2_G_0P5)                            0.07       1.58 r
+  core/U7849/X (STP_MUXI2_MG_0P5)                         0.03       1.61 f
+  core/U7850/X (STP_AO21B_1)                              0.01       1.63 r
+  core/remainder_q_reg[95]/D (STP_FDPRBQ_1)               0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.20       3.80
+  core/remainder_q_reg[95]/CK (STP_FDPRBQ_1)              0.00       3.80 r
+  library setup time                                     -0.05       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.12
+
+
+  Startpoint: in_bits_i[482]
+              (input port clocked by clk)
+  Endpoint: core/remainder_q_reg[9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_base_enc_w512  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_enc_4096_104_512
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[482] (in)                                     0.00       0.40 r
+  core/in_bits_i[482] (bch_enc_4096_104_512)              0.00       0.40 r
+  core/U1874/X (STP_AO2BB2_0P5)                           0.04       0.44 r
+  core/U1875/X (STP_INV_S_0P65)                           0.04       0.47 f
+  core/U1876/X (STP_AOI22_0P5)                            0.05       0.52 r
+  core/U1877/X (STP_INV_S_0P65)                           0.04       0.56 f
+  core/U2550/X (STP_OAI22_0P5)                            0.05       0.61 r
+  core/U2551/X (STP_INV_S_0P65)                           0.03       0.64 f
+  core/U2552/X (STP_AOI22_0P5)                            0.05       0.68 r
+  core/U2553/X (STP_INV_S_0P65)                           0.02       0.71 f
+  core/U4104/X (STP_AOI22_0P5)                            0.04       0.74 r
+  core/U4108/X (STP_EO3_0P5)                              0.04       0.79 f
+  core/U4109/X (STP_EO3_0P5)                              0.09       0.88 f
+  core/U4110/X (STP_EO3_0P5)                              0.09       0.97 f
+  core/U4111/X (STP_EO3_0P5)                              0.09       1.06 f
+  core/U4112/X (STP_EO3_0P5)                              0.09       1.15 f
+  core/U4113/X (STP_EO3_0P5)                              0.09       1.24 f
+  core/U4114/X (STP_EO3_0P5)                              0.09       1.33 f
+  core/U4115/X (STP_EO3_0P5)                              0.09       1.42 f
+  core/U4116/X (STP_EO3_0P5)                              0.09       1.51 f
+  core/U4678/X (STP_NR2_G_0P5)                            0.07       1.58 r
+  core/U4756/X (STP_MUXI2_MG_0P5)                         0.03       1.61 f
+  core/U4757/X (STP_AO21B_1)                              0.01       1.63 r
+  core/remainder_q_reg[9]/D (STP_FDPRBQ_1)                0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.20       3.80
+  core/remainder_q_reg[9]/CK (STP_FDPRBQ_1)               0.00       3.80 r
+  library setup time                                     -0.05       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.12
+
+
+  Startpoint: in_bits_i[482]
+              (input port clocked by clk)
+  Endpoint: core/remainder_q_reg[12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_base_enc_w512  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_enc_4096_104_512
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[482] (in)                                     0.00       0.40 r
+  core/in_bits_i[482] (bch_enc_4096_104_512)              0.00       0.40 r
+  core/U1874/X (STP_AO2BB2_0P5)                           0.04       0.44 r
+  core/U1875/X (STP_INV_S_0P65)                           0.04       0.47 f
+  core/U1876/X (STP_AOI22_0P5)                            0.05       0.52 r
+  core/U1877/X (STP_INV_S_0P65)                           0.04       0.56 f
+  core/U2550/X (STP_OAI22_0P5)                            0.05       0.61 r
+  core/U2551/X (STP_INV_S_0P65)                           0.03       0.64 f
+  core/U2552/X (STP_AOI22_0P5)                            0.05       0.68 r
+  core/U2553/X (STP_INV_S_0P65)                           0.02       0.71 f
+  core/U4104/X (STP_AOI22_0P5)                            0.04       0.74 r
+  core/U4108/X (STP_EO3_0P5)                              0.04       0.79 f
+  core/U4109/X (STP_EO3_0P5)                              0.09       0.88 f
+  core/U4110/X (STP_EO3_0P5)                              0.09       0.97 f
+  core/U4111/X (STP_EO3_0P5)                              0.09       1.06 f
+  core/U4112/X (STP_EO3_0P5)                              0.09       1.15 f
+  core/U4113/X (STP_EO3_0P5)                              0.09       1.24 f
+  core/U4114/X (STP_EO3_0P5)                              0.09       1.33 f
+  core/U4115/X (STP_EO3_0P5)                              0.09       1.42 f
+  core/U4116/X (STP_EO3_0P5)                              0.09       1.51 f
+  core/U4678/X (STP_NR2_G_0P5)                            0.07       1.58 r
+  core/U4960/X (STP_MUXI2_MG_0P5)                         0.03       1.61 f
+  core/U4961/X (STP_AO21B_1)                              0.01       1.63 r
+  core/remainder_q_reg[12]/D (STP_FDPRBQ_1)               0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.20       3.80
+  core/remainder_q_reg[12]/CK (STP_FDPRBQ_1)              0.00       3.80 r
+  library setup time                                     -0.05       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.12
+
+
+  Startpoint: in_bits_i[482]
+              (input port clocked by clk)
+  Endpoint: core/remainder_q_reg[41]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_base_enc_w512  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_enc_4096_104_512
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[482] (in)                                     0.00       0.40 r
+  core/in_bits_i[482] (bch_enc_4096_104_512)              0.00       0.40 r
+  core/U1874/X (STP_AO2BB2_0P5)                           0.04       0.44 r
+  core/U1875/X (STP_INV_S_0P65)                           0.04       0.47 f
+  core/U1876/X (STP_AOI22_0P5)                            0.05       0.52 r
+  core/U1877/X (STP_INV_S_0P65)                           0.04       0.56 f
+  core/U2550/X (STP_OAI22_0P5)                            0.05       0.61 r
+  core/U2551/X (STP_INV_S_0P65)                           0.03       0.64 f
+  core/U2552/X (STP_AOI22_0P5)                            0.05       0.68 r
+  core/U2553/X (STP_INV_S_0P65)                           0.02       0.71 f
+  core/U4104/X (STP_AOI22_0P5)                            0.04       0.74 r
+  core/U4108/X (STP_EO3_0P5)                              0.04       0.79 f
+  core/U4109/X (STP_EO3_0P5)                              0.09       0.88 f
+  core/U4110/X (STP_EO3_0P5)                              0.09       0.97 f
+  core/U4111/X (STP_EO3_0P5)                              0.09       1.06 f
+  core/U4112/X (STP_EO3_0P5)                              0.09       1.15 f
+  core/U4113/X (STP_EO3_0P5)                              0.09       1.24 f
+  core/U4114/X (STP_EO3_0P5)                              0.09       1.33 f
+  core/U4115/X (STP_EO3_0P5)                              0.09       1.42 f
+  core/U4116/X (STP_EO3_0P5)                              0.09       1.51 f
+  core/U4678/X (STP_NR2_G_0P5)                            0.07       1.58 r
+  core/U6169/X (STP_MUXI2_MG_0P5)                         0.03       1.61 f
+  core/U6170/X (STP_AO21B_1)                              0.01       1.63 r
+  core/remainder_q_reg[41]/D (STP_FDPRBQ_1)               0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.20       3.80
+  core/remainder_q_reg[41]/CK (STP_FDPRBQ_1)              0.00       3.80 r
+  library setup time                                     -0.05       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.12
+
+
+  Startpoint: in_bits_i[482]
+              (input port clocked by clk)
+  Endpoint: core/remainder_q_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_base_enc_w512  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_enc_4096_104_512
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[482] (in)                                     0.00       0.40 r
+  core/in_bits_i[482] (bch_enc_4096_104_512)              0.00       0.40 r
+  core/U1874/X (STP_AO2BB2_0P5)                           0.04       0.44 r
+  core/U1875/X (STP_INV_S_0P65)                           0.04       0.47 f
+  core/U1876/X (STP_AOI22_0P5)                            0.05       0.52 r
+  core/U1877/X (STP_INV_S_0P65)                           0.04       0.56 f
+  core/U2550/X (STP_OAI22_0P5)                            0.05       0.61 r
+  core/U2551/X (STP_INV_S_0P65)                           0.03       0.64 f
+  core/U2552/X (STP_AOI22_0P5)                            0.05       0.68 r
+  core/U2553/X (STP_INV_S_0P65)                           0.02       0.71 f
+  core/U4104/X (STP_AOI22_0P5)                            0.04       0.74 r
+  core/U4108/X (STP_EO3_0P5)                              0.04       0.79 f
+  core/U4109/X (STP_EO3_0P5)                              0.09       0.88 f
+  core/U4110/X (STP_EO3_0P5)                              0.09       0.97 f
+  core/U4111/X (STP_EO3_0P5)                              0.09       1.06 f
+  core/U4112/X (STP_EO3_0P5)                              0.09       1.15 f
+  core/U4113/X (STP_EO3_0P5)                              0.09       1.24 f
+  core/U4114/X (STP_EO3_0P5)                              0.09       1.33 f
+  core/U4115/X (STP_EO3_0P5)                              0.09       1.42 f
+  core/U4116/X (STP_EO3_0P5)                              0.09       1.51 f
+  core/U4678/X (STP_NR2_G_0P5)                            0.07       1.58 r
+  core/U5095/X (STP_MUXI2_MG_0P5)                         0.03       1.61 f
+  core/U5096/X (STP_AO21B_1)                              0.01       1.63 r
+  core/remainder_q_reg[14]/D (STP_FDPRBQ_1)               0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.20       3.80
+  core/remainder_q_reg[14]/CK (STP_FDPRBQ_1)              0.00       3.80 r
+  library setup time                                     -0.05       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.12
+
+
+  Startpoint: in_bits_i[482]
+              (input port clocked by clk)
+  Endpoint: core/remainder_q_reg[9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_base_enc_w512  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_enc_4096_104_512
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[482] (in)                                     0.00       0.40 r
+  core/in_bits_i[482] (bch_enc_4096_104_512)              0.00       0.40 r
+  core/U1874/X (STP_AO2BB2_0P5)                           0.04       0.44 r
+  core/U1875/X (STP_INV_S_0P65)                           0.04       0.47 f
+  core/U1876/X (STP_AOI22_0P5)                            0.05       0.52 r
+  core/U1877/X (STP_INV_S_0P65)                           0.04       0.56 f
+  core/U2550/X (STP_OAI22_0P5)                            0.05       0.61 r
+  core/U2551/X (STP_INV_S_0P65)                           0.03       0.64 f
+  core/U2552/X (STP_AOI22_0P5)                            0.05       0.68 r
+  core/U2553/X (STP_INV_S_0P65)                           0.02       0.71 f
+  core/U4104/X (STP_AOI22_0P5)                            0.04       0.74 r
+  core/U4108/X (STP_EO3_0P5)                              0.04       0.79 f
+  core/U4109/X (STP_EO3_0P5)                              0.09       0.88 f
+  core/U4110/X (STP_EO3_0P5)                              0.09       0.97 f
+  core/U4111/X (STP_EO3_0P5)                              0.09       1.06 f
+  core/U4112/X (STP_EO3_0P5)                              0.09       1.15 f
+  core/U4113/X (STP_EO3_0P5)                              0.09       1.24 f
+  core/U4114/X (STP_EO3_0P5)                              0.09       1.33 f
+  core/U4115/X (STP_EO3_0P5)                              0.09       1.42 f
+  core/U4116/X (STP_EO3_0P5)                              0.09       1.51 f
+  core/U4678/X (STP_NR2_G_0P5)                            0.07       1.58 r
+  core/U4756/X (STP_MUXI2_MG_0P5)                         0.03       1.61 f
+  core/U4757/X (STP_AO21B_1)                              0.01       1.63 r
+  core/remainder_q_reg[9]/D (STP_FDPRBQ_1)                0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.20       3.80
+  core/remainder_q_reg[9]/CK (STP_FDPRBQ_1)               0.00       3.80 r
+  library setup time                                     -0.05       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.12
+
+
+  Startpoint: in_bits_i[482]
+              (input port clocked by clk)
+  Endpoint: core/remainder_q_reg[12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_base_enc_w512  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_enc_4096_104_512
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[482] (in)                                     0.00       0.40 r
+  core/in_bits_i[482] (bch_enc_4096_104_512)              0.00       0.40 r
+  core/U1874/X (STP_AO2BB2_0P5)                           0.04       0.44 r
+  core/U1875/X (STP_INV_S_0P65)                           0.04       0.47 f
+  core/U1876/X (STP_AOI22_0P5)                            0.05       0.52 r
+  core/U1877/X (STP_INV_S_0P65)                           0.04       0.56 f
+  core/U2550/X (STP_OAI22_0P5)                            0.05       0.61 r
+  core/U2551/X (STP_INV_S_0P65)                           0.03       0.64 f
+  core/U2552/X (STP_AOI22_0P5)                            0.05       0.68 r
+  core/U2553/X (STP_INV_S_0P65)                           0.02       0.71 f
+  core/U4104/X (STP_AOI22_0P5)                            0.04       0.74 r
+  core/U4108/X (STP_EO3_0P5)                              0.04       0.79 f
+  core/U4109/X (STP_EO3_0P5)                              0.09       0.88 f
+  core/U4110/X (STP_EO3_0P5)                              0.09       0.97 f
+  core/U4111/X (STP_EO3_0P5)                              0.09       1.06 f
+  core/U4112/X (STP_EO3_0P5)                              0.09       1.15 f
+  core/U4113/X (STP_EO3_0P5)                              0.09       1.24 f
+  core/U4114/X (STP_EO3_0P5)                              0.09       1.33 f
+  core/U4115/X (STP_EO3_0P5)                              0.09       1.42 f
+  core/U4116/X (STP_EO3_0P5)                              0.09       1.51 f
+  core/U4678/X (STP_NR2_G_0P5)                            0.07       1.58 r
+  core/U4960/X (STP_MUXI2_MG_0P5)                         0.03       1.61 f
+  core/U4961/X (STP_AO21B_1)                              0.01       1.63 r
+  core/remainder_q_reg[12]/D (STP_FDPRBQ_1)               0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.20       3.80
+  core/remainder_q_reg[12]/CK (STP_FDPRBQ_1)              0.00       3.80 r
+  library setup time                                     -0.05       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.12
+
+
+  Startpoint: in_bits_i[482]
+              (input port clocked by clk)
+  Endpoint: core/remainder_q_reg[41]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_base_enc_w512  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_enc_4096_104_512
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[482] (in)                                     0.00       0.40 r
+  core/in_bits_i[482] (bch_enc_4096_104_512)              0.00       0.40 r
+  core/U1874/X (STP_AO2BB2_0P5)                           0.04       0.44 r
+  core/U1875/X (STP_INV_S_0P65)                           0.04       0.47 f
+  core/U1876/X (STP_AOI22_0P5)                            0.05       0.52 r
+  core/U1877/X (STP_INV_S_0P65)                           0.04       0.56 f
+  core/U2550/X (STP_OAI22_0P5)                            0.05       0.61 r
+  core/U2551/X (STP_INV_S_0P65)                           0.03       0.64 f
+  core/U2552/X (STP_AOI22_0P5)                            0.05       0.68 r
+  core/U2553/X (STP_INV_S_0P65)                           0.02       0.71 f
+  core/U4104/X (STP_AOI22_0P5)                            0.04       0.74 r
+  core/U4108/X (STP_EO3_0P5)                              0.04       0.79 f
+  core/U4109/X (STP_EO3_0P5)                              0.09       0.88 f
+  core/U4110/X (STP_EO3_0P5)                              0.09       0.97 f
+  core/U4111/X (STP_EO3_0P5)                              0.09       1.06 f
+  core/U4112/X (STP_EO3_0P5)                              0.09       1.15 f
+  core/U4113/X (STP_EO3_0P5)                              0.09       1.24 f
+  core/U4114/X (STP_EO3_0P5)                              0.09       1.33 f
+  core/U4115/X (STP_EO3_0P5)                              0.09       1.42 f
+  core/U4116/X (STP_EO3_0P5)                              0.09       1.51 f
+  core/U4678/X (STP_NR2_G_0P5)                            0.07       1.58 r
+  core/U6169/X (STP_MUXI2_MG_0P5)                         0.03       1.61 f
+  core/U6170/X (STP_AO21B_1)                              0.01       1.63 r
+  core/remainder_q_reg[41]/D (STP_FDPRBQ_1)               0.00       1.63 r
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.20       3.80
+  core/remainder_q_reg[41]/CK (STP_FDPRBQ_1)              0.00       3.80 r
+  library setup time                                     -0.05       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.12
+
+
+1

@@ -1,0 +1,44 @@
+
+****************************************
+Report : area
+Design : bch_target_enc_w512
+Version: Q-2019.12-SP5-5
+Date   : Fri Nov  6 03:23:14 2026
+****************************************
+
+Library(s) Used:
+
+    um28nchslogl35hsl140f_ssgwc0p9v125c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db)
+
+Number of ports:                         2110
+Number of nets:                         27119
+Number of cells:                        25529
+Number of combinational cells:          25122
+Number of sequential cells:               406
+Number of macros/black boxes:               0
+Number of buf/inv:                       3152
+Number of references:                       1
+
+Combinational area:              26785.919467
+Buf/Inv area:                     1060.415986
+Noncombinational area:            1227.743971
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 28013.663438
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  -----------------------------
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  --------------------
+bch_target_enc_w512               28013.6634    100.0      0.0000     0.0000  0.0000  bch_target_enc_w512
+core                              28013.6634    100.0  26785.9195  1227.7440  0.0000  bch_enc_4096_390_512
+--------------------------------  ----------  -------  ----------  ---------  ------  --------------------
+Total                                                  26785.9195  1227.7440  0.0000
+
+1
