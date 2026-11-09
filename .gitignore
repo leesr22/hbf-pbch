@@ -3,3 +3,6 @@ ucli.key
 bch/sim/build/
 bch/syn/work/
 bch/syn/generated_reports/
+pbch/sim/build/
+pbch/syn/work/
+pbch/syn/generated_reports/

@@ -1,0 +1,6 @@
+result=PASS
+slack_ns=1.37882
+area_um2=48924.791139
+period_ns=4.0
+top=pbch_fht_dec_replay_w64
+library=/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db

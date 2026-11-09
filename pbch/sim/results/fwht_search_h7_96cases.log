@@ -1,0 +1,11 @@
+Command: /home/leesr0222/hbf-pbch/pbch/sim/build/fwht_search_h7/simv +vcs+lic+wait +VEC_DIR=/home/leesr0222/hbf-pbch/pbch/sim/vectors/fwht_search_regression -l /home/leesr0222/hbf-pbch/pbch/sim/build/fwht_search_h7/run.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Nov  9 22:57 2026
+PASS fwht_search_h7 exact regression cases=96
+$finish called from file "/home/leesr0222/hbf-pbch/pbch/sim/tb/fwht_search_h7_tb.sv", line 79.
+$finish at simulation time             30930000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 30930000 ps
+CPU Time:      1.210 seconds;       Data structure size:   0.7Mb
+Mon Nov  9 22:57:19 2026

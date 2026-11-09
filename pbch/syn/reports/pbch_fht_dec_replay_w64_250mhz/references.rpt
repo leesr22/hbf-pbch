@@ -1,0 +1,464 @@
+ 
+****************************************
+Report : reference
+Design : pbch_fht_dec_replay_w64
+Version: Q-2019.12-SP5-5
+Date   : Fri Nov  6 03:51:30 2026
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+pbch_dec_replay_13_13_13_4096_169_64_1_201b
+                              48924.791139       1  48924.791139  h, n
+-----------------------------------------------------------------------------
+Total 1 references                                  48924.791139
+
+****************************************
+Design: pbch_dec_replay_13_13_13_4096_169_64_1_201b 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+STP_AO22_0P5       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000      13     13.104000  
+STP_FDPRBQ_1       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  3.024000      13     39.311999  n
+STP_FDPSBQ_1       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  2.856000       1      2.856000  n
+STP_INV_S_0P65     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.336000       2      0.672000  
+STP_NR2_G_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.504000       2      1.008000  
+STP_NR3_G_0P65     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000       1      0.672000  
+STP_OAI21B_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STP_OR2_1          um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000       1      0.672000  
+bch_dec_13_13_4109_4278_64_1_13_41_201b
+                              44453.135202       1  44453.135202  h, n
+pbch_unmask_4096_13_64         4412.519938       1   4412.519938  h, n
+-----------------------------------------------------------------------------
+Total 10 references                                 48924.791139
+
+****************************************
+Design: bch_dec_13_13_4109_4278_64_1_13_41_201b 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+STP_AN2_S_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000       2      1.344000  
+STP_AO21_1         um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STP_BUF_1          um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.504000       4      2.016000  
+STP_FDPRBQ_1       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  3.024000     190    574.559987  n
+STP_INV_S_0P65     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.336000       1      0.336000  
+STP_MUX2_S_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.176000     186    218.736000  
+STP_ND2_S_0P8      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.504000       1      0.504000  
+STP_NR2_G_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.504000       3      1.512000  
+STP_NR3B_MG_0P75   um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STP_NR4_0P5        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STP_OAOI211_0P5    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STP_OR3_1          um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+bch_bm_13_13_201b             13968.191835       1  13968.191835  h, n
+bch_chien_13_13_4278_4109_64_13_41_201b
+                              21240.407527       1  21240.407527  h, n
+bch_syndrome_13_13_4278_64_13_41_201b
+                               8441.327853       1   8441.327853  h, n
+-----------------------------------------------------------------------------
+Total 15 references                                 44453.135202
+
+****************************************
+Design: bch_bm_13_13_201b 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+STP_ADDF_V1_0P5    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  2.520000       2      5.040000  r
+STP_AN2_S_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000       1      0.672000  
+STP_AO2BB2_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000     227    228.816004  
+STP_AO21B_1        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STP_AO21_1         um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STP_AO22_0P5       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000     140    141.120002  
+STP_AOA211_DG_1    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000       3      3.024000  
+STP_AOAI211_0P5    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000     250    209.999993  
+STP_AOI21_0P75     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000       5      3.360000  
+STP_AOI22_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000     355    298.199991  
+STP_AOI31_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STP_AOI32_1        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000       1      1.008000  
+STP_AOI221_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000       5      5.040000  
+STP_AOI222_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.176000     467    549.192000  
+STP_BUF_1          um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.504000      46     23.184000  
+STP_EO3_0P5        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.512000    3177   4803.623888  
+STP_FDPRBQ_1       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  3.024000    1088   3290.111923  n
+STP_INV_S_0P65     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.336000    1048    352.127995  
+STP_ND2_S_0P8      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.504000    4682   2359.728038  
+STP_ND3_0P5        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000     251    168.671998  
+STP_ND4_MM_1       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STP_NR2_G_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.504000    1691    852.264014  
+STP_NR3_G_0P65     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000       1      0.672000  
+STP_NR4_0P5        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STP_OA2BB2_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000       6      6.048000  
+STP_OA21_1         um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STP_OA32_1         um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.176000       1      1.176000  
+STP_OAI21_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000     165    110.879999  
+STP_OAI22_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000     268    225.119993  
+STP_OAI31_G_0P5    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000     157    131.879996  
+STP_OAI211_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       2      1.680000  
+STP_OAI221_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000     168    169.344003  
+STP_OAI222_0P75    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.344000      14     18.816000  
+STP_OAOI211_0P5    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       2      1.680000  
+STP_OR2_1          um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000       1      0.672000  
+-----------------------------------------------------------------------------
+Total 35 references                                 13968.191835
+
+****************************************
+Design: bch_chien_13_13_4278_4109_64_13_41_201b 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+STP_ADDF_V1_0P5    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  2.520000      65    163.799999  r
+STP_ADDH_0P5       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.176000      70     82.320000  r
+STP_AN2_S_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000       9      6.048000  
+STP_AN3B_0P5       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000      19     15.960000  
+STP_AN3_0P5        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000      16     13.440000  
+STP_AN4B_0P5       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000      27     27.216000  
+STP_AN4_L_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000       7      7.056000  
+STP_AO2BB2_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000     743    748.944012  
+STP_AO21B_1        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       2      1.680000  
+STP_AO21_1         um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       6      5.040000  
+STP_AO22_0P5       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000      76     76.608001  
+STP_AOAI211_0P5    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000      29     24.359999  
+STP_AOI21_0P75     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000      68     45.695999  
+STP_AOI22_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000    5401   4536.839858  
+STP_AOI31_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STP_AOI211_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000      79     66.359998  
+STP_AOI221_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000     173    174.384003  
+STP_BUF_1          um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.504000       4      2.016000  
+STP_EO2_S_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.512000      24     36.287999  
+STP_EO3_0P5        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.512000    8619  13031.927696  
+STP_FDPRBQ_1       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  3.024000     207    625.967985  n
+STP_INV_S_0P65     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.336000    1835    616.559992  
+STP_MAJ3_0P5       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.176000       1      1.176000  
+STP_MAJI3_1        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000       4      4.032000  
+STP_ND2B_MM_1      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000       1      0.672000  
+STP_ND2_S_0P8      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.504000      16      8.064000  
+STP_ND2_S_1        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.504000       2      1.008000  
+STP_ND3_0P5        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000      35     23.520000  
+STP_ND4B_1         um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000       7      7.056000  
+STP_ND4_MM_1       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000      50     41.999999  
+STP_NR2B_V1DG_1    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000       9      6.048000  
+STP_NR2_G_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.504000      22     11.088000  
+STP_NR3B_MG_0P75   um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       9      7.560000  
+STP_NR3_G_0P65     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000       6      4.032000  
+STP_NR4BB_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.176000       3      3.528000  
+STP_NR4B_1         um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000      12     12.096000  
+STP_NR4_0P5        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000      63     52.919998  
+STP_OA2BB2_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000     125    126.000002  
+STP_OA21B_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       9      7.560000  
+STP_OA21_1         um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       3      2.520000  
+STP_OA22_DG_1      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000       2      2.016000  
+STP_OAI21B_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STP_OAI21_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000      74     49.727999  
+STP_OAI22_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000     339    284.759991  
+STP_OAI31_G_0P5    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       2      1.680000  
+STP_OAI32_1        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000       1      1.008000  
+STP_OAI211_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000     146    122.639996  
+STP_OAI221_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000     112    112.896002  
+STP_OAOI211_0P5    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000      40     33.599999  
+STP_OR4B_1         um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000       1      1.008000  
+-----------------------------------------------------------------------------
+Total 50 references                                 21240.407527
+
+****************************************
+Design: bch_syndrome_13_13_4278_64_13_41_201b 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+STP_ADDF_V1_0P5    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  2.520000       6     15.120000  r
+STP_ADDH_0P5       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.176000      12     14.112000  r
+STP_AN2_S_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000      10      6.720000  
+STP_AO2BB2_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000     656    661.248011  
+STP_AO21B_1        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       5      4.200000  
+STP_AO21_1         um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       3      2.520000  
+STP_AO22_0P5       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000      14     14.112000  
+STP_AOAI211_0P5    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000      96     80.639997  
+STP_AOI21B_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STP_AOI21_0P75     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000     231    155.231998  
+STP_AOI22_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000    1276   1071.839967  
+STP_AOI31_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       4      3.360000  
+STP_AOI32_1        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000       8      8.064000  
+STP_AOI211_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000      33     27.719999  
+STP_AOI221_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000      17     17.136000  
+STP_AOI222_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.176000       1      1.176000  
+STP_BUF_1          um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.504000       3      1.512000  
+STP_EO2_S_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.512000       5      7.560000  
+STP_EO3_0P5        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.512000    2115   3197.879925  
+STP_FDPRBQ_1       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  3.024000     523   1581.551963  n
+STP_INV_S_0P65     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.336000     791    265.775996  
+STP_MUX2_S_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.176000       2      2.352000  
+STP_MUXI2_MG_0P5   um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000      63     63.504001  
+STP_ND2B_MM_1      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000      13      8.736000  
+STP_ND2_S_0P8      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.504000     522    263.088004  
+STP_ND3_0P5        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000      62     41.663999  
+STP_ND4_MM_1       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       3      2.520000  
+STP_NR2B_V1DG_1    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000       5      3.360000  
+STP_NR2_G_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.504000     543    273.672004  
+STP_NR3_G_0P65     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000       3      2.016000  
+STP_NR4_0P5        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       3      2.520000  
+STP_OA2BB2_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000      43     43.344001  
+STP_OA21B_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       2      1.680000  
+STP_OA21_1         um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STP_OA22_DG_1      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000       2      2.016000  
+STP_OA31_1         um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000       1      1.008000  
+STP_OAI21_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000     267    179.423998  
+STP_OAI22_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000     293    246.119992  
+STP_OAI31_G_0P5    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000      25     20.999999  
+STP_OAI211_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000      60     50.399998  
+STP_OAI221_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000      34     34.272001  
+STP_OAI222_0P75    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.344000      13     17.472000  
+STP_OAOI211_0P5    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000      45     37.799999  
+STP_OR2_1          um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000       5      3.360000  
+STP_OR3B_0P5       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+-----------------------------------------------------------------------------
+Total 45 references                                  8441.327853
+
+****************************************
+Design: pbch_unmask_4096_13_64 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+STP_ADDH_0P5       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.176000       3      3.528000  r
+STP_AN2_S_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000       6      4.032000  
+STP_AN3B_0P5       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       6      5.040000  
+STP_AN3_0P5        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STP_AN4B_0P5       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000      14     14.112000  
+STP_AN4_L_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000       4      4.032000  
+STP_AO2BB2_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000      60     60.480001  
+STP_AO21B_1        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STP_AOA211_DG_1    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000       1      1.008000  
+STP_AOAI211_0P5    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000      11      9.240000  
+STP_AOI21B_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STP_AOI21_0P75     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000      86     57.791999  
+STP_AOI31_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000     364    305.759990  
+STP_AOI211_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000      10      8.400000  
+STP_EO3_0P5        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.512000     384    580.607986  
+STP_FDPRBQ_1       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  3.024000       6     18.144000  n
+STP_INV_S_0P65     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.336000     701    235.535997  
+STP_ND2B_MM_1      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000      17     11.424000  
+STP_ND2_S_0P8      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.504000     986    496.944008  
+STP_ND3B_0P5       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       7      5.880000  
+STP_ND3_0P5        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000     257    172.703998  
+STP_ND4B_1         um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000      61     61.488001  
+STP_ND4_MM_1       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000     708    594.719981  
+STP_NR2B_V1DG_1    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000      19     12.768000  
+STP_NR2_G_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.504000     976    491.904008  
+STP_NR3B_MG_0P75   um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       6      5.040000  
+STP_NR3_G_0P65     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000     297    199.583997  
+STP_NR4BB_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.176000       3      3.528000  
+STP_NR4B_1         um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000      73     73.584001  
+STP_NR4_0P5        um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000     719    603.959981  
+STP_OA21B_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       3      2.520000  
+STP_OA31_1         um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000       1      1.008000  
+STP_OAI21_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000      71     47.711999  
+STP_OAI22_0P5      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STP_OAI31_G_0P5    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000     302    253.679992  
+STP_OAI211_0P5     um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000      28     23.519999  
+STP_OAOI211_0P5    um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       5      4.200000  
+STP_OR2_1          um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.672000      11      7.392000  
+STP_OR3B_0P5       um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       7      5.880000  
+STP_OR3_1          um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STP_OR4B_1         um28nchslogl35hsl140f_ssgwc0p9v125c
+                                  1.008000      21     21.168000  
+-----------------------------------------------------------------------------
+Total 41 references                                  4412.519938
+1

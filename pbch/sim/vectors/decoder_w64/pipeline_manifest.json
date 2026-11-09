@@ -1,0 +1,72 @@
+{
+  "profile": "pbch_fht",
+  "width": 64,
+  "frames": [
+    {
+      "frame": 0,
+      "error_weight": 0,
+      "error_positions": [],
+      "selector": 85
+    },
+    {
+      "frame": 1,
+      "error_weight": 1,
+      "error_positions": [
+        414
+      ],
+      "selector": 162
+    },
+    {
+      "frame": 2,
+      "error_weight": 6,
+      "error_positions": [
+        1491,
+        1347,
+        2708,
+        4195,
+        337,
+        1257
+      ],
+      "selector": 2059
+    },
+    {
+      "frame": 3,
+      "error_weight": 12,
+      "error_positions": [
+        3503,
+        2765,
+        3218,
+        3493,
+        3939,
+        1287,
+        1880,
+        3036,
+        2954,
+        687,
+        729,
+        3318
+      ],
+      "selector": 7088
+    },
+    {
+      "frame": 4,
+      "error_weight": 13,
+      "error_positions": [
+        932,
+        975,
+        754,
+        3299,
+        3831,
+        492,
+        2378,
+        306,
+        101,
+        1930,
+        2650,
+        2594,
+        2312
+      ],
+      "selector": 3095
+    }
+  ]
+}

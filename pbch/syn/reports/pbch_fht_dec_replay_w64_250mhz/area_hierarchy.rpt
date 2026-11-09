@@ -1,0 +1,49 @@
+ 
+****************************************
+Report : area
+Design : pbch_fht_dec_replay_w64
+Version: Q-2019.12-SP5-5
+Date   : Fri Nov  6 03:51:29 2026
+****************************************
+
+Library(s) Used:
+
+    um28nchslogl35hsl140f_ssgwc0p9v125c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db)
+
+Number of ports:                         2168
+Number of nets:                         49443
+Number of cells:                        47297
+Number of combinational cells:          45263
+Number of sequential cells:              2028
+Number of macros/black boxes:               0
+Number of buf/inv:                       4435
+Number of references:                       1
+
+Combinational area:              42792.287282
+Buf/Inv area:                     1499.735981
+Noncombinational area:            6132.503857
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 48924.791139
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  -------------------------------------------
+pbch_fht_dec_replay_w64           48924.7911    100.0      0.0000     0.0000  0.0000  pbch_fht_dec_replay_w64
+core                              48924.7911    100.0     16.9680    42.1680  0.0000  pbch_dec_replay_13_13_13_4096_169_64_1_201b
+core/bch_u                        44453.1352     90.9    228.6480   574.5600  0.0000  bch_dec_13_13_4109_4278_64_1_13_41_201b
+core/bch_u/bm_lanes[0].bm_u       13968.1918     28.6  10678.0799  3290.1119  0.0000  bch_bm_13_13_201b
+core/bch_u/chien_u                21240.4075     43.4  20614.4395   625.9680  0.0000  bch_chien_13_13_4278_4109_64_13_41_201b
+core/bch_u/syndrome_u              8441.3279     17.3   6859.7759  1581.5520  0.0000  bch_syndrome_13_13_4278_64_13_41_201b
+core/unmask_u                      4412.5199      9.0   4394.3759    18.1440  0.0000  pbch_unmask_4096_13_64
+--------------------------------  ----------  -------  ----------  ---------  ------  -------------------------------------------
+Total                                                  42792.2873  6132.5039  0.0000
+
+1

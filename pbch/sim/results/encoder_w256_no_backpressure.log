@@ -1,0 +1,34 @@
+Command: /home/leesr0222/hbf-pbch-fwht-max32/build/encoder_w256/simv +vcs+lic+wait +VEC_DIR=/home/leesr0222/hbf-pbch-fwht-max32/vectors/encoder_max32 -l build/encoder_w256/run_no_bp.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Nov  9 19:21 2026
+START vector=0 cycle=4
+START vector=1 cycle=43
+START vector=2 cycle=111
+PASS result=0 flags=0 selector=0 selected_failures=0 actual_failures=0 truncated=0 cycle=128
+START vector=3 cycle=187
+PASS result=1 flags=1 selector=0 selected_failures=0 actual_failures=0 truncated=0 cycle=196
+START vector=4 cycle=270
+PASS result=2 flags=9 selector=887 selected_failures=0 actual_failures=0 truncated=0 cycle=272
+PASS result=3 flags=16 selector=a10 selected_failures=1 actual_failures=1 truncated=0 cycle=357
+START vector=5 cycle=372
+PASS result=4 flags=32 selector=1232 selected_failures=6 actual_failures=6 truncated=0 cycle=460
+START vector=6 cycle=475
+PASS result=5 flags=33 selector=1481 selected_failures=6 actual_failures=6 truncated=1 cycle=578
+START vector=7 cycle=593
+PASS result=6 flags=48 selector=11ba selected_failures=6 actual_failures=13 truncated=1 cycle=728
+PASS result=7 flags=80 selector=461 selected_failures=6 actual_failures=30 truncated=1 cycle=828
+START_GAP 0->1 cycles=39
+START_GAP 1->2 cycles=68
+START_GAP 2->3 cycles=76
+START_GAP 3->4 cycles=83
+START_GAP 4->5 cycles=102
+START_GAP 5->6 cycles=103
+START_GAP 6->7 cycles=118
+PASS pbch_fwht_encoder MAX_FLAGS=32 vectors=8
+$finish called from file "/home/leesr0222/hbf-pbch-fwht-max32/tb/pbch_encoder_tb.sv", line 231.
+$finish at simulation time              3314000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 3314000 ps
+CPU Time:      0.540 seconds;       Data structure size:   0.7Mb
+Mon Nov  9 19:21:44 2026

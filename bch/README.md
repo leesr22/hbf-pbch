@@ -6,17 +6,22 @@ cores; only generated constants and parameters differ.
 
 ## Frozen configurations
 
-| Configuration | Circuit | Width | Area (um2) | Throughput (GB/s) | Engines at 3.072 TB/s | Replicated area (mm2) |
-|---|---|---:|---:|---:|---:|---:|
-| BCH(k=4096, t=8) | Encoder | 512 | 8,635.9 | 14.222 | 216 | 1.865 |
-| BCH(k=4096, t=8) | Decoder | 128 | 38,913.5 | 3.507 | 876 | 34.088 |
-| BCH(k=4096, t=30) | Encoder | 512 | 28,013.7 | 14.222 | 216 | 6.051 |
-| BCH(k=4096, t=30) | Decoder | 64 | 127,799.8 | 1.730 | 1,776 | 226.972 |
+| Configuration | Circuit | Width | Area (um2) | Throughput (GB/s) | Target (GB/s) | Replicas | Replicated area (mm2) |
+|---|---|---:|---:|---:|---:|---:|---:|
+| BCH(k=4096, t=8) | Encoder | 512 | 8,635.9 | 14.222 | 12.8 | 1 | 0.009 |
+| BCH(k=4096, t=8) | Decoder | 128 | 38,913.5 | 3.507 | 384 | 110 | 4.280 |
+| BCH(k=4096, t=30) | Encoder | 512 | 28,013.7 | 14.222 | 12.8 | 1 | 0.028 |
+| BCH(k=4096, t=30) | Decoder | 64 | 127,799.8 | 1.730 | 384 | 222 | 28.372 |
 
 All synthesis results use a 250 MHz clock and the UMC 28 nm 0.9 V slow
 standard-cell library. Area is pre-layout cell area. Throughput is computed
 from the steady-state message initiation interval. NAND2 gate equivalents use
 0.504 um2 per NAND2 gate.
+
+Encoder and decoder replication use different system targets because the
+encoder is on the program/write path and the decoder is on the sensing/read
+path. The previous common 3.072 TB/s normalization is not used in the primary
+area totals.
 
 ## Architecture
 
