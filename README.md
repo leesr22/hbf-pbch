@@ -3,7 +3,7 @@
 This repository contains the ECC RTL used for the HBF read-disturbance
 hardware evaluation.
 
-- [`bch/`](bch/): frozen BCH reference and reliability-matched BCH design
+- [`bch/`](bch/): selected BCH reference and reliability-matched BCH design
 - [`pbch/`](pbch/): exact-FWHT PBCH encoder and cache-buffer-replay decoder
 
 The BCH and PBCH releases are kept in separate directories so that their RTL,
@@ -25,9 +25,27 @@ and read paths.
 | Configuration | Encoder area | Decoder area | Total replicated area |
 |---|---:|---:|---:|
 | BCH(k=4096, t=8) | 0.009 mm2 | 4.280 mm2 | 4.289 mm2 |
-| BCH(k=4096, t=30) | 0.028 mm2 | 28.372 mm2 | 28.400 mm2 |
-| PBCH(k=4096, t=13, l=13) | 0.641 mm2 | 10.421 mm2 | 11.062 mm2 |
+| BCH(k=4096, t=30) | 0.028 mm2 | 27.120 mm2 | 27.148 mm2 |
+| PBCH(k=4096, t=13, l=13) | 0.718 mm2 | 9.234 mm2 | 9.952 mm2 |
+
+All selected encoders use W=512 and all selected decoders use W=128.  The
+decoder BM lane count is balanced to code strength: one lane for BCH(t=8),
+four lanes for BCH(t=30), and two lanes for PBCH(t=13,l=13).
 
 The PBCH encoder throughput point uses eight retained flags per codeword. The
 RTL supports 0--32 retained flags; if more than 32 are observed, it keeps the
 first 32 in codeword order and asserts a truncation flag.
+
+## Result figures
+
+- [`reports/figures/ecc_hardware_results_common_width.png`](reports/figures/ecc_hardware_results_common_width.png): complete hardware-result table
+- [`reports/figures/ecc_replicated_area_common_width_28nm.png`](reports/figures/ecc_replicated_area_common_width_28nm.png): total replicated area at 28 nm
+- [`reports/figures/ecc_replicated_area_common_width_3nm.png`](reports/figures/ecc_replicated_area_common_width_3nm.png): scaled total replicated area at 3 nm
+- [`reports/figures/ecc_single_engine_area_common_width_28nm.png`](reports/figures/ecc_single_engine_area_common_width_28nm.png): one encoder plus one decoder at 28 nm
+- [`reports/figures/ecc_single_engine_area_common_width_3nm.png`](reports/figures/ecc_single_engine_area_common_width_3nm.png): scaled one-encoder/one-decoder area at 3 nm
+
+The PNG and SVG versions can be regenerated from the checked synthesis CSVs:
+
+```bash
+python3 scripts/plot_common_width_results.py
+```

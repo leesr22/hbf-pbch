@@ -2,13 +2,13 @@
 set -euo pipefail
 
 pbch_root=$(cd "$(dirname "$0")/.." && pwd)
-top=pbch_fwht_encoder_w256
+top=pbch_fwht_encoder_w512
 build="$pbch_root/sim/build/$top"
 mkdir -p "$build"
 
 vcs +warn=noLNX_OS_VERUN +warn=noLINX_KRNL +vcs+lic+wait \
     -full64 -sverilog -timescale=1ns/1ps -LDFLAGS -Wl,--no-as-needed \
-    +define+PBCH_TOP=$top +define+PBCH_W=256 \
+    +define+PBCH_TOP=$top +define+PBCH_W=512 \
     -top pbch_encoder_tb -o "$build/simv" -Mdir="$build/csrc" \
     "$pbch_root/rtl/encoder/fwht_max_tree.sv" \
     "$pbch_root/rtl/encoder/signed_sum_tree.sv" \

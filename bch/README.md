@@ -1,17 +1,17 @@
 # BCH RTL release
 
-This directory contains the frozen BCH hardware used in the HBF study.
+This directory contains the selected BCH hardware used in the HBF study.
 Both evaluated configurations use the same parameterized encoder and decoder
 cores; only generated constants and parameters differ.
 
-## Frozen configurations
+## Selected common-width configurations
 
 | Configuration | Circuit | Width | Area (um2) | Throughput (GB/s) | Target (GB/s) | Replicas | Replicated area (mm2) |
 |---|---|---:|---:|---:|---:|---:|---:|
 | BCH(k=4096, t=8) | Encoder | 512 | 8,635.9 | 14.222 | 12.8 | 1 | 0.009 |
 | BCH(k=4096, t=8) | Decoder | 128 | 38,913.5 | 3.507 | 384 | 110 | 4.280 |
 | BCH(k=4096, t=30) | Encoder | 512 | 28,013.7 | 14.222 | 12.8 | 1 | 0.028 |
-| BCH(k=4096, t=30) | Decoder | 64 | 127,799.8 | 1.730 | 384 | 222 | 28.372 |
+| BCH(k=4096, t=30) | Decoder | 128 | 231,791.6 | 3.282 | 384 | 117 | 27.120 |
 
 All synthesis results use a 250 MHz clock and the UMC 28 nm 0.9 V slow
 standard-cell library. Area is pre-layout cell area. Throughput is computed
@@ -30,6 +30,8 @@ area totals.
 - Syndrome: computes only odd syndromes; even syndromes are reconstructed by
   repeated squaring.
 - Key-equation solver: inversionless Berlekamp-Massey.
+- BM interleaving: one lane for t=8 and four lanes for t=30, balancing the
+  W=128 syndrome, BM, and Chien pipeline rates.
 - Error location/correction: parallel Chien search over each stream beat.
 - Decoder pipeline: syndrome, BM, and Chien stages process different codewords
   concurrently.
@@ -47,13 +49,13 @@ bch/
   rtl/
     bch/        parameterized BCH cores
     common/     finite-field helper functions
-    generated/  frozen wrappers for the four selected synthesis points
+    generated/  wrappers for the selected synthesis points
   sim/
     tb/         self-checking VCS testbenches
     vectors/    encoder and decoder reference vectors
     results/    checked simulation logs
   syn/
-    reports/    frozen Design Compiler reports
+    reports/    checked Design Compiler reports
     results/    machine-readable status files
     results.csv summary of the selected points
 ```
@@ -70,7 +72,7 @@ sim/run_decoder.sh t8 pipeline
 sim/run_decoder.sh t30 pipeline
 ```
 
-Run all four frozen points with:
+Run all four selected points with:
 
 ```bash
 cd bch
@@ -82,7 +84,7 @@ The decoder pipeline test streams 25 frames. Five error patterns with weights
 
 ## Synthesis
 
-Synopsys Design Compiler Q-2019.12-SP5-5 was used for the frozen reports.
+Synopsys Design Compiler Q-2019.12-SP5-5 was used for the checked reports.
 The laboratory library path is the default and can be overridden with
 `BCH_TARGET_LIBRARY`.
 

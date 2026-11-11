@@ -20,10 +20,10 @@ case "$1" in
         ;;
     t30)
         profile=bch_target
-        top=bch_target_dec_replay_w64
+        top=bch_target_dec_replay_w128_bm4
         r=390
         t=30
-        width=64
+        width=128
         ;;
     *)
         echo "unknown configuration: $1" >&2

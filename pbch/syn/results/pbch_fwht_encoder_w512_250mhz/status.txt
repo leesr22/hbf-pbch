@@ -1,0 +1,5 @@
+result=PASS
+slack_ns=0.824413
+area_um2=89701.919321
+period_ns=4.0
+top=pbch_fwht_encoder_w512

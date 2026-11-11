@@ -1,0 +1,5 @@
+result=PASS
+slack_ns=0.877324
+area_um2=231791.612210
+period_ns=4.0
+top=bch_target_dec_replay_w128_bm4

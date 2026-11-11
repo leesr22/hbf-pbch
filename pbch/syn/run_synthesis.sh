@@ -11,8 +11,8 @@ fi
 kind=$1
 mhz=${2:-250}
 case "$kind" in
-    enc) top=pbch_fwht_encoder_w256 ;;
-    dec) top=pbch_fht_dec_replay_w64 ;;
+    enc) top=pbch_fwht_encoder_w512 ;;
+    dec) top=pbch_fht_dec_replay_w128_bm2 ;;
     *) exit 2 ;;
 esac
 [[ $mhz =~ ^[0-9]+$ ]] || exit 2

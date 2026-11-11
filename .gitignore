@@ -6,3 +6,5 @@ bch/syn/generated_reports/
 pbch/sim/build/
 pbch/syn/work/
 pbch/syn/generated_reports/
+# VCS work directory created when invoked from the repository root
+csrc/

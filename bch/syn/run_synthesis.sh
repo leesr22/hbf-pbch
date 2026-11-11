@@ -17,7 +17,7 @@ case "${configuration}_${kind}" in
     t8_enc)  top=bch_base_enc_w512 ;;
     t8_dec)  top=bch_base_dec_replay_w128 ;;
     t30_enc) top=bch_target_enc_w512 ;;
-    t30_dec) top=bch_target_dec_replay_w64 ;;
+    t30_dec) top=bch_target_dec_replay_w128_bm4 ;;
     *)
         echo "unsupported synthesis point: $configuration $kind" >&2
         exit 2

@@ -3,11 +3,11 @@
 This directory contains the selected PBCH hardware for the HBF study:
 
 - code: `k=4096`, `t=13`, `l=13`, `n=4278`
-- encoder: W=256 exact blocked-FWHT search, `MAX_FLAGS=32`
-- decoder: W=64 cache-buffer-replay structure
+- encoder: W=512 exact blocked-FWHT search, `MAX_FLAGS=32`
+- decoder: W=128 cache-buffer-replay structure with two interleaved BM lanes
 - clock/process: 250 MHz, UMC 28 nm 0.9 V slow library
 
-The PBCH decoder reuses the frozen BCH arithmetic cores under `../bch/rtl/`.
+The PBCH decoder reuses the selected BCH arithmetic cores under `../bch/rtl/`.
 Only PBCH-specific selector removal and the generated PBCH constants are kept
 under this directory.
 
@@ -18,11 +18,11 @@ provisioned for the 384 GB/s read path.
 
 | Circuit | Width | Area (um2) | NAND2 GE | II (cycles) | Throughput | Target | Replicas | Replicated area |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Encoder | 256 | 80,146.6 | 159,021 | 75 | 1.707 GB/s | 12.8 GB/s | 8 | 0.641 mm2 |
-| Decoder | 64 | 48,924.8 | 97,073 | 71 | 1.803 GB/s | 384 GB/s | 213 | 10.421 mm2 |
+| Encoder | 512 | 89,701.9 | 177,980 | 75 | 1.707 GB/s | 12.8 GB/s | 8 | 0.718 mm2 |
+| Decoder | 128 | 81,002.5 | 160,719 | 38 | 3.368 GB/s | 384 GB/s | 114 | 9.234 mm2 |
 
-Total replicated PBCH area is 11.062 mm2. For comparison, the
-reliability-matched BCH(k=4096, t=30) total is 28.400 mm2 under the same
+Total replicated PBCH area is 9.952 mm2. For comparison, the
+reliability-matched BCH(k=4096, t=30) total is 27.148 mm2 under the same
 write/read bandwidth targets.
 
 The encoder throughput row uses a fixed eight-flag codeword. Encoder processing
@@ -59,13 +59,13 @@ pbch/
   rtl/
     encoder/    hand-written FWHT encoder blocks
     decoder/    PBCH replay decoder and selector removal
-    generated/  frozen encoder/decoder wrappers and GF(2) constants
+    generated/  selected encoder/decoder wrappers and GF(2) constants
   sim/
     tb/         self-checking VCS testbenches
-    vectors/    frozen encoder, FWHT, and decoder vectors
+    vectors/    checked encoder, FWHT, and decoder vectors
     results/    checked PASS logs
   syn/
-    reports/    frozen Design Compiler area/timing/hierarchy reports
+    reports/    checked Design Compiler area/timing/hierarchy reports
     results/    machine-readable status files
     results.csv selected hardware points and bandwidth provisioning
 ```
