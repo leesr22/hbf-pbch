@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="676.8pt" version="1.1" viewBox="0 0 1065.6 676.8" width="1065.6pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <metadata>
+  <rdf:RDF xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-13T23:57:37.065159</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.4.3, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linecap:butt;stroke-linejoin:round;}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 676.8
+L 1065.6 676.8
+L 1065.6 0
+L 0 0
+z
+" style="fill:#ffffff;"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path clip-path="url(#p919a3f616f)" d="M 36.6336 554.3424
+L 1028.9664 554.3424
+Q 1041.5808 554.3424 1041.5808 546.3936
+L 1041.5808 105.2352
+Q 1041.5808 97.2864 1028.9664 97.2864
+L 36.6336 97.2864
+Q 24.0192 97.2864 24.0192 105.2352
+L 24.0192 546.3936
+Q 24.0192 554.3424 36.6336 554.3424
+z
+" style="fill:#ffffff;stroke:#e3e7ed;stroke-linejoin:miter;stroke-width:0.9;"/>
+   </g>
+   <g id="patch_3">
+    <path clip-path="url(#p919a3f616f)" d="M 26.1216 155.5776
+L 1039.4784 155.5776
+L 1039.4784 98.6112
+L 26.1216 98.6112
+z
+" style="fill:#e2e5ea;"/>
+   </g>
+   <g id="patch_4">
+    <path clip-path="url(#p919a3f616f)" d="M 26.1216 205.2576
+L 1039.4784 205.2576
+L 1039.4784 155.5776
+L 26.1216 155.5776
+z
+" style="fill:#f8fafc;"/>
+   </g>
+   <g id="patch_5">
+    <path clip-path="url(#p919a3f616f)" d="M 26.1216 254.9376
+L 1039.4784 254.9376
+L 1039.4784 205.2576
+L 26.1216 205.2576
+z
+" style="fill:#f8fafc;"/>
+   </g>
+   <g id="patch_6">
+    <path clip-path="url(#p919a3f616f)" d="M 26.1216 403.9776
+L 1039.4784 403.9776
+L 1039.4784 354.2976
+L 26.1216 354.2976
+z
+" style="fill:#f8fafc;"/>
+   </g>
+   <g id="patch_7">
+    <path clip-path="url(#p919a3f616f)" d="M 26.1216 453.6576
+L 1039.4784 453.6576
+L 1039.4784 403.9776
+L 26.1216 403.9776
+z
+" style="fill:#f8fafc;"/>
+   </g>
+   <g id="line2d_1">
+    <path clip-path="url(#p919a3f616f)" d="M 213.592608 205.2576
+L 1039.4784 205.2576
+" style="fill:none;stroke:#e3e7ed;stroke-linecap:square;stroke-width:0.7;"/>
+   </g>
+   <g id="line2d_2">
+    <path clip-path="url(#p919a3f616f)" d="M 26.1216 254.9376
+L 1039.4784 254.9376
+" style="fill:none;stroke:#ccd3dc;stroke-linecap:square;stroke-width:1.15;"/>
+   </g>
+   <g id="line2d_3">
+    <path clip-path="url(#p919a3f616f)" d="M 213.592608 304.6176
+L 1039.4784 304.6176
+" style="fill:none;stroke:#e3e7ed;stroke-linecap:square;stroke-width:0.7;"/>
+   </g>
+   <g id="line2d_4">
+    <path clip-path="url(#p919a3f616f)" d="M 26.1216 354.2976
+L 1039.4784 354.2976
+" style="fill:none;stroke:#ccd3dc;stroke-linecap:square;stroke-width:1.15;"/>
+   </g>
+   <g id="line2d_5">
+    <path clip-path="url(#p919a3f616f)" d="M 213.592608 403.9776
+L 1039.4784 403.9776
+" style="fill:none;stroke:#e3e7ed;stroke-linecap:square;stroke-width:0.7;"/>
+   </g>
+   <g id="line2d_6">
+    <path clip-path="url(#p919a3f616f)" d="M 26.1216 453.6576
+L 1039.4784 453.6576
+" style="fill:none;stroke:#ccd3dc;stroke-linecap:square;stroke-width:1.15;"/>
+   </g>
+   <g id="line2d_7">
+    <path clip-path="url(#p919a3f616f)" d="M 213.592608 503.3376
+L 1039.4784 503.3376
+" style="fill:none;stroke:#e3e7ed;stroke-linecap:square;stroke-width:0.7;"/>
+   </g>
+   <g id="text_1">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:25px;font-stretch:normal;font-style:normal;font-weight:medium;text-anchor:start;" transform="rotate(-0, 26.1216, 51.367294)" x="26.1216" y="51.367294">ECC Hardware Results at 300 MHz</text>
+   </g>
+   <g id="text_2">
+    <text style="fill:#8490a3;font-family:DejaVu Sans;font-size:12.5px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 26.1216, 72.339647)" x="26.1216" y="72.339647">UMC 28 nm synthesis  ·  Encoder target: 12.8 GB/s  ·  Decoder target: 384 GB/s</text>
+   </g>
+   <g id="text_3">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.7px;font-stretch:normal;font-style:normal;font-weight:medium;text-anchor:start;" transform="rotate(-0, 28.371252, 130.046931)" x="28.371252" y="130.046931">Configuration</text>
+   </g>
+   <g id="text_4">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.7px;font-stretch:normal;font-style:normal;font-weight:medium;text-anchor:start;" transform="rotate(-0, 215.538253, 130.046931)" x="215.538253" y="130.046931">Circuit</text>
+   </g>
+   <g id="text_5">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.7px;font-stretch:normal;font-style:normal;font-weight:medium;" transform="translate(414.39715 124.056102)">Single-circuit</text>
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.7px;font-stretch:normal;font-style:normal;font-weight:medium;" transform="translate(420.783712 136.037761)">NAND2 GE</text>
+   </g>
+   <g id="text_6">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.7px;font-stretch:normal;font-style:normal;font-weight:medium;" transform="translate(542.122204 124.056102)">Codeword interval</text>
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.7px;font-stretch:normal;font-style:normal;font-weight:medium;" transform="translate(570.27825 136.037761)">(cycles)</text>
+   </g>
+   <g id="text_7">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.7px;font-stretch:normal;font-style:normal;font-weight:medium;" transform="translate(699.331943 124.056102)">Throughput</text>
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.7px;font-stretch:normal;font-style:normal;font-weight:medium;" transform="translate(699.994842 136.037761)">@ 300 MHz</text>
+   </g>
+   <g id="text_8">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.7px;font-stretch:normal;font-style:normal;font-weight:medium;" transform="translate(823.339417 124.056102)">Replicas for</text>
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.7px;font-stretch:normal;font-style:normal;font-weight:medium;" transform="translate(827.806667 136.037761)">target BW</text>
+   </g>
+   <g id="text_9">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.7px;font-stretch:normal;font-style:normal;font-weight:medium;" transform="translate(961.116286 124.056102)">Total</text>
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.7px;font-stretch:normal;font-style:normal;font-weight:medium;" transform="translate(945.195856 136.037761)">NAND2 GE</text>
+   </g>
+   <g id="text_10">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:11.4px;font-stretch:normal;font-style:normal;font-weight:medium;text-anchor:start;" transform="rotate(-0, 28.371252, 208.403287)" x="28.371252" y="208.403287">BCH(t=8)</text>
+   </g>
+   <g id="text_11">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:11.2px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 227.049986, 176.2217)" x="227.049986" y="176.2217">Encoder</text>
+   </g>
+   <g id="text_12">
+    <text style="fill:#8490a3;font-family:DejaVu Sans;font-size:9.5px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 227.049986, 194.962206)" x="227.049986" y="194.962206">W=512</text>
+   </g>
+   <g id="text_13">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 449.198064, 183.342537)" x="449.198064" y="183.342537">17,135</text>
+   </g>
+   <g id="text_14">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 591.068016, 183.342537)" x="591.068016" y="183.342537">9</text>
+   </g>
+   <g id="text_15">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 730.404576, 183.342537)" x="730.404576" y="183.342537">17.067 GB/s</text>
+   </g>
+   <g id="text_16">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 854.540784, 183.342537)" x="854.540784" y="183.342537">1</text>
+   </g>
+   <g id="text_17">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 973.610208, 183.342537)" x="973.610208" y="183.342537">17,135</text>
+   </g>
+   <g id="text_18">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:11.2px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 227.049986, 225.9017)" x="227.049986" y="225.9017">Decoder</text>
+   </g>
+   <g id="text_19">
+    <text style="fill:#8490a3;font-family:DejaVu Sans;font-size:9.5px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 227.049986, 244.642206)" x="227.049986" y="244.642206">W=64</text>
+   </g>
+   <g id="text_20">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 449.198064, 233.022537)" x="449.198064" y="233.022537">53,682</text>
+   </g>
+   <g id="text_21">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 591.068016, 233.022537)" x="591.068016" y="233.022537">69</text>
+   </g>
+   <g id="text_22">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 730.404576, 233.022537)" x="730.404576" y="233.022537">2.226 GB/s</text>
+   </g>
+   <g id="text_23">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 854.540784, 233.022537)" x="854.540784" y="233.022537">173</text>
+   </g>
+   <g id="text_24">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 973.610208, 233.022537)" x="973.610208" y="233.022537">9.287 M</text>
+   </g>
+   <g id="text_25">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:11.4px;font-stretch:normal;font-style:normal;font-weight:medium;text-anchor:start;" transform="rotate(-0, 28.371252, 307.763287)" x="28.371252" y="307.763287">BCH(t=9)</text>
+   </g>
+   <g id="text_26">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:11.2px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 227.049986, 275.5817)" x="227.049986" y="275.5817">Encoder</text>
+   </g>
+   <g id="text_27">
+    <text style="fill:#8490a3;font-family:DejaVu Sans;font-size:9.5px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 227.049986, 294.322206)" x="227.049986" y="294.322206">W=512</text>
+   </g>
+   <g id="text_28">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 449.198064, 282.702537)" x="449.198064" y="282.702537">19,009</text>
+   </g>
+   <g id="text_29">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 591.068016, 282.702537)" x="591.068016" y="282.702537">9</text>
+   </g>
+   <g id="text_30">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 730.404576, 282.702537)" x="730.404576" y="282.702537">17.067 GB/s</text>
+   </g>
+   <g id="text_31">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 854.540784, 282.702537)" x="854.540784" y="282.702537">1</text>
+   </g>
+   <g id="text_32">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 973.610208, 282.702537)" x="973.610208" y="282.702537">19,009</text>
+   </g>
+   <g id="text_33">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:11.2px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 227.049986, 325.2617)" x="227.049986" y="325.2617">Decoder</text>
+   </g>
+   <g id="text_34">
+    <text style="fill:#8490a3;font-family:DejaVu Sans;font-size:9.5px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 227.049986, 344.002206)" x="227.049986" y="344.002206">W=64</text>
+   </g>
+   <g id="text_35">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 449.198064, 332.382537)" x="449.198064" y="332.382537">60,447</text>
+   </g>
+   <g id="text_36">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 591.068016, 332.382537)" x="591.068016" y="332.382537">69</text>
+   </g>
+   <g id="text_37">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 730.404576, 332.382537)" x="730.404576" y="332.382537">2.226 GB/s</text>
+   </g>
+   <g id="text_38">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 854.540784, 332.382537)" x="854.540784" y="332.382537">173</text>
+   </g>
+   <g id="text_39">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 973.610208, 332.382537)" x="973.610208" y="332.382537">10.457 M</text>
+   </g>
+   <g id="text_40">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:11.4px;font-stretch:normal;font-style:normal;font-weight:medium;text-anchor:start;" transform="rotate(-0, 28.371252, 407.123287)" x="28.371252" y="407.123287">BCH(t=27)</text>
+   </g>
+   <g id="text_41">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:11.2px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 227.049986, 374.9417)" x="227.049986" y="374.9417">Encoder</text>
+   </g>
+   <g id="text_42">
+    <text style="fill:#8490a3;font-family:DejaVu Sans;font-size:9.5px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 227.049986, 393.682206)" x="227.049986" y="393.682206">W=512</text>
+   </g>
+   <g id="text_43">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 449.198064, 382.062537)" x="449.198064" y="382.062537">49,616</text>
+   </g>
+   <g id="text_44">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 591.068016, 382.062537)" x="591.068016" y="382.062537">9</text>
+   </g>
+   <g id="text_45">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 730.404576, 382.062537)" x="730.404576" y="382.062537">17.067 GB/s</text>
+   </g>
+   <g id="text_46">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 854.540784, 382.062537)" x="854.540784" y="382.062537">1</text>
+   </g>
+   <g id="text_47">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 973.610208, 382.062537)" x="973.610208" y="382.062537">49,616</text>
+   </g>
+   <g id="text_48">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:11.2px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 227.049986, 424.6217)" x="227.049986" y="424.6217">Decoder</text>
+   </g>
+   <g id="text_49">
+    <text style="fill:#8490a3;font-family:DejaVu Sans;font-size:9.5px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 227.049986, 443.362206)" x="227.049986" y="443.362206">W=64</text>
+   </g>
+   <g id="text_50">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 449.198064, 431.742537)" x="449.198064" y="431.742537">230,668</text>
+   </g>
+   <g id="text_51">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 591.068016, 431.742537)" x="591.068016" y="431.742537">73</text>
+   </g>
+   <g id="text_52">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 730.404576, 431.742537)" x="730.404576" y="431.742537">2.104 GB/s</text>
+   </g>
+   <g id="text_53">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 854.540784, 431.742537)" x="854.540784" y="431.742537">183</text>
+   </g>
+   <g id="text_54">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 973.610208, 431.742537)" x="973.610208" y="431.742537">42.212 M</text>
+   </g>
+   <g id="text_55">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:11.4px;font-stretch:normal;font-style:normal;font-weight:medium;text-anchor:start;" transform="rotate(-0, 28.371252, 506.483287)" x="28.371252" y="506.483287">PBCH(t=8, l=13)</text>
+   </g>
+   <g id="text_56">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:11.2px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 227.049986, 474.3017)" x="227.049986" y="474.3017">Encoder</text>
+   </g>
+   <g id="text_57">
+    <text style="fill:#8490a3;font-family:DejaVu Sans;font-size:9.5px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 227.049986, 493.042206)" x="227.049986" y="493.042206">W=512</text>
+   </g>
+   <g id="text_58">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 449.198064, 481.422537)" x="449.198064" y="481.422537">167,068</text>
+   </g>
+   <g id="text_59">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 591.068016, 481.422537)" x="591.068016" y="481.422537">75</text>
+   </g>
+   <g id="text_60">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 730.404576, 481.422537)" x="730.404576" y="481.422537">2.036 GB/s</text>
+   </g>
+   <g id="text_61">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 854.540784, 481.422537)" x="854.540784" y="481.422537">7</text>
+   </g>
+   <g id="text_62">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 973.610208, 481.422537)" x="973.610208" y="481.422537">1.169 M</text>
+   </g>
+   <g id="text_63">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:11.2px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 227.049986, 523.9817)" x="227.049986" y="523.9817">Decoder</text>
+   </g>
+   <g id="text_64">
+    <text style="fill:#8490a3;font-family:DejaVu Sans;font-size:9.5px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 227.049986, 542.722206)" x="227.049986" y="542.722206">W=64</text>
+   </g>
+   <g id="text_65">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 449.198064, 531.102537)" x="449.198064" y="531.102537">63,697</text>
+   </g>
+   <g id="text_66">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 591.068016, 531.102537)" x="591.068016" y="531.102537">70</text>
+   </g>
+   <g id="text_67">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 730.404576, 531.102537)" x="730.404576" y="531.102537">2.194 GB/s</text>
+   </g>
+   <g id="text_68">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 854.540784, 531.102537)" x="854.540784" y="531.102537">175</text>
+   </g>
+   <g id="text_69">
+    <text style="fill:#17202a;font-family:DejaVu Sans;font-size:10.6px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 973.610208, 531.102537)" x="973.610208" y="531.102537">11.147 M</text>
+   </g>
+   <g id="text_70">
+    <text style="fill:#8490a3;font-family:DejaVu Sans;font-size:10.2px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 26.1216, 581.003362)" x="26.1216" y="581.003362">All eight blocks were synthesized directly at 300 MHz with common widths: W=512 for every encoder and W=64 for every decoder.</text>
+   </g>
+   <g id="text_71">
+    <text style="fill:#8490a3;font-family:DejaVu Sans;font-size:10.2px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 26.1216, 602.862562)" x="26.1216" y="602.862562">Replicas are rounded up to meet each bandwidth target.</text>
+   </g>
+   <g id="text_72">
+    <text style="fill:#8490a3;font-family:DejaVu Sans;font-size:10.2px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 26.1216, 624.721762)" x="26.1216" y="624.721762">PBCH encoder throughput is workload-expected at q=0.002.</text>
+   </g>
+   <g id="PathCollection_1">
+    <path clip-path="url(#p919a3f616f)" d="M 218.943132 177.03397
+C 219.802488 177.03397 220.626763 176.692544 221.23442 176.084888
+C 221.842076 175.477231 222.183502 174.652956 222.183502 173.7936
+C 222.183502 172.934244 221.842076 172.109969 221.23442 171.502312
+C 220.626763 170.894656 219.802488 170.55323 218.943132 170.55323
+C 218.083776 170.55323 217.259501 170.894656 216.651844 171.502312
+C 216.044187 172.109969 215.702762 172.934244 215.702762 173.7936
+C 215.702762 174.652956 216.044187 175.477231 216.651844 176.084888
+C 217.259501 176.692544 218.083776 177.03397 218.943132 177.03397
+z
+" style="fill:#2f73d2;"/>
+   </g>
+   <g id="PathCollection_2">
+    <path clip-path="url(#p919a3f616f)" d="M 218.943132 226.71397
+C 219.802488 226.71397 220.626763 226.372544 221.23442 225.764888
+C 221.842076 225.157231 222.183502 224.332956 222.183502 223.4736
+C 222.183502 222.614244 221.842076 221.789969 221.23442 221.182312
+C 220.626763 220.574656 219.802488 220.23323 218.943132 220.23323
+C 218.083776 220.23323 217.259501 220.574656 216.651844 221.182312
+C 216.044187 221.789969 215.702762 222.614244 215.702762 223.4736
+C 215.702762 224.332956 216.044187 225.157231 216.651844 225.764888
+C 217.259501 226.372544 218.083776 226.71397 218.943132 226.71397
+z
+" style="fill:#f7be32;"/>
+   </g>
+   <g id="PathCollection_3">
+    <path clip-path="url(#p919a3f616f)" d="M 218.943132 276.39397
+C 219.802488 276.39397 220.626763 276.052544 221.23442 275.444888
+C 221.842076 274.837231 222.183502 274.012956 222.183502 273.1536
+C 222.183502 272.294244 221.842076 271.469969 221.23442 270.862312
+C 220.626763 270.254656 219.802488 269.91323 218.943132 269.91323
+C 218.083776 269.91323 217.259501 270.254656 216.651844 270.862312
+C 216.044187 271.469969 215.702762 272.294244 215.702762 273.1536
+C 215.702762 274.012956 216.044187 274.837231 216.651844 275.444888
+C 217.259501 276.052544 218.083776 276.39397 218.943132 276.39397
+z
+" style="fill:#2f73d2;"/>
+   </g>
+   <g id="PathCollection_4">
+    <path clip-path="url(#p919a3f616f)" d="M 218.943132 326.07397
+C 219.802488 326.07397 220.626763 325.732544 221.23442 325.124888
+C 221.842076 324.517231 222.183502 323.692956 222.183502 322.8336
+C 222.183502 321.974244 221.842076 321.149969 221.23442 320.542312
+C 220.626763 319.934656 219.802488 319.59323 218.943132 319.59323
+C 218.083776 319.59323 217.259501 319.934656 216.651844 320.542312
+C 216.044187 321.149969 215.702762 321.974244 215.702762 322.8336
+C 215.702762 323.692956 216.044187 324.517231 216.651844 325.124888
+C 217.259501 325.732544 218.083776 326.07397 218.943132 326.07397
+z
+" style="fill:#f7be32;"/>
+   </g>
+   <g id="PathCollection_5">
+    <path clip-path="url(#p919a3f616f)" d="M 218.943132 375.75397
+C 219.802488 375.75397 220.626763 375.412544 221.23442 374.804888
+C 221.842076 374.197231 222.183502 373.372956 222.183502 372.5136
+C 222.183502 371.654244 221.842076 370.829969 221.23442 370.222312
+C 220.626763 369.614656 219.802488 369.27323 218.943132 369.27323
+C 218.083776 369.27323 217.259501 369.614656 216.651844 370.222312
+C 216.044187 370.829969 215.702762 371.654244 215.702762 372.5136
+C 215.702762 373.372956 216.044187 374.197231 216.651844 374.804888
+C 217.259501 375.412544 218.083776 375.75397 218.943132 375.75397
+z
+" style="fill:#2f73d2;"/>
+   </g>
+   <g id="PathCollection_6">
+    <path clip-path="url(#p919a3f616f)" d="M 218.943132 425.43397
+C 219.802488 425.43397 220.626763 425.092544 221.23442 424.484888
+C 221.842076 423.877231 222.183502 423.052956 222.183502 422.1936
+C 222.183502 421.334244 221.842076 420.509969 221.23442 419.902312
+C 220.626763 419.294656 219.802488 418.95323 218.943132 418.95323
+C 218.083776 418.95323 217.259501 419.294656 216.651844 419.902312
+C 216.044187 420.509969 215.702762 421.334244 215.702762 422.1936
+C 215.702762 423.052956 216.044187 423.877231 216.651844 424.484888
+C 217.259501 425.092544 218.083776 425.43397 218.943132 425.43397
+z
+" style="fill:#f7be32;"/>
+   </g>
+   <g id="PathCollection_7">
+    <path clip-path="url(#p919a3f616f)" d="M 218.943132 475.11397
+C 219.802488 475.11397 220.626763 474.772544 221.23442 474.164888
+C 221.842076 473.557231 222.183502 472.732956 222.183502 471.8736
+C 222.183502 471.014244 221.842076 470.189969 221.23442 469.582312
+C 220.626763 468.974656 219.802488 468.63323 218.943132 468.63323
+C 218.083776 468.63323 217.259501 468.974656 216.651844 469.582312
+C 216.044187 470.189969 215.702762 471.014244 215.702762 471.8736
+C 215.702762 472.732956 216.044187 473.557231 216.651844 474.164888
+C 217.259501 474.772544 218.083776 475.11397 218.943132 475.11397
+z
+" style="fill:#2f73d2;"/>
+   </g>
+   <g id="PathCollection_8">
+    <path clip-path="url(#p919a3f616f)" d="M 218.943132 524.79397
+C 219.802488 524.79397 220.626763 524.452544 221.23442 523.844888
+C 221.842076 523.237231 222.183502 522.412956 222.183502 521.5536
+C 222.183502 520.694244 221.842076 519.869969 221.23442 519.262312
+C 220.626763 518.654656 219.802488 518.31323 218.943132 518.31323
+C 218.083776 518.31323 217.259501 518.654656 216.651844 519.262312
+C 216.044187 519.869969 215.702762 520.694244 215.702762 521.5536
+C 215.702762 522.412956 216.044187 523.237231 216.651844 523.844888
+C 217.259501 524.452544 218.083776 524.79397 218.943132 524.79397
+z
+" style="fill:#f7be32;"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p919a3f616f">
+   <rect height="662.4" width="1051.2" x="7.2" y="7.2"/>
+  </clipPath>
+ </defs>
+</svg>

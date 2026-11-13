@@ -1,0 +1,60 @@
+{
+  "profile": "bch_base",
+  "width": 64,
+  "frames": [
+    {
+      "frame": 0,
+      "error_weight": 0,
+      "error_positions": [],
+      "selector": 0
+    },
+    {
+      "frame": 1,
+      "error_weight": 1,
+      "error_positions": [
+        1322
+      ],
+      "selector": 0
+    },
+    {
+      "frame": 2,
+      "error_weight": 4,
+      "error_positions": [
+        2056,
+        2406,
+        4182,
+        549
+      ],
+      "selector": 0
+    },
+    {
+      "frame": 3,
+      "error_weight": 7,
+      "error_positions": [
+        2909,
+        2173,
+        694,
+        835,
+        920,
+        1002,
+        4009
+      ],
+      "selector": 0
+    },
+    {
+      "frame": 4,
+      "error_weight": 8,
+      "error_positions": [
+        1472,
+        2057,
+        1127,
+        2965,
+        2009,
+        1722,
+        165,
+        163
+      ],
+      "selector": 0
+    }
+  ]
+}

@@ -8,3 +8,9 @@ pbch/syn/work/
 pbch/syn/generated_reports/
 # VCS work directory created when invoked from the repository root
 csrc/
+paper_eval/build/
+paper_eval/syn/study_work/
+paper_eval/syn/study_reports/
+paper_eval/syn/study_results/
+paper_eval/**/__pycache__/
+paper_eval/.pytest_cache/

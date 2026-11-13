@@ -1,0 +1,46 @@
+{
+  "release": "final-paper-hardware",
+  "profiles": {
+    "bch_base": {
+      "k": 4096,
+      "t": 8,
+      "r": 104,
+      "n": 4200,
+      "encoder_top": "bch_base_enc_w512",
+      "decoder_top": "bch_base_dec_replay_w64"
+    },
+    "bch_equal_r": {
+      "k": 4096,
+      "t": 9,
+      "r": 117,
+      "n": 4213,
+      "encoder_top": "bch_equal_r_enc_w512",
+      "decoder_top": "bch_equal_r_dec_replay_w64"
+    },
+    "bch_paper": {
+      "k": 4096,
+      "t": 27,
+      "r": 351,
+      "n": 4447,
+      "encoder_top": "bch_paper_enc_w512",
+      "decoder_top": "bch_paper_bm2_dec_replay_w64"
+    },
+    "pbch_paper": {
+      "k": 4096,
+      "t": 8,
+      "l": 13,
+      "r": 104,
+      "n": 4213,
+      "encoder_top": "pbch_paper_blockg7_fwht_h7_m32_p128_w512",
+      "decoder_top": "pbch_paper_dec_replay_w64"
+    }
+  },
+  "encoder_width": 512,
+  "decoder_width": 64,
+  "clock_mhz": 300,
+  "primitive_polynomial": "0x201b",
+  "g0_sha256": "594651a44b18272ade97d60f67e9e3fa961bda33be288827b12fb2f7dc926b53",
+  "g0_unique_columns": 3413,
+  "g0_zero_columns": 0,
+  "g0_max_column_multiplicity": 5
+}

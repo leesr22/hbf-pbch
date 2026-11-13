@@ -1,51 +1,59 @@
-# HBF BCH/PBCH hardware
+# Outlast BCH/PBCH hardware evaluation
 
-This repository contains the ECC RTL used for the HBF read-disturbance
-hardware evaluation.
+This repository contains the synthesizable ECC hardware used for the Outlast
+paper evaluation. The authoritative final release is in
+[`paper_eval/`](paper_eval/); the older top-level `bch/`, `pbch/`, and `reports/`
+directories are retained only as provenance for earlier design points.
 
-- [`bch/`](bch/): selected BCH reference and reliability-matched BCH design
-- [`pbch/`](pbch/): exact-FWHT PBCH encoder and cache-buffer-replay decoder
+## Final four configurations
 
-The BCH and PBCH releases are kept in separate directories so that their RTL,
-simulation collateral, and synthesis reports can be reviewed independently.
+All configurations protect a 4,096-bit (512-B) payload over `GF(2^13)`.
 
-## Evaluation point
+| Configuration | Role | Redundancy | Codeword bits |
+|---|---|---:|---:|
+| BCH(`t=8`) | Conventional baseline | 104 | 4,200 |
+| BCH(`t=9`) | Same redundancy as Outlast | 117 | 4,213 |
+| BCH(`t=27`) | Minimum BCH meeting the reference UBER target | 351 | 4,447 |
+| Outlast (`t=8`, `l=13`) | Main paper configuration | 117 | 4,213 |
 
-- Clock/process: 250 MHz, UMC 28 nm 0.9 V slow library
-- Write-path target for encoders: 12.8 GB/s
-- Read-path target for decoders: 384 GB/s
-- Payload: 4096 bits (512 B) per codeword
-- Area: pre-layout standard-cell area
-- Decoder storage: external cache-buffer replay
+Outlast (`t=8`, `l=13`) and BCH(`t=9`) are the equal-redundancy pair. Under
+the paper's reference point—`RBER_error=1e-5`, `RBER_defect=1e-3`, ideal
+probing, `UBER=FER/n`, and target UBER `1e-16`—BCH requires `t=27`, whereas
+Outlast meets the target with `t=8,l=13`. The latter pair is therefore the
+minimum-configuration comparison at a common reliability target, not a claim
+that their numerical UBER is identical under every channel condition.
 
-The earlier 3.072 TB/s common target is no longer the primary provisioning
-point. Encoder and decoder replication now follow their respective HBF write
-and read paths.
+## Final hardware point
 
-| Configuration | Encoder area | Decoder area | Total replicated area |
-|---|---:|---:|---:|
-| BCH(k=4096, t=8) | 0.009 mm2 | 4.280 mm2 | 4.289 mm2 |
-| BCH(k=4096, t=30) | 0.028 mm2 | 27.120 mm2 | 27.148 mm2 |
-| PBCH(k=4096, t=13, l=13) | 0.718 mm2 | 9.234 mm2 | 9.952 mm2 |
+- UMC 28-nm 0.9-V slow library, direct 300-MHz synthesis
+- `W=512` for every encoder and `W=64` for every decoder
+- Encoder target: 12.8 GB/s; decoder target: 384 GB/s
+- NAND2 GE normalization: 0.504 um2 per NAND2 gate
+- Pre-layout mapped-cell results; no advanced-node area extrapolation
 
-All selected encoders use W=512 and all selected decoders use W=128.  The
-decoder BM lane count is balanced to code strength: one lane for BCH(t=8),
-four lanes for BCH(t=30), and two lanes for PBCH(t=13,l=13).
+| Configuration | Provisioned engines | Total NAND2 GE |
+|---|---:|---:|
+| BCH(`t=8`) | 1 encoder + 173 decoders | 9.304 M |
+| BCH(`t=9`) | 1 encoder + 173 decoders | 10.476 M |
+| BCH(`t=27`) | 1 encoder + 183 decoders | 42.262 M |
+| Outlast (`t=8`,`l=13`) | 7 encoders + 175 decoders | 12.317 M |
 
-The PBCH encoder throughput point uses eight retained flags per codeword. The
-RTL supports 0--32 retained flags; if more than 32 are observed, it keeps the
-first 32 in codeword order and asserts a truncation flag.
+Relative to equal-redundancy BCH(`t=9`), Outlast costs 17.6% more total gates.
+Relative to BCH(`t=27`), the minimum BCH configuration meeting the same UBER
+target at the reference channel point, Outlast uses 70.9% fewer total gates.
 
-## Result figures
+![Final 300-MHz hardware table](paper_eval/results/paper_hardware/ecc_hardware_table_300mhz_common_width.png)
 
-- [`reports/figures/ecc_hardware_results_common_width.png`](reports/figures/ecc_hardware_results_common_width.png): complete hardware-result table
-- [`reports/figures/ecc_replicated_area_common_width_28nm.png`](reports/figures/ecc_replicated_area_common_width_28nm.png): total replicated area at 28 nm
-- [`reports/figures/ecc_replicated_area_common_width_3nm.png`](reports/figures/ecc_replicated_area_common_width_3nm.png): scaled total replicated area at 3 nm
-- [`reports/figures/ecc_single_engine_area_common_width_28nm.png`](reports/figures/ecc_single_engine_area_common_width_28nm.png): one encoder plus one decoder at 28 nm
-- [`reports/figures/ecc_single_engine_area_common_width_3nm.png`](reports/figures/ecc_single_engine_area_common_width_3nm.png): scaled one-encoder/one-decoder area at 3 nm
+## Reproduce and inspect
 
-The PNG and SVG versions can be regenerated from the checked synthesis CSVs:
+- [Release overview](paper_eval/README.md)
+- [Evaluation rationale and interpretation](paper_eval/docs/HARDWARE_EVALUATION.md)
+- [Machine-readable results](paper_eval/results/paper_hardware/blocks_300mhz_common_width.csv)
+- [Timing summary](paper_eval/results/paper_hardware/timing_summary.csv)
+- [PNG table](paper_eval/results/paper_hardware/ecc_hardware_table_300mhz_common_width.png)
+- [SVG table](paper_eval/results/paper_hardware/ecc_hardware_table_300mhz_common_width.svg)
 
-```bash
-python3 scripts/plot_common_width_results.py
-```
+The repository excludes proprietary cell libraries, mapped netlists, DDC
+databases, and raw EDA logs. It includes the selected RTL, generated wrappers,
+self-checking testbenches and vectors, synthesis scripts, and summarized
+results needed to audit the reported point.

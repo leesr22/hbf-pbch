@@ -1,0 +1,62 @@
+{
+  "profile": "bch_equal_r",
+  "width": 64,
+  "frames": [
+    {
+      "frame": 0,
+      "error_weight": 0,
+      "error_positions": [],
+      "selector": 0
+    },
+    {
+      "frame": 1,
+      "error_weight": 1,
+      "error_positions": [
+        236
+      ],
+      "selector": 0
+    },
+    {
+      "frame": 2,
+      "error_weight": 4,
+      "error_positions": [
+        3540,
+        2549,
+        1601,
+        805
+      ],
+      "selector": 0
+    },
+    {
+      "frame": 3,
+      "error_weight": 8,
+      "error_positions": [
+        3511,
+        3099,
+        1676,
+        3756,
+        1654,
+        1574,
+        2854,
+        3128
+      ],
+      "selector": 0
+    },
+    {
+      "frame": 4,
+      "error_weight": 9,
+      "error_positions": [
+        3339,
+        1290,
+        2322,
+        274,
+        3174,
+        786,
+        4002,
+        3142,
+        2408
+      ],
+      "selector": 0
+    }
+  ]
+}

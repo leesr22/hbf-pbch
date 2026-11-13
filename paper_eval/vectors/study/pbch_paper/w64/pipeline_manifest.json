@@ -1,0 +1,60 @@
+{
+  "profile": "pbch_paper",
+  "width": 64,
+  "frames": [
+    {
+      "frame": 0,
+      "error_weight": 0,
+      "error_positions": [],
+      "selector": 26
+    },
+    {
+      "frame": 1,
+      "error_weight": 1,
+      "error_positions": [
+        692
+      ],
+      "selector": 42
+    },
+    {
+      "frame": 2,
+      "error_weight": 4,
+      "error_positions": [
+        4035,
+        1075,
+        1012,
+        3480
+      ],
+      "selector": 1818
+    },
+    {
+      "frame": 3,
+      "error_weight": 7,
+      "error_positions": [
+        3727,
+        3055,
+        2156,
+        3816,
+        2366,
+        2183,
+        3351
+      ],
+      "selector": 498
+    },
+    {
+      "frame": 4,
+      "error_weight": 8,
+      "error_positions": [
+        4100,
+        3140,
+        2814,
+        2360,
+        673,
+        1320,
+        2939,
+        4156
+      ],
+      "selector": 261
+    }
+  ]
+}

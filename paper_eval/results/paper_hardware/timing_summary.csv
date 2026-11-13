@@ -1,0 +1,9 @@
+configuration,circuit,top,clock_mhz,setup_slack_ns,result
+BCH(t=8),Encoder,bch_base_enc_w512,300,1.457640,PASS
+BCH(t=8),Decoder,bch_base_dec_replay_w64,300,0.683921,PASS
+BCH(t=9),Encoder,bch_equal_r_enc_w512,300,1.430620,PASS
+BCH(t=9),Decoder,bch_equal_r_dec_replay_w64,300,0.617065,PASS
+BCH(t=27),Encoder,bch_paper_enc_w512,300,1.307470,PASS
+BCH(t=27),Decoder,bch_paper_bm2_dec_replay_w64,300,0.192935,PASS
+"Outlast(t=8,l=13)",Encoder,pbch_paper_blockg7_fwht_h7_m32_p128_w512,300,0.103487,PASS
+"Outlast(t=8,l=13)",Decoder,pbch_paper_dec_replay_w64,300,0.685541,PASS

@@ -1,0 +1,9 @@
+configuration,block,microarchitecture,frequency_MHz,area_um2,NAND2_GE_per_engine,II_cycles,throughput_GBps,bandwidth_target_GBps,replicas,total_area_mm2,aggregate_MGE,slack_ns,synthesis_basis,synthesis_run
+BCH(t=8),Encoder,W=512,300,8635.871850,17134.666,9.000000,17.066667,12.8,1,0.008636,0.017135,1.457640,direct 300-MHz synthesis,bch_base_enc_w512_fair_w512_300mhz
+BCH(t=8),Decoder,"W=64, BM=1",300,27055.895524,53682.332,69.000000,2.226087,384.0,173,4.680670,9.287044,0.683921,direct 300-MHz synthesis,bch_base_dec_replay_w64_fair_w_300mhz
+BCH(t=9),Encoder,W=512,300,9580.367830,19008.666,9.000000,17.066667,12.8,1,0.009580,0.019009,1.430620,direct 300-MHz synthesis,bch_equal_r_enc_w512_fair_w512_300mhz
+BCH(t=9),Decoder,"W=64, BM=1",300,30465.455458,60447.332,69.000000,2.226087,384.0,173,5.270524,10.457388,0.617065,direct 300-MHz synthesis,bch_equal_r_dec_replay_w64_fair_w_300mhz
+BCH(t=27),Encoder,W=512,300,25006.295503,49615.666,9.000000,17.066667,12.8,1,0.025006,0.049616,1.307470,direct 300-MHz synthesis,bch_paper_enc_w512_fair_w512_300mhz
+BCH(t=27),Decoder,"W=64, BM=2",300,116256.838107,230668.330,73.000000,2.104110,384.0,183,21.275001,42.212304,0.192935,direct 300-MHz synthesis,bch_paper_bm2_dec_replay_w64_fair_w_300mhz
+"PBCH(t=8,l=13)",Encoder,W=512,300,84202.103434,167067.666,75.426217,2.036427,12.8,7,0.589415,1.169474,0.103487,direct 300-MHz synthesis,pbch_paper_blockg7_fwht_h7_m32_p128_w512_fair_w512_300mhz
+"PBCH(t=8,l=13)",Decoder,"W=64, BM=1",300,32103.455449,63697.332,70.000000,2.194286,384.0,175,5.618105,11.147033,0.685541,direct 300-MHz synthesis,pbch_paper_dec_replay_w64_fair_w_300mhz
