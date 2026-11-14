@@ -1,0 +1,23 @@
+ 
+****************************************
+check_design summary:
+Version:     Q-2019.12-SP5-5
+Date:        Sat Nov 14 22:04:17 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      9
+    Feedthrough (LINT-29)                                           9
+--------------------------------------------------------------------------------
+
+Warning: In design 'pbch_unmask_rec_cse', input port 'in_count_i[6]' is connected directly to output port 'out_count_o[6]'. (LINT-29)
+Warning: In design 'pbch_unmask_rec_cse', input port 'in_count_i[5]' is connected directly to output port 'out_count_o[5]'. (LINT-29)
+Warning: In design 'pbch_unmask_rec_cse', input port 'in_count_i[4]' is connected directly to output port 'out_count_o[4]'. (LINT-29)
+Warning: In design 'pbch_unmask_rec_cse', input port 'in_count_i[3]' is connected directly to output port 'out_count_o[3]'. (LINT-29)
+Warning: In design 'pbch_unmask_rec_cse', input port 'in_count_i[2]' is connected directly to output port 'out_count_o[2]'. (LINT-29)
+Warning: In design 'pbch_unmask_rec_cse', input port 'in_count_i[1]' is connected directly to output port 'out_count_o[1]'. (LINT-29)
+Warning: In design 'pbch_unmask_rec_cse', input port 'in_count_i[0]' is connected directly to output port 'out_count_o[0]'. (LINT-29)
+Warning: In design 'pbch_unmask_rec_cse', input port 'in_valid_i' is connected directly to output port 'out_valid_o'. (LINT-29)
+Warning: In design 'pbch_unmask_rec_cse', input port 'out_ready_i' is connected directly to output port 'in_ready_o'. (LINT-29)
+1

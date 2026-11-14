@@ -1,0 +1,2119 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : pbch_encoder_folded256_h5_c16
+Version: Q-2019.12-SP5-5
+Date   : Sat Nov 14 22:24:08 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: SSGWC0P9V125C   Library: um28nchslogl35hsl140f_ssgwc0p9v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: core/label_position_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/grouped_block_fwht_search.search_u/labels_q_reg[0][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encoder_folded256_h5_c16
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_encoder_core_folded256_h5_c16_4096_13_104_512_128_32_2_5_5_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_scan_label_b32
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/label_position_q_reg[0]/CK (STP_FDPRBQ_1)          0.00 #     0.00 r
+  core/label_position_q_reg[0]/Q (STP_FDPRBQ_1)           0.09       0.09 f
+  core/label_u/position_i[0] (pbch_scan_label_b32)        0.00       0.09 f
+  core/label_u/U1166/X (STP_NR2_G_0P5)                    0.06       0.15 r
+  core/label_u/U1156/X (STP_NR2_G_0P5)                    0.03       0.18 f
+  core/label_u/U438/X (STP_AN2_S_0P5)                     0.04       0.22 f
+  core/label_u/U436/X (STP_NR2_G_0P8)                     0.02       0.24 r
+  core/label_u/U432/X (STP_INV_S_0P65)                    0.02       0.26 f
+  core/label_u/U431/X (STP_NR2_G_0P8)                     0.02       0.29 r
+  core/label_u/U427/X (STP_ND2_S_1)                       0.02       0.31 f
+  core/label_u/U423/X (STP_NR2_G_0P8)                     0.02       0.34 r
+  core/label_u/U419/X (STP_ND2_S_1)                       0.03       0.36 f
+  core/label_u/U1427/X (STP_OR2_1)                        0.04       0.40 f
+  core/label_u/U1107/X (STP_NR2_G_0P5)                    0.03       0.43 r
+  core/label_u/U407/X (STP_ND2B_MM_1)                     0.02       0.45 f
+  core/label_u/U381/X (STP_AN2_S_1)                       0.07       0.52 f
+  core/label_u/U952/X (STP_OR2_1)                         0.10       0.62 f
+  core/label_u/U473/X (STP_INV_S_1)                       0.07       0.69 r
+  core/label_u/U1380/X (STP_OR2_1)                        0.08       0.77 r
+  core/label_u/U257/X (STP_INV_S_1)                       0.08       0.85 f
+  core/label_u/U218/X (STP_ND2_S_1)                       0.03       0.88 r
+  core/label_u/U723/X (STP_OAI211_0P5)                    0.03       0.91 f
+  core/label_u/U722/X (STP_OAOI211_0P5)                   0.03       0.94 r
+  core/label_u/U161/X (STP_OAI22_0P5)                     0.02       0.96 f
+  core/label_u/U577/X (STP_NR4_0P5)                       0.04       1.01 r
+  core/label_u/U574/X (STP_AOI22_0P5)                     0.05       1.05 f
+  core/label_u/U974/X (STP_AO2BB2_0P5)                    0.07       1.12 f
+  core/label_u/U1035/X (STP_AO2BB2_0P5)                   0.06       1.18 f
+  core/label_u/U1017/X (STP_AO2BB2_0P5)                   0.04       1.22 f
+  core/label_u/U1016/X (STP_AOI22_0P5)                    0.04       1.26 r
+  core/label_u/U1058/X (STP_INV_S_0P65)                   0.03       1.29 f
+  core/label_u/U125/X (STP_OAI22_0P75)                    0.04       1.33 r
+  core/label_u/U503/X (STP_OA2BB2_0P5)                    0.07       1.39 r
+  core/label_u/U116/X (STP_INV_S_0P65)                    0.03       1.42 f
+  core/label_u/U1534/X (STP_EO3_0P5)                      0.08       1.51 r
+  core/label_u/U109/X (STP_OAI21_0P5)                     0.02       1.53 f
+  core/label_u/U615/X (STP_AOI21_0P75)                    0.03       1.56 r
+  core/label_u/U614/X (STP_OA2BB2_0P5)                    0.05       1.61 r
+  core/label_u/U78/X (STP_INV_S_0P65)                     0.02       1.63 f
+  core/label_u/U500/X (STP_AO2BB2_0P5)                    0.05       1.69 f
+  core/label_u/U461/X (STP_AO2BB2_0P5)                    0.06       1.75 f
+  core/label_u/U1573/X (STP_EO3_0P5)                      0.10       1.86 f
+  core/label_u/U1574/X (STP_EO3_0P5)                      0.09       1.95 f
+  core/label_u/U653/X (STP_AO2BB2_0P5)                    0.04       1.99 f
+  core/label_u/U652/X (STP_AOI22_0P5)                     0.06       2.05 r
+  core/label_u/U515/X (STP_OA2BB2_0P5)                    0.06       2.11 f
+  core/label_u/U1152/X (STP_OA2BB2_0P5)                   0.06       2.18 f
+  core/label_u/U510/X (STP_AO2BB2_0P5)                    0.06       2.23 f
+  core/label_u/U1215/X (STP_AO2BB2_0P5)                   0.05       2.29 f
+  core/label_u/U1691/X (STP_EO3_0P5)                      0.08       2.37 r
+  core/label_u/U666/X (STP_AOI22_0P5)                     0.03       2.40 f
+  core/label_u/U1188/X (STP_AO2BB2_0P5)                   0.07       2.47 f
+  core/label_u/U1296/X (STP_AO2BB2_0P5)                   0.06       2.53 f
+  core/label_u/U661/X (STP_AO2BB2_0P5)                    0.06       2.59 f
+  core/label_u/U1760/X (STP_EO3_0P5)                      0.10       2.69 f
+  core/label_u/U1762/X (STP_EO3_0P5)                      0.09       2.77 f
+  core/label_u/U6/X (STP_OAI22_0P5)                       0.03       2.80 r
+  core/label_u/U1351/X (STP_AOI211_0P5)                   0.02       2.82 f
+  core/label_u/U4/X (STP_ND4_MM_1)                        0.04       2.86 r
+  core/label_u/label_o[1] (pbch_scan_label_b32)           0.00       2.86 r
+  core/grouped_block_fwht_search.search_u/label_i[1] (selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61)
+                                                          0.00       2.86 r
+  core/grouped_block_fwht_search.search_u/U563/X (STP_INV_S_1)
+                                                          0.07       2.92 f
+  core/grouped_block_fwht_search.search_u/U741/X (STP_AOI22_0P5)
+                                                          0.05       2.97 r
+  core/grouped_block_fwht_search.search_u/labels_q_reg[0][1]/D (STP_FDPQ_V2_1)
+                                                          0.00       2.97 r
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/grouped_block_fwht_search.search_u/labels_q_reg[0][1]/CK (STP_FDPQ_V2_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.03       3.10
+  data required time                                                 3.10
+  --------------------------------------------------------------------------
+  data required time                                                 3.10
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: core/label_position_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/grouped_block_fwht_search.search_u/labels_q_reg[0][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encoder_folded256_h5_c16
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_encoder_core_folded256_h5_c16_4096_13_104_512_128_32_2_5_5_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_scan_label_b32
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/label_position_q_reg[0]/CK (STP_FDPRBQ_1)          0.00 #     0.00 r
+  core/label_position_q_reg[0]/Q (STP_FDPRBQ_1)           0.09       0.09 f
+  core/label_u/position_i[0] (pbch_scan_label_b32)        0.00       0.09 f
+  core/label_u/U1166/X (STP_NR2_G_0P5)                    0.06       0.15 r
+  core/label_u/U1156/X (STP_NR2_G_0P5)                    0.03       0.18 f
+  core/label_u/U438/X (STP_AN2_S_0P5)                     0.04       0.22 f
+  core/label_u/U436/X (STP_NR2_G_0P8)                     0.02       0.24 r
+  core/label_u/U432/X (STP_INV_S_0P65)                    0.02       0.26 f
+  core/label_u/U431/X (STP_NR2_G_0P8)                     0.02       0.29 r
+  core/label_u/U427/X (STP_ND2_S_1)                       0.02       0.31 f
+  core/label_u/U423/X (STP_NR2_G_0P8)                     0.02       0.34 r
+  core/label_u/U419/X (STP_ND2_S_1)                       0.03       0.36 f
+  core/label_u/U1427/X (STP_OR2_1)                        0.04       0.40 f
+  core/label_u/U1107/X (STP_NR2_G_0P5)                    0.03       0.43 r
+  core/label_u/U407/X (STP_ND2B_MM_1)                     0.02       0.45 f
+  core/label_u/U381/X (STP_AN2_S_1)                       0.07       0.52 f
+  core/label_u/U952/X (STP_OR2_1)                         0.10       0.62 f
+  core/label_u/U473/X (STP_INV_S_1)                       0.07       0.69 r
+  core/label_u/U1380/X (STP_OR2_1)                        0.08       0.77 r
+  core/label_u/U257/X (STP_INV_S_1)                       0.08       0.85 f
+  core/label_u/U218/X (STP_ND2_S_1)                       0.03       0.88 r
+  core/label_u/U723/X (STP_OAI211_0P5)                    0.03       0.91 f
+  core/label_u/U722/X (STP_OAOI211_0P5)                   0.03       0.94 r
+  core/label_u/U161/X (STP_OAI22_0P5)                     0.02       0.96 f
+  core/label_u/U577/X (STP_NR4_0P5)                       0.04       1.01 r
+  core/label_u/U574/X (STP_AOI22_0P5)                     0.05       1.05 f
+  core/label_u/U974/X (STP_AO2BB2_0P5)                    0.07       1.12 f
+  core/label_u/U1035/X (STP_AO2BB2_0P5)                   0.06       1.18 f
+  core/label_u/U1017/X (STP_AO2BB2_0P5)                   0.04       1.22 f
+  core/label_u/U1016/X (STP_AOI22_0P5)                    0.04       1.26 r
+  core/label_u/U1058/X (STP_INV_S_0P65)                   0.03       1.29 f
+  core/label_u/U125/X (STP_OAI22_0P75)                    0.04       1.33 r
+  core/label_u/U503/X (STP_OA2BB2_0P5)                    0.07       1.39 r
+  core/label_u/U116/X (STP_INV_S_0P65)                    0.03       1.42 f
+  core/label_u/U1534/X (STP_EO3_0P5)                      0.08       1.51 r
+  core/label_u/U109/X (STP_OAI21_0P5)                     0.02       1.53 f
+  core/label_u/U615/X (STP_AOI21_0P75)                    0.03       1.56 r
+  core/label_u/U614/X (STP_OA2BB2_0P5)                    0.05       1.61 r
+  core/label_u/U78/X (STP_INV_S_0P65)                     0.02       1.63 f
+  core/label_u/U500/X (STP_AO2BB2_0P5)                    0.05       1.69 f
+  core/label_u/U461/X (STP_AO2BB2_0P5)                    0.06       1.75 f
+  core/label_u/U1573/X (STP_EO3_0P5)                      0.10       1.86 f
+  core/label_u/U1574/X (STP_EO3_0P5)                      0.09       1.95 f
+  core/label_u/U653/X (STP_AO2BB2_0P5)                    0.04       1.99 f
+  core/label_u/U652/X (STP_AOI22_0P5)                     0.06       2.05 r
+  core/label_u/U515/X (STP_OA2BB2_0P5)                    0.06       2.11 f
+  core/label_u/U1152/X (STP_OA2BB2_0P5)                   0.06       2.18 f
+  core/label_u/U510/X (STP_AO2BB2_0P5)                    0.06       2.23 f
+  core/label_u/U1215/X (STP_AO2BB2_0P5)                   0.05       2.29 f
+  core/label_u/U1691/X (STP_EO3_0P5)                      0.08       2.37 r
+  core/label_u/U666/X (STP_AOI22_0P5)                     0.03       2.40 f
+  core/label_u/U1188/X (STP_AO2BB2_0P5)                   0.07       2.47 f
+  core/label_u/U1296/X (STP_AO2BB2_0P5)                   0.06       2.53 f
+  core/label_u/U661/X (STP_AO2BB2_0P5)                    0.06       2.59 f
+  core/label_u/U1696/X (STP_EO3_0P5)                      0.10       2.69 f
+  core/label_u/U1767/X (STP_EO3_0P5)                      0.10       2.79 f
+  core/label_u/U662/X (STP_AOI21_0P75)                    0.02       2.81 r
+  core/label_u/U1349/X (STP_OAOI211_0P5)                  0.03       2.84 f
+  core/label_u/U1347/X (STP_OAI211_0P5)                   0.02       2.86 r
+  core/label_u/label_o[0] (pbch_scan_label_b32)           0.00       2.86 r
+  core/grouped_block_fwht_search.search_u/label_i[0] (selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61)
+                                                          0.00       2.86 r
+  core/grouped_block_fwht_search.search_u/U562/X (STP_INV_S_1)
+                                                          0.07       2.92 f
+  core/grouped_block_fwht_search.search_u/U703/X (STP_AOI22_0P5)
+                                                          0.05       2.97 r
+  core/grouped_block_fwht_search.search_u/labels_q_reg[0][0]/D (STP_FDPQ_V2_1)
+                                                          0.00       2.97 r
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/grouped_block_fwht_search.search_u/labels_q_reg[0][0]/CK (STP_FDPQ_V2_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.03       3.10
+  data required time                                                 3.10
+  --------------------------------------------------------------------------
+  data required time                                                 3.10
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: core/label_position_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/grouped_block_fwht_search.search_u/labels_q_reg[31][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encoder_folded256_h5_c16
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_encoder_core_folded256_h5_c16_4096_13_104_512_128_32_2_5_5_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_scan_label_b32
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/label_position_q_reg[0]/CK (STP_FDPRBQ_1)          0.00 #     0.00 r
+  core/label_position_q_reg[0]/Q (STP_FDPRBQ_1)           0.09       0.09 f
+  core/label_u/position_i[0] (pbch_scan_label_b32)        0.00       0.09 f
+  core/label_u/U1166/X (STP_NR2_G_0P5)                    0.06       0.15 r
+  core/label_u/U1156/X (STP_NR2_G_0P5)                    0.03       0.18 f
+  core/label_u/U438/X (STP_AN2_S_0P5)                     0.04       0.22 f
+  core/label_u/U436/X (STP_NR2_G_0P8)                     0.02       0.24 r
+  core/label_u/U432/X (STP_INV_S_0P65)                    0.02       0.26 f
+  core/label_u/U431/X (STP_NR2_G_0P8)                     0.02       0.29 r
+  core/label_u/U427/X (STP_ND2_S_1)                       0.02       0.31 f
+  core/label_u/U423/X (STP_NR2_G_0P8)                     0.02       0.34 r
+  core/label_u/U419/X (STP_ND2_S_1)                       0.03       0.36 f
+  core/label_u/U1427/X (STP_OR2_1)                        0.04       0.40 f
+  core/label_u/U1107/X (STP_NR2_G_0P5)                    0.03       0.43 r
+  core/label_u/U407/X (STP_ND2B_MM_1)                     0.02       0.45 f
+  core/label_u/U381/X (STP_AN2_S_1)                       0.07       0.52 f
+  core/label_u/U952/X (STP_OR2_1)                         0.10       0.62 f
+  core/label_u/U473/X (STP_INV_S_1)                       0.07       0.69 r
+  core/label_u/U1380/X (STP_OR2_1)                        0.08       0.77 r
+  core/label_u/U257/X (STP_INV_S_1)                       0.08       0.85 f
+  core/label_u/U218/X (STP_ND2_S_1)                       0.03       0.88 r
+  core/label_u/U723/X (STP_OAI211_0P5)                    0.03       0.91 f
+  core/label_u/U722/X (STP_OAOI211_0P5)                   0.03       0.94 r
+  core/label_u/U161/X (STP_OAI22_0P5)                     0.02       0.96 f
+  core/label_u/U577/X (STP_NR4_0P5)                       0.04       1.01 r
+  core/label_u/U574/X (STP_AOI22_0P5)                     0.05       1.05 f
+  core/label_u/U974/X (STP_AO2BB2_0P5)                    0.07       1.12 f
+  core/label_u/U1035/X (STP_AO2BB2_0P5)                   0.06       1.18 f
+  core/label_u/U1017/X (STP_AO2BB2_0P5)                   0.04       1.22 f
+  core/label_u/U1016/X (STP_AOI22_0P5)                    0.04       1.26 r
+  core/label_u/U1058/X (STP_INV_S_0P65)                   0.03       1.29 f
+  core/label_u/U125/X (STP_OAI22_0P75)                    0.04       1.33 r
+  core/label_u/U503/X (STP_OA2BB2_0P5)                    0.07       1.39 r
+  core/label_u/U116/X (STP_INV_S_0P65)                    0.03       1.42 f
+  core/label_u/U1534/X (STP_EO3_0P5)                      0.08       1.51 r
+  core/label_u/U109/X (STP_OAI21_0P5)                     0.02       1.53 f
+  core/label_u/U615/X (STP_AOI21_0P75)                    0.03       1.56 r
+  core/label_u/U614/X (STP_OA2BB2_0P5)                    0.05       1.61 r
+  core/label_u/U78/X (STP_INV_S_0P65)                     0.02       1.63 f
+  core/label_u/U500/X (STP_AO2BB2_0P5)                    0.05       1.69 f
+  core/label_u/U461/X (STP_AO2BB2_0P5)                    0.06       1.75 f
+  core/label_u/U1573/X (STP_EO3_0P5)                      0.10       1.86 f
+  core/label_u/U1574/X (STP_EO3_0P5)                      0.09       1.95 f
+  core/label_u/U653/X (STP_AO2BB2_0P5)                    0.04       1.99 f
+  core/label_u/U652/X (STP_AOI22_0P5)                     0.06       2.05 r
+  core/label_u/U515/X (STP_OA2BB2_0P5)                    0.06       2.11 f
+  core/label_u/U1152/X (STP_OA2BB2_0P5)                   0.06       2.18 f
+  core/label_u/U510/X (STP_AO2BB2_0P5)                    0.06       2.23 f
+  core/label_u/U1215/X (STP_AO2BB2_0P5)                   0.05       2.29 f
+  core/label_u/U1691/X (STP_EO3_0P5)                      0.08       2.37 r
+  core/label_u/U666/X (STP_AOI22_0P5)                     0.03       2.40 f
+  core/label_u/U1188/X (STP_AO2BB2_0P5)                   0.07       2.47 f
+  core/label_u/U1296/X (STP_AO2BB2_0P5)                   0.06       2.53 f
+  core/label_u/U661/X (STP_AO2BB2_0P5)                    0.06       2.59 f
+  core/label_u/U1696/X (STP_EO3_0P5)                      0.10       2.69 f
+  core/label_u/U1767/X (STP_EO3_0P5)                      0.10       2.79 f
+  core/label_u/U1349/X (STP_OAOI211_0P5)                  0.04       2.83 r
+  core/label_u/U1347/X (STP_OAI211_0P5)                   0.04       2.87 f
+  core/label_u/label_o[0] (pbch_scan_label_b32)           0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/label_i[0] (selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61)
+                                                          0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/U562/X (STP_INV_S_1)
+                                                          0.07       2.93 r
+  core/grouped_block_fwht_search.search_u/U1080/X (STP_AO2BB2_0P5)
+                                                          0.04       2.97 f
+  core/grouped_block_fwht_search.search_u/labels_q_reg[31][0]/D (STP_FDPQ_V2_1)
+                                                          0.00       2.97 f
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/grouped_block_fwht_search.search_u/labels_q_reg[31][0]/CK (STP_FDPQ_V2_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.03       3.11
+  data required time                                                 3.11
+  --------------------------------------------------------------------------
+  data required time                                                 3.11
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: core/label_position_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/grouped_block_fwht_search.search_u/labels_q_reg[27][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encoder_folded256_h5_c16
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_encoder_core_folded256_h5_c16_4096_13_104_512_128_32_2_5_5_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_scan_label_b32
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/label_position_q_reg[0]/CK (STP_FDPRBQ_1)          0.00 #     0.00 r
+  core/label_position_q_reg[0]/Q (STP_FDPRBQ_1)           0.09       0.09 f
+  core/label_u/position_i[0] (pbch_scan_label_b32)        0.00       0.09 f
+  core/label_u/U1166/X (STP_NR2_G_0P5)                    0.06       0.15 r
+  core/label_u/U1156/X (STP_NR2_G_0P5)                    0.03       0.18 f
+  core/label_u/U438/X (STP_AN2_S_0P5)                     0.04       0.22 f
+  core/label_u/U436/X (STP_NR2_G_0P8)                     0.02       0.24 r
+  core/label_u/U432/X (STP_INV_S_0P65)                    0.02       0.26 f
+  core/label_u/U431/X (STP_NR2_G_0P8)                     0.02       0.29 r
+  core/label_u/U427/X (STP_ND2_S_1)                       0.02       0.31 f
+  core/label_u/U423/X (STP_NR2_G_0P8)                     0.02       0.34 r
+  core/label_u/U419/X (STP_ND2_S_1)                       0.03       0.36 f
+  core/label_u/U1427/X (STP_OR2_1)                        0.04       0.40 f
+  core/label_u/U1107/X (STP_NR2_G_0P5)                    0.03       0.43 r
+  core/label_u/U407/X (STP_ND2B_MM_1)                     0.02       0.45 f
+  core/label_u/U381/X (STP_AN2_S_1)                       0.07       0.52 f
+  core/label_u/U952/X (STP_OR2_1)                         0.10       0.62 f
+  core/label_u/U473/X (STP_INV_S_1)                       0.07       0.69 r
+  core/label_u/U1380/X (STP_OR2_1)                        0.08       0.77 r
+  core/label_u/U257/X (STP_INV_S_1)                       0.08       0.85 f
+  core/label_u/U218/X (STP_ND2_S_1)                       0.03       0.88 r
+  core/label_u/U723/X (STP_OAI211_0P5)                    0.03       0.91 f
+  core/label_u/U722/X (STP_OAOI211_0P5)                   0.03       0.94 r
+  core/label_u/U161/X (STP_OAI22_0P5)                     0.02       0.96 f
+  core/label_u/U577/X (STP_NR4_0P5)                       0.04       1.01 r
+  core/label_u/U574/X (STP_AOI22_0P5)                     0.05       1.05 f
+  core/label_u/U974/X (STP_AO2BB2_0P5)                    0.07       1.12 f
+  core/label_u/U1035/X (STP_AO2BB2_0P5)                   0.06       1.18 f
+  core/label_u/U1017/X (STP_AO2BB2_0P5)                   0.04       1.22 f
+  core/label_u/U1016/X (STP_AOI22_0P5)                    0.04       1.26 r
+  core/label_u/U1058/X (STP_INV_S_0P65)                   0.03       1.29 f
+  core/label_u/U125/X (STP_OAI22_0P75)                    0.04       1.33 r
+  core/label_u/U503/X (STP_OA2BB2_0P5)                    0.07       1.39 r
+  core/label_u/U116/X (STP_INV_S_0P65)                    0.03       1.42 f
+  core/label_u/U1534/X (STP_EO3_0P5)                      0.08       1.51 r
+  core/label_u/U109/X (STP_OAI21_0P5)                     0.02       1.53 f
+  core/label_u/U615/X (STP_AOI21_0P75)                    0.03       1.56 r
+  core/label_u/U614/X (STP_OA2BB2_0P5)                    0.05       1.61 r
+  core/label_u/U78/X (STP_INV_S_0P65)                     0.02       1.63 f
+  core/label_u/U500/X (STP_AO2BB2_0P5)                    0.05       1.69 f
+  core/label_u/U461/X (STP_AO2BB2_0P5)                    0.06       1.75 f
+  core/label_u/U1573/X (STP_EO3_0P5)                      0.10       1.86 f
+  core/label_u/U1574/X (STP_EO3_0P5)                      0.09       1.95 f
+  core/label_u/U653/X (STP_AO2BB2_0P5)                    0.04       1.99 f
+  core/label_u/U652/X (STP_AOI22_0P5)                     0.06       2.05 r
+  core/label_u/U515/X (STP_OA2BB2_0P5)                    0.06       2.11 f
+  core/label_u/U1152/X (STP_OA2BB2_0P5)                   0.06       2.18 f
+  core/label_u/U510/X (STP_AO2BB2_0P5)                    0.06       2.23 f
+  core/label_u/U1215/X (STP_AO2BB2_0P5)                   0.05       2.29 f
+  core/label_u/U1691/X (STP_EO3_0P5)                      0.08       2.37 r
+  core/label_u/U666/X (STP_AOI22_0P5)                     0.03       2.40 f
+  core/label_u/U1188/X (STP_AO2BB2_0P5)                   0.07       2.47 f
+  core/label_u/U1296/X (STP_AO2BB2_0P5)                   0.06       2.53 f
+  core/label_u/U661/X (STP_AO2BB2_0P5)                    0.06       2.59 f
+  core/label_u/U1696/X (STP_EO3_0P5)                      0.10       2.69 f
+  core/label_u/U1767/X (STP_EO3_0P5)                      0.10       2.79 f
+  core/label_u/U1349/X (STP_OAOI211_0P5)                  0.04       2.83 r
+  core/label_u/U1347/X (STP_OAI211_0P5)                   0.04       2.87 f
+  core/label_u/label_o[0] (pbch_scan_label_b32)           0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/label_i[0] (selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61)
+                                                          0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/U562/X (STP_INV_S_1)
+                                                          0.07       2.93 r
+  core/grouped_block_fwht_search.search_u/U1045/X (STP_AO2BB2_0P5)
+                                                          0.04       2.97 f
+  core/grouped_block_fwht_search.search_u/labels_q_reg[27][0]/D (STP_FDPQ_V2_1)
+                                                          0.00       2.97 f
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/grouped_block_fwht_search.search_u/labels_q_reg[27][0]/CK (STP_FDPQ_V2_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.03       3.11
+  data required time                                                 3.11
+  --------------------------------------------------------------------------
+  data required time                                                 3.11
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: core/label_position_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/grouped_block_fwht_search.search_u/labels_q_reg[24][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encoder_folded256_h5_c16
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_encoder_core_folded256_h5_c16_4096_13_104_512_128_32_2_5_5_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_scan_label_b32
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/label_position_q_reg[0]/CK (STP_FDPRBQ_1)          0.00 #     0.00 r
+  core/label_position_q_reg[0]/Q (STP_FDPRBQ_1)           0.09       0.09 f
+  core/label_u/position_i[0] (pbch_scan_label_b32)        0.00       0.09 f
+  core/label_u/U1166/X (STP_NR2_G_0P5)                    0.06       0.15 r
+  core/label_u/U1156/X (STP_NR2_G_0P5)                    0.03       0.18 f
+  core/label_u/U438/X (STP_AN2_S_0P5)                     0.04       0.22 f
+  core/label_u/U436/X (STP_NR2_G_0P8)                     0.02       0.24 r
+  core/label_u/U432/X (STP_INV_S_0P65)                    0.02       0.26 f
+  core/label_u/U431/X (STP_NR2_G_0P8)                     0.02       0.29 r
+  core/label_u/U427/X (STP_ND2_S_1)                       0.02       0.31 f
+  core/label_u/U423/X (STP_NR2_G_0P8)                     0.02       0.34 r
+  core/label_u/U419/X (STP_ND2_S_1)                       0.03       0.36 f
+  core/label_u/U1427/X (STP_OR2_1)                        0.04       0.40 f
+  core/label_u/U1107/X (STP_NR2_G_0P5)                    0.03       0.43 r
+  core/label_u/U407/X (STP_ND2B_MM_1)                     0.02       0.45 f
+  core/label_u/U381/X (STP_AN2_S_1)                       0.07       0.52 f
+  core/label_u/U952/X (STP_OR2_1)                         0.10       0.62 f
+  core/label_u/U473/X (STP_INV_S_1)                       0.07       0.69 r
+  core/label_u/U1380/X (STP_OR2_1)                        0.08       0.77 r
+  core/label_u/U257/X (STP_INV_S_1)                       0.08       0.85 f
+  core/label_u/U218/X (STP_ND2_S_1)                       0.03       0.88 r
+  core/label_u/U723/X (STP_OAI211_0P5)                    0.03       0.91 f
+  core/label_u/U722/X (STP_OAOI211_0P5)                   0.03       0.94 r
+  core/label_u/U161/X (STP_OAI22_0P5)                     0.02       0.96 f
+  core/label_u/U577/X (STP_NR4_0P5)                       0.04       1.01 r
+  core/label_u/U574/X (STP_AOI22_0P5)                     0.05       1.05 f
+  core/label_u/U974/X (STP_AO2BB2_0P5)                    0.07       1.12 f
+  core/label_u/U1035/X (STP_AO2BB2_0P5)                   0.06       1.18 f
+  core/label_u/U1017/X (STP_AO2BB2_0P5)                   0.04       1.22 f
+  core/label_u/U1016/X (STP_AOI22_0P5)                    0.04       1.26 r
+  core/label_u/U1058/X (STP_INV_S_0P65)                   0.03       1.29 f
+  core/label_u/U125/X (STP_OAI22_0P75)                    0.04       1.33 r
+  core/label_u/U503/X (STP_OA2BB2_0P5)                    0.07       1.39 r
+  core/label_u/U116/X (STP_INV_S_0P65)                    0.03       1.42 f
+  core/label_u/U1534/X (STP_EO3_0P5)                      0.08       1.51 r
+  core/label_u/U109/X (STP_OAI21_0P5)                     0.02       1.53 f
+  core/label_u/U615/X (STP_AOI21_0P75)                    0.03       1.56 r
+  core/label_u/U614/X (STP_OA2BB2_0P5)                    0.05       1.61 r
+  core/label_u/U78/X (STP_INV_S_0P65)                     0.02       1.63 f
+  core/label_u/U500/X (STP_AO2BB2_0P5)                    0.05       1.69 f
+  core/label_u/U461/X (STP_AO2BB2_0P5)                    0.06       1.75 f
+  core/label_u/U1573/X (STP_EO3_0P5)                      0.10       1.86 f
+  core/label_u/U1574/X (STP_EO3_0P5)                      0.09       1.95 f
+  core/label_u/U653/X (STP_AO2BB2_0P5)                    0.04       1.99 f
+  core/label_u/U652/X (STP_AOI22_0P5)                     0.06       2.05 r
+  core/label_u/U515/X (STP_OA2BB2_0P5)                    0.06       2.11 f
+  core/label_u/U1152/X (STP_OA2BB2_0P5)                   0.06       2.18 f
+  core/label_u/U510/X (STP_AO2BB2_0P5)                    0.06       2.23 f
+  core/label_u/U1215/X (STP_AO2BB2_0P5)                   0.05       2.29 f
+  core/label_u/U1691/X (STP_EO3_0P5)                      0.08       2.37 r
+  core/label_u/U666/X (STP_AOI22_0P5)                     0.03       2.40 f
+  core/label_u/U1188/X (STP_AO2BB2_0P5)                   0.07       2.47 f
+  core/label_u/U1296/X (STP_AO2BB2_0P5)                   0.06       2.53 f
+  core/label_u/U661/X (STP_AO2BB2_0P5)                    0.06       2.59 f
+  core/label_u/U1696/X (STP_EO3_0P5)                      0.10       2.69 f
+  core/label_u/U1767/X (STP_EO3_0P5)                      0.10       2.79 f
+  core/label_u/U1349/X (STP_OAOI211_0P5)                  0.04       2.83 r
+  core/label_u/U1347/X (STP_OAI211_0P5)                   0.04       2.87 f
+  core/label_u/label_o[0] (pbch_scan_label_b32)           0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/label_i[0] (selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61)
+                                                          0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/U562/X (STP_INV_S_1)
+                                                          0.07       2.93 r
+  core/grouped_block_fwht_search.search_u/U1012/X (STP_AO2BB2_0P5)
+                                                          0.04       2.97 f
+  core/grouped_block_fwht_search.search_u/labels_q_reg[24][0]/D (STP_FDPQ_V2_1)
+                                                          0.00       2.97 f
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/grouped_block_fwht_search.search_u/labels_q_reg[24][0]/CK (STP_FDPQ_V2_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.03       3.11
+  data required time                                                 3.11
+  --------------------------------------------------------------------------
+  data required time                                                 3.11
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: core/label_position_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/grouped_block_fwht_search.search_u/labels_q_reg[22][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encoder_folded256_h5_c16
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_encoder_core_folded256_h5_c16_4096_13_104_512_128_32_2_5_5_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_scan_label_b32
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/label_position_q_reg[0]/CK (STP_FDPRBQ_1)          0.00 #     0.00 r
+  core/label_position_q_reg[0]/Q (STP_FDPRBQ_1)           0.09       0.09 f
+  core/label_u/position_i[0] (pbch_scan_label_b32)        0.00       0.09 f
+  core/label_u/U1166/X (STP_NR2_G_0P5)                    0.06       0.15 r
+  core/label_u/U1156/X (STP_NR2_G_0P5)                    0.03       0.18 f
+  core/label_u/U438/X (STP_AN2_S_0P5)                     0.04       0.22 f
+  core/label_u/U436/X (STP_NR2_G_0P8)                     0.02       0.24 r
+  core/label_u/U432/X (STP_INV_S_0P65)                    0.02       0.26 f
+  core/label_u/U431/X (STP_NR2_G_0P8)                     0.02       0.29 r
+  core/label_u/U427/X (STP_ND2_S_1)                       0.02       0.31 f
+  core/label_u/U423/X (STP_NR2_G_0P8)                     0.02       0.34 r
+  core/label_u/U419/X (STP_ND2_S_1)                       0.03       0.36 f
+  core/label_u/U1427/X (STP_OR2_1)                        0.04       0.40 f
+  core/label_u/U1107/X (STP_NR2_G_0P5)                    0.03       0.43 r
+  core/label_u/U407/X (STP_ND2B_MM_1)                     0.02       0.45 f
+  core/label_u/U381/X (STP_AN2_S_1)                       0.07       0.52 f
+  core/label_u/U952/X (STP_OR2_1)                         0.10       0.62 f
+  core/label_u/U473/X (STP_INV_S_1)                       0.07       0.69 r
+  core/label_u/U1380/X (STP_OR2_1)                        0.08       0.77 r
+  core/label_u/U257/X (STP_INV_S_1)                       0.08       0.85 f
+  core/label_u/U218/X (STP_ND2_S_1)                       0.03       0.88 r
+  core/label_u/U723/X (STP_OAI211_0P5)                    0.03       0.91 f
+  core/label_u/U722/X (STP_OAOI211_0P5)                   0.03       0.94 r
+  core/label_u/U161/X (STP_OAI22_0P5)                     0.02       0.96 f
+  core/label_u/U577/X (STP_NR4_0P5)                       0.04       1.01 r
+  core/label_u/U574/X (STP_AOI22_0P5)                     0.05       1.05 f
+  core/label_u/U974/X (STP_AO2BB2_0P5)                    0.07       1.12 f
+  core/label_u/U1035/X (STP_AO2BB2_0P5)                   0.06       1.18 f
+  core/label_u/U1017/X (STP_AO2BB2_0P5)                   0.04       1.22 f
+  core/label_u/U1016/X (STP_AOI22_0P5)                    0.04       1.26 r
+  core/label_u/U1058/X (STP_INV_S_0P65)                   0.03       1.29 f
+  core/label_u/U125/X (STP_OAI22_0P75)                    0.04       1.33 r
+  core/label_u/U503/X (STP_OA2BB2_0P5)                    0.07       1.39 r
+  core/label_u/U116/X (STP_INV_S_0P65)                    0.03       1.42 f
+  core/label_u/U1534/X (STP_EO3_0P5)                      0.08       1.51 r
+  core/label_u/U109/X (STP_OAI21_0P5)                     0.02       1.53 f
+  core/label_u/U615/X (STP_AOI21_0P75)                    0.03       1.56 r
+  core/label_u/U614/X (STP_OA2BB2_0P5)                    0.05       1.61 r
+  core/label_u/U78/X (STP_INV_S_0P65)                     0.02       1.63 f
+  core/label_u/U500/X (STP_AO2BB2_0P5)                    0.05       1.69 f
+  core/label_u/U461/X (STP_AO2BB2_0P5)                    0.06       1.75 f
+  core/label_u/U1573/X (STP_EO3_0P5)                      0.10       1.86 f
+  core/label_u/U1574/X (STP_EO3_0P5)                      0.09       1.95 f
+  core/label_u/U653/X (STP_AO2BB2_0P5)                    0.04       1.99 f
+  core/label_u/U652/X (STP_AOI22_0P5)                     0.06       2.05 r
+  core/label_u/U515/X (STP_OA2BB2_0P5)                    0.06       2.11 f
+  core/label_u/U1152/X (STP_OA2BB2_0P5)                   0.06       2.18 f
+  core/label_u/U510/X (STP_AO2BB2_0P5)                    0.06       2.23 f
+  core/label_u/U1215/X (STP_AO2BB2_0P5)                   0.05       2.29 f
+  core/label_u/U1691/X (STP_EO3_0P5)                      0.08       2.37 r
+  core/label_u/U666/X (STP_AOI22_0P5)                     0.03       2.40 f
+  core/label_u/U1188/X (STP_AO2BB2_0P5)                   0.07       2.47 f
+  core/label_u/U1296/X (STP_AO2BB2_0P5)                   0.06       2.53 f
+  core/label_u/U661/X (STP_AO2BB2_0P5)                    0.06       2.59 f
+  core/label_u/U1696/X (STP_EO3_0P5)                      0.10       2.69 f
+  core/label_u/U1767/X (STP_EO3_0P5)                      0.10       2.79 f
+  core/label_u/U1349/X (STP_OAOI211_0P5)                  0.04       2.83 r
+  core/label_u/U1347/X (STP_OAI211_0P5)                   0.04       2.87 f
+  core/label_u/label_o[0] (pbch_scan_label_b32)           0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/label_i[0] (selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61)
+                                                          0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/U562/X (STP_INV_S_1)
+                                                          0.07       2.93 r
+  core/grouped_block_fwht_search.search_u/U716/X (STP_AO2BB2_0P5)
+                                                          0.04       2.97 f
+  core/grouped_block_fwht_search.search_u/labels_q_reg[22][0]/D (STP_FDPQ_V2_1)
+                                                          0.00       2.97 f
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/grouped_block_fwht_search.search_u/labels_q_reg[22][0]/CK (STP_FDPQ_V2_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.03       3.11
+  data required time                                                 3.11
+  --------------------------------------------------------------------------
+  data required time                                                 3.11
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: core/label_position_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/grouped_block_fwht_search.search_u/labels_q_reg[15][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encoder_folded256_h5_c16
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_encoder_core_folded256_h5_c16_4096_13_104_512_128_32_2_5_5_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_scan_label_b32
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/label_position_q_reg[0]/CK (STP_FDPRBQ_1)          0.00 #     0.00 r
+  core/label_position_q_reg[0]/Q (STP_FDPRBQ_1)           0.09       0.09 f
+  core/label_u/position_i[0] (pbch_scan_label_b32)        0.00       0.09 f
+  core/label_u/U1166/X (STP_NR2_G_0P5)                    0.06       0.15 r
+  core/label_u/U1156/X (STP_NR2_G_0P5)                    0.03       0.18 f
+  core/label_u/U438/X (STP_AN2_S_0P5)                     0.04       0.22 f
+  core/label_u/U436/X (STP_NR2_G_0P8)                     0.02       0.24 r
+  core/label_u/U432/X (STP_INV_S_0P65)                    0.02       0.26 f
+  core/label_u/U431/X (STP_NR2_G_0P8)                     0.02       0.29 r
+  core/label_u/U427/X (STP_ND2_S_1)                       0.02       0.31 f
+  core/label_u/U423/X (STP_NR2_G_0P8)                     0.02       0.34 r
+  core/label_u/U419/X (STP_ND2_S_1)                       0.03       0.36 f
+  core/label_u/U1427/X (STP_OR2_1)                        0.04       0.40 f
+  core/label_u/U1107/X (STP_NR2_G_0P5)                    0.03       0.43 r
+  core/label_u/U407/X (STP_ND2B_MM_1)                     0.02       0.45 f
+  core/label_u/U381/X (STP_AN2_S_1)                       0.07       0.52 f
+  core/label_u/U952/X (STP_OR2_1)                         0.10       0.62 f
+  core/label_u/U473/X (STP_INV_S_1)                       0.07       0.69 r
+  core/label_u/U1380/X (STP_OR2_1)                        0.08       0.77 r
+  core/label_u/U257/X (STP_INV_S_1)                       0.08       0.85 f
+  core/label_u/U218/X (STP_ND2_S_1)                       0.03       0.88 r
+  core/label_u/U723/X (STP_OAI211_0P5)                    0.03       0.91 f
+  core/label_u/U722/X (STP_OAOI211_0P5)                   0.03       0.94 r
+  core/label_u/U161/X (STP_OAI22_0P5)                     0.02       0.96 f
+  core/label_u/U577/X (STP_NR4_0P5)                       0.04       1.01 r
+  core/label_u/U574/X (STP_AOI22_0P5)                     0.05       1.05 f
+  core/label_u/U974/X (STP_AO2BB2_0P5)                    0.07       1.12 f
+  core/label_u/U1035/X (STP_AO2BB2_0P5)                   0.06       1.18 f
+  core/label_u/U1017/X (STP_AO2BB2_0P5)                   0.04       1.22 f
+  core/label_u/U1016/X (STP_AOI22_0P5)                    0.04       1.26 r
+  core/label_u/U1058/X (STP_INV_S_0P65)                   0.03       1.29 f
+  core/label_u/U125/X (STP_OAI22_0P75)                    0.04       1.33 r
+  core/label_u/U503/X (STP_OA2BB2_0P5)                    0.07       1.39 r
+  core/label_u/U116/X (STP_INV_S_0P65)                    0.03       1.42 f
+  core/label_u/U1534/X (STP_EO3_0P5)                      0.08       1.51 r
+  core/label_u/U109/X (STP_OAI21_0P5)                     0.02       1.53 f
+  core/label_u/U615/X (STP_AOI21_0P75)                    0.03       1.56 r
+  core/label_u/U614/X (STP_OA2BB2_0P5)                    0.05       1.61 r
+  core/label_u/U78/X (STP_INV_S_0P65)                     0.02       1.63 f
+  core/label_u/U500/X (STP_AO2BB2_0P5)                    0.05       1.69 f
+  core/label_u/U461/X (STP_AO2BB2_0P5)                    0.06       1.75 f
+  core/label_u/U1573/X (STP_EO3_0P5)                      0.10       1.86 f
+  core/label_u/U1574/X (STP_EO3_0P5)                      0.09       1.95 f
+  core/label_u/U653/X (STP_AO2BB2_0P5)                    0.04       1.99 f
+  core/label_u/U652/X (STP_AOI22_0P5)                     0.06       2.05 r
+  core/label_u/U515/X (STP_OA2BB2_0P5)                    0.06       2.11 f
+  core/label_u/U1152/X (STP_OA2BB2_0P5)                   0.06       2.18 f
+  core/label_u/U510/X (STP_AO2BB2_0P5)                    0.06       2.23 f
+  core/label_u/U1215/X (STP_AO2BB2_0P5)                   0.05       2.29 f
+  core/label_u/U1691/X (STP_EO3_0P5)                      0.08       2.37 r
+  core/label_u/U666/X (STP_AOI22_0P5)                     0.03       2.40 f
+  core/label_u/U1188/X (STP_AO2BB2_0P5)                   0.07       2.47 f
+  core/label_u/U1296/X (STP_AO2BB2_0P5)                   0.06       2.53 f
+  core/label_u/U661/X (STP_AO2BB2_0P5)                    0.06       2.59 f
+  core/label_u/U1696/X (STP_EO3_0P5)                      0.10       2.69 f
+  core/label_u/U1767/X (STP_EO3_0P5)                      0.10       2.79 f
+  core/label_u/U1349/X (STP_OAOI211_0P5)                  0.04       2.83 r
+  core/label_u/U1347/X (STP_OAI211_0P5)                   0.04       2.87 f
+  core/label_u/label_o[0] (pbch_scan_label_b32)           0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/label_i[0] (selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61)
+                                                          0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/U562/X (STP_INV_S_1)
+                                                          0.07       2.93 r
+  core/grouped_block_fwht_search.search_u/U1001/X (STP_AO2BB2_0P5)
+                                                          0.04       2.97 f
+  core/grouped_block_fwht_search.search_u/labels_q_reg[15][0]/D (STP_FDPQ_V2_1)
+                                                          0.00       2.97 f
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/grouped_block_fwht_search.search_u/labels_q_reg[15][0]/CK (STP_FDPQ_V2_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.03       3.11
+  data required time                                                 3.11
+  --------------------------------------------------------------------------
+  data required time                                                 3.11
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: core/label_position_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/grouped_block_fwht_search.search_u/labels_q_reg[14][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encoder_folded256_h5_c16
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_encoder_core_folded256_h5_c16_4096_13_104_512_128_32_2_5_5_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_scan_label_b32
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/label_position_q_reg[0]/CK (STP_FDPRBQ_1)          0.00 #     0.00 r
+  core/label_position_q_reg[0]/Q (STP_FDPRBQ_1)           0.09       0.09 f
+  core/label_u/position_i[0] (pbch_scan_label_b32)        0.00       0.09 f
+  core/label_u/U1166/X (STP_NR2_G_0P5)                    0.06       0.15 r
+  core/label_u/U1156/X (STP_NR2_G_0P5)                    0.03       0.18 f
+  core/label_u/U438/X (STP_AN2_S_0P5)                     0.04       0.22 f
+  core/label_u/U436/X (STP_NR2_G_0P8)                     0.02       0.24 r
+  core/label_u/U432/X (STP_INV_S_0P65)                    0.02       0.26 f
+  core/label_u/U431/X (STP_NR2_G_0P8)                     0.02       0.29 r
+  core/label_u/U427/X (STP_ND2_S_1)                       0.02       0.31 f
+  core/label_u/U423/X (STP_NR2_G_0P8)                     0.02       0.34 r
+  core/label_u/U419/X (STP_ND2_S_1)                       0.03       0.36 f
+  core/label_u/U1427/X (STP_OR2_1)                        0.04       0.40 f
+  core/label_u/U1107/X (STP_NR2_G_0P5)                    0.03       0.43 r
+  core/label_u/U407/X (STP_ND2B_MM_1)                     0.02       0.45 f
+  core/label_u/U381/X (STP_AN2_S_1)                       0.07       0.52 f
+  core/label_u/U952/X (STP_OR2_1)                         0.10       0.62 f
+  core/label_u/U473/X (STP_INV_S_1)                       0.07       0.69 r
+  core/label_u/U1380/X (STP_OR2_1)                        0.08       0.77 r
+  core/label_u/U257/X (STP_INV_S_1)                       0.08       0.85 f
+  core/label_u/U218/X (STP_ND2_S_1)                       0.03       0.88 r
+  core/label_u/U723/X (STP_OAI211_0P5)                    0.03       0.91 f
+  core/label_u/U722/X (STP_OAOI211_0P5)                   0.03       0.94 r
+  core/label_u/U161/X (STP_OAI22_0P5)                     0.02       0.96 f
+  core/label_u/U577/X (STP_NR4_0P5)                       0.04       1.01 r
+  core/label_u/U574/X (STP_AOI22_0P5)                     0.05       1.05 f
+  core/label_u/U974/X (STP_AO2BB2_0P5)                    0.07       1.12 f
+  core/label_u/U1035/X (STP_AO2BB2_0P5)                   0.06       1.18 f
+  core/label_u/U1017/X (STP_AO2BB2_0P5)                   0.04       1.22 f
+  core/label_u/U1016/X (STP_AOI22_0P5)                    0.04       1.26 r
+  core/label_u/U1058/X (STP_INV_S_0P65)                   0.03       1.29 f
+  core/label_u/U125/X (STP_OAI22_0P75)                    0.04       1.33 r
+  core/label_u/U503/X (STP_OA2BB2_0P5)                    0.07       1.39 r
+  core/label_u/U116/X (STP_INV_S_0P65)                    0.03       1.42 f
+  core/label_u/U1534/X (STP_EO3_0P5)                      0.08       1.51 r
+  core/label_u/U109/X (STP_OAI21_0P5)                     0.02       1.53 f
+  core/label_u/U615/X (STP_AOI21_0P75)                    0.03       1.56 r
+  core/label_u/U614/X (STP_OA2BB2_0P5)                    0.05       1.61 r
+  core/label_u/U78/X (STP_INV_S_0P65)                     0.02       1.63 f
+  core/label_u/U500/X (STP_AO2BB2_0P5)                    0.05       1.69 f
+  core/label_u/U461/X (STP_AO2BB2_0P5)                    0.06       1.75 f
+  core/label_u/U1573/X (STP_EO3_0P5)                      0.10       1.86 f
+  core/label_u/U1574/X (STP_EO3_0P5)                      0.09       1.95 f
+  core/label_u/U653/X (STP_AO2BB2_0P5)                    0.04       1.99 f
+  core/label_u/U652/X (STP_AOI22_0P5)                     0.06       2.05 r
+  core/label_u/U515/X (STP_OA2BB2_0P5)                    0.06       2.11 f
+  core/label_u/U1152/X (STP_OA2BB2_0P5)                   0.06       2.18 f
+  core/label_u/U510/X (STP_AO2BB2_0P5)                    0.06       2.23 f
+  core/label_u/U1215/X (STP_AO2BB2_0P5)                   0.05       2.29 f
+  core/label_u/U1691/X (STP_EO3_0P5)                      0.08       2.37 r
+  core/label_u/U666/X (STP_AOI22_0P5)                     0.03       2.40 f
+  core/label_u/U1188/X (STP_AO2BB2_0P5)                   0.07       2.47 f
+  core/label_u/U1296/X (STP_AO2BB2_0P5)                   0.06       2.53 f
+  core/label_u/U661/X (STP_AO2BB2_0P5)                    0.06       2.59 f
+  core/label_u/U1696/X (STP_EO3_0P5)                      0.10       2.69 f
+  core/label_u/U1767/X (STP_EO3_0P5)                      0.10       2.79 f
+  core/label_u/U1349/X (STP_OAOI211_0P5)                  0.04       2.83 r
+  core/label_u/U1347/X (STP_OAI211_0P5)                   0.04       2.87 f
+  core/label_u/label_o[0] (pbch_scan_label_b32)           0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/label_i[0] (selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61)
+                                                          0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/U562/X (STP_INV_S_1)
+                                                          0.07       2.93 r
+  core/grouped_block_fwht_search.search_u/U990/X (STP_AO2BB2_0P5)
+                                                          0.04       2.97 f
+  core/grouped_block_fwht_search.search_u/labels_q_reg[14][0]/D (STP_FDPQ_V2_1)
+                                                          0.00       2.97 f
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/grouped_block_fwht_search.search_u/labels_q_reg[14][0]/CK (STP_FDPQ_V2_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.03       3.11
+  data required time                                                 3.11
+  --------------------------------------------------------------------------
+  data required time                                                 3.11
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: core/label_position_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/grouped_block_fwht_search.search_u/labels_q_reg[13][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encoder_folded256_h5_c16
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_encoder_core_folded256_h5_c16_4096_13_104_512_128_32_2_5_5_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_scan_label_b32
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/label_position_q_reg[0]/CK (STP_FDPRBQ_1)          0.00 #     0.00 r
+  core/label_position_q_reg[0]/Q (STP_FDPRBQ_1)           0.09       0.09 f
+  core/label_u/position_i[0] (pbch_scan_label_b32)        0.00       0.09 f
+  core/label_u/U1166/X (STP_NR2_G_0P5)                    0.06       0.15 r
+  core/label_u/U1156/X (STP_NR2_G_0P5)                    0.03       0.18 f
+  core/label_u/U438/X (STP_AN2_S_0P5)                     0.04       0.22 f
+  core/label_u/U436/X (STP_NR2_G_0P8)                     0.02       0.24 r
+  core/label_u/U432/X (STP_INV_S_0P65)                    0.02       0.26 f
+  core/label_u/U431/X (STP_NR2_G_0P8)                     0.02       0.29 r
+  core/label_u/U427/X (STP_ND2_S_1)                       0.02       0.31 f
+  core/label_u/U423/X (STP_NR2_G_0P8)                     0.02       0.34 r
+  core/label_u/U419/X (STP_ND2_S_1)                       0.03       0.36 f
+  core/label_u/U1427/X (STP_OR2_1)                        0.04       0.40 f
+  core/label_u/U1107/X (STP_NR2_G_0P5)                    0.03       0.43 r
+  core/label_u/U407/X (STP_ND2B_MM_1)                     0.02       0.45 f
+  core/label_u/U381/X (STP_AN2_S_1)                       0.07       0.52 f
+  core/label_u/U952/X (STP_OR2_1)                         0.10       0.62 f
+  core/label_u/U473/X (STP_INV_S_1)                       0.07       0.69 r
+  core/label_u/U1380/X (STP_OR2_1)                        0.08       0.77 r
+  core/label_u/U257/X (STP_INV_S_1)                       0.08       0.85 f
+  core/label_u/U218/X (STP_ND2_S_1)                       0.03       0.88 r
+  core/label_u/U723/X (STP_OAI211_0P5)                    0.03       0.91 f
+  core/label_u/U722/X (STP_OAOI211_0P5)                   0.03       0.94 r
+  core/label_u/U161/X (STP_OAI22_0P5)                     0.02       0.96 f
+  core/label_u/U577/X (STP_NR4_0P5)                       0.04       1.01 r
+  core/label_u/U574/X (STP_AOI22_0P5)                     0.05       1.05 f
+  core/label_u/U974/X (STP_AO2BB2_0P5)                    0.07       1.12 f
+  core/label_u/U1035/X (STP_AO2BB2_0P5)                   0.06       1.18 f
+  core/label_u/U1017/X (STP_AO2BB2_0P5)                   0.04       1.22 f
+  core/label_u/U1016/X (STP_AOI22_0P5)                    0.04       1.26 r
+  core/label_u/U1058/X (STP_INV_S_0P65)                   0.03       1.29 f
+  core/label_u/U125/X (STP_OAI22_0P75)                    0.04       1.33 r
+  core/label_u/U503/X (STP_OA2BB2_0P5)                    0.07       1.39 r
+  core/label_u/U116/X (STP_INV_S_0P65)                    0.03       1.42 f
+  core/label_u/U1534/X (STP_EO3_0P5)                      0.08       1.51 r
+  core/label_u/U109/X (STP_OAI21_0P5)                     0.02       1.53 f
+  core/label_u/U615/X (STP_AOI21_0P75)                    0.03       1.56 r
+  core/label_u/U614/X (STP_OA2BB2_0P5)                    0.05       1.61 r
+  core/label_u/U78/X (STP_INV_S_0P65)                     0.02       1.63 f
+  core/label_u/U500/X (STP_AO2BB2_0P5)                    0.05       1.69 f
+  core/label_u/U461/X (STP_AO2BB2_0P5)                    0.06       1.75 f
+  core/label_u/U1573/X (STP_EO3_0P5)                      0.10       1.86 f
+  core/label_u/U1574/X (STP_EO3_0P5)                      0.09       1.95 f
+  core/label_u/U653/X (STP_AO2BB2_0P5)                    0.04       1.99 f
+  core/label_u/U652/X (STP_AOI22_0P5)                     0.06       2.05 r
+  core/label_u/U515/X (STP_OA2BB2_0P5)                    0.06       2.11 f
+  core/label_u/U1152/X (STP_OA2BB2_0P5)                   0.06       2.18 f
+  core/label_u/U510/X (STP_AO2BB2_0P5)                    0.06       2.23 f
+  core/label_u/U1215/X (STP_AO2BB2_0P5)                   0.05       2.29 f
+  core/label_u/U1691/X (STP_EO3_0P5)                      0.08       2.37 r
+  core/label_u/U666/X (STP_AOI22_0P5)                     0.03       2.40 f
+  core/label_u/U1188/X (STP_AO2BB2_0P5)                   0.07       2.47 f
+  core/label_u/U1296/X (STP_AO2BB2_0P5)                   0.06       2.53 f
+  core/label_u/U661/X (STP_AO2BB2_0P5)                    0.06       2.59 f
+  core/label_u/U1696/X (STP_EO3_0P5)                      0.10       2.69 f
+  core/label_u/U1767/X (STP_EO3_0P5)                      0.10       2.79 f
+  core/label_u/U1349/X (STP_OAOI211_0P5)                  0.04       2.83 r
+  core/label_u/U1347/X (STP_OAI211_0P5)                   0.04       2.87 f
+  core/label_u/label_o[0] (pbch_scan_label_b32)           0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/label_i[0] (selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61)
+                                                          0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/U562/X (STP_INV_S_1)
+                                                          0.07       2.93 r
+  core/grouped_block_fwht_search.search_u/U977/X (STP_AO2BB2_0P5)
+                                                          0.04       2.97 f
+  core/grouped_block_fwht_search.search_u/labels_q_reg[13][0]/D (STP_FDPQ_V2_1)
+                                                          0.00       2.97 f
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/grouped_block_fwht_search.search_u/labels_q_reg[13][0]/CK (STP_FDPQ_V2_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.03       3.11
+  data required time                                                 3.11
+  --------------------------------------------------------------------------
+  data required time                                                 3.11
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: core/label_position_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/grouped_block_fwht_search.search_u/labels_q_reg[12][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encoder_folded256_h5_c16
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_encoder_core_folded256_h5_c16_4096_13_104_512_128_32_2_5_5_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_scan_label_b32
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/label_position_q_reg[0]/CK (STP_FDPRBQ_1)          0.00 #     0.00 r
+  core/label_position_q_reg[0]/Q (STP_FDPRBQ_1)           0.09       0.09 f
+  core/label_u/position_i[0] (pbch_scan_label_b32)        0.00       0.09 f
+  core/label_u/U1166/X (STP_NR2_G_0P5)                    0.06       0.15 r
+  core/label_u/U1156/X (STP_NR2_G_0P5)                    0.03       0.18 f
+  core/label_u/U438/X (STP_AN2_S_0P5)                     0.04       0.22 f
+  core/label_u/U436/X (STP_NR2_G_0P8)                     0.02       0.24 r
+  core/label_u/U432/X (STP_INV_S_0P65)                    0.02       0.26 f
+  core/label_u/U431/X (STP_NR2_G_0P8)                     0.02       0.29 r
+  core/label_u/U427/X (STP_ND2_S_1)                       0.02       0.31 f
+  core/label_u/U423/X (STP_NR2_G_0P8)                     0.02       0.34 r
+  core/label_u/U419/X (STP_ND2_S_1)                       0.03       0.36 f
+  core/label_u/U1427/X (STP_OR2_1)                        0.04       0.40 f
+  core/label_u/U1107/X (STP_NR2_G_0P5)                    0.03       0.43 r
+  core/label_u/U407/X (STP_ND2B_MM_1)                     0.02       0.45 f
+  core/label_u/U381/X (STP_AN2_S_1)                       0.07       0.52 f
+  core/label_u/U952/X (STP_OR2_1)                         0.10       0.62 f
+  core/label_u/U473/X (STP_INV_S_1)                       0.07       0.69 r
+  core/label_u/U1380/X (STP_OR2_1)                        0.08       0.77 r
+  core/label_u/U257/X (STP_INV_S_1)                       0.08       0.85 f
+  core/label_u/U218/X (STP_ND2_S_1)                       0.03       0.88 r
+  core/label_u/U723/X (STP_OAI211_0P5)                    0.03       0.91 f
+  core/label_u/U722/X (STP_OAOI211_0P5)                   0.03       0.94 r
+  core/label_u/U161/X (STP_OAI22_0P5)                     0.02       0.96 f
+  core/label_u/U577/X (STP_NR4_0P5)                       0.04       1.01 r
+  core/label_u/U574/X (STP_AOI22_0P5)                     0.05       1.05 f
+  core/label_u/U974/X (STP_AO2BB2_0P5)                    0.07       1.12 f
+  core/label_u/U1035/X (STP_AO2BB2_0P5)                   0.06       1.18 f
+  core/label_u/U1017/X (STP_AO2BB2_0P5)                   0.04       1.22 f
+  core/label_u/U1016/X (STP_AOI22_0P5)                    0.04       1.26 r
+  core/label_u/U1058/X (STP_INV_S_0P65)                   0.03       1.29 f
+  core/label_u/U125/X (STP_OAI22_0P75)                    0.04       1.33 r
+  core/label_u/U503/X (STP_OA2BB2_0P5)                    0.07       1.39 r
+  core/label_u/U116/X (STP_INV_S_0P65)                    0.03       1.42 f
+  core/label_u/U1534/X (STP_EO3_0P5)                      0.08       1.51 r
+  core/label_u/U109/X (STP_OAI21_0P5)                     0.02       1.53 f
+  core/label_u/U615/X (STP_AOI21_0P75)                    0.03       1.56 r
+  core/label_u/U614/X (STP_OA2BB2_0P5)                    0.05       1.61 r
+  core/label_u/U78/X (STP_INV_S_0P65)                     0.02       1.63 f
+  core/label_u/U500/X (STP_AO2BB2_0P5)                    0.05       1.69 f
+  core/label_u/U461/X (STP_AO2BB2_0P5)                    0.06       1.75 f
+  core/label_u/U1573/X (STP_EO3_0P5)                      0.10       1.86 f
+  core/label_u/U1574/X (STP_EO3_0P5)                      0.09       1.95 f
+  core/label_u/U653/X (STP_AO2BB2_0P5)                    0.04       1.99 f
+  core/label_u/U652/X (STP_AOI22_0P5)                     0.06       2.05 r
+  core/label_u/U515/X (STP_OA2BB2_0P5)                    0.06       2.11 f
+  core/label_u/U1152/X (STP_OA2BB2_0P5)                   0.06       2.18 f
+  core/label_u/U510/X (STP_AO2BB2_0P5)                    0.06       2.23 f
+  core/label_u/U1215/X (STP_AO2BB2_0P5)                   0.05       2.29 f
+  core/label_u/U1691/X (STP_EO3_0P5)                      0.08       2.37 r
+  core/label_u/U666/X (STP_AOI22_0P5)                     0.03       2.40 f
+  core/label_u/U1188/X (STP_AO2BB2_0P5)                   0.07       2.47 f
+  core/label_u/U1296/X (STP_AO2BB2_0P5)                   0.06       2.53 f
+  core/label_u/U661/X (STP_AO2BB2_0P5)                    0.06       2.59 f
+  core/label_u/U1696/X (STP_EO3_0P5)                      0.10       2.69 f
+  core/label_u/U1767/X (STP_EO3_0P5)                      0.10       2.79 f
+  core/label_u/U1349/X (STP_OAOI211_0P5)                  0.04       2.83 r
+  core/label_u/U1347/X (STP_OAI211_0P5)                   0.04       2.87 f
+  core/label_u/label_o[0] (pbch_scan_label_b32)           0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/label_i[0] (selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61)
+                                                          0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/U562/X (STP_INV_S_1)
+                                                          0.07       2.93 r
+  core/grouped_block_fwht_search.search_u/U1417/X (STP_AO2BB2_0P5)
+                                                          0.04       2.97 f
+  core/grouped_block_fwht_search.search_u/labels_q_reg[12][0]/D (STP_FDPQ_V2_1)
+                                                          0.00       2.97 f
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/grouped_block_fwht_search.search_u/labels_q_reg[12][0]/CK (STP_FDPQ_V2_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.03       3.11
+  data required time                                                 3.11
+  --------------------------------------------------------------------------
+  data required time                                                 3.11
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: core/label_position_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/grouped_block_fwht_search.search_u/labels_q_reg[11][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encoder_folded256_h5_c16
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_encoder_core_folded256_h5_c16_4096_13_104_512_128_32_2_5_5_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_scan_label_b32
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/label_position_q_reg[0]/CK (STP_FDPRBQ_1)          0.00 #     0.00 r
+  core/label_position_q_reg[0]/Q (STP_FDPRBQ_1)           0.09       0.09 f
+  core/label_u/position_i[0] (pbch_scan_label_b32)        0.00       0.09 f
+  core/label_u/U1166/X (STP_NR2_G_0P5)                    0.06       0.15 r
+  core/label_u/U1156/X (STP_NR2_G_0P5)                    0.03       0.18 f
+  core/label_u/U438/X (STP_AN2_S_0P5)                     0.04       0.22 f
+  core/label_u/U436/X (STP_NR2_G_0P8)                     0.02       0.24 r
+  core/label_u/U432/X (STP_INV_S_0P65)                    0.02       0.26 f
+  core/label_u/U431/X (STP_NR2_G_0P8)                     0.02       0.29 r
+  core/label_u/U427/X (STP_ND2_S_1)                       0.02       0.31 f
+  core/label_u/U423/X (STP_NR2_G_0P8)                     0.02       0.34 r
+  core/label_u/U419/X (STP_ND2_S_1)                       0.03       0.36 f
+  core/label_u/U1427/X (STP_OR2_1)                        0.04       0.40 f
+  core/label_u/U1107/X (STP_NR2_G_0P5)                    0.03       0.43 r
+  core/label_u/U407/X (STP_ND2B_MM_1)                     0.02       0.45 f
+  core/label_u/U381/X (STP_AN2_S_1)                       0.07       0.52 f
+  core/label_u/U952/X (STP_OR2_1)                         0.10       0.62 f
+  core/label_u/U473/X (STP_INV_S_1)                       0.07       0.69 r
+  core/label_u/U1380/X (STP_OR2_1)                        0.08       0.77 r
+  core/label_u/U257/X (STP_INV_S_1)                       0.08       0.85 f
+  core/label_u/U218/X (STP_ND2_S_1)                       0.03       0.88 r
+  core/label_u/U723/X (STP_OAI211_0P5)                    0.03       0.91 f
+  core/label_u/U722/X (STP_OAOI211_0P5)                   0.03       0.94 r
+  core/label_u/U161/X (STP_OAI22_0P5)                     0.02       0.96 f
+  core/label_u/U577/X (STP_NR4_0P5)                       0.04       1.01 r
+  core/label_u/U574/X (STP_AOI22_0P5)                     0.05       1.05 f
+  core/label_u/U974/X (STP_AO2BB2_0P5)                    0.07       1.12 f
+  core/label_u/U1035/X (STP_AO2BB2_0P5)                   0.06       1.18 f
+  core/label_u/U1017/X (STP_AO2BB2_0P5)                   0.04       1.22 f
+  core/label_u/U1016/X (STP_AOI22_0P5)                    0.04       1.26 r
+  core/label_u/U1058/X (STP_INV_S_0P65)                   0.03       1.29 f
+  core/label_u/U125/X (STP_OAI22_0P75)                    0.04       1.33 r
+  core/label_u/U503/X (STP_OA2BB2_0P5)                    0.07       1.39 r
+  core/label_u/U116/X (STP_INV_S_0P65)                    0.03       1.42 f
+  core/label_u/U1534/X (STP_EO3_0P5)                      0.08       1.51 r
+  core/label_u/U109/X (STP_OAI21_0P5)                     0.02       1.53 f
+  core/label_u/U615/X (STP_AOI21_0P75)                    0.03       1.56 r
+  core/label_u/U614/X (STP_OA2BB2_0P5)                    0.05       1.61 r
+  core/label_u/U78/X (STP_INV_S_0P65)                     0.02       1.63 f
+  core/label_u/U500/X (STP_AO2BB2_0P5)                    0.05       1.69 f
+  core/label_u/U461/X (STP_AO2BB2_0P5)                    0.06       1.75 f
+  core/label_u/U1573/X (STP_EO3_0P5)                      0.10       1.86 f
+  core/label_u/U1574/X (STP_EO3_0P5)                      0.09       1.95 f
+  core/label_u/U653/X (STP_AO2BB2_0P5)                    0.04       1.99 f
+  core/label_u/U652/X (STP_AOI22_0P5)                     0.06       2.05 r
+  core/label_u/U515/X (STP_OA2BB2_0P5)                    0.06       2.11 f
+  core/label_u/U1152/X (STP_OA2BB2_0P5)                   0.06       2.18 f
+  core/label_u/U510/X (STP_AO2BB2_0P5)                    0.06       2.23 f
+  core/label_u/U1215/X (STP_AO2BB2_0P5)                   0.05       2.29 f
+  core/label_u/U1691/X (STP_EO3_0P5)                      0.08       2.37 r
+  core/label_u/U666/X (STP_AOI22_0P5)                     0.03       2.40 f
+  core/label_u/U1188/X (STP_AO2BB2_0P5)                   0.07       2.47 f
+  core/label_u/U1296/X (STP_AO2BB2_0P5)                   0.06       2.53 f
+  core/label_u/U661/X (STP_AO2BB2_0P5)                    0.06       2.59 f
+  core/label_u/U1696/X (STP_EO3_0P5)                      0.10       2.69 f
+  core/label_u/U1767/X (STP_EO3_0P5)                      0.10       2.79 f
+  core/label_u/U1349/X (STP_OAOI211_0P5)                  0.04       2.83 r
+  core/label_u/U1347/X (STP_OAI211_0P5)                   0.04       2.87 f
+  core/label_u/label_o[0] (pbch_scan_label_b32)           0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/label_i[0] (selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61)
+                                                          0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/U562/X (STP_INV_S_1)
+                                                          0.07       2.93 r
+  core/grouped_block_fwht_search.search_u/U955/X (STP_AO2BB2_0P5)
+                                                          0.04       2.97 f
+  core/grouped_block_fwht_search.search_u/labels_q_reg[11][0]/D (STP_FDPQ_V2_1)
+                                                          0.00       2.97 f
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/grouped_block_fwht_search.search_u/labels_q_reg[11][0]/CK (STP_FDPQ_V2_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.03       3.11
+  data required time                                                 3.11
+  --------------------------------------------------------------------------
+  data required time                                                 3.11
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: core/label_position_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/grouped_block_fwht_search.search_u/labels_q_reg[10][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encoder_folded256_h5_c16
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_encoder_core_folded256_h5_c16_4096_13_104_512_128_32_2_5_5_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_scan_label_b32
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/label_position_q_reg[0]/CK (STP_FDPRBQ_1)          0.00 #     0.00 r
+  core/label_position_q_reg[0]/Q (STP_FDPRBQ_1)           0.09       0.09 f
+  core/label_u/position_i[0] (pbch_scan_label_b32)        0.00       0.09 f
+  core/label_u/U1166/X (STP_NR2_G_0P5)                    0.06       0.15 r
+  core/label_u/U1156/X (STP_NR2_G_0P5)                    0.03       0.18 f
+  core/label_u/U438/X (STP_AN2_S_0P5)                     0.04       0.22 f
+  core/label_u/U436/X (STP_NR2_G_0P8)                     0.02       0.24 r
+  core/label_u/U432/X (STP_INV_S_0P65)                    0.02       0.26 f
+  core/label_u/U431/X (STP_NR2_G_0P8)                     0.02       0.29 r
+  core/label_u/U427/X (STP_ND2_S_1)                       0.02       0.31 f
+  core/label_u/U423/X (STP_NR2_G_0P8)                     0.02       0.34 r
+  core/label_u/U419/X (STP_ND2_S_1)                       0.03       0.36 f
+  core/label_u/U1427/X (STP_OR2_1)                        0.04       0.40 f
+  core/label_u/U1107/X (STP_NR2_G_0P5)                    0.03       0.43 r
+  core/label_u/U407/X (STP_ND2B_MM_1)                     0.02       0.45 f
+  core/label_u/U381/X (STP_AN2_S_1)                       0.07       0.52 f
+  core/label_u/U952/X (STP_OR2_1)                         0.10       0.62 f
+  core/label_u/U473/X (STP_INV_S_1)                       0.07       0.69 r
+  core/label_u/U1380/X (STP_OR2_1)                        0.08       0.77 r
+  core/label_u/U257/X (STP_INV_S_1)                       0.08       0.85 f
+  core/label_u/U218/X (STP_ND2_S_1)                       0.03       0.88 r
+  core/label_u/U723/X (STP_OAI211_0P5)                    0.03       0.91 f
+  core/label_u/U722/X (STP_OAOI211_0P5)                   0.03       0.94 r
+  core/label_u/U161/X (STP_OAI22_0P5)                     0.02       0.96 f
+  core/label_u/U577/X (STP_NR4_0P5)                       0.04       1.01 r
+  core/label_u/U574/X (STP_AOI22_0P5)                     0.05       1.05 f
+  core/label_u/U974/X (STP_AO2BB2_0P5)                    0.07       1.12 f
+  core/label_u/U1035/X (STP_AO2BB2_0P5)                   0.06       1.18 f
+  core/label_u/U1017/X (STP_AO2BB2_0P5)                   0.04       1.22 f
+  core/label_u/U1016/X (STP_AOI22_0P5)                    0.04       1.26 r
+  core/label_u/U1058/X (STP_INV_S_0P65)                   0.03       1.29 f
+  core/label_u/U125/X (STP_OAI22_0P75)                    0.04       1.33 r
+  core/label_u/U503/X (STP_OA2BB2_0P5)                    0.07       1.39 r
+  core/label_u/U116/X (STP_INV_S_0P65)                    0.03       1.42 f
+  core/label_u/U1534/X (STP_EO3_0P5)                      0.08       1.51 r
+  core/label_u/U109/X (STP_OAI21_0P5)                     0.02       1.53 f
+  core/label_u/U615/X (STP_AOI21_0P75)                    0.03       1.56 r
+  core/label_u/U614/X (STP_OA2BB2_0P5)                    0.05       1.61 r
+  core/label_u/U78/X (STP_INV_S_0P65)                     0.02       1.63 f
+  core/label_u/U500/X (STP_AO2BB2_0P5)                    0.05       1.69 f
+  core/label_u/U461/X (STP_AO2BB2_0P5)                    0.06       1.75 f
+  core/label_u/U1573/X (STP_EO3_0P5)                      0.10       1.86 f
+  core/label_u/U1574/X (STP_EO3_0P5)                      0.09       1.95 f
+  core/label_u/U653/X (STP_AO2BB2_0P5)                    0.04       1.99 f
+  core/label_u/U652/X (STP_AOI22_0P5)                     0.06       2.05 r
+  core/label_u/U515/X (STP_OA2BB2_0P5)                    0.06       2.11 f
+  core/label_u/U1152/X (STP_OA2BB2_0P5)                   0.06       2.18 f
+  core/label_u/U510/X (STP_AO2BB2_0P5)                    0.06       2.23 f
+  core/label_u/U1215/X (STP_AO2BB2_0P5)                   0.05       2.29 f
+  core/label_u/U1691/X (STP_EO3_0P5)                      0.08       2.37 r
+  core/label_u/U666/X (STP_AOI22_0P5)                     0.03       2.40 f
+  core/label_u/U1188/X (STP_AO2BB2_0P5)                   0.07       2.47 f
+  core/label_u/U1296/X (STP_AO2BB2_0P5)                   0.06       2.53 f
+  core/label_u/U661/X (STP_AO2BB2_0P5)                    0.06       2.59 f
+  core/label_u/U1696/X (STP_EO3_0P5)                      0.10       2.69 f
+  core/label_u/U1767/X (STP_EO3_0P5)                      0.10       2.79 f
+  core/label_u/U1349/X (STP_OAOI211_0P5)                  0.04       2.83 r
+  core/label_u/U1347/X (STP_OAI211_0P5)                   0.04       2.87 f
+  core/label_u/label_o[0] (pbch_scan_label_b32)           0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/label_i[0] (selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61)
+                                                          0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/U562/X (STP_INV_S_1)
+                                                          0.07       2.93 r
+  core/grouped_block_fwht_search.search_u/U944/X (STP_AO2BB2_0P5)
+                                                          0.04       2.97 f
+  core/grouped_block_fwht_search.search_u/labels_q_reg[10][0]/D (STP_FDPQ_V2_1)
+                                                          0.00       2.97 f
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/grouped_block_fwht_search.search_u/labels_q_reg[10][0]/CK (STP_FDPQ_V2_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.03       3.11
+  data required time                                                 3.11
+  --------------------------------------------------------------------------
+  data required time                                                 3.11
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: core/label_position_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/grouped_block_fwht_search.search_u/labels_q_reg[9][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encoder_folded256_h5_c16
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_encoder_core_folded256_h5_c16_4096_13_104_512_128_32_2_5_5_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_scan_label_b32
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/label_position_q_reg[0]/CK (STP_FDPRBQ_1)          0.00 #     0.00 r
+  core/label_position_q_reg[0]/Q (STP_FDPRBQ_1)           0.09       0.09 f
+  core/label_u/position_i[0] (pbch_scan_label_b32)        0.00       0.09 f
+  core/label_u/U1166/X (STP_NR2_G_0P5)                    0.06       0.15 r
+  core/label_u/U1156/X (STP_NR2_G_0P5)                    0.03       0.18 f
+  core/label_u/U438/X (STP_AN2_S_0P5)                     0.04       0.22 f
+  core/label_u/U436/X (STP_NR2_G_0P8)                     0.02       0.24 r
+  core/label_u/U432/X (STP_INV_S_0P65)                    0.02       0.26 f
+  core/label_u/U431/X (STP_NR2_G_0P8)                     0.02       0.29 r
+  core/label_u/U427/X (STP_ND2_S_1)                       0.02       0.31 f
+  core/label_u/U423/X (STP_NR2_G_0P8)                     0.02       0.34 r
+  core/label_u/U419/X (STP_ND2_S_1)                       0.03       0.36 f
+  core/label_u/U1427/X (STP_OR2_1)                        0.04       0.40 f
+  core/label_u/U1107/X (STP_NR2_G_0P5)                    0.03       0.43 r
+  core/label_u/U407/X (STP_ND2B_MM_1)                     0.02       0.45 f
+  core/label_u/U381/X (STP_AN2_S_1)                       0.07       0.52 f
+  core/label_u/U952/X (STP_OR2_1)                         0.10       0.62 f
+  core/label_u/U473/X (STP_INV_S_1)                       0.07       0.69 r
+  core/label_u/U1380/X (STP_OR2_1)                        0.08       0.77 r
+  core/label_u/U257/X (STP_INV_S_1)                       0.08       0.85 f
+  core/label_u/U218/X (STP_ND2_S_1)                       0.03       0.88 r
+  core/label_u/U723/X (STP_OAI211_0P5)                    0.03       0.91 f
+  core/label_u/U722/X (STP_OAOI211_0P5)                   0.03       0.94 r
+  core/label_u/U161/X (STP_OAI22_0P5)                     0.02       0.96 f
+  core/label_u/U577/X (STP_NR4_0P5)                       0.04       1.01 r
+  core/label_u/U574/X (STP_AOI22_0P5)                     0.05       1.05 f
+  core/label_u/U974/X (STP_AO2BB2_0P5)                    0.07       1.12 f
+  core/label_u/U1035/X (STP_AO2BB2_0P5)                   0.06       1.18 f
+  core/label_u/U1017/X (STP_AO2BB2_0P5)                   0.04       1.22 f
+  core/label_u/U1016/X (STP_AOI22_0P5)                    0.04       1.26 r
+  core/label_u/U1058/X (STP_INV_S_0P65)                   0.03       1.29 f
+  core/label_u/U125/X (STP_OAI22_0P75)                    0.04       1.33 r
+  core/label_u/U503/X (STP_OA2BB2_0P5)                    0.07       1.39 r
+  core/label_u/U116/X (STP_INV_S_0P65)                    0.03       1.42 f
+  core/label_u/U1534/X (STP_EO3_0P5)                      0.08       1.51 r
+  core/label_u/U109/X (STP_OAI21_0P5)                     0.02       1.53 f
+  core/label_u/U615/X (STP_AOI21_0P75)                    0.03       1.56 r
+  core/label_u/U614/X (STP_OA2BB2_0P5)                    0.05       1.61 r
+  core/label_u/U78/X (STP_INV_S_0P65)                     0.02       1.63 f
+  core/label_u/U500/X (STP_AO2BB2_0P5)                    0.05       1.69 f
+  core/label_u/U461/X (STP_AO2BB2_0P5)                    0.06       1.75 f
+  core/label_u/U1573/X (STP_EO3_0P5)                      0.10       1.86 f
+  core/label_u/U1574/X (STP_EO3_0P5)                      0.09       1.95 f
+  core/label_u/U653/X (STP_AO2BB2_0P5)                    0.04       1.99 f
+  core/label_u/U652/X (STP_AOI22_0P5)                     0.06       2.05 r
+  core/label_u/U515/X (STP_OA2BB2_0P5)                    0.06       2.11 f
+  core/label_u/U1152/X (STP_OA2BB2_0P5)                   0.06       2.18 f
+  core/label_u/U510/X (STP_AO2BB2_0P5)                    0.06       2.23 f
+  core/label_u/U1215/X (STP_AO2BB2_0P5)                   0.05       2.29 f
+  core/label_u/U1691/X (STP_EO3_0P5)                      0.08       2.37 r
+  core/label_u/U666/X (STP_AOI22_0P5)                     0.03       2.40 f
+  core/label_u/U1188/X (STP_AO2BB2_0P5)                   0.07       2.47 f
+  core/label_u/U1296/X (STP_AO2BB2_0P5)                   0.06       2.53 f
+  core/label_u/U661/X (STP_AO2BB2_0P5)                    0.06       2.59 f
+  core/label_u/U1696/X (STP_EO3_0P5)                      0.10       2.69 f
+  core/label_u/U1767/X (STP_EO3_0P5)                      0.10       2.79 f
+  core/label_u/U1349/X (STP_OAOI211_0P5)                  0.04       2.83 r
+  core/label_u/U1347/X (STP_OAI211_0P5)                   0.04       2.87 f
+  core/label_u/label_o[0] (pbch_scan_label_b32)           0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/label_i[0] (selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61)
+                                                          0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/U562/X (STP_INV_S_1)
+                                                          0.07       2.93 r
+  core/grouped_block_fwht_search.search_u/U933/X (STP_AO2BB2_0P5)
+                                                          0.04       2.97 f
+  core/grouped_block_fwht_search.search_u/labels_q_reg[9][0]/D (STP_FDPQ_V2_1)
+                                                          0.00       2.97 f
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/grouped_block_fwht_search.search_u/labels_q_reg[9][0]/CK (STP_FDPQ_V2_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.03       3.11
+  data required time                                                 3.11
+  --------------------------------------------------------------------------
+  data required time                                                 3.11
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: core/label_position_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/grouped_block_fwht_search.search_u/labels_q_reg[8][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encoder_folded256_h5_c16
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_encoder_core_folded256_h5_c16_4096_13_104_512_128_32_2_5_5_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_scan_label_b32
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/label_position_q_reg[0]/CK (STP_FDPRBQ_1)          0.00 #     0.00 r
+  core/label_position_q_reg[0]/Q (STP_FDPRBQ_1)           0.09       0.09 f
+  core/label_u/position_i[0] (pbch_scan_label_b32)        0.00       0.09 f
+  core/label_u/U1166/X (STP_NR2_G_0P5)                    0.06       0.15 r
+  core/label_u/U1156/X (STP_NR2_G_0P5)                    0.03       0.18 f
+  core/label_u/U438/X (STP_AN2_S_0P5)                     0.04       0.22 f
+  core/label_u/U436/X (STP_NR2_G_0P8)                     0.02       0.24 r
+  core/label_u/U432/X (STP_INV_S_0P65)                    0.02       0.26 f
+  core/label_u/U431/X (STP_NR2_G_0P8)                     0.02       0.29 r
+  core/label_u/U427/X (STP_ND2_S_1)                       0.02       0.31 f
+  core/label_u/U423/X (STP_NR2_G_0P8)                     0.02       0.34 r
+  core/label_u/U419/X (STP_ND2_S_1)                       0.03       0.36 f
+  core/label_u/U1427/X (STP_OR2_1)                        0.04       0.40 f
+  core/label_u/U1107/X (STP_NR2_G_0P5)                    0.03       0.43 r
+  core/label_u/U407/X (STP_ND2B_MM_1)                     0.02       0.45 f
+  core/label_u/U381/X (STP_AN2_S_1)                       0.07       0.52 f
+  core/label_u/U952/X (STP_OR2_1)                         0.10       0.62 f
+  core/label_u/U473/X (STP_INV_S_1)                       0.07       0.69 r
+  core/label_u/U1380/X (STP_OR2_1)                        0.08       0.77 r
+  core/label_u/U257/X (STP_INV_S_1)                       0.08       0.85 f
+  core/label_u/U218/X (STP_ND2_S_1)                       0.03       0.88 r
+  core/label_u/U723/X (STP_OAI211_0P5)                    0.03       0.91 f
+  core/label_u/U722/X (STP_OAOI211_0P5)                   0.03       0.94 r
+  core/label_u/U161/X (STP_OAI22_0P5)                     0.02       0.96 f
+  core/label_u/U577/X (STP_NR4_0P5)                       0.04       1.01 r
+  core/label_u/U574/X (STP_AOI22_0P5)                     0.05       1.05 f
+  core/label_u/U974/X (STP_AO2BB2_0P5)                    0.07       1.12 f
+  core/label_u/U1035/X (STP_AO2BB2_0P5)                   0.06       1.18 f
+  core/label_u/U1017/X (STP_AO2BB2_0P5)                   0.04       1.22 f
+  core/label_u/U1016/X (STP_AOI22_0P5)                    0.04       1.26 r
+  core/label_u/U1058/X (STP_INV_S_0P65)                   0.03       1.29 f
+  core/label_u/U125/X (STP_OAI22_0P75)                    0.04       1.33 r
+  core/label_u/U503/X (STP_OA2BB2_0P5)                    0.07       1.39 r
+  core/label_u/U116/X (STP_INV_S_0P65)                    0.03       1.42 f
+  core/label_u/U1534/X (STP_EO3_0P5)                      0.08       1.51 r
+  core/label_u/U109/X (STP_OAI21_0P5)                     0.02       1.53 f
+  core/label_u/U615/X (STP_AOI21_0P75)                    0.03       1.56 r
+  core/label_u/U614/X (STP_OA2BB2_0P5)                    0.05       1.61 r
+  core/label_u/U78/X (STP_INV_S_0P65)                     0.02       1.63 f
+  core/label_u/U500/X (STP_AO2BB2_0P5)                    0.05       1.69 f
+  core/label_u/U461/X (STP_AO2BB2_0P5)                    0.06       1.75 f
+  core/label_u/U1573/X (STP_EO3_0P5)                      0.10       1.86 f
+  core/label_u/U1574/X (STP_EO3_0P5)                      0.09       1.95 f
+  core/label_u/U653/X (STP_AO2BB2_0P5)                    0.04       1.99 f
+  core/label_u/U652/X (STP_AOI22_0P5)                     0.06       2.05 r
+  core/label_u/U515/X (STP_OA2BB2_0P5)                    0.06       2.11 f
+  core/label_u/U1152/X (STP_OA2BB2_0P5)                   0.06       2.18 f
+  core/label_u/U510/X (STP_AO2BB2_0P5)                    0.06       2.23 f
+  core/label_u/U1215/X (STP_AO2BB2_0P5)                   0.05       2.29 f
+  core/label_u/U1691/X (STP_EO3_0P5)                      0.08       2.37 r
+  core/label_u/U666/X (STP_AOI22_0P5)                     0.03       2.40 f
+  core/label_u/U1188/X (STP_AO2BB2_0P5)                   0.07       2.47 f
+  core/label_u/U1296/X (STP_AO2BB2_0P5)                   0.06       2.53 f
+  core/label_u/U661/X (STP_AO2BB2_0P5)                    0.06       2.59 f
+  core/label_u/U1696/X (STP_EO3_0P5)                      0.10       2.69 f
+  core/label_u/U1767/X (STP_EO3_0P5)                      0.10       2.79 f
+  core/label_u/U1349/X (STP_OAOI211_0P5)                  0.04       2.83 r
+  core/label_u/U1347/X (STP_OAI211_0P5)                   0.04       2.87 f
+  core/label_u/label_o[0] (pbch_scan_label_b32)           0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/label_i[0] (selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61)
+                                                          0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/U562/X (STP_INV_S_1)
+                                                          0.07       2.93 r
+  core/grouped_block_fwht_search.search_u/U922/X (STP_AO2BB2_0P5)
+                                                          0.04       2.97 f
+  core/grouped_block_fwht_search.search_u/labels_q_reg[8][0]/D (STP_FDPQ_V2_1)
+                                                          0.00       2.97 f
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/grouped_block_fwht_search.search_u/labels_q_reg[8][0]/CK (STP_FDPQ_V2_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.03       3.11
+  data required time                                                 3.11
+  --------------------------------------------------------------------------
+  data required time                                                 3.11
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: core/label_position_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/grouped_block_fwht_search.search_u/labels_q_reg[21][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encoder_folded256_h5_c16
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_encoder_core_folded256_h5_c16_4096_13_104_512_128_32_2_5_5_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_scan_label_b32
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/label_position_q_reg[0]/CK (STP_FDPRBQ_1)          0.00 #     0.00 r
+  core/label_position_q_reg[0]/Q (STP_FDPRBQ_1)           0.09       0.09 f
+  core/label_u/position_i[0] (pbch_scan_label_b32)        0.00       0.09 f
+  core/label_u/U1166/X (STP_NR2_G_0P5)                    0.06       0.15 r
+  core/label_u/U1156/X (STP_NR2_G_0P5)                    0.03       0.18 f
+  core/label_u/U438/X (STP_AN2_S_0P5)                     0.04       0.22 f
+  core/label_u/U436/X (STP_NR2_G_0P8)                     0.02       0.24 r
+  core/label_u/U432/X (STP_INV_S_0P65)                    0.02       0.26 f
+  core/label_u/U431/X (STP_NR2_G_0P8)                     0.02       0.29 r
+  core/label_u/U427/X (STP_ND2_S_1)                       0.02       0.31 f
+  core/label_u/U423/X (STP_NR2_G_0P8)                     0.02       0.34 r
+  core/label_u/U419/X (STP_ND2_S_1)                       0.03       0.36 f
+  core/label_u/U1427/X (STP_OR2_1)                        0.04       0.40 f
+  core/label_u/U1107/X (STP_NR2_G_0P5)                    0.03       0.43 r
+  core/label_u/U407/X (STP_ND2B_MM_1)                     0.02       0.45 f
+  core/label_u/U381/X (STP_AN2_S_1)                       0.07       0.52 f
+  core/label_u/U952/X (STP_OR2_1)                         0.10       0.62 f
+  core/label_u/U473/X (STP_INV_S_1)                       0.07       0.69 r
+  core/label_u/U1380/X (STP_OR2_1)                        0.08       0.77 r
+  core/label_u/U257/X (STP_INV_S_1)                       0.08       0.85 f
+  core/label_u/U218/X (STP_ND2_S_1)                       0.03       0.88 r
+  core/label_u/U723/X (STP_OAI211_0P5)                    0.03       0.91 f
+  core/label_u/U722/X (STP_OAOI211_0P5)                   0.03       0.94 r
+  core/label_u/U161/X (STP_OAI22_0P5)                     0.02       0.96 f
+  core/label_u/U577/X (STP_NR4_0P5)                       0.04       1.01 r
+  core/label_u/U574/X (STP_AOI22_0P5)                     0.05       1.05 f
+  core/label_u/U974/X (STP_AO2BB2_0P5)                    0.07       1.12 f
+  core/label_u/U1035/X (STP_AO2BB2_0P5)                   0.06       1.18 f
+  core/label_u/U1017/X (STP_AO2BB2_0P5)                   0.04       1.22 f
+  core/label_u/U1016/X (STP_AOI22_0P5)                    0.04       1.26 r
+  core/label_u/U1058/X (STP_INV_S_0P65)                   0.03       1.29 f
+  core/label_u/U125/X (STP_OAI22_0P75)                    0.04       1.33 r
+  core/label_u/U503/X (STP_OA2BB2_0P5)                    0.07       1.39 r
+  core/label_u/U116/X (STP_INV_S_0P65)                    0.03       1.42 f
+  core/label_u/U1534/X (STP_EO3_0P5)                      0.08       1.51 r
+  core/label_u/U109/X (STP_OAI21_0P5)                     0.02       1.53 f
+  core/label_u/U615/X (STP_AOI21_0P75)                    0.03       1.56 r
+  core/label_u/U614/X (STP_OA2BB2_0P5)                    0.05       1.61 r
+  core/label_u/U78/X (STP_INV_S_0P65)                     0.02       1.63 f
+  core/label_u/U500/X (STP_AO2BB2_0P5)                    0.05       1.69 f
+  core/label_u/U461/X (STP_AO2BB2_0P5)                    0.06       1.75 f
+  core/label_u/U1573/X (STP_EO3_0P5)                      0.10       1.86 f
+  core/label_u/U1574/X (STP_EO3_0P5)                      0.09       1.95 f
+  core/label_u/U653/X (STP_AO2BB2_0P5)                    0.04       1.99 f
+  core/label_u/U652/X (STP_AOI22_0P5)                     0.06       2.05 r
+  core/label_u/U515/X (STP_OA2BB2_0P5)                    0.06       2.11 f
+  core/label_u/U1152/X (STP_OA2BB2_0P5)                   0.06       2.18 f
+  core/label_u/U510/X (STP_AO2BB2_0P5)                    0.06       2.23 f
+  core/label_u/U1215/X (STP_AO2BB2_0P5)                   0.05       2.29 f
+  core/label_u/U1691/X (STP_EO3_0P5)                      0.08       2.37 r
+  core/label_u/U666/X (STP_AOI22_0P5)                     0.03       2.40 f
+  core/label_u/U1188/X (STP_AO2BB2_0P5)                   0.07       2.47 f
+  core/label_u/U1296/X (STP_AO2BB2_0P5)                   0.06       2.53 f
+  core/label_u/U661/X (STP_AO2BB2_0P5)                    0.06       2.59 f
+  core/label_u/U1696/X (STP_EO3_0P5)                      0.10       2.69 f
+  core/label_u/U1767/X (STP_EO3_0P5)                      0.10       2.79 f
+  core/label_u/U1349/X (STP_OAOI211_0P5)                  0.04       2.83 r
+  core/label_u/U1347/X (STP_OAI211_0P5)                   0.04       2.87 f
+  core/label_u/label_o[0] (pbch_scan_label_b32)           0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/label_i[0] (selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61)
+                                                          0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/U562/X (STP_INV_S_1)
+                                                          0.07       2.93 r
+  core/grouped_block_fwht_search.search_u/U887/X (STP_AO2BB2_0P5)
+                                                          0.04       2.97 f
+  core/grouped_block_fwht_search.search_u/labels_q_reg[21][0]/D (STP_FDPQ_V2_1)
+                                                          0.00       2.97 f
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/grouped_block_fwht_search.search_u/labels_q_reg[21][0]/CK (STP_FDPQ_V2_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.03       3.11
+  data required time                                                 3.11
+  --------------------------------------------------------------------------
+  data required time                                                 3.11
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: core/label_position_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/grouped_block_fwht_search.search_u/labels_q_reg[20][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encoder_folded256_h5_c16
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_encoder_core_folded256_h5_c16_4096_13_104_512_128_32_2_5_5_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_scan_label_b32
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/label_position_q_reg[0]/CK (STP_FDPRBQ_1)          0.00 #     0.00 r
+  core/label_position_q_reg[0]/Q (STP_FDPRBQ_1)           0.09       0.09 f
+  core/label_u/position_i[0] (pbch_scan_label_b32)        0.00       0.09 f
+  core/label_u/U1166/X (STP_NR2_G_0P5)                    0.06       0.15 r
+  core/label_u/U1156/X (STP_NR2_G_0P5)                    0.03       0.18 f
+  core/label_u/U438/X (STP_AN2_S_0P5)                     0.04       0.22 f
+  core/label_u/U436/X (STP_NR2_G_0P8)                     0.02       0.24 r
+  core/label_u/U432/X (STP_INV_S_0P65)                    0.02       0.26 f
+  core/label_u/U431/X (STP_NR2_G_0P8)                     0.02       0.29 r
+  core/label_u/U427/X (STP_ND2_S_1)                       0.02       0.31 f
+  core/label_u/U423/X (STP_NR2_G_0P8)                     0.02       0.34 r
+  core/label_u/U419/X (STP_ND2_S_1)                       0.03       0.36 f
+  core/label_u/U1427/X (STP_OR2_1)                        0.04       0.40 f
+  core/label_u/U1107/X (STP_NR2_G_0P5)                    0.03       0.43 r
+  core/label_u/U407/X (STP_ND2B_MM_1)                     0.02       0.45 f
+  core/label_u/U381/X (STP_AN2_S_1)                       0.07       0.52 f
+  core/label_u/U952/X (STP_OR2_1)                         0.10       0.62 f
+  core/label_u/U473/X (STP_INV_S_1)                       0.07       0.69 r
+  core/label_u/U1380/X (STP_OR2_1)                        0.08       0.77 r
+  core/label_u/U257/X (STP_INV_S_1)                       0.08       0.85 f
+  core/label_u/U218/X (STP_ND2_S_1)                       0.03       0.88 r
+  core/label_u/U723/X (STP_OAI211_0P5)                    0.03       0.91 f
+  core/label_u/U722/X (STP_OAOI211_0P5)                   0.03       0.94 r
+  core/label_u/U161/X (STP_OAI22_0P5)                     0.02       0.96 f
+  core/label_u/U577/X (STP_NR4_0P5)                       0.04       1.01 r
+  core/label_u/U574/X (STP_AOI22_0P5)                     0.05       1.05 f
+  core/label_u/U974/X (STP_AO2BB2_0P5)                    0.07       1.12 f
+  core/label_u/U1035/X (STP_AO2BB2_0P5)                   0.06       1.18 f
+  core/label_u/U1017/X (STP_AO2BB2_0P5)                   0.04       1.22 f
+  core/label_u/U1016/X (STP_AOI22_0P5)                    0.04       1.26 r
+  core/label_u/U1058/X (STP_INV_S_0P65)                   0.03       1.29 f
+  core/label_u/U125/X (STP_OAI22_0P75)                    0.04       1.33 r
+  core/label_u/U503/X (STP_OA2BB2_0P5)                    0.07       1.39 r
+  core/label_u/U116/X (STP_INV_S_0P65)                    0.03       1.42 f
+  core/label_u/U1534/X (STP_EO3_0P5)                      0.08       1.51 r
+  core/label_u/U109/X (STP_OAI21_0P5)                     0.02       1.53 f
+  core/label_u/U615/X (STP_AOI21_0P75)                    0.03       1.56 r
+  core/label_u/U614/X (STP_OA2BB2_0P5)                    0.05       1.61 r
+  core/label_u/U78/X (STP_INV_S_0P65)                     0.02       1.63 f
+  core/label_u/U500/X (STP_AO2BB2_0P5)                    0.05       1.69 f
+  core/label_u/U461/X (STP_AO2BB2_0P5)                    0.06       1.75 f
+  core/label_u/U1573/X (STP_EO3_0P5)                      0.10       1.86 f
+  core/label_u/U1574/X (STP_EO3_0P5)                      0.09       1.95 f
+  core/label_u/U653/X (STP_AO2BB2_0P5)                    0.04       1.99 f
+  core/label_u/U652/X (STP_AOI22_0P5)                     0.06       2.05 r
+  core/label_u/U515/X (STP_OA2BB2_0P5)                    0.06       2.11 f
+  core/label_u/U1152/X (STP_OA2BB2_0P5)                   0.06       2.18 f
+  core/label_u/U510/X (STP_AO2BB2_0P5)                    0.06       2.23 f
+  core/label_u/U1215/X (STP_AO2BB2_0P5)                   0.05       2.29 f
+  core/label_u/U1691/X (STP_EO3_0P5)                      0.08       2.37 r
+  core/label_u/U666/X (STP_AOI22_0P5)                     0.03       2.40 f
+  core/label_u/U1188/X (STP_AO2BB2_0P5)                   0.07       2.47 f
+  core/label_u/U1296/X (STP_AO2BB2_0P5)                   0.06       2.53 f
+  core/label_u/U661/X (STP_AO2BB2_0P5)                    0.06       2.59 f
+  core/label_u/U1696/X (STP_EO3_0P5)                      0.10       2.69 f
+  core/label_u/U1767/X (STP_EO3_0P5)                      0.10       2.79 f
+  core/label_u/U1349/X (STP_OAOI211_0P5)                  0.04       2.83 r
+  core/label_u/U1347/X (STP_OAI211_0P5)                   0.04       2.87 f
+  core/label_u/label_o[0] (pbch_scan_label_b32)           0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/label_i[0] (selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61)
+                                                          0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/U562/X (STP_INV_S_1)
+                                                          0.07       2.93 r
+  core/grouped_block_fwht_search.search_u/U869/X (STP_AO2BB2_0P5)
+                                                          0.04       2.97 f
+  core/grouped_block_fwht_search.search_u/labels_q_reg[20][0]/D (STP_FDPQ_V2_1)
+                                                          0.00       2.97 f
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/grouped_block_fwht_search.search_u/labels_q_reg[20][0]/CK (STP_FDPQ_V2_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.03       3.11
+  data required time                                                 3.11
+  --------------------------------------------------------------------------
+  data required time                                                 3.11
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: core/label_position_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/grouped_block_fwht_search.search_u/labels_q_reg[19][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encoder_folded256_h5_c16
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_encoder_core_folded256_h5_c16_4096_13_104_512_128_32_2_5_5_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_scan_label_b32
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/label_position_q_reg[0]/CK (STP_FDPRBQ_1)          0.00 #     0.00 r
+  core/label_position_q_reg[0]/Q (STP_FDPRBQ_1)           0.09       0.09 f
+  core/label_u/position_i[0] (pbch_scan_label_b32)        0.00       0.09 f
+  core/label_u/U1166/X (STP_NR2_G_0P5)                    0.06       0.15 r
+  core/label_u/U1156/X (STP_NR2_G_0P5)                    0.03       0.18 f
+  core/label_u/U438/X (STP_AN2_S_0P5)                     0.04       0.22 f
+  core/label_u/U436/X (STP_NR2_G_0P8)                     0.02       0.24 r
+  core/label_u/U432/X (STP_INV_S_0P65)                    0.02       0.26 f
+  core/label_u/U431/X (STP_NR2_G_0P8)                     0.02       0.29 r
+  core/label_u/U427/X (STP_ND2_S_1)                       0.02       0.31 f
+  core/label_u/U423/X (STP_NR2_G_0P8)                     0.02       0.34 r
+  core/label_u/U419/X (STP_ND2_S_1)                       0.03       0.36 f
+  core/label_u/U1427/X (STP_OR2_1)                        0.04       0.40 f
+  core/label_u/U1107/X (STP_NR2_G_0P5)                    0.03       0.43 r
+  core/label_u/U407/X (STP_ND2B_MM_1)                     0.02       0.45 f
+  core/label_u/U381/X (STP_AN2_S_1)                       0.07       0.52 f
+  core/label_u/U952/X (STP_OR2_1)                         0.10       0.62 f
+  core/label_u/U473/X (STP_INV_S_1)                       0.07       0.69 r
+  core/label_u/U1380/X (STP_OR2_1)                        0.08       0.77 r
+  core/label_u/U257/X (STP_INV_S_1)                       0.08       0.85 f
+  core/label_u/U218/X (STP_ND2_S_1)                       0.03       0.88 r
+  core/label_u/U723/X (STP_OAI211_0P5)                    0.03       0.91 f
+  core/label_u/U722/X (STP_OAOI211_0P5)                   0.03       0.94 r
+  core/label_u/U161/X (STP_OAI22_0P5)                     0.02       0.96 f
+  core/label_u/U577/X (STP_NR4_0P5)                       0.04       1.01 r
+  core/label_u/U574/X (STP_AOI22_0P5)                     0.05       1.05 f
+  core/label_u/U974/X (STP_AO2BB2_0P5)                    0.07       1.12 f
+  core/label_u/U1035/X (STP_AO2BB2_0P5)                   0.06       1.18 f
+  core/label_u/U1017/X (STP_AO2BB2_0P5)                   0.04       1.22 f
+  core/label_u/U1016/X (STP_AOI22_0P5)                    0.04       1.26 r
+  core/label_u/U1058/X (STP_INV_S_0P65)                   0.03       1.29 f
+  core/label_u/U125/X (STP_OAI22_0P75)                    0.04       1.33 r
+  core/label_u/U503/X (STP_OA2BB2_0P5)                    0.07       1.39 r
+  core/label_u/U116/X (STP_INV_S_0P65)                    0.03       1.42 f
+  core/label_u/U1534/X (STP_EO3_0P5)                      0.08       1.51 r
+  core/label_u/U109/X (STP_OAI21_0P5)                     0.02       1.53 f
+  core/label_u/U615/X (STP_AOI21_0P75)                    0.03       1.56 r
+  core/label_u/U614/X (STP_OA2BB2_0P5)                    0.05       1.61 r
+  core/label_u/U78/X (STP_INV_S_0P65)                     0.02       1.63 f
+  core/label_u/U500/X (STP_AO2BB2_0P5)                    0.05       1.69 f
+  core/label_u/U461/X (STP_AO2BB2_0P5)                    0.06       1.75 f
+  core/label_u/U1573/X (STP_EO3_0P5)                      0.10       1.86 f
+  core/label_u/U1574/X (STP_EO3_0P5)                      0.09       1.95 f
+  core/label_u/U653/X (STP_AO2BB2_0P5)                    0.04       1.99 f
+  core/label_u/U652/X (STP_AOI22_0P5)                     0.06       2.05 r
+  core/label_u/U515/X (STP_OA2BB2_0P5)                    0.06       2.11 f
+  core/label_u/U1152/X (STP_OA2BB2_0P5)                   0.06       2.18 f
+  core/label_u/U510/X (STP_AO2BB2_0P5)                    0.06       2.23 f
+  core/label_u/U1215/X (STP_AO2BB2_0P5)                   0.05       2.29 f
+  core/label_u/U1691/X (STP_EO3_0P5)                      0.08       2.37 r
+  core/label_u/U666/X (STP_AOI22_0P5)                     0.03       2.40 f
+  core/label_u/U1188/X (STP_AO2BB2_0P5)                   0.07       2.47 f
+  core/label_u/U1296/X (STP_AO2BB2_0P5)                   0.06       2.53 f
+  core/label_u/U661/X (STP_AO2BB2_0P5)                    0.06       2.59 f
+  core/label_u/U1696/X (STP_EO3_0P5)                      0.10       2.69 f
+  core/label_u/U1767/X (STP_EO3_0P5)                      0.10       2.79 f
+  core/label_u/U1349/X (STP_OAOI211_0P5)                  0.04       2.83 r
+  core/label_u/U1347/X (STP_OAI211_0P5)                   0.04       2.87 f
+  core/label_u/label_o[0] (pbch_scan_label_b32)           0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/label_i[0] (selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61)
+                                                          0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/U562/X (STP_INV_S_1)
+                                                          0.07       2.93 r
+  core/grouped_block_fwht_search.search_u/U865/X (STP_AO2BB2_0P5)
+                                                          0.04       2.97 f
+  core/grouped_block_fwht_search.search_u/labels_q_reg[19][0]/D (STP_FDPQ_V2_1)
+                                                          0.00       2.97 f
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/grouped_block_fwht_search.search_u/labels_q_reg[19][0]/CK (STP_FDPQ_V2_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.03       3.11
+  data required time                                                 3.11
+  --------------------------------------------------------------------------
+  data required time                                                 3.11
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: core/label_position_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/grouped_block_fwht_search.search_u/labels_q_reg[18][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encoder_folded256_h5_c16
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_encoder_core_folded256_h5_c16_4096_13_104_512_128_32_2_5_5_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_scan_label_b32
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/label_position_q_reg[0]/CK (STP_FDPRBQ_1)          0.00 #     0.00 r
+  core/label_position_q_reg[0]/Q (STP_FDPRBQ_1)           0.09       0.09 f
+  core/label_u/position_i[0] (pbch_scan_label_b32)        0.00       0.09 f
+  core/label_u/U1166/X (STP_NR2_G_0P5)                    0.06       0.15 r
+  core/label_u/U1156/X (STP_NR2_G_0P5)                    0.03       0.18 f
+  core/label_u/U438/X (STP_AN2_S_0P5)                     0.04       0.22 f
+  core/label_u/U436/X (STP_NR2_G_0P8)                     0.02       0.24 r
+  core/label_u/U432/X (STP_INV_S_0P65)                    0.02       0.26 f
+  core/label_u/U431/X (STP_NR2_G_0P8)                     0.02       0.29 r
+  core/label_u/U427/X (STP_ND2_S_1)                       0.02       0.31 f
+  core/label_u/U423/X (STP_NR2_G_0P8)                     0.02       0.34 r
+  core/label_u/U419/X (STP_ND2_S_1)                       0.03       0.36 f
+  core/label_u/U1427/X (STP_OR2_1)                        0.04       0.40 f
+  core/label_u/U1107/X (STP_NR2_G_0P5)                    0.03       0.43 r
+  core/label_u/U407/X (STP_ND2B_MM_1)                     0.02       0.45 f
+  core/label_u/U381/X (STP_AN2_S_1)                       0.07       0.52 f
+  core/label_u/U952/X (STP_OR2_1)                         0.10       0.62 f
+  core/label_u/U473/X (STP_INV_S_1)                       0.07       0.69 r
+  core/label_u/U1380/X (STP_OR2_1)                        0.08       0.77 r
+  core/label_u/U257/X (STP_INV_S_1)                       0.08       0.85 f
+  core/label_u/U218/X (STP_ND2_S_1)                       0.03       0.88 r
+  core/label_u/U723/X (STP_OAI211_0P5)                    0.03       0.91 f
+  core/label_u/U722/X (STP_OAOI211_0P5)                   0.03       0.94 r
+  core/label_u/U161/X (STP_OAI22_0P5)                     0.02       0.96 f
+  core/label_u/U577/X (STP_NR4_0P5)                       0.04       1.01 r
+  core/label_u/U574/X (STP_AOI22_0P5)                     0.05       1.05 f
+  core/label_u/U974/X (STP_AO2BB2_0P5)                    0.07       1.12 f
+  core/label_u/U1035/X (STP_AO2BB2_0P5)                   0.06       1.18 f
+  core/label_u/U1017/X (STP_AO2BB2_0P5)                   0.04       1.22 f
+  core/label_u/U1016/X (STP_AOI22_0P5)                    0.04       1.26 r
+  core/label_u/U1058/X (STP_INV_S_0P65)                   0.03       1.29 f
+  core/label_u/U125/X (STP_OAI22_0P75)                    0.04       1.33 r
+  core/label_u/U503/X (STP_OA2BB2_0P5)                    0.07       1.39 r
+  core/label_u/U116/X (STP_INV_S_0P65)                    0.03       1.42 f
+  core/label_u/U1534/X (STP_EO3_0P5)                      0.08       1.51 r
+  core/label_u/U109/X (STP_OAI21_0P5)                     0.02       1.53 f
+  core/label_u/U615/X (STP_AOI21_0P75)                    0.03       1.56 r
+  core/label_u/U614/X (STP_OA2BB2_0P5)                    0.05       1.61 r
+  core/label_u/U78/X (STP_INV_S_0P65)                     0.02       1.63 f
+  core/label_u/U500/X (STP_AO2BB2_0P5)                    0.05       1.69 f
+  core/label_u/U461/X (STP_AO2BB2_0P5)                    0.06       1.75 f
+  core/label_u/U1573/X (STP_EO3_0P5)                      0.10       1.86 f
+  core/label_u/U1574/X (STP_EO3_0P5)                      0.09       1.95 f
+  core/label_u/U653/X (STP_AO2BB2_0P5)                    0.04       1.99 f
+  core/label_u/U652/X (STP_AOI22_0P5)                     0.06       2.05 r
+  core/label_u/U515/X (STP_OA2BB2_0P5)                    0.06       2.11 f
+  core/label_u/U1152/X (STP_OA2BB2_0P5)                   0.06       2.18 f
+  core/label_u/U510/X (STP_AO2BB2_0P5)                    0.06       2.23 f
+  core/label_u/U1215/X (STP_AO2BB2_0P5)                   0.05       2.29 f
+  core/label_u/U1691/X (STP_EO3_0P5)                      0.08       2.37 r
+  core/label_u/U666/X (STP_AOI22_0P5)                     0.03       2.40 f
+  core/label_u/U1188/X (STP_AO2BB2_0P5)                   0.07       2.47 f
+  core/label_u/U1296/X (STP_AO2BB2_0P5)                   0.06       2.53 f
+  core/label_u/U661/X (STP_AO2BB2_0P5)                    0.06       2.59 f
+  core/label_u/U1696/X (STP_EO3_0P5)                      0.10       2.69 f
+  core/label_u/U1767/X (STP_EO3_0P5)                      0.10       2.79 f
+  core/label_u/U1349/X (STP_OAOI211_0P5)                  0.04       2.83 r
+  core/label_u/U1347/X (STP_OAI211_0P5)                   0.04       2.87 f
+  core/label_u/label_o[0] (pbch_scan_label_b32)           0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/label_i[0] (selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61)
+                                                          0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/U562/X (STP_INV_S_1)
+                                                          0.07       2.93 r
+  core/grouped_block_fwht_search.search_u/U854/X (STP_AO2BB2_0P5)
+                                                          0.04       2.97 f
+  core/grouped_block_fwht_search.search_u/labels_q_reg[18][0]/D (STP_FDPQ_V2_1)
+                                                          0.00       2.97 f
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/grouped_block_fwht_search.search_u/labels_q_reg[18][0]/CK (STP_FDPQ_V2_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.03       3.11
+  data required time                                                 3.11
+  --------------------------------------------------------------------------
+  data required time                                                 3.11
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: core/label_position_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/grouped_block_fwht_search.search_u/labels_q_reg[17][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encoder_folded256_h5_c16
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_encoder_core_folded256_h5_c16_4096_13_104_512_128_32_2_5_5_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_scan_label_b32
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/label_position_q_reg[0]/CK (STP_FDPRBQ_1)          0.00 #     0.00 r
+  core/label_position_q_reg[0]/Q (STP_FDPRBQ_1)           0.09       0.09 f
+  core/label_u/position_i[0] (pbch_scan_label_b32)        0.00       0.09 f
+  core/label_u/U1166/X (STP_NR2_G_0P5)                    0.06       0.15 r
+  core/label_u/U1156/X (STP_NR2_G_0P5)                    0.03       0.18 f
+  core/label_u/U438/X (STP_AN2_S_0P5)                     0.04       0.22 f
+  core/label_u/U436/X (STP_NR2_G_0P8)                     0.02       0.24 r
+  core/label_u/U432/X (STP_INV_S_0P65)                    0.02       0.26 f
+  core/label_u/U431/X (STP_NR2_G_0P8)                     0.02       0.29 r
+  core/label_u/U427/X (STP_ND2_S_1)                       0.02       0.31 f
+  core/label_u/U423/X (STP_NR2_G_0P8)                     0.02       0.34 r
+  core/label_u/U419/X (STP_ND2_S_1)                       0.03       0.36 f
+  core/label_u/U1427/X (STP_OR2_1)                        0.04       0.40 f
+  core/label_u/U1107/X (STP_NR2_G_0P5)                    0.03       0.43 r
+  core/label_u/U407/X (STP_ND2B_MM_1)                     0.02       0.45 f
+  core/label_u/U381/X (STP_AN2_S_1)                       0.07       0.52 f
+  core/label_u/U952/X (STP_OR2_1)                         0.10       0.62 f
+  core/label_u/U473/X (STP_INV_S_1)                       0.07       0.69 r
+  core/label_u/U1380/X (STP_OR2_1)                        0.08       0.77 r
+  core/label_u/U257/X (STP_INV_S_1)                       0.08       0.85 f
+  core/label_u/U218/X (STP_ND2_S_1)                       0.03       0.88 r
+  core/label_u/U723/X (STP_OAI211_0P5)                    0.03       0.91 f
+  core/label_u/U722/X (STP_OAOI211_0P5)                   0.03       0.94 r
+  core/label_u/U161/X (STP_OAI22_0P5)                     0.02       0.96 f
+  core/label_u/U577/X (STP_NR4_0P5)                       0.04       1.01 r
+  core/label_u/U574/X (STP_AOI22_0P5)                     0.05       1.05 f
+  core/label_u/U974/X (STP_AO2BB2_0P5)                    0.07       1.12 f
+  core/label_u/U1035/X (STP_AO2BB2_0P5)                   0.06       1.18 f
+  core/label_u/U1017/X (STP_AO2BB2_0P5)                   0.04       1.22 f
+  core/label_u/U1016/X (STP_AOI22_0P5)                    0.04       1.26 r
+  core/label_u/U1058/X (STP_INV_S_0P65)                   0.03       1.29 f
+  core/label_u/U125/X (STP_OAI22_0P75)                    0.04       1.33 r
+  core/label_u/U503/X (STP_OA2BB2_0P5)                    0.07       1.39 r
+  core/label_u/U116/X (STP_INV_S_0P65)                    0.03       1.42 f
+  core/label_u/U1534/X (STP_EO3_0P5)                      0.08       1.51 r
+  core/label_u/U109/X (STP_OAI21_0P5)                     0.02       1.53 f
+  core/label_u/U615/X (STP_AOI21_0P75)                    0.03       1.56 r
+  core/label_u/U614/X (STP_OA2BB2_0P5)                    0.05       1.61 r
+  core/label_u/U78/X (STP_INV_S_0P65)                     0.02       1.63 f
+  core/label_u/U500/X (STP_AO2BB2_0P5)                    0.05       1.69 f
+  core/label_u/U461/X (STP_AO2BB2_0P5)                    0.06       1.75 f
+  core/label_u/U1573/X (STP_EO3_0P5)                      0.10       1.86 f
+  core/label_u/U1574/X (STP_EO3_0P5)                      0.09       1.95 f
+  core/label_u/U653/X (STP_AO2BB2_0P5)                    0.04       1.99 f
+  core/label_u/U652/X (STP_AOI22_0P5)                     0.06       2.05 r
+  core/label_u/U515/X (STP_OA2BB2_0P5)                    0.06       2.11 f
+  core/label_u/U1152/X (STP_OA2BB2_0P5)                   0.06       2.18 f
+  core/label_u/U510/X (STP_AO2BB2_0P5)                    0.06       2.23 f
+  core/label_u/U1215/X (STP_AO2BB2_0P5)                   0.05       2.29 f
+  core/label_u/U1691/X (STP_EO3_0P5)                      0.08       2.37 r
+  core/label_u/U666/X (STP_AOI22_0P5)                     0.03       2.40 f
+  core/label_u/U1188/X (STP_AO2BB2_0P5)                   0.07       2.47 f
+  core/label_u/U1296/X (STP_AO2BB2_0P5)                   0.06       2.53 f
+  core/label_u/U661/X (STP_AO2BB2_0P5)                    0.06       2.59 f
+  core/label_u/U1696/X (STP_EO3_0P5)                      0.10       2.69 f
+  core/label_u/U1767/X (STP_EO3_0P5)                      0.10       2.79 f
+  core/label_u/U1349/X (STP_OAOI211_0P5)                  0.04       2.83 r
+  core/label_u/U1347/X (STP_OAI211_0P5)                   0.04       2.87 f
+  core/label_u/label_o[0] (pbch_scan_label_b32)           0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/label_i[0] (selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61)
+                                                          0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/U562/X (STP_INV_S_1)
+                                                          0.07       2.93 r
+  core/grouped_block_fwht_search.search_u/U843/X (STP_AO2BB2_0P5)
+                                                          0.04       2.97 f
+  core/grouped_block_fwht_search.search_u/labels_q_reg[17][0]/D (STP_FDPQ_V2_1)
+                                                          0.00       2.97 f
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/grouped_block_fwht_search.search_u/labels_q_reg[17][0]/CK (STP_FDPQ_V2_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.03       3.11
+  data required time                                                 3.11
+  --------------------------------------------------------------------------
+  data required time                                                 3.11
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: core/label_position_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/grouped_block_fwht_search.search_u/labels_q_reg[16][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encoder_folded256_h5_c16
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_encoder_core_folded256_h5_c16_4096_13_104_512_128_32_2_5_5_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  pbch_scan_label_b32
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/label_position_q_reg[0]/CK (STP_FDPRBQ_1)          0.00 #     0.00 r
+  core/label_position_q_reg[0]/Q (STP_FDPRBQ_1)           0.09       0.09 f
+  core/label_u/position_i[0] (pbch_scan_label_b32)        0.00       0.09 f
+  core/label_u/U1166/X (STP_NR2_G_0P5)                    0.06       0.15 r
+  core/label_u/U1156/X (STP_NR2_G_0P5)                    0.03       0.18 f
+  core/label_u/U438/X (STP_AN2_S_0P5)                     0.04       0.22 f
+  core/label_u/U436/X (STP_NR2_G_0P8)                     0.02       0.24 r
+  core/label_u/U432/X (STP_INV_S_0P65)                    0.02       0.26 f
+  core/label_u/U431/X (STP_NR2_G_0P8)                     0.02       0.29 r
+  core/label_u/U427/X (STP_ND2_S_1)                       0.02       0.31 f
+  core/label_u/U423/X (STP_NR2_G_0P8)                     0.02       0.34 r
+  core/label_u/U419/X (STP_ND2_S_1)                       0.03       0.36 f
+  core/label_u/U1427/X (STP_OR2_1)                        0.04       0.40 f
+  core/label_u/U1107/X (STP_NR2_G_0P5)                    0.03       0.43 r
+  core/label_u/U407/X (STP_ND2B_MM_1)                     0.02       0.45 f
+  core/label_u/U381/X (STP_AN2_S_1)                       0.07       0.52 f
+  core/label_u/U952/X (STP_OR2_1)                         0.10       0.62 f
+  core/label_u/U473/X (STP_INV_S_1)                       0.07       0.69 r
+  core/label_u/U1380/X (STP_OR2_1)                        0.08       0.77 r
+  core/label_u/U257/X (STP_INV_S_1)                       0.08       0.85 f
+  core/label_u/U218/X (STP_ND2_S_1)                       0.03       0.88 r
+  core/label_u/U723/X (STP_OAI211_0P5)                    0.03       0.91 f
+  core/label_u/U722/X (STP_OAOI211_0P5)                   0.03       0.94 r
+  core/label_u/U161/X (STP_OAI22_0P5)                     0.02       0.96 f
+  core/label_u/U577/X (STP_NR4_0P5)                       0.04       1.01 r
+  core/label_u/U574/X (STP_AOI22_0P5)                     0.05       1.05 f
+  core/label_u/U974/X (STP_AO2BB2_0P5)                    0.07       1.12 f
+  core/label_u/U1035/X (STP_AO2BB2_0P5)                   0.06       1.18 f
+  core/label_u/U1017/X (STP_AO2BB2_0P5)                   0.04       1.22 f
+  core/label_u/U1016/X (STP_AOI22_0P5)                    0.04       1.26 r
+  core/label_u/U1058/X (STP_INV_S_0P65)                   0.03       1.29 f
+  core/label_u/U125/X (STP_OAI22_0P75)                    0.04       1.33 r
+  core/label_u/U503/X (STP_OA2BB2_0P5)                    0.07       1.39 r
+  core/label_u/U116/X (STP_INV_S_0P65)                    0.03       1.42 f
+  core/label_u/U1534/X (STP_EO3_0P5)                      0.08       1.51 r
+  core/label_u/U109/X (STP_OAI21_0P5)                     0.02       1.53 f
+  core/label_u/U615/X (STP_AOI21_0P75)                    0.03       1.56 r
+  core/label_u/U614/X (STP_OA2BB2_0P5)                    0.05       1.61 r
+  core/label_u/U78/X (STP_INV_S_0P65)                     0.02       1.63 f
+  core/label_u/U500/X (STP_AO2BB2_0P5)                    0.05       1.69 f
+  core/label_u/U461/X (STP_AO2BB2_0P5)                    0.06       1.75 f
+  core/label_u/U1573/X (STP_EO3_0P5)                      0.10       1.86 f
+  core/label_u/U1574/X (STP_EO3_0P5)                      0.09       1.95 f
+  core/label_u/U653/X (STP_AO2BB2_0P5)                    0.04       1.99 f
+  core/label_u/U652/X (STP_AOI22_0P5)                     0.06       2.05 r
+  core/label_u/U515/X (STP_OA2BB2_0P5)                    0.06       2.11 f
+  core/label_u/U1152/X (STP_OA2BB2_0P5)                   0.06       2.18 f
+  core/label_u/U510/X (STP_AO2BB2_0P5)                    0.06       2.23 f
+  core/label_u/U1215/X (STP_AO2BB2_0P5)                   0.05       2.29 f
+  core/label_u/U1691/X (STP_EO3_0P5)                      0.08       2.37 r
+  core/label_u/U666/X (STP_AOI22_0P5)                     0.03       2.40 f
+  core/label_u/U1188/X (STP_AO2BB2_0P5)                   0.07       2.47 f
+  core/label_u/U1296/X (STP_AO2BB2_0P5)                   0.06       2.53 f
+  core/label_u/U661/X (STP_AO2BB2_0P5)                    0.06       2.59 f
+  core/label_u/U1696/X (STP_EO3_0P5)                      0.10       2.69 f
+  core/label_u/U1767/X (STP_EO3_0P5)                      0.10       2.79 f
+  core/label_u/U1349/X (STP_OAOI211_0P5)                  0.04       2.83 r
+  core/label_u/U1347/X (STP_OAI211_0P5)                   0.04       2.87 f
+  core/label_u/label_o[0] (pbch_scan_label_b32)           0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/label_i[0] (selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5_CHUNK16_EARLY_EXIT1_FUSE_INPUT1_MODULAR61)
+                                                          0.00       2.87 f
+  core/grouped_block_fwht_search.search_u/U562/X (STP_INV_S_1)
+                                                          0.07       2.93 r
+  core/grouped_block_fwht_search.search_u/U832/X (STP_AO2BB2_0P5)
+                                                          0.04       2.97 f
+  core/grouped_block_fwht_search.search_u/labels_q_reg[16][0]/D (STP_FDPQ_V2_1)
+                                                          0.00       2.97 f
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/grouped_block_fwht_search.search_u/labels_q_reg[16][0]/CK (STP_FDPQ_V2_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.03       3.11
+  data required time                                                 3.11
+  --------------------------------------------------------------------------
+  data required time                                                 3.11
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+1

@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : area
+Design : pbch_dec_cse
+Version: Q-2019.12-SP5-5
+Date   : Sat Nov 14 22:04:17 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'pbch_dec_cse' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    um28nchslogl35hsl140f_ssgwc0p9v125c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db)
+
+Number of ports:                         1778
+Number of nets:                         28118
+Number of cells:                        26364
+Number of combinational cells:          25019
+Number of sequential cells:              1339
+Number of macros/black boxes:               0
+Number of buf/inv:                       2486
+Number of references:                       1
+
+Combinational area:              24362.687595
+Buf/Inv area:                      843.863989
+Noncombinational area:            4048.799906
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 28411.487500
+Total area:                 undefined
+
+The above information was reported from the logical library. The following are from the physical library:
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  -------------------------------------------
+pbch_dec_cse                      28411.4875    100.0      0.0000     0.0000  0.0000  pbch_dec_cse
+core                              28411.4875    100.0     16.9680    42.1680  0.0000  pbch_dec_rec_cse_13_8_13_4096_104_64_1_201b
+core/bch_u                        27639.5275     97.3    151.3680   378.0000  0.0000  bch_dec_13_8_4109_4213_64_1_13_40_201b
+core/bch_u/bm_lanes[0].bm_u        8908.3679     31.4   6800.6399  2107.7280  0.0000  bch_bm_13_8_201b
+core/bch_u/chien_u                12927.0957     45.5  12497.6877   429.4080  0.0000  bch_chien_13_8_4213_4109_64_13_40_201b
+core/bch_u/syndrome_u              5274.6959     18.6   4282.8239   991.8720  0.0000  bch_syndrome_13_8_4213_64_13_40_201b
+core/unmask_u                       712.8240      2.5    613.2000    99.6240  0.0000  pbch_unmask_rec_cse
+--------------------------------  ----------  -------  ----------  ---------  ------  -------------------------------------------
+Total                                                  24362.6876  4048.7999  0.0000
+
+1

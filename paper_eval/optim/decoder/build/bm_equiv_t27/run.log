@@ -1,0 +1,11 @@
+Command: /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/bm_equiv_t27/simv +vcs+lic+wait +VEC_FILE=/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/vectors/bm_t27.mem -l /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/bm_equiv_t27/run.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Nov 14 22:06 2026
+PASS BM exact locator+degree T=27 1000 sets: actualerrors0..2T+5 +random Frobenius syndromes
+$finish called from file "/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/bm_equiv_tb.sv", line 42.
+$finish at simulation time            328009000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 328009000 ps
+CPU Time:      5.060 seconds;       Data structure size:   0.0Mb
+Sat Nov 14 22:06:27 2026

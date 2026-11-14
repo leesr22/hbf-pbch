@@ -1,0 +1,13 @@
+Notice: timing checks disabled with +notimingcheck at compile-time
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Nov 14 23:22 2026
+START vector=0 cycle=4
+START vector=1 cycle=61
+START vector=2 cycle=129
+Fatal: "/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/encoder/runs/strict_piped_h7_c32_d5_crc128/sim_accepted_gate/testbench_snapshot.sv", 247: pbch_sparse_pipeline_enc_tb: at time 6202000 ps
+codeword mismatch context=0
+$finish called from file "/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/encoder/runs/strict_piped_h7_c32_d5_crc128/sim_accepted_gate/testbench_snapshot.sv", line 247.
+$finish at simulation time              6202000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 6202000 ps

@@ -1,0 +1,282 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : bch_encoder_cse_t9
+Version: Q-2019.12-SP5-5
+Date   : Sat Nov 14 22:57:34 2026
+****************************************
+
+Operating Conditions: SSGWC0P9V125C   Library: um28nchslogl35hsl140f_ssgwc0p9v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: in_bits_i[471]
+              (input port clocked by clk)
+  Endpoint: remainder_q_reg[46]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encoder_cse_t9 ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_remainder_cse_t9
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[471] (in)                                     0.00       0.40 r
+  map_u/data_i[471] (bch_remainder_cse_t9)                0.00       0.40 r
+  map_u/U300/X (STP_OA2BB2_0P5)                           0.06       0.46 r
+  map_u/U301/X (STP_INV_S_0P65)                           0.04       0.50 f
+  map_u/U302/X (STP_AOI22_0P5)                            0.06       0.56 r
+  map_u/U306/X (STP_INV_S_0P65)                           0.04       0.59 f
+  map_u/U308/X (STP_AOI22_0P5)                            0.06       0.66 r
+  map_u/U309/X (STP_INV_S_0P65)                           0.03       0.69 f
+  map_u/U310/X (STP_OAI22_0P5)                            0.04       0.73 r
+  map_u/U311/X (STP_INV_S_0P65)                           0.02       0.75 f
+  map_u/U6447/X (STP_AOI22_0P5)                           0.03       0.78 r
+  map_u/U6448/X (STP_EO3_0P5)                             0.08       0.86 f
+  map_u/U6449/X (STP_EO3_0P5)                             0.09       0.95 f
+  map_u/U6450/X (STP_EO3_0P5)                             0.09       1.05 f
+  map_u/U6451/X (STP_EO3_0P5)                             0.09       1.14 f
+  map_u/U6452/X (STP_EO3_0P5)                             0.09       1.23 f
+  map_u/U6453/X (STP_EO3_0P5)                             0.09       1.32 f
+  map_u/U6454/X (STP_EO3_0P5)                             0.09       1.41 f
+  map_u/U6455/X (STP_EO3_0P5)                             0.09       1.50 f
+  map_u/next_o[46] (bch_remainder_cse_t9)                 0.00       1.50 f
+  U2779/X (STP_AO22_0P5)                                  0.05       1.54 f
+  remainder_q_reg[46]/D (STP_FDPRBQ_1)                    0.00       1.54 f
+  data arrival time                                                  1.54
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  remainder_q_reg[46]/CK (STP_FDPRBQ_1)                   0.00       3.13 r
+  library setup time                                     -0.03       3.10
+  data required time                                                 3.10
+  --------------------------------------------------------------------------
+  data required time                                                 3.10
+  data arrival time                                                 -1.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.56
+
+
+  Startpoint: in_bits_i[427]
+              (input port clocked by clk)
+  Endpoint: remainder_q_reg[81]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encoder_cse_t9 ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_remainder_cse_t9
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[427] (in)                                     0.00       0.40 r
+  map_u/data_i[427] (bch_remainder_cse_t9)                0.00       0.40 r
+  map_u/U17/X (STP_OA2BB2_0P5)                            0.06       0.46 r
+  map_u/U18/X (STP_INV_S_0P65)                            0.04       0.50 f
+  map_u/U19/X (STP_AOI22_0P5)                             0.07       0.57 r
+  map_u/U20/X (STP_INV_S_0P65)                            0.05       0.61 f
+  map_u/U1237/X (STP_OAI22_0P5)                           0.07       0.68 r
+  map_u/U1238/X (STP_INV_S_0P65)                          0.04       0.72 f
+  map_u/U4846/X (STP_AOI22_0P5)                           0.04       0.76 r
+  map_u/U4847/X (STP_EO3_0P5)                             0.09       0.84 f
+  map_u/U4848/X (STP_EO3_0P5)                             0.09       0.93 f
+  map_u/U4849/X (STP_EO3_0P5)                             0.09       1.03 f
+  map_u/U4850/X (STP_EO3_0P5)                             0.09       1.12 f
+  map_u/U4851/X (STP_EO3_0P5)                             0.09       1.21 f
+  map_u/U4852/X (STP_EO3_0P5)                             0.09       1.30 f
+  map_u/U4867/X (STP_EO3_0P5)                             0.09       1.38 f
+  map_u/U4868/X (STP_EO3_0P5)                             0.08       1.46 r
+  map_u/next_o[81] (bch_remainder_cse_t9)                 0.00       1.46 r
+  U2778/X (STP_AO22_0P5)                                  0.04       1.50 r
+  remainder_q_reg[81]/D (STP_FDPRBQ_1)                    0.00       1.50 r
+  data arrival time                                                  1.50
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  remainder_q_reg[81]/CK (STP_FDPRBQ_1)                   0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -1.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.58
+
+
+  Startpoint: in_bits_i[477]
+              (input port clocked by clk)
+  Endpoint: remainder_q_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encoder_cse_t9 ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_remainder_cse_t9
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[477] (in)                                     0.00       0.40 r
+  map_u/data_i[477] (bch_remainder_cse_t9)                0.00       0.40 r
+  map_u/U1267/X (STP_OA2BB2_0P5)                          0.05       0.45 r
+  map_u/U1268/X (STP_INV_S_0P65)                          0.03       0.49 f
+  map_u/U1269/X (STP_AOI22_0P5)                           0.05       0.54 r
+  map_u/U1271/X (STP_INV_S_0P65)                          0.04       0.58 f
+  map_u/U1272/X (STP_OAI22_0P5)                           0.05       0.62 r
+  map_u/U2005/X (STP_EO3_0P5)                             0.09       0.72 f
+  map_u/U5416/X (STP_EO3_0P5)                             0.10       0.81 f
+  map_u/U5417/X (STP_EO3_0P5)                             0.09       0.90 f
+  map_u/U5418/X (STP_EO3_0P5)                             0.09       0.99 f
+  map_u/U5419/X (STP_EO3_0P5)                             0.09       1.08 f
+  map_u/U5420/X (STP_EO3_0P5)                             0.09       1.17 f
+  map_u/U5421/X (STP_EO3_0P5)                             0.09       1.26 f
+  map_u/U5422/X (STP_EO3_0P5)                             0.09       1.35 f
+  map_u/U5423/X (STP_EO3_0P5)                             0.08       1.43 r
+  map_u/next_o[7] (bch_remainder_cse_t9)                  0.00       1.43 r
+  U2777/X (STP_AO22_0P5)                                  0.04       1.47 r
+  remainder_q_reg[7]/D (STP_FDPRBQ_1)                     0.00       1.47 r
+  data arrival time                                                  1.47
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  remainder_q_reg[7]/CK (STP_FDPRBQ_1)                    0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -1.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.61
+
+
+  Startpoint: in_bits_i[491]
+              (input port clocked by clk)
+  Endpoint: remainder_q_reg[88]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encoder_cse_t9 ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_remainder_cse_t9
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[491] (in)                                     0.00       0.40 r
+  map_u/data_i[491] (bch_remainder_cse_t9)                0.00       0.40 r
+  map_u/U611/X (STP_OA2BB2_0P5)                           0.06       0.46 r
+  map_u/U612/X (STP_INV_S_0P65)                           0.03       0.49 f
+  map_u/U613/X (STP_AOI22_0P5)                            0.05       0.54 r
+  map_u/U614/X (STP_INV_S_0P65)                           0.04       0.57 f
+  map_u/U2226/X (STP_AOI22_0P5)                           0.07       0.64 r
+  map_u/U2227/X (STP_INV_S_0P65)                          0.03       0.68 f
+  map_u/U2228/X (STP_OAI22_0P5)                           0.05       0.73 r
+  map_u/U7228/X (STP_EO3_0P5)                             0.09       0.82 r
+  map_u/U7230/X (STP_EO3_0P5)                             0.04       0.86 f
+  map_u/U7231/X (STP_EO3_0P5)                             0.09       0.96 f
+  map_u/U7232/X (STP_EO3_0P5)                             0.04       0.99 f
+  map_u/U7233/X (STP_EO3_0P5)                             0.09       1.09 f
+  map_u/U7234/X (STP_EO3_0P5)                             0.09       1.17 f
+  map_u/U7235/X (STP_EO3_0P5)                             0.09       1.26 f
+  map_u/U7236/X (STP_EO3_0P5)                             0.09       1.35 f
+  map_u/U7237/X (STP_EO3_0P5)                             0.09       1.44 f
+  map_u/next_o[88] (bch_remainder_cse_t9)                 0.00       1.44 f
+  U2776/X (STP_AO22_0P5)                                  0.05       1.49 f
+  remainder_q_reg[88]/D (STP_FDPRBQ_1)                    0.00       1.49 f
+  data arrival time                                                  1.49
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  remainder_q_reg[88]/CK (STP_FDPRBQ_1)                   0.00       3.13 r
+  library setup time                                     -0.03       3.10
+  data required time                                                 3.10
+  --------------------------------------------------------------------------
+  data required time                                                 3.10
+  data arrival time                                                 -1.49
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.62
+
+
+  Startpoint: in_bits_i[437]
+              (input port clocked by clk)
+  Endpoint: remainder_q_reg[74]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encoder_cse_t9 ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_remainder_cse_t9
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.40       0.40 r
+  in_bits_i[437] (in)                                     0.00       0.40 r
+  map_u/data_i[437] (bch_remainder_cse_t9)                0.00       0.40 r
+  map_u/U1169/X (STP_OA2BB2_0P5)                          0.07       0.47 r
+  map_u/U1170/X (STP_INV_S_0P65)                          0.04       0.51 f
+  map_u/U1442/X (STP_AOI22_0P5)                           0.06       0.57 r
+  map_u/U1443/X (STP_INV_S_0P65)                          0.04       0.60 f
+  map_u/U1444/X (STP_AOI22_0P5)                           0.07       0.67 r
+  map_u/U1445/X (STP_INV_S_0P65)                          0.04       0.71 f
+  map_u/U2979/X (STP_AOI22_0P5)                           0.05       0.76 r
+  map_u/U2980/X (STP_EO3_0P5)                             0.09       0.85 f
+  map_u/U4806/X (STP_AO2BB2_0P5)                          0.04       0.90 f
+  map_u/U4807/X (STP_EO3_0P5)                             0.09       0.99 f
+  map_u/U4808/X (STP_EO3_0P5)                             0.09       1.08 f
+  map_u/U4809/X (STP_EO3_0P5)                             0.09       1.17 f
+  map_u/U4810/X (STP_EO3_0P5)                             0.09       1.26 f
+  map_u/U4811/X (STP_EO3_0P5)                             0.09       1.35 f
+  map_u/U4812/X (STP_EO3_0P5)                             0.08       1.43 r
+  map_u/next_o[74] (bch_remainder_cse_t9)                 0.00       1.43 r
+  U2772/X (STP_AO22_0P5)                                  0.04       1.46 r
+  remainder_q_reg[74]/D (STP_FDPRBQ_1)                    0.00       1.46 r
+  data arrival time                                                  1.46
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  remainder_q_reg[74]/CK (STP_FDPRBQ_1)                   0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -1.46
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.62
+
+
+1

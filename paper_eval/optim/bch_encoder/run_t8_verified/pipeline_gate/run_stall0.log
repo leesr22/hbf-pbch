@@ -1,0 +1,11 @@
+Notice: timing checks disabled with +notimingcheck at compile-time
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Nov 14 23:10 2026
+PASS mapped/golden BCH R=104 frames=128 beats=1152 E2E=9 II=9
+$finish called from file "/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/bch_encoder/encoder_pipeline_tb.sv", line 73.
+$finish at simulation time              3859105
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 3859105 ps
+CPU Time:      1.340 seconds;       Data structure size:   0.7Mb
+Sat Nov 14 23:10:44 2026

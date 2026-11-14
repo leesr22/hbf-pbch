@@ -1,0 +1,20 @@
+Command: /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/compressedgroupfirstchien_functional/simv +vcs+lic+wait +VEC_DIR=/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/vectors -l /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/compressedgroupfirstchien_functional/run.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Nov 14 22:43 2026
+METRIC errors=0 e2e_cycles=204
+METRIC errors=1 e2e_cycles=204
+METRIC errors=2 e2e_cycles=204
+METRIC errors=3 e2e_cycles=204
+METRIC errors=4 e2e_cycles=204
+METRIC errors=5 e2e_cycles=204
+METRIC errors=6 e2e_cycles=204
+METRIC errors=7 e2e_cycles=204
+METRIC errors=8 e2e_cycles=204
+PASS replay-aligned functional-equivalence frames=144 errors0..64 andrandominvalidwords, payload/status/backpressure (reference waits for slower BM)
+$finish called from file "/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/decoder_functional_equiv_tb.sv", line 113.
+$finish at simulation time            117680198
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 117680198 ps
+CPU Time:      7.550 seconds;       Data structure size:   0.1Mb
+Sat Nov 14 22:43:09 2026

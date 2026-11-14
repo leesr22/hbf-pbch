@@ -1,0 +1,13 @@
+Command: /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/fair_group_t8_gate/simv +vcs+lic+wait +VEC_DIR=/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/vectors/study/bch_base/w64 -l /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/fair_group_t8_gate/run.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Nov 14 22:48 2026
+METRIC E2E_frame_0=298
+METRIC E2E_frame_1=346
+METRIC E2E_frame_2=391
+Fatal: "/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/decoder_pipeline_metrics_tb.sv", 212: decoder_pipeline_metrics_tb: at time 10000000000 ps
+pipeline timeout
+$finish called from file "/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/decoder_pipeline_metrics_tb.sv", line 212.
+$finish at simulation time          10000000000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 10000000000 ps

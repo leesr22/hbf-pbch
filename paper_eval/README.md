@@ -1,4 +1,11 @@
-# Final K=4096 paper hardware point
+# Original K=4096 paper hardware point
+
+**Latest optimization:** see [`optim/README.md`](optim/README.md) and the
+[new comparison table](optim/results/hardware_comparison.png). The optimized
+full-FWHT PBCH provision is 7.941 MGE versus 8.066 MGE for common-optimized
+BCH(t=9), at 300 MHz. [`optim/REPRODUCE.md`](optim/REPRODUCE.md) describes the
+portable flows. The original release below is preserved as a baseline;
+its measurements are not the latest optimized result.
 
 This directory is the self-contained release for the final Outlast hardware
 comparison. It contains the four configurations used in the paper-facing

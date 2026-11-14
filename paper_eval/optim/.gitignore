@@ -1,0 +1,57 @@
+# Rebuildable EDA products stay on the server; source, reports and manifests
+# remain available for review. No PDK cell-model files are copied here.
+**/work/
+**/csrc/
+**/simv
+**/simv.*
+**/ucli.key
+**/*.ddc
+**/netlist.v
+**/mapped.v
+**/*.vpd
+**/*.vcd
+**/AN.DB/
+**/alib-*/
+**/__pycache__/
+# Additional VCS/DC names used by standalone experiments.
+**/*_csrc/
+**/*simv*
+**/*.daidir/
+**/*.o
+**/*.a
+**/*.so
+**/*.db
+**/*.sdb
+**/*.ddc
+**/*.svf
+**/*.pvl
+**/*.mr
+**/*.syn
+**/DVEfiles/
+**/novas.*
+# Compiler stdout is noisy and may contain machine/license diagnostics.
+# Functional test logs, source snapshots, and area/timing reports are retained.
+**/*compile*.log
+**/command.log
+**/dc_shell.log
+reproduction/
+# Regenerate the large workloads using gen_regression.py; keep their seeds.
+encoder/vectors/q002/*.hex
+encoder/vectors/q002_long/*.hex
+# Keep frozen sources for final/retained alternatives, not every rejected run.
+encoder/runs/*/sources/
+!encoder/runs/final_h5_c16_crc256/sources/
+!encoder/runs/strict_piped_h7_c16_crc128/sources/
+!encoder/runs/strict_piped_h7_c16_d2_crc128/sources/
+!encoder/runs/strict_piped_h7_c16_d3_crc128/sources/
+!encoder/runs/strict_piped_h7_c16_d5_crc128/sources/
+decoder/runs/*/source_snapshot/
+!decoder/runs/compressedfirstchien/source_snapshot/
+!decoder/runs/compressedgroupfirstchien/source_snapshot/
+!decoder/runs/fair_group_t8/source_snapshot/
+!decoder/runs/fair_chien_t9/source_snapshot/
+!decoder/runs/fair_chien_t27/source_snapshot/
+# Repeated workload logs superseded by the accepted-START rechecks.
+encoder/runs/reference/sim_q002_long/
+encoder/runs/final_h5_c16_crc256/sim_q002_long/
+encoder/runs/strict_piped_h7_c16_d5_crc128/sim_q002_long/

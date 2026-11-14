@@ -1,0 +1,10 @@
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Nov 14 22:56 2026
+PASS BCH encoder K=4096 R=351 W=512 beats=9
+$finish called from file "/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/tb/study_bch_encoder_tb.sv", line 93.
+$finish at simulation time                54000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 54000 ps
+CPU Time:      0.400 seconds;       Data structure size:   0.1Mb
+Sat Nov 14 22:56:54 2026

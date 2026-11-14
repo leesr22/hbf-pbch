@@ -1,0 +1,8 @@
+{
+  "bch_remainder_cse_t27.sv": "25d317ff9880a89a13dd17128badc01cb7f3816dcdebe748b16278540c7b0801",
+  "bch_encoder_cse_t27.sv": "96cc94c957ffcd4c3e5cfb1256ed0892a72d14909bcfb7b39b0351b984efc939",
+  "bch_remainder_cse_t27_tb.sv": "28914ae55e0d41c62689987d6599f5feda10db198f6e3f42e5f7500701bfa360",
+  "cse_t27.json": "59d70edde09e436f542d45e9653ff9e4a21d256cfdac537c8286feb9b51f01c8",
+  "synth.tcl": "b7544f34c5c9b44579e0ed55c27c21c86b4baca12847dbbdebd27678a956d2b8",
+  "gen_cse.py": "b614fc5db089312ece16ac3e723aac417977185eb9bfdd8a60ab3a0ad6455ece"
+}

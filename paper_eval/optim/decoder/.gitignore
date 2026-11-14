@@ -1,0 +1,11 @@
+__pycache__/
+# Keep simulator evidence, but not generated executables/object directories.
+build/*
+!build/*/
+build/*/*
+!build/*/run.log
+!build/*/compile.log
+!build/*/pipeline_stress_pass.log
+!build/*/driver_presampling_timeout.log
+# The run root retains reports, netlist, manifest, and immutable source copies.
+runs/*/work/

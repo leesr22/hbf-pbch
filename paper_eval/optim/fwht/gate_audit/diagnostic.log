@@ -1,0 +1,64 @@
+Notice: timing checks disabled with +notimingcheck at compile-time
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Nov 14 23:27 2026
+START vector=0 cycle=4
+CORE_AUDIT cycle=58 state=0 count=00 best=40 bucket_lowbits=xxxx
+CORE_AUDIT cycle=59 state=0 count=00 best=40 bucket_lowbits=xxxx
+SEARCH_AUDIT cycle=59 start=1 finish=0 done=0 selector=0000 best_score=0000
+CORE_AUDIT cycle=60 state=1 count=00 best=40 bucket_lowbits=xxxx
+SEARCH_AUDIT cycle=60 start=0 finish=1 done=0 selector=0000 best_score=0000
+CORE_AUDIT cycle=61 state=2 count=00 best=40 bucket_lowbits=xxxx
+START vector=1 cycle=61
+CORE_AUDIT cycle=62 state=2 count=00 best=40 bucket_lowbits=xxxx
+CORE_AUDIT cycle=63 state=2 count=00 best=xx bucket_lowbits=xxxx
+CORE_AUDIT cycle=64 state=2 count=00 best=xx bucket_lowbits=xxxx
+CORE_AUDIT cycle=65 state=2 count=00 best=xx bucket_lowbits=xxxx
+CORE_AUDIT cycle=66 state=2 count=00 best=xx bucket_lowbits=xxxx
+CORE_AUDIT cycle=67 state=2 count=00 best=xx bucket_lowbits=xxxx
+SEARCH_AUDIT cycle=126 start=0 finish=0 done=1 selector=xxxx best_score=xxxx
+SEARCH_AUDIT cycle=127 start=1 finish=0 done=0 selector=xxxx best_score=xxxx
+SEARCH_AUDIT cycle=128 start=0 finish=1 done=0 selector=xxxx best_score=xxxx
+START vector=2 cycle=129
+SEARCH_AUDIT cycle=194 start=0 finish=0 done=1 selector=xxxx best_score=xxxx
+OUTPUT_AUDIT cycle=1541 context=0 count=13 last=0 selector=xxxx expected_selector=0000 failures=xxxx unknown_bits=1
+OUTPUT_AUDIT cycle=1542 context=0 count=512 last=0 selector=xxxx expected_selector=0000 failures=xxxx unknown_bits=1
+OUTPUT_AUDIT cycle=1543 context=0 count=512 last=0 selector=xxxx expected_selector=0000 failures=xxxx unknown_bits=1
+OUTPUT_AUDIT cycle=1544 context=0 count=512 last=0 selector=xxxx expected_selector=0000 failures=xxxx unknown_bits=1
+OUTPUT_AUDIT cycle=1545 context=0 count=512 last=0 selector=xxxx expected_selector=0000 failures=xxxx unknown_bits=1
+OUTPUT_AUDIT cycle=1546 context=0 count=512 last=0 selector=xxxx expected_selector=0000 failures=xxxx unknown_bits=1
+OUTPUT_AUDIT cycle=1547 context=0 count=512 last=0 selector=xxxx expected_selector=0000 failures=xxxx unknown_bits=1
+OUTPUT_AUDIT cycle=1548 context=0 count=512 last=0 selector=xxxx expected_selector=0000 failures=xxxx unknown_bits=1
+OUTPUT_AUDIT cycle=1549 context=0 count=512 last=0 selector=xxxx expected_selector=0000 failures=xxxx unknown_bits=1
+OUTPUT_AUDIT cycle=1550 context=0 count=104 last=1 selector=xxxx expected_selector=0000 failures=xxxx unknown_bits=1
+MISMATCH bit=0 got=x expected=1
+MISMATCH bit=1 got=x expected=0
+MISMATCH bit=2 got=x expected=1
+MISMATCH bit=3 got=x expected=1
+MISMATCH bit=4 got=x expected=1
+MISMATCH bit=5 got=x expected=0
+MISMATCH bit=6 got=x expected=0
+MISMATCH bit=7 got=x expected=1
+MISMATCH bit=8 got=x expected=1
+MISMATCH bit=9 got=x expected=0
+MISMATCH bit=10 got=x expected=1
+MISMATCH bit=11 got=x expected=1
+MISMATCH bit=12 got=x expected=1
+MISMATCH bit=13 got=x expected=0
+MISMATCH bit=14 got=x expected=0
+MISMATCH bit=15 got=x expected=0
+MISMATCH bit=16 got=x expected=1
+MISMATCH bit=17 got=x expected=0
+MISMATCH bit=18 got=x expected=0
+MISMATCH bit=19 got=x expected=1
+MISMATCH bit=20 got=x expected=0
+MISMATCH bit=21 got=x expected=1
+MISMATCH bit=22 got=x expected=1
+MISMATCH bit=23 got=x expected=1
+MISMATCH_SUMMARY count=4213 observed_unknown=1 expected_unknown=0
+Fatal: "/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/fwht/gate_audit/tb.sv", 269: pbch_sparse_pipeline_enc_tb: at time 6202000 ps
+codeword mismatch context=0
+$finish called from file "/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/fwht/gate_audit/tb.sv", line 269.
+$finish at simulation time              6202000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 6202000 ps

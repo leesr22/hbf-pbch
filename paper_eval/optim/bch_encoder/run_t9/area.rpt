@@ -1,0 +1,45 @@
+ 
+****************************************
+Report : area
+Design : bch_encoder_cse_t9
+Version: Q-2019.12-SP5-5
+Date   : Sat Nov 14 22:57:34 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    um28nchslogl35hsl140f_ssgwc0p9v125c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db)
+
+Number of ports:                         1801
+Number of nets:                          9883
+Number of cells:                         8602
+Number of combinational cells:           8468
+Number of sequential cells:               133
+Number of macros/black boxes:               0
+Number of buf/inv:                       1201
+Number of references:                      27
+
+Combinational area:               8791.103845
+Buf/Inv area:                      405.887995
+Noncombinational area:             402.191991
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  9193.295835
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  --------------------
+bch_encoder_cse_t9                9193.2958    100.0   576.9120   402.1920  0.0000  bch_encoder_cse_t9
+map_u                             8214.1918     89.3  8214.1918     0.0000  0.0000  bch_remainder_cse_t9
+--------------------------------  ---------  -------  ---------  ---------  ------  --------------------
+Total                                                 8791.1038   402.1920  0.0000
+
+1

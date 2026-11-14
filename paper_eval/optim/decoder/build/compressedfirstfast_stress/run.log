@@ -1,0 +1,20 @@
+Command: /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/compressedfirstfast_stress/simv +vcs+lic+wait +VEC_DIR=/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/vectors -l /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/compressedfirstfast_stress/run.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Nov 14 22:21 2026
+METRIC errors=0 e2e_cycles=171
+METRIC errors=1 e2e_cycles=171
+METRIC errors=2 e2e_cycles=171
+METRIC errors=3 e2e_cycles=171
+METRIC errors=4 e2e_cycles=171
+METRIC errors=5 e2e_cycles=171
+METRIC errors=6 e2e_cycles=171
+METRIC errors=7 e2e_cycles=171
+METRIC errors=8 e2e_cycles=171
+PASS decoder frames=144 random selectors errors0..8 input bubbles/output backpressure
+$finish called from file "/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/decoder_tb.sv", line 92.
+$finish at simulation time            101566976
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 101566976 ps
+CPU Time:      3.050 seconds;       Data structure size:   0.0Mb
+Sat Nov 14 22:21:59 2026

@@ -1,0 +1,1077 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : fwht_h6_c8_e1
+Version: Q-2019.12-SP5-5
+Date   : Sat Nov 14 21:57:48 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: SSGWC0P9V125C   Library: um28nchslogl35hsl140f_ssgwc0p9v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: core/value_q_reg[1][61][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/best_score_o_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fwht_h6_c8_e1      ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_HIGH_L6_CHUNK8_EARLY_EXIT1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  fht_max_tree_COUNT64_SCORE_W7_INDEX_W6
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/value_q_reg[1][61][1]/CK (STP_FDPHQ_1)             0.00 #     0.00 r
+  core/value_q_reg[1][61][1]/Q (STP_FDPHQ_1)              0.04       0.04 f
+  core/max_u/value_i[61][1] (fht_max_tree_COUNT64_SCORE_W7_INDEX_W6)
+                                                          0.00       0.04 f
+  core/max_u/U761/X (STP_INV_S_0P65)                      0.01       0.05 r
+  core/max_u/U131/X (STP_OA2BB2_0P5)                      0.04       0.09 r
+  core/max_u/U766/X (STP_AOAI211_0P5)                     0.03       0.12 f
+  core/max_u/U132/X (STP_OAI21_0P5)                       0.02       0.14 r
+  core/max_u/U767/X (STP_MAJI3_1)                         0.03       0.16 f
+  core/max_u/U768/X (STP_MAJI3_1)                         0.02       0.19 r
+  core/max_u/U769/X (STP_AOAI211_0P5)                     0.02       0.21 f
+  core/max_u/U51/X (STP_OAI21_0P5)                        0.02       0.22 r
+  core/max_u/U282/X (STP_MAJ3_0P5)                        0.07       0.29 r
+  core/max_u/U165/X (STP_MUXI2_MG_0P5)                    0.04       0.33 r
+  core/max_u/U770/X (STP_INV_S_0P65)                      0.02       0.35 f
+  core/max_u/U63/X (STP_ND2_S_0P8)                        0.02       0.37 r
+  core/max_u/U796/X (STP_MAJI3_1)                         0.03       0.39 f
+  core/max_u/U798/X (STP_MAJI3_1)                         0.02       0.42 r
+  core/max_u/U148/X (STP_OAI21_0P5)                       0.02       0.44 f
+  core/max_u/U801/X (STP_OAOI211_0P5)                     0.05       0.49 r
+  core/max_u/U802/X (STP_MAJI3_1)                         0.05       0.54 f
+  core/max_u/U490/X (STP_INV_S_0P65)                      0.04       0.57 r
+  core/max_u/U351/X (STP_MUXI2_MG_0P5)                    0.04       0.61 r
+  core/max_u/U812/X (STP_NR2_G_0P5)                       0.02       0.64 f
+  core/max_u/U813/X (STP_MAJI3_1)                         0.02       0.66 r
+  core/max_u/U814/X (STP_MAJI3_1)                         0.03       0.69 f
+  core/max_u/U815/X (STP_MAJI3_1)                         0.02       0.71 r
+  core/max_u/U816/X (STP_MAJI3_1)                         0.02       0.74 f
+  core/max_u/U817/X (STP_OAOI211_0P5)                     0.04       0.78 r
+  core/max_u/U818/X (STP_MAJI3_1)                         0.06       0.83 f
+  core/max_u/U552/X (STP_INV_S_0P65)                      0.04       0.87 r
+  core/max_u/U820/X (STP_AOI22_0P5)                       0.03       0.90 f
+  core/max_u/U511/X (STP_INV_S_0P65)                      0.02       0.92 r
+  core/max_u/U826/X (STP_NR2_G_0P5)                       0.01       0.94 f
+  core/max_u/U827/X (STP_MAJI3_1)                         0.02       0.96 r
+  core/max_u/U828/X (STP_MAJI3_1)                         0.03       0.98 f
+  core/max_u/U829/X (STP_MAJI3_1)                         0.02       1.00 r
+  core/max_u/U830/X (STP_MAJI3_1)                         0.02       1.02 f
+  core/max_u/U831/X (STP_OAOI211_0P5)                     0.04       1.06 r
+  core/max_u/U833/X (STP_MAJI3_1)                         0.05       1.12 f
+  core/max_u/U551/X (STP_INV_S_0P65)                      0.04       1.16 r
+  core/max_u/U432/X (STP_MUXI2_MG_0P5)                    0.04       1.21 r
+  core/max_u/U414/X (STP_INV_S_0P65)                      0.02       1.23 f
+  core/max_u/U1077/X (STP_MAJI3_1)                        0.02       1.25 r
+  core/max_u/U1078/X (STP_MAJI3_1)                        0.03       1.28 f
+  core/max_u/U1079/X (STP_MAJI3_1)                        0.02       1.31 r
+  core/max_u/U1080/X (STP_MAJI3_1)                        0.02       1.33 f
+  core/max_u/U1081/X (STP_OAOI211_0P5)                    0.04       1.37 r
+  core/max_u/U1082/X (STP_MAJI3_1)                        0.06       1.43 f
+  core/max_u/U561/X (STP_INV_S_0P65)                      0.05       1.48 r
+  core/max_u/U542/X (STP_MUXI2_MG_0P5)                    0.04       1.52 r
+  core/max_u/U565/X (STP_INV_S_0P65)                      0.02       1.54 f
+  core/max_u/U1623/X (STP_MAJI3_1)                        0.02       1.56 r
+  core/max_u/U1624/X (STP_MAJI3_1)                        0.03       1.59 f
+  core/max_u/U1625/X (STP_MAJI3_1)                        0.03       1.62 r
+  core/max_u/U1626/X (STP_MAJI3_1)                        0.03       1.64 f
+  core/max_u/U1627/X (STP_AOAI211_0P5)                    0.02       1.66 r
+  core/max_u/U1628/X (STP_MAJI3_1)                        0.07       1.73 f
+  core/max_u/U563/X (STP_INV_S_0P65)                      0.05       1.78 r
+  core/max_u/U569/X (STP_OA2BB2_0P5)                      0.05       1.84 r
+  core/max_u/value_o[4] (fht_max_tree_COUNT64_SCORE_W7_INDEX_W6)
+                                                          0.00       1.84 r
+  core/U25/X (STP_OAI22_0P5)                              0.03       1.87 f
+  core/U6555/X (STP_AOI221_0P5)                           0.04       1.91 r
+  core/U6556/X (STP_OAI221_0P5)                           0.04       1.95 f
+  core/U6558/X (STP_OA31_1)                               0.09       2.03 f
+  core/U82/X (STP_NR2B_V1DG_1)                            0.03       2.06 r
+  core/U24/X (STP_ND2_S_1)                                0.09       2.15 f
+  core/U6569/X (STP_NR2_G_0P5)                            0.13       2.28 r
+  core/U59/X (STP_INV_S_0P65)                             0.04       2.32 f
+  core/U94/X (STP_OAI222_0P75)                            0.03       2.36 r
+  core/best_score_o_reg[0]/D (STP_FDPRBQ_1)               0.00       2.36 r
+  data arrival time                                                  2.36
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/best_score_o_reg[0]/CK (STP_FDPRBQ_1)              0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: core/value_q_reg[1][61][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/best_score_o_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fwht_h6_c8_e1      ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_HIGH_L6_CHUNK8_EARLY_EXIT1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  fht_max_tree_COUNT64_SCORE_W7_INDEX_W6
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/value_q_reg[1][61][1]/CK (STP_FDPHQ_1)             0.00 #     0.00 r
+  core/value_q_reg[1][61][1]/Q (STP_FDPHQ_1)              0.04       0.04 f
+  core/max_u/value_i[61][1] (fht_max_tree_COUNT64_SCORE_W7_INDEX_W6)
+                                                          0.00       0.04 f
+  core/max_u/U761/X (STP_INV_S_0P65)                      0.01       0.05 r
+  core/max_u/U131/X (STP_OA2BB2_0P5)                      0.04       0.09 r
+  core/max_u/U766/X (STP_AOAI211_0P5)                     0.03       0.12 f
+  core/max_u/U132/X (STP_OAI21_0P5)                       0.02       0.14 r
+  core/max_u/U767/X (STP_MAJI3_1)                         0.03       0.16 f
+  core/max_u/U768/X (STP_MAJI3_1)                         0.02       0.19 r
+  core/max_u/U769/X (STP_AOAI211_0P5)                     0.02       0.21 f
+  core/max_u/U51/X (STP_OAI21_0P5)                        0.02       0.22 r
+  core/max_u/U282/X (STP_MAJ3_0P5)                        0.07       0.29 r
+  core/max_u/U165/X (STP_MUXI2_MG_0P5)                    0.04       0.33 r
+  core/max_u/U770/X (STP_INV_S_0P65)                      0.02       0.35 f
+  core/max_u/U63/X (STP_ND2_S_0P8)                        0.02       0.37 r
+  core/max_u/U796/X (STP_MAJI3_1)                         0.03       0.39 f
+  core/max_u/U798/X (STP_MAJI3_1)                         0.02       0.42 r
+  core/max_u/U148/X (STP_OAI21_0P5)                       0.02       0.44 f
+  core/max_u/U801/X (STP_OAOI211_0P5)                     0.05       0.49 r
+  core/max_u/U802/X (STP_MAJI3_1)                         0.05       0.54 f
+  core/max_u/U490/X (STP_INV_S_0P65)                      0.04       0.57 r
+  core/max_u/U351/X (STP_MUXI2_MG_0P5)                    0.04       0.61 r
+  core/max_u/U812/X (STP_NR2_G_0P5)                       0.02       0.64 f
+  core/max_u/U813/X (STP_MAJI3_1)                         0.02       0.66 r
+  core/max_u/U814/X (STP_MAJI3_1)                         0.03       0.69 f
+  core/max_u/U815/X (STP_MAJI3_1)                         0.02       0.71 r
+  core/max_u/U816/X (STP_MAJI3_1)                         0.02       0.74 f
+  core/max_u/U817/X (STP_OAOI211_0P5)                     0.04       0.78 r
+  core/max_u/U818/X (STP_MAJI3_1)                         0.06       0.83 f
+  core/max_u/U552/X (STP_INV_S_0P65)                      0.04       0.87 r
+  core/max_u/U820/X (STP_AOI22_0P5)                       0.03       0.90 f
+  core/max_u/U511/X (STP_INV_S_0P65)                      0.02       0.92 r
+  core/max_u/U826/X (STP_NR2_G_0P5)                       0.01       0.94 f
+  core/max_u/U827/X (STP_MAJI3_1)                         0.02       0.96 r
+  core/max_u/U828/X (STP_MAJI3_1)                         0.03       0.98 f
+  core/max_u/U829/X (STP_MAJI3_1)                         0.02       1.00 r
+  core/max_u/U830/X (STP_MAJI3_1)                         0.02       1.02 f
+  core/max_u/U831/X (STP_OAOI211_0P5)                     0.04       1.06 r
+  core/max_u/U833/X (STP_MAJI3_1)                         0.05       1.12 f
+  core/max_u/U551/X (STP_INV_S_0P65)                      0.04       1.16 r
+  core/max_u/U432/X (STP_MUXI2_MG_0P5)                    0.04       1.21 r
+  core/max_u/U414/X (STP_INV_S_0P65)                      0.02       1.23 f
+  core/max_u/U1077/X (STP_MAJI3_1)                        0.02       1.25 r
+  core/max_u/U1078/X (STP_MAJI3_1)                        0.03       1.28 f
+  core/max_u/U1079/X (STP_MAJI3_1)                        0.02       1.31 r
+  core/max_u/U1080/X (STP_MAJI3_1)                        0.02       1.33 f
+  core/max_u/U1081/X (STP_OAOI211_0P5)                    0.04       1.37 r
+  core/max_u/U1082/X (STP_MAJI3_1)                        0.06       1.43 f
+  core/max_u/U561/X (STP_INV_S_0P65)                      0.05       1.48 r
+  core/max_u/U542/X (STP_MUXI2_MG_0P5)                    0.04       1.52 r
+  core/max_u/U565/X (STP_INV_S_0P65)                      0.02       1.54 f
+  core/max_u/U1623/X (STP_MAJI3_1)                        0.02       1.56 r
+  core/max_u/U1624/X (STP_MAJI3_1)                        0.03       1.59 f
+  core/max_u/U1625/X (STP_MAJI3_1)                        0.03       1.62 r
+  core/max_u/U1626/X (STP_MAJI3_1)                        0.03       1.64 f
+  core/max_u/U1627/X (STP_AOAI211_0P5)                    0.02       1.66 r
+  core/max_u/U1628/X (STP_MAJI3_1)                        0.07       1.73 f
+  core/max_u/U563/X (STP_INV_S_0P65)                      0.05       1.78 r
+  core/max_u/U569/X (STP_OA2BB2_0P5)                      0.05       1.84 r
+  core/max_u/value_o[4] (fht_max_tree_COUNT64_SCORE_W7_INDEX_W6)
+                                                          0.00       1.84 r
+  core/U25/X (STP_OAI22_0P5)                              0.03       1.87 f
+  core/U6555/X (STP_AOI221_0P5)                           0.04       1.91 r
+  core/U6556/X (STP_OAI221_0P5)                           0.04       1.95 f
+  core/U6558/X (STP_OA31_1)                               0.09       2.03 f
+  core/U82/X (STP_NR2B_V1DG_1)                            0.03       2.06 r
+  core/U24/X (STP_ND2_S_1)                                0.09       2.15 f
+  core/U6569/X (STP_NR2_G_0P5)                            0.13       2.28 r
+  core/U59/X (STP_INV_S_0P65)                             0.04       2.32 f
+  core/U93/X (STP_OAI222_0P75)                            0.03       2.36 r
+  core/best_score_o_reg[3]/D (STP_FDPRBQ_1)               0.00       2.36 r
+  data arrival time                                                  2.36
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/best_score_o_reg[3]/CK (STP_FDPRBQ_1)              0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: core/value_q_reg[1][61][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/best_score_o_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fwht_h6_c8_e1      ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_HIGH_L6_CHUNK8_EARLY_EXIT1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  fht_max_tree_COUNT64_SCORE_W7_INDEX_W6
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/value_q_reg[1][61][1]/CK (STP_FDPHQ_1)             0.00 #     0.00 r
+  core/value_q_reg[1][61][1]/Q (STP_FDPHQ_1)              0.04       0.04 f
+  core/max_u/value_i[61][1] (fht_max_tree_COUNT64_SCORE_W7_INDEX_W6)
+                                                          0.00       0.04 f
+  core/max_u/U761/X (STP_INV_S_0P65)                      0.01       0.05 r
+  core/max_u/U131/X (STP_OA2BB2_0P5)                      0.04       0.09 r
+  core/max_u/U766/X (STP_AOAI211_0P5)                     0.03       0.12 f
+  core/max_u/U132/X (STP_OAI21_0P5)                       0.02       0.14 r
+  core/max_u/U767/X (STP_MAJI3_1)                         0.03       0.16 f
+  core/max_u/U768/X (STP_MAJI3_1)                         0.02       0.19 r
+  core/max_u/U769/X (STP_AOAI211_0P5)                     0.02       0.21 f
+  core/max_u/U51/X (STP_OAI21_0P5)                        0.02       0.22 r
+  core/max_u/U282/X (STP_MAJ3_0P5)                        0.07       0.29 r
+  core/max_u/U165/X (STP_MUXI2_MG_0P5)                    0.04       0.33 r
+  core/max_u/U770/X (STP_INV_S_0P65)                      0.02       0.35 f
+  core/max_u/U63/X (STP_ND2_S_0P8)                        0.02       0.37 r
+  core/max_u/U796/X (STP_MAJI3_1)                         0.03       0.39 f
+  core/max_u/U798/X (STP_MAJI3_1)                         0.02       0.42 r
+  core/max_u/U148/X (STP_OAI21_0P5)                       0.02       0.44 f
+  core/max_u/U801/X (STP_OAOI211_0P5)                     0.05       0.49 r
+  core/max_u/U802/X (STP_MAJI3_1)                         0.05       0.54 f
+  core/max_u/U490/X (STP_INV_S_0P65)                      0.04       0.57 r
+  core/max_u/U351/X (STP_MUXI2_MG_0P5)                    0.04       0.61 r
+  core/max_u/U812/X (STP_NR2_G_0P5)                       0.02       0.64 f
+  core/max_u/U813/X (STP_MAJI3_1)                         0.02       0.66 r
+  core/max_u/U814/X (STP_MAJI3_1)                         0.03       0.69 f
+  core/max_u/U815/X (STP_MAJI3_1)                         0.02       0.71 r
+  core/max_u/U816/X (STP_MAJI3_1)                         0.02       0.74 f
+  core/max_u/U817/X (STP_OAOI211_0P5)                     0.04       0.78 r
+  core/max_u/U818/X (STP_MAJI3_1)                         0.06       0.83 f
+  core/max_u/U552/X (STP_INV_S_0P65)                      0.04       0.87 r
+  core/max_u/U820/X (STP_AOI22_0P5)                       0.03       0.90 f
+  core/max_u/U511/X (STP_INV_S_0P65)                      0.02       0.92 r
+  core/max_u/U826/X (STP_NR2_G_0P5)                       0.01       0.94 f
+  core/max_u/U827/X (STP_MAJI3_1)                         0.02       0.96 r
+  core/max_u/U828/X (STP_MAJI3_1)                         0.03       0.98 f
+  core/max_u/U829/X (STP_MAJI3_1)                         0.02       1.00 r
+  core/max_u/U830/X (STP_MAJI3_1)                         0.02       1.02 f
+  core/max_u/U831/X (STP_OAOI211_0P5)                     0.04       1.06 r
+  core/max_u/U833/X (STP_MAJI3_1)                         0.05       1.12 f
+  core/max_u/U551/X (STP_INV_S_0P65)                      0.04       1.16 r
+  core/max_u/U432/X (STP_MUXI2_MG_0P5)                    0.04       1.21 r
+  core/max_u/U414/X (STP_INV_S_0P65)                      0.02       1.23 f
+  core/max_u/U1077/X (STP_MAJI3_1)                        0.02       1.25 r
+  core/max_u/U1078/X (STP_MAJI3_1)                        0.03       1.28 f
+  core/max_u/U1079/X (STP_MAJI3_1)                        0.02       1.31 r
+  core/max_u/U1080/X (STP_MAJI3_1)                        0.02       1.33 f
+  core/max_u/U1081/X (STP_OAOI211_0P5)                    0.04       1.37 r
+  core/max_u/U1082/X (STP_MAJI3_1)                        0.06       1.43 f
+  core/max_u/U561/X (STP_INV_S_0P65)                      0.05       1.48 r
+  core/max_u/U542/X (STP_MUXI2_MG_0P5)                    0.04       1.52 r
+  core/max_u/U565/X (STP_INV_S_0P65)                      0.02       1.54 f
+  core/max_u/U1623/X (STP_MAJI3_1)                        0.02       1.56 r
+  core/max_u/U1624/X (STP_MAJI3_1)                        0.03       1.59 f
+  core/max_u/U1625/X (STP_MAJI3_1)                        0.03       1.62 r
+  core/max_u/U1626/X (STP_MAJI3_1)                        0.03       1.64 f
+  core/max_u/U1627/X (STP_AOAI211_0P5)                    0.02       1.66 r
+  core/max_u/U1628/X (STP_MAJI3_1)                        0.07       1.73 f
+  core/max_u/U563/X (STP_INV_S_0P65)                      0.05       1.78 r
+  core/max_u/U569/X (STP_OA2BB2_0P5)                      0.05       1.84 r
+  core/max_u/value_o[4] (fht_max_tree_COUNT64_SCORE_W7_INDEX_W6)
+                                                          0.00       1.84 r
+  core/U25/X (STP_OAI22_0P5)                              0.03       1.87 f
+  core/U6555/X (STP_AOI221_0P5)                           0.04       1.91 r
+  core/U6556/X (STP_OAI221_0P5)                           0.04       1.95 f
+  core/U6558/X (STP_OA31_1)                               0.09       2.03 f
+  core/U82/X (STP_NR2B_V1DG_1)                            0.03       2.06 r
+  core/U24/X (STP_ND2_S_1)                                0.09       2.15 f
+  core/U6569/X (STP_NR2_G_0P5)                            0.13       2.28 r
+  core/U59/X (STP_INV_S_0P65)                             0.04       2.32 f
+  core/U92/X (STP_OAI222_0P75)                            0.03       2.36 r
+  core/best_score_o_reg[5]/D (STP_FDPRBQ_1)               0.00       2.36 r
+  data arrival time                                                  2.36
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/best_score_o_reg[5]/CK (STP_FDPRBQ_1)              0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: core/value_q_reg[1][61][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/selector_o_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fwht_h6_c8_e1      ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_HIGH_L6_CHUNK8_EARLY_EXIT1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  fht_max_tree_COUNT64_SCORE_W7_INDEX_W6
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/value_q_reg[1][61][1]/CK (STP_FDPHQ_1)             0.00 #     0.00 r
+  core/value_q_reg[1][61][1]/Q (STP_FDPHQ_1)              0.04       0.04 f
+  core/max_u/value_i[61][1] (fht_max_tree_COUNT64_SCORE_W7_INDEX_W6)
+                                                          0.00       0.04 f
+  core/max_u/U761/X (STP_INV_S_0P65)                      0.01       0.05 r
+  core/max_u/U131/X (STP_OA2BB2_0P5)                      0.04       0.09 r
+  core/max_u/U766/X (STP_AOAI211_0P5)                     0.03       0.12 f
+  core/max_u/U132/X (STP_OAI21_0P5)                       0.02       0.14 r
+  core/max_u/U767/X (STP_MAJI3_1)                         0.03       0.16 f
+  core/max_u/U768/X (STP_MAJI3_1)                         0.02       0.19 r
+  core/max_u/U769/X (STP_AOAI211_0P5)                     0.02       0.21 f
+  core/max_u/U51/X (STP_OAI21_0P5)                        0.02       0.22 r
+  core/max_u/U282/X (STP_MAJ3_0P5)                        0.07       0.29 r
+  core/max_u/U165/X (STP_MUXI2_MG_0P5)                    0.04       0.33 r
+  core/max_u/U770/X (STP_INV_S_0P65)                      0.02       0.35 f
+  core/max_u/U63/X (STP_ND2_S_0P8)                        0.02       0.37 r
+  core/max_u/U796/X (STP_MAJI3_1)                         0.03       0.39 f
+  core/max_u/U798/X (STP_MAJI3_1)                         0.02       0.42 r
+  core/max_u/U148/X (STP_OAI21_0P5)                       0.02       0.44 f
+  core/max_u/U801/X (STP_OAOI211_0P5)                     0.05       0.49 r
+  core/max_u/U802/X (STP_MAJI3_1)                         0.05       0.54 f
+  core/max_u/U490/X (STP_INV_S_0P65)                      0.04       0.57 r
+  core/max_u/U351/X (STP_MUXI2_MG_0P5)                    0.04       0.61 r
+  core/max_u/U812/X (STP_NR2_G_0P5)                       0.02       0.64 f
+  core/max_u/U813/X (STP_MAJI3_1)                         0.02       0.66 r
+  core/max_u/U814/X (STP_MAJI3_1)                         0.03       0.69 f
+  core/max_u/U815/X (STP_MAJI3_1)                         0.02       0.71 r
+  core/max_u/U816/X (STP_MAJI3_1)                         0.02       0.74 f
+  core/max_u/U817/X (STP_OAOI211_0P5)                     0.04       0.78 r
+  core/max_u/U818/X (STP_MAJI3_1)                         0.06       0.83 f
+  core/max_u/U552/X (STP_INV_S_0P65)                      0.04       0.87 r
+  core/max_u/U820/X (STP_AOI22_0P5)                       0.03       0.90 f
+  core/max_u/U511/X (STP_INV_S_0P65)                      0.02       0.92 r
+  core/max_u/U826/X (STP_NR2_G_0P5)                       0.01       0.94 f
+  core/max_u/U827/X (STP_MAJI3_1)                         0.02       0.96 r
+  core/max_u/U828/X (STP_MAJI3_1)                         0.03       0.98 f
+  core/max_u/U829/X (STP_MAJI3_1)                         0.02       1.00 r
+  core/max_u/U830/X (STP_MAJI3_1)                         0.02       1.02 f
+  core/max_u/U831/X (STP_OAOI211_0P5)                     0.04       1.06 r
+  core/max_u/U833/X (STP_MAJI3_1)                         0.05       1.12 f
+  core/max_u/U551/X (STP_INV_S_0P65)                      0.04       1.16 r
+  core/max_u/U432/X (STP_MUXI2_MG_0P5)                    0.04       1.21 r
+  core/max_u/U414/X (STP_INV_S_0P65)                      0.02       1.23 f
+  core/max_u/U1077/X (STP_MAJI3_1)                        0.02       1.25 r
+  core/max_u/U1078/X (STP_MAJI3_1)                        0.03       1.28 f
+  core/max_u/U1079/X (STP_MAJI3_1)                        0.02       1.31 r
+  core/max_u/U1080/X (STP_MAJI3_1)                        0.02       1.33 f
+  core/max_u/U1081/X (STP_OAOI211_0P5)                    0.04       1.37 r
+  core/max_u/U1082/X (STP_MAJI3_1)                        0.06       1.43 f
+  core/max_u/U561/X (STP_INV_S_0P65)                      0.05       1.48 r
+  core/max_u/U542/X (STP_MUXI2_MG_0P5)                    0.04       1.52 r
+  core/max_u/U565/X (STP_INV_S_0P65)                      0.02       1.54 f
+  core/max_u/U1623/X (STP_MAJI3_1)                        0.02       1.56 r
+  core/max_u/U1624/X (STP_MAJI3_1)                        0.03       1.59 f
+  core/max_u/U1625/X (STP_MAJI3_1)                        0.03       1.62 r
+  core/max_u/U1626/X (STP_MAJI3_1)                        0.03       1.64 f
+  core/max_u/U1627/X (STP_AOAI211_0P5)                    0.02       1.66 r
+  core/max_u/U1628/X (STP_MAJI3_1)                        0.07       1.73 f
+  core/max_u/U563/X (STP_INV_S_0P65)                      0.05       1.78 r
+  core/max_u/U569/X (STP_OA2BB2_0P5)                      0.05       1.84 r
+  core/max_u/value_o[4] (fht_max_tree_COUNT64_SCORE_W7_INDEX_W6)
+                                                          0.00       1.84 r
+  core/U25/X (STP_OAI22_0P5)                              0.03       1.87 f
+  core/U6555/X (STP_AOI221_0P5)                           0.04       1.91 r
+  core/U6556/X (STP_OAI221_0P5)                           0.04       1.95 f
+  core/U6558/X (STP_OA31_1)                               0.09       2.03 f
+  core/U82/X (STP_NR2B_V1DG_1)                            0.03       2.06 r
+  core/U24/X (STP_ND2_S_1)                                0.09       2.15 f
+  core/U6569/X (STP_NR2_G_0P5)                            0.13       2.28 r
+  core/U7031/X (STP_AOI22_0P5)                            0.04       2.32 f
+  core/U6/X (STP_OAI21_0P5)                               0.02       2.34 r
+  core/selector_o_reg[4]/D (STP_FDPRBQ_1)                 0.00       2.34 r
+  data arrival time                                                  2.34
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/selector_o_reg[4]/CK (STP_FDPRBQ_1)                0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.74
+
+
+  Startpoint: core/value_q_reg[1][61][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/selector_o_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fwht_h6_c8_e1      ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_HIGH_L6_CHUNK8_EARLY_EXIT1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  fht_max_tree_COUNT64_SCORE_W7_INDEX_W6
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/value_q_reg[1][61][1]/CK (STP_FDPHQ_1)             0.00 #     0.00 r
+  core/value_q_reg[1][61][1]/Q (STP_FDPHQ_1)              0.04       0.04 f
+  core/max_u/value_i[61][1] (fht_max_tree_COUNT64_SCORE_W7_INDEX_W6)
+                                                          0.00       0.04 f
+  core/max_u/U761/X (STP_INV_S_0P65)                      0.01       0.05 r
+  core/max_u/U131/X (STP_OA2BB2_0P5)                      0.04       0.09 r
+  core/max_u/U766/X (STP_AOAI211_0P5)                     0.03       0.12 f
+  core/max_u/U132/X (STP_OAI21_0P5)                       0.02       0.14 r
+  core/max_u/U767/X (STP_MAJI3_1)                         0.03       0.16 f
+  core/max_u/U768/X (STP_MAJI3_1)                         0.02       0.19 r
+  core/max_u/U769/X (STP_AOAI211_0P5)                     0.02       0.21 f
+  core/max_u/U51/X (STP_OAI21_0P5)                        0.02       0.22 r
+  core/max_u/U282/X (STP_MAJ3_0P5)                        0.07       0.29 r
+  core/max_u/U165/X (STP_MUXI2_MG_0P5)                    0.04       0.33 r
+  core/max_u/U770/X (STP_INV_S_0P65)                      0.02       0.35 f
+  core/max_u/U63/X (STP_ND2_S_0P8)                        0.02       0.37 r
+  core/max_u/U796/X (STP_MAJI3_1)                         0.03       0.39 f
+  core/max_u/U798/X (STP_MAJI3_1)                         0.02       0.42 r
+  core/max_u/U148/X (STP_OAI21_0P5)                       0.02       0.44 f
+  core/max_u/U801/X (STP_OAOI211_0P5)                     0.05       0.49 r
+  core/max_u/U802/X (STP_MAJI3_1)                         0.05       0.54 f
+  core/max_u/U490/X (STP_INV_S_0P65)                      0.04       0.57 r
+  core/max_u/U351/X (STP_MUXI2_MG_0P5)                    0.04       0.61 r
+  core/max_u/U812/X (STP_NR2_G_0P5)                       0.02       0.64 f
+  core/max_u/U813/X (STP_MAJI3_1)                         0.02       0.66 r
+  core/max_u/U814/X (STP_MAJI3_1)                         0.03       0.69 f
+  core/max_u/U815/X (STP_MAJI3_1)                         0.02       0.71 r
+  core/max_u/U816/X (STP_MAJI3_1)                         0.02       0.74 f
+  core/max_u/U817/X (STP_OAOI211_0P5)                     0.04       0.78 r
+  core/max_u/U818/X (STP_MAJI3_1)                         0.06       0.83 f
+  core/max_u/U552/X (STP_INV_S_0P65)                      0.04       0.87 r
+  core/max_u/U820/X (STP_AOI22_0P5)                       0.03       0.90 f
+  core/max_u/U511/X (STP_INV_S_0P65)                      0.02       0.92 r
+  core/max_u/U826/X (STP_NR2_G_0P5)                       0.01       0.94 f
+  core/max_u/U827/X (STP_MAJI3_1)                         0.02       0.96 r
+  core/max_u/U828/X (STP_MAJI3_1)                         0.03       0.98 f
+  core/max_u/U829/X (STP_MAJI3_1)                         0.02       1.00 r
+  core/max_u/U830/X (STP_MAJI3_1)                         0.02       1.02 f
+  core/max_u/U831/X (STP_OAOI211_0P5)                     0.04       1.06 r
+  core/max_u/U833/X (STP_MAJI3_1)                         0.05       1.12 f
+  core/max_u/U551/X (STP_INV_S_0P65)                      0.04       1.16 r
+  core/max_u/U432/X (STP_MUXI2_MG_0P5)                    0.04       1.21 r
+  core/max_u/U414/X (STP_INV_S_0P65)                      0.02       1.23 f
+  core/max_u/U1077/X (STP_MAJI3_1)                        0.02       1.25 r
+  core/max_u/U1078/X (STP_MAJI3_1)                        0.03       1.28 f
+  core/max_u/U1079/X (STP_MAJI3_1)                        0.02       1.31 r
+  core/max_u/U1080/X (STP_MAJI3_1)                        0.02       1.33 f
+  core/max_u/U1081/X (STP_OAOI211_0P5)                    0.04       1.37 r
+  core/max_u/U1082/X (STP_MAJI3_1)                        0.06       1.43 f
+  core/max_u/U561/X (STP_INV_S_0P65)                      0.05       1.48 r
+  core/max_u/U542/X (STP_MUXI2_MG_0P5)                    0.04       1.52 r
+  core/max_u/U565/X (STP_INV_S_0P65)                      0.02       1.54 f
+  core/max_u/U1623/X (STP_MAJI3_1)                        0.02       1.56 r
+  core/max_u/U1624/X (STP_MAJI3_1)                        0.03       1.59 f
+  core/max_u/U1625/X (STP_MAJI3_1)                        0.03       1.62 r
+  core/max_u/U1626/X (STP_MAJI3_1)                        0.03       1.64 f
+  core/max_u/U1627/X (STP_AOAI211_0P5)                    0.02       1.66 r
+  core/max_u/U1628/X (STP_MAJI3_1)                        0.07       1.73 f
+  core/max_u/U563/X (STP_INV_S_0P65)                      0.05       1.78 r
+  core/max_u/U569/X (STP_OA2BB2_0P5)                      0.05       1.84 r
+  core/max_u/value_o[4] (fht_max_tree_COUNT64_SCORE_W7_INDEX_W6)
+                                                          0.00       1.84 r
+  core/U25/X (STP_OAI22_0P5)                              0.03       1.87 f
+  core/U6555/X (STP_AOI221_0P5)                           0.04       1.91 r
+  core/U6556/X (STP_OAI221_0P5)                           0.04       1.95 f
+  core/U6558/X (STP_OA31_1)                               0.09       2.03 f
+  core/U82/X (STP_NR2B_V1DG_1)                            0.03       2.06 r
+  core/U24/X (STP_ND2_S_1)                                0.09       2.15 f
+  core/U6569/X (STP_NR2_G_0P5)                            0.13       2.28 r
+  core/U7025/X (STP_AOI22_0P5)                            0.04       2.32 f
+  core/U17/X (STP_OAI21_0P5)                              0.02       2.34 r
+  core/selector_o_reg[0]/D (STP_FDPRBQ_1)                 0.00       2.34 r
+  data arrival time                                                  2.34
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/selector_o_reg[0]/CK (STP_FDPRBQ_1)                0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.74
+
+
+  Startpoint: core/value_q_reg[1][61][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/selector_o_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fwht_h6_c8_e1      ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_HIGH_L6_CHUNK8_EARLY_EXIT1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  fht_max_tree_COUNT64_SCORE_W7_INDEX_W6
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/value_q_reg[1][61][1]/CK (STP_FDPHQ_1)             0.00 #     0.00 r
+  core/value_q_reg[1][61][1]/Q (STP_FDPHQ_1)              0.04       0.04 f
+  core/max_u/value_i[61][1] (fht_max_tree_COUNT64_SCORE_W7_INDEX_W6)
+                                                          0.00       0.04 f
+  core/max_u/U761/X (STP_INV_S_0P65)                      0.01       0.05 r
+  core/max_u/U131/X (STP_OA2BB2_0P5)                      0.04       0.09 r
+  core/max_u/U766/X (STP_AOAI211_0P5)                     0.03       0.12 f
+  core/max_u/U132/X (STP_OAI21_0P5)                       0.02       0.14 r
+  core/max_u/U767/X (STP_MAJI3_1)                         0.03       0.16 f
+  core/max_u/U768/X (STP_MAJI3_1)                         0.02       0.19 r
+  core/max_u/U769/X (STP_AOAI211_0P5)                     0.02       0.21 f
+  core/max_u/U51/X (STP_OAI21_0P5)                        0.02       0.22 r
+  core/max_u/U282/X (STP_MAJ3_0P5)                        0.07       0.29 r
+  core/max_u/U165/X (STP_MUXI2_MG_0P5)                    0.04       0.33 r
+  core/max_u/U770/X (STP_INV_S_0P65)                      0.02       0.35 f
+  core/max_u/U63/X (STP_ND2_S_0P8)                        0.02       0.37 r
+  core/max_u/U796/X (STP_MAJI3_1)                         0.03       0.39 f
+  core/max_u/U798/X (STP_MAJI3_1)                         0.02       0.42 r
+  core/max_u/U148/X (STP_OAI21_0P5)                       0.02       0.44 f
+  core/max_u/U801/X (STP_OAOI211_0P5)                     0.05       0.49 r
+  core/max_u/U802/X (STP_MAJI3_1)                         0.05       0.54 f
+  core/max_u/U490/X (STP_INV_S_0P65)                      0.04       0.57 r
+  core/max_u/U351/X (STP_MUXI2_MG_0P5)                    0.04       0.61 r
+  core/max_u/U812/X (STP_NR2_G_0P5)                       0.02       0.64 f
+  core/max_u/U813/X (STP_MAJI3_1)                         0.02       0.66 r
+  core/max_u/U814/X (STP_MAJI3_1)                         0.03       0.69 f
+  core/max_u/U815/X (STP_MAJI3_1)                         0.02       0.71 r
+  core/max_u/U816/X (STP_MAJI3_1)                         0.02       0.74 f
+  core/max_u/U817/X (STP_OAOI211_0P5)                     0.04       0.78 r
+  core/max_u/U818/X (STP_MAJI3_1)                         0.06       0.83 f
+  core/max_u/U552/X (STP_INV_S_0P65)                      0.04       0.87 r
+  core/max_u/U820/X (STP_AOI22_0P5)                       0.03       0.90 f
+  core/max_u/U511/X (STP_INV_S_0P65)                      0.02       0.92 r
+  core/max_u/U826/X (STP_NR2_G_0P5)                       0.01       0.94 f
+  core/max_u/U827/X (STP_MAJI3_1)                         0.02       0.96 r
+  core/max_u/U828/X (STP_MAJI3_1)                         0.03       0.98 f
+  core/max_u/U829/X (STP_MAJI3_1)                         0.02       1.00 r
+  core/max_u/U830/X (STP_MAJI3_1)                         0.02       1.02 f
+  core/max_u/U831/X (STP_OAOI211_0P5)                     0.04       1.06 r
+  core/max_u/U833/X (STP_MAJI3_1)                         0.05       1.12 f
+  core/max_u/U551/X (STP_INV_S_0P65)                      0.04       1.16 r
+  core/max_u/U432/X (STP_MUXI2_MG_0P5)                    0.04       1.21 r
+  core/max_u/U414/X (STP_INV_S_0P65)                      0.02       1.23 f
+  core/max_u/U1077/X (STP_MAJI3_1)                        0.02       1.25 r
+  core/max_u/U1078/X (STP_MAJI3_1)                        0.03       1.28 f
+  core/max_u/U1079/X (STP_MAJI3_1)                        0.02       1.31 r
+  core/max_u/U1080/X (STP_MAJI3_1)                        0.02       1.33 f
+  core/max_u/U1081/X (STP_OAOI211_0P5)                    0.04       1.37 r
+  core/max_u/U1082/X (STP_MAJI3_1)                        0.06       1.43 f
+  core/max_u/U561/X (STP_INV_S_0P65)                      0.05       1.48 r
+  core/max_u/U542/X (STP_MUXI2_MG_0P5)                    0.04       1.52 r
+  core/max_u/U565/X (STP_INV_S_0P65)                      0.02       1.54 f
+  core/max_u/U1623/X (STP_MAJI3_1)                        0.02       1.56 r
+  core/max_u/U1624/X (STP_MAJI3_1)                        0.03       1.59 f
+  core/max_u/U1625/X (STP_MAJI3_1)                        0.03       1.62 r
+  core/max_u/U1626/X (STP_MAJI3_1)                        0.03       1.64 f
+  core/max_u/U1627/X (STP_AOAI211_0P5)                    0.02       1.66 r
+  core/max_u/U1628/X (STP_MAJI3_1)                        0.07       1.73 f
+  core/max_u/U563/X (STP_INV_S_0P65)                      0.05       1.78 r
+  core/max_u/U569/X (STP_OA2BB2_0P5)                      0.05       1.84 r
+  core/max_u/value_o[4] (fht_max_tree_COUNT64_SCORE_W7_INDEX_W6)
+                                                          0.00       1.84 r
+  core/U25/X (STP_OAI22_0P5)                              0.03       1.87 f
+  core/U6555/X (STP_AOI221_0P5)                           0.04       1.91 r
+  core/U6556/X (STP_OAI221_0P5)                           0.04       1.95 f
+  core/U6558/X (STP_OA31_1)                               0.09       2.03 f
+  core/U82/X (STP_NR2B_V1DG_1)                            0.03       2.06 r
+  core/U24/X (STP_ND2_S_1)                                0.09       2.15 f
+  core/U6569/X (STP_NR2_G_0P5)                            0.13       2.28 r
+  core/U7027/X (STP_AOI22_0P5)                            0.04       2.32 f
+  core/U10/X (STP_OAI21_0P5)                              0.02       2.34 r
+  core/selector_o_reg[1]/D (STP_FDPRBQ_1)                 0.00       2.34 r
+  data arrival time                                                  2.34
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/selector_o_reg[1]/CK (STP_FDPRBQ_1)                0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.74
+
+
+  Startpoint: core/value_q_reg[1][61][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/selector_o_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fwht_h6_c8_e1      ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_HIGH_L6_CHUNK8_EARLY_EXIT1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  fht_max_tree_COUNT64_SCORE_W7_INDEX_W6
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/value_q_reg[1][61][1]/CK (STP_FDPHQ_1)             0.00 #     0.00 r
+  core/value_q_reg[1][61][1]/Q (STP_FDPHQ_1)              0.04       0.04 f
+  core/max_u/value_i[61][1] (fht_max_tree_COUNT64_SCORE_W7_INDEX_W6)
+                                                          0.00       0.04 f
+  core/max_u/U761/X (STP_INV_S_0P65)                      0.01       0.05 r
+  core/max_u/U131/X (STP_OA2BB2_0P5)                      0.04       0.09 r
+  core/max_u/U766/X (STP_AOAI211_0P5)                     0.03       0.12 f
+  core/max_u/U132/X (STP_OAI21_0P5)                       0.02       0.14 r
+  core/max_u/U767/X (STP_MAJI3_1)                         0.03       0.16 f
+  core/max_u/U768/X (STP_MAJI3_1)                         0.02       0.19 r
+  core/max_u/U769/X (STP_AOAI211_0P5)                     0.02       0.21 f
+  core/max_u/U51/X (STP_OAI21_0P5)                        0.02       0.22 r
+  core/max_u/U282/X (STP_MAJ3_0P5)                        0.07       0.29 r
+  core/max_u/U165/X (STP_MUXI2_MG_0P5)                    0.04       0.33 r
+  core/max_u/U770/X (STP_INV_S_0P65)                      0.02       0.35 f
+  core/max_u/U63/X (STP_ND2_S_0P8)                        0.02       0.37 r
+  core/max_u/U796/X (STP_MAJI3_1)                         0.03       0.39 f
+  core/max_u/U798/X (STP_MAJI3_1)                         0.02       0.42 r
+  core/max_u/U148/X (STP_OAI21_0P5)                       0.02       0.44 f
+  core/max_u/U801/X (STP_OAOI211_0P5)                     0.05       0.49 r
+  core/max_u/U802/X (STP_MAJI3_1)                         0.05       0.54 f
+  core/max_u/U490/X (STP_INV_S_0P65)                      0.04       0.57 r
+  core/max_u/U351/X (STP_MUXI2_MG_0P5)                    0.04       0.61 r
+  core/max_u/U812/X (STP_NR2_G_0P5)                       0.02       0.64 f
+  core/max_u/U813/X (STP_MAJI3_1)                         0.02       0.66 r
+  core/max_u/U814/X (STP_MAJI3_1)                         0.03       0.69 f
+  core/max_u/U815/X (STP_MAJI3_1)                         0.02       0.71 r
+  core/max_u/U816/X (STP_MAJI3_1)                         0.02       0.74 f
+  core/max_u/U817/X (STP_OAOI211_0P5)                     0.04       0.78 r
+  core/max_u/U818/X (STP_MAJI3_1)                         0.06       0.83 f
+  core/max_u/U552/X (STP_INV_S_0P65)                      0.04       0.87 r
+  core/max_u/U820/X (STP_AOI22_0P5)                       0.03       0.90 f
+  core/max_u/U511/X (STP_INV_S_0P65)                      0.02       0.92 r
+  core/max_u/U826/X (STP_NR2_G_0P5)                       0.01       0.94 f
+  core/max_u/U827/X (STP_MAJI3_1)                         0.02       0.96 r
+  core/max_u/U828/X (STP_MAJI3_1)                         0.03       0.98 f
+  core/max_u/U829/X (STP_MAJI3_1)                         0.02       1.00 r
+  core/max_u/U830/X (STP_MAJI3_1)                         0.02       1.02 f
+  core/max_u/U831/X (STP_OAOI211_0P5)                     0.04       1.06 r
+  core/max_u/U833/X (STP_MAJI3_1)                         0.05       1.12 f
+  core/max_u/U551/X (STP_INV_S_0P65)                      0.04       1.16 r
+  core/max_u/U432/X (STP_MUXI2_MG_0P5)                    0.04       1.21 r
+  core/max_u/U414/X (STP_INV_S_0P65)                      0.02       1.23 f
+  core/max_u/U1077/X (STP_MAJI3_1)                        0.02       1.25 r
+  core/max_u/U1078/X (STP_MAJI3_1)                        0.03       1.28 f
+  core/max_u/U1079/X (STP_MAJI3_1)                        0.02       1.31 r
+  core/max_u/U1080/X (STP_MAJI3_1)                        0.02       1.33 f
+  core/max_u/U1081/X (STP_OAOI211_0P5)                    0.04       1.37 r
+  core/max_u/U1082/X (STP_MAJI3_1)                        0.06       1.43 f
+  core/max_u/U561/X (STP_INV_S_0P65)                      0.05       1.48 r
+  core/max_u/U542/X (STP_MUXI2_MG_0P5)                    0.04       1.52 r
+  core/max_u/U565/X (STP_INV_S_0P65)                      0.02       1.54 f
+  core/max_u/U1623/X (STP_MAJI3_1)                        0.02       1.56 r
+  core/max_u/U1624/X (STP_MAJI3_1)                        0.03       1.59 f
+  core/max_u/U1625/X (STP_MAJI3_1)                        0.03       1.62 r
+  core/max_u/U1626/X (STP_MAJI3_1)                        0.03       1.64 f
+  core/max_u/U1627/X (STP_AOAI211_0P5)                    0.02       1.66 r
+  core/max_u/U1628/X (STP_MAJI3_1)                        0.07       1.73 f
+  core/max_u/U563/X (STP_INV_S_0P65)                      0.05       1.78 r
+  core/max_u/U569/X (STP_OA2BB2_0P5)                      0.05       1.84 r
+  core/max_u/value_o[4] (fht_max_tree_COUNT64_SCORE_W7_INDEX_W6)
+                                                          0.00       1.84 r
+  core/U25/X (STP_OAI22_0P5)                              0.03       1.87 f
+  core/U6555/X (STP_AOI221_0P5)                           0.04       1.91 r
+  core/U6556/X (STP_OAI221_0P5)                           0.04       1.95 f
+  core/U6558/X (STP_OA31_1)                               0.09       2.03 f
+  core/U82/X (STP_NR2B_V1DG_1)                            0.03       2.06 r
+  core/U24/X (STP_ND2_S_1)                                0.09       2.15 f
+  core/U6569/X (STP_NR2_G_0P5)                            0.13       2.28 r
+  core/U7032/X (STP_AOI22_0P5)                            0.04       2.32 f
+  core/U9/X (STP_OAI21_0P5)                               0.02       2.34 r
+  core/selector_o_reg[2]/D (STP_FDPRBQ_1)                 0.00       2.34 r
+  data arrival time                                                  2.34
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/selector_o_reg[2]/CK (STP_FDPRBQ_1)                0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.74
+
+
+  Startpoint: core/value_q_reg[1][61][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/selector_o_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fwht_h6_c8_e1      ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_HIGH_L6_CHUNK8_EARLY_EXIT1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  fht_max_tree_COUNT64_SCORE_W7_INDEX_W6
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/value_q_reg[1][61][1]/CK (STP_FDPHQ_1)             0.00 #     0.00 r
+  core/value_q_reg[1][61][1]/Q (STP_FDPHQ_1)              0.04       0.04 f
+  core/max_u/value_i[61][1] (fht_max_tree_COUNT64_SCORE_W7_INDEX_W6)
+                                                          0.00       0.04 f
+  core/max_u/U761/X (STP_INV_S_0P65)                      0.01       0.05 r
+  core/max_u/U131/X (STP_OA2BB2_0P5)                      0.04       0.09 r
+  core/max_u/U766/X (STP_AOAI211_0P5)                     0.03       0.12 f
+  core/max_u/U132/X (STP_OAI21_0P5)                       0.02       0.14 r
+  core/max_u/U767/X (STP_MAJI3_1)                         0.03       0.16 f
+  core/max_u/U768/X (STP_MAJI3_1)                         0.02       0.19 r
+  core/max_u/U769/X (STP_AOAI211_0P5)                     0.02       0.21 f
+  core/max_u/U51/X (STP_OAI21_0P5)                        0.02       0.22 r
+  core/max_u/U282/X (STP_MAJ3_0P5)                        0.07       0.29 r
+  core/max_u/U165/X (STP_MUXI2_MG_0P5)                    0.04       0.33 r
+  core/max_u/U770/X (STP_INV_S_0P65)                      0.02       0.35 f
+  core/max_u/U63/X (STP_ND2_S_0P8)                        0.02       0.37 r
+  core/max_u/U796/X (STP_MAJI3_1)                         0.03       0.39 f
+  core/max_u/U798/X (STP_MAJI3_1)                         0.02       0.42 r
+  core/max_u/U148/X (STP_OAI21_0P5)                       0.02       0.44 f
+  core/max_u/U801/X (STP_OAOI211_0P5)                     0.05       0.49 r
+  core/max_u/U802/X (STP_MAJI3_1)                         0.05       0.54 f
+  core/max_u/U490/X (STP_INV_S_0P65)                      0.04       0.57 r
+  core/max_u/U351/X (STP_MUXI2_MG_0P5)                    0.04       0.61 r
+  core/max_u/U812/X (STP_NR2_G_0P5)                       0.02       0.64 f
+  core/max_u/U813/X (STP_MAJI3_1)                         0.02       0.66 r
+  core/max_u/U814/X (STP_MAJI3_1)                         0.03       0.69 f
+  core/max_u/U815/X (STP_MAJI3_1)                         0.02       0.71 r
+  core/max_u/U816/X (STP_MAJI3_1)                         0.02       0.74 f
+  core/max_u/U817/X (STP_OAOI211_0P5)                     0.04       0.78 r
+  core/max_u/U818/X (STP_MAJI3_1)                         0.06       0.83 f
+  core/max_u/U552/X (STP_INV_S_0P65)                      0.04       0.87 r
+  core/max_u/U820/X (STP_AOI22_0P5)                       0.03       0.90 f
+  core/max_u/U511/X (STP_INV_S_0P65)                      0.02       0.92 r
+  core/max_u/U826/X (STP_NR2_G_0P5)                       0.01       0.94 f
+  core/max_u/U827/X (STP_MAJI3_1)                         0.02       0.96 r
+  core/max_u/U828/X (STP_MAJI3_1)                         0.03       0.98 f
+  core/max_u/U829/X (STP_MAJI3_1)                         0.02       1.00 r
+  core/max_u/U830/X (STP_MAJI3_1)                         0.02       1.02 f
+  core/max_u/U831/X (STP_OAOI211_0P5)                     0.04       1.06 r
+  core/max_u/U833/X (STP_MAJI3_1)                         0.05       1.12 f
+  core/max_u/U551/X (STP_INV_S_0P65)                      0.04       1.16 r
+  core/max_u/U432/X (STP_MUXI2_MG_0P5)                    0.04       1.21 r
+  core/max_u/U414/X (STP_INV_S_0P65)                      0.02       1.23 f
+  core/max_u/U1077/X (STP_MAJI3_1)                        0.02       1.25 r
+  core/max_u/U1078/X (STP_MAJI3_1)                        0.03       1.28 f
+  core/max_u/U1079/X (STP_MAJI3_1)                        0.02       1.31 r
+  core/max_u/U1080/X (STP_MAJI3_1)                        0.02       1.33 f
+  core/max_u/U1081/X (STP_OAOI211_0P5)                    0.04       1.37 r
+  core/max_u/U1082/X (STP_MAJI3_1)                        0.06       1.43 f
+  core/max_u/U561/X (STP_INV_S_0P65)                      0.05       1.48 r
+  core/max_u/U542/X (STP_MUXI2_MG_0P5)                    0.04       1.52 r
+  core/max_u/U565/X (STP_INV_S_0P65)                      0.02       1.54 f
+  core/max_u/U1623/X (STP_MAJI3_1)                        0.02       1.56 r
+  core/max_u/U1624/X (STP_MAJI3_1)                        0.03       1.59 f
+  core/max_u/U1625/X (STP_MAJI3_1)                        0.03       1.62 r
+  core/max_u/U1626/X (STP_MAJI3_1)                        0.03       1.64 f
+  core/max_u/U1627/X (STP_AOAI211_0P5)                    0.02       1.66 r
+  core/max_u/U1628/X (STP_MAJI3_1)                        0.07       1.73 f
+  core/max_u/U563/X (STP_INV_S_0P65)                      0.05       1.78 r
+  core/max_u/U569/X (STP_OA2BB2_0P5)                      0.05       1.84 r
+  core/max_u/value_o[4] (fht_max_tree_COUNT64_SCORE_W7_INDEX_W6)
+                                                          0.00       1.84 r
+  core/U25/X (STP_OAI22_0P5)                              0.03       1.87 f
+  core/U6555/X (STP_AOI221_0P5)                           0.04       1.91 r
+  core/U6556/X (STP_OAI221_0P5)                           0.04       1.95 f
+  core/U6558/X (STP_OA31_1)                               0.09       2.03 f
+  core/U82/X (STP_NR2B_V1DG_1)                            0.03       2.06 r
+  core/U24/X (STP_ND2_S_1)                                0.09       2.15 f
+  core/U6569/X (STP_NR2_G_0P5)                            0.13       2.28 r
+  core/U7029/X (STP_AOI22_0P5)                            0.04       2.32 f
+  core/U16/X (STP_OAI21_0P5)                              0.02       2.34 r
+  core/selector_o_reg[3]/D (STP_FDPRBQ_1)                 0.00       2.34 r
+  data arrival time                                                  2.34
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/selector_o_reg[3]/CK (STP_FDPRBQ_1)                0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.74
+
+
+  Startpoint: core/value_q_reg[1][61][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/selector_o_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fwht_h6_c8_e1      ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_HIGH_L6_CHUNK8_EARLY_EXIT1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  fht_max_tree_COUNT64_SCORE_W7_INDEX_W6
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/value_q_reg[1][61][1]/CK (STP_FDPHQ_1)             0.00 #     0.00 r
+  core/value_q_reg[1][61][1]/Q (STP_FDPHQ_1)              0.04       0.04 f
+  core/max_u/value_i[61][1] (fht_max_tree_COUNT64_SCORE_W7_INDEX_W6)
+                                                          0.00       0.04 f
+  core/max_u/U761/X (STP_INV_S_0P65)                      0.01       0.05 r
+  core/max_u/U131/X (STP_OA2BB2_0P5)                      0.04       0.09 r
+  core/max_u/U766/X (STP_AOAI211_0P5)                     0.03       0.12 f
+  core/max_u/U132/X (STP_OAI21_0P5)                       0.02       0.14 r
+  core/max_u/U767/X (STP_MAJI3_1)                         0.03       0.16 f
+  core/max_u/U768/X (STP_MAJI3_1)                         0.02       0.19 r
+  core/max_u/U769/X (STP_AOAI211_0P5)                     0.02       0.21 f
+  core/max_u/U51/X (STP_OAI21_0P5)                        0.02       0.22 r
+  core/max_u/U282/X (STP_MAJ3_0P5)                        0.07       0.29 r
+  core/max_u/U165/X (STP_MUXI2_MG_0P5)                    0.04       0.33 r
+  core/max_u/U770/X (STP_INV_S_0P65)                      0.02       0.35 f
+  core/max_u/U63/X (STP_ND2_S_0P8)                        0.02       0.37 r
+  core/max_u/U796/X (STP_MAJI3_1)                         0.03       0.39 f
+  core/max_u/U798/X (STP_MAJI3_1)                         0.02       0.42 r
+  core/max_u/U148/X (STP_OAI21_0P5)                       0.02       0.44 f
+  core/max_u/U801/X (STP_OAOI211_0P5)                     0.05       0.49 r
+  core/max_u/U802/X (STP_MAJI3_1)                         0.05       0.54 f
+  core/max_u/U490/X (STP_INV_S_0P65)                      0.04       0.57 r
+  core/max_u/U351/X (STP_MUXI2_MG_0P5)                    0.04       0.61 r
+  core/max_u/U812/X (STP_NR2_G_0P5)                       0.02       0.64 f
+  core/max_u/U813/X (STP_MAJI3_1)                         0.02       0.66 r
+  core/max_u/U814/X (STP_MAJI3_1)                         0.03       0.69 f
+  core/max_u/U815/X (STP_MAJI3_1)                         0.02       0.71 r
+  core/max_u/U816/X (STP_MAJI3_1)                         0.02       0.74 f
+  core/max_u/U817/X (STP_OAOI211_0P5)                     0.04       0.78 r
+  core/max_u/U818/X (STP_MAJI3_1)                         0.06       0.83 f
+  core/max_u/U552/X (STP_INV_S_0P65)                      0.04       0.87 r
+  core/max_u/U820/X (STP_AOI22_0P5)                       0.03       0.90 f
+  core/max_u/U511/X (STP_INV_S_0P65)                      0.02       0.92 r
+  core/max_u/U826/X (STP_NR2_G_0P5)                       0.01       0.94 f
+  core/max_u/U827/X (STP_MAJI3_1)                         0.02       0.96 r
+  core/max_u/U828/X (STP_MAJI3_1)                         0.03       0.98 f
+  core/max_u/U829/X (STP_MAJI3_1)                         0.02       1.00 r
+  core/max_u/U830/X (STP_MAJI3_1)                         0.02       1.02 f
+  core/max_u/U831/X (STP_OAOI211_0P5)                     0.04       1.06 r
+  core/max_u/U833/X (STP_MAJI3_1)                         0.05       1.12 f
+  core/max_u/U551/X (STP_INV_S_0P65)                      0.04       1.16 r
+  core/max_u/U432/X (STP_MUXI2_MG_0P5)                    0.04       1.21 r
+  core/max_u/U414/X (STP_INV_S_0P65)                      0.02       1.23 f
+  core/max_u/U1077/X (STP_MAJI3_1)                        0.02       1.25 r
+  core/max_u/U1078/X (STP_MAJI3_1)                        0.03       1.28 f
+  core/max_u/U1079/X (STP_MAJI3_1)                        0.02       1.31 r
+  core/max_u/U1080/X (STP_MAJI3_1)                        0.02       1.33 f
+  core/max_u/U1081/X (STP_OAOI211_0P5)                    0.04       1.37 r
+  core/max_u/U1082/X (STP_MAJI3_1)                        0.06       1.43 f
+  core/max_u/U561/X (STP_INV_S_0P65)                      0.05       1.48 r
+  core/max_u/U542/X (STP_MUXI2_MG_0P5)                    0.04       1.52 r
+  core/max_u/U565/X (STP_INV_S_0P65)                      0.02       1.54 f
+  core/max_u/U1623/X (STP_MAJI3_1)                        0.02       1.56 r
+  core/max_u/U1624/X (STP_MAJI3_1)                        0.03       1.59 f
+  core/max_u/U1625/X (STP_MAJI3_1)                        0.03       1.62 r
+  core/max_u/U1626/X (STP_MAJI3_1)                        0.03       1.64 f
+  core/max_u/U1627/X (STP_AOAI211_0P5)                    0.02       1.66 r
+  core/max_u/U1628/X (STP_MAJI3_1)                        0.07       1.73 f
+  core/max_u/U563/X (STP_INV_S_0P65)                      0.05       1.78 r
+  core/max_u/U569/X (STP_OA2BB2_0P5)                      0.05       1.84 r
+  core/max_u/value_o[4] (fht_max_tree_COUNT64_SCORE_W7_INDEX_W6)
+                                                          0.00       1.84 r
+  core/U25/X (STP_OAI22_0P5)                              0.03       1.87 f
+  core/U6555/X (STP_AOI221_0P5)                           0.04       1.91 r
+  core/U6556/X (STP_OAI221_0P5)                           0.04       1.95 f
+  core/U6558/X (STP_OA31_1)                               0.09       2.03 f
+  core/U82/X (STP_NR2B_V1DG_1)                            0.03       2.06 r
+  core/U24/X (STP_ND2_S_1)                                0.09       2.15 f
+  core/U6569/X (STP_NR2_G_0P5)                            0.13       2.28 r
+  core/U7033/X (STP_AOI22_0P5)                            0.04       2.32 f
+  core/U8/X (STP_OAI21_0P5)                               0.02       2.34 r
+  core/selector_o_reg[5]/D (STP_FDPRBQ_1)                 0.00       2.34 r
+  data arrival time                                                  2.34
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/selector_o_reg[5]/CK (STP_FDPRBQ_1)                0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.74
+
+
+  Startpoint: core/value_q_reg[1][61][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/selector_o_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fwht_h6_c8_e1      ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_HIGH_L6_CHUNK8_EARLY_EXIT1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  fht_max_tree_COUNT64_SCORE_W7_INDEX_W6
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/value_q_reg[1][61][1]/CK (STP_FDPHQ_1)             0.00 #     0.00 r
+  core/value_q_reg[1][61][1]/Q (STP_FDPHQ_1)              0.04       0.04 f
+  core/max_u/value_i[61][1] (fht_max_tree_COUNT64_SCORE_W7_INDEX_W6)
+                                                          0.00       0.04 f
+  core/max_u/U761/X (STP_INV_S_0P65)                      0.01       0.05 r
+  core/max_u/U131/X (STP_OA2BB2_0P5)                      0.04       0.09 r
+  core/max_u/U766/X (STP_AOAI211_0P5)                     0.03       0.12 f
+  core/max_u/U132/X (STP_OAI21_0P5)                       0.02       0.14 r
+  core/max_u/U767/X (STP_MAJI3_1)                         0.03       0.16 f
+  core/max_u/U768/X (STP_MAJI3_1)                         0.02       0.19 r
+  core/max_u/U769/X (STP_AOAI211_0P5)                     0.02       0.21 f
+  core/max_u/U51/X (STP_OAI21_0P5)                        0.02       0.22 r
+  core/max_u/U282/X (STP_MAJ3_0P5)                        0.07       0.29 r
+  core/max_u/U165/X (STP_MUXI2_MG_0P5)                    0.04       0.33 r
+  core/max_u/U770/X (STP_INV_S_0P65)                      0.02       0.35 f
+  core/max_u/U63/X (STP_ND2_S_0P8)                        0.02       0.37 r
+  core/max_u/U796/X (STP_MAJI3_1)                         0.03       0.39 f
+  core/max_u/U798/X (STP_MAJI3_1)                         0.02       0.42 r
+  core/max_u/U148/X (STP_OAI21_0P5)                       0.02       0.44 f
+  core/max_u/U801/X (STP_OAOI211_0P5)                     0.05       0.49 r
+  core/max_u/U802/X (STP_MAJI3_1)                         0.05       0.54 f
+  core/max_u/U490/X (STP_INV_S_0P65)                      0.04       0.57 r
+  core/max_u/U351/X (STP_MUXI2_MG_0P5)                    0.04       0.61 r
+  core/max_u/U812/X (STP_NR2_G_0P5)                       0.02       0.64 f
+  core/max_u/U813/X (STP_MAJI3_1)                         0.02       0.66 r
+  core/max_u/U814/X (STP_MAJI3_1)                         0.03       0.69 f
+  core/max_u/U815/X (STP_MAJI3_1)                         0.02       0.71 r
+  core/max_u/U816/X (STP_MAJI3_1)                         0.02       0.74 f
+  core/max_u/U817/X (STP_OAOI211_0P5)                     0.04       0.78 r
+  core/max_u/U818/X (STP_MAJI3_1)                         0.06       0.83 f
+  core/max_u/U552/X (STP_INV_S_0P65)                      0.04       0.87 r
+  core/max_u/U820/X (STP_AOI22_0P5)                       0.03       0.90 f
+  core/max_u/U511/X (STP_INV_S_0P65)                      0.02       0.92 r
+  core/max_u/U826/X (STP_NR2_G_0P5)                       0.01       0.94 f
+  core/max_u/U827/X (STP_MAJI3_1)                         0.02       0.96 r
+  core/max_u/U828/X (STP_MAJI3_1)                         0.03       0.98 f
+  core/max_u/U829/X (STP_MAJI3_1)                         0.02       1.00 r
+  core/max_u/U830/X (STP_MAJI3_1)                         0.02       1.02 f
+  core/max_u/U831/X (STP_OAOI211_0P5)                     0.04       1.06 r
+  core/max_u/U833/X (STP_MAJI3_1)                         0.05       1.12 f
+  core/max_u/U551/X (STP_INV_S_0P65)                      0.04       1.16 r
+  core/max_u/U432/X (STP_MUXI2_MG_0P5)                    0.04       1.21 r
+  core/max_u/U414/X (STP_INV_S_0P65)                      0.02       1.23 f
+  core/max_u/U1077/X (STP_MAJI3_1)                        0.02       1.25 r
+  core/max_u/U1078/X (STP_MAJI3_1)                        0.03       1.28 f
+  core/max_u/U1079/X (STP_MAJI3_1)                        0.02       1.31 r
+  core/max_u/U1080/X (STP_MAJI3_1)                        0.02       1.33 f
+  core/max_u/U1081/X (STP_OAOI211_0P5)                    0.04       1.37 r
+  core/max_u/U1082/X (STP_MAJI3_1)                        0.06       1.43 f
+  core/max_u/U561/X (STP_INV_S_0P65)                      0.05       1.48 r
+  core/max_u/U542/X (STP_MUXI2_MG_0P5)                    0.04       1.52 r
+  core/max_u/U565/X (STP_INV_S_0P65)                      0.02       1.54 f
+  core/max_u/U1623/X (STP_MAJI3_1)                        0.02       1.56 r
+  core/max_u/U1624/X (STP_MAJI3_1)                        0.03       1.59 f
+  core/max_u/U1625/X (STP_MAJI3_1)                        0.03       1.62 r
+  core/max_u/U1626/X (STP_MAJI3_1)                        0.03       1.64 f
+  core/max_u/U1627/X (STP_AOAI211_0P5)                    0.02       1.66 r
+  core/max_u/U1628/X (STP_MAJI3_1)                        0.07       1.73 f
+  core/max_u/U563/X (STP_INV_S_0P65)                      0.05       1.78 r
+  core/max_u/U569/X (STP_OA2BB2_0P5)                      0.05       1.84 r
+  core/max_u/value_o[4] (fht_max_tree_COUNT64_SCORE_W7_INDEX_W6)
+                                                          0.00       1.84 r
+  core/U25/X (STP_OAI22_0P5)                              0.03       1.87 f
+  core/U6555/X (STP_AOI221_0P5)                           0.04       1.91 r
+  core/U6556/X (STP_OAI221_0P5)                           0.04       1.95 f
+  core/U6558/X (STP_OA31_1)                               0.09       2.03 f
+  core/U82/X (STP_NR2B_V1DG_1)                            0.03       2.06 r
+  core/U24/X (STP_ND2_S_1)                                0.09       2.15 f
+  core/U6569/X (STP_NR2_G_0P5)                            0.13       2.28 r
+  core/U7024/X (STP_AOI22_0P5)                            0.04       2.32 f
+  core/U14/X (STP_OAI21_0P5)                              0.02       2.34 r
+  core/selector_o_reg[6]/D (STP_FDPRBQ_1)                 0.00       2.34 r
+  data arrival time                                                  2.34
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/selector_o_reg[6]/CK (STP_FDPRBQ_1)                0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.74
+
+
+1

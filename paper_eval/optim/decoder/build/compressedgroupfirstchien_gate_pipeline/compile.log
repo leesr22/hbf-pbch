@@ -1,0 +1,616 @@
+Command: vcs +warn=noLNX_OS_VERUN +warn=noLINX_KRNL +vcs+lic+wait -full64 -sverilog \
+-timescale=1ns/1ps -LDFLAGS -Wl,--no-as-needed +incdir+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval \
++define+DEC_TOP=pbch_dec_compressedgroupfirstchien +define+PBCH_MODE +define+L_BITS=13 \
++define+K_BITS=4096 +define+T_BITS=8 +define+R_BITS=104 +define+W_BITS=64 +define+PIPELINE_FRAMES=25 \
++define+VIRL_functiononly +define+SNPS_SEQ_DELAY=0 +define+SNPS_COMBO_DELAY=0 +define+SNPS_LAT_DELAY=0 \
++notimingcheck -top decoder_pipeline_metrics_tb -o /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/compressedgroupfirstchien_gate_pipeline/simv \
+-Mdir=/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/compressedgroupfirstchien_gate_pipeline/csrc \
+/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/verilog/3.0/um28nchslogl35hsl140f.v \
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v \
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/decoder_pipeline_metrics_tb.sv \
+-l /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/compressedgroupfirstchien_gate_pipeline/compile.log \
+
+                         Chronologic VCS (TM)
+      Version R-2020.12-SP1-1_Full64 -- Sat Nov 14 23:09:23 2026
+
+                    Copyright (c) 1991 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+Parsing design file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/verilog/3.0/um28nchslogl35hsl140f.v'
+Parsing design file '/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v'
+Parsing design file '/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/decoder_pipeline_metrics_tb.sv'
+Top Level Modules:
+       decoder_pipeline_metrics_tb
+TimeScale is 100 ps / 1 ps
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 19306
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U4766( .A (replay_bits_i[52]),  .B (\DP_OP_712J1_123_5803/n296 ),  .S (info_bits_o[52]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 19519
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U4915( .A (replay_bits_i[53]),  .B (\DP_OP_712J1_123_5803/n297 ),  .S (info_bits_o[53]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 19697
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U5039( .A (replay_bits_i[54]),  .B (\DP_OP_712J1_123_5803/n298 ),  .S (info_bits_o[54]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 19699
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U5040( .A (replay_bits_i[55]),  .B (\DP_OP_712J1_123_5803/n299 ),  .S (info_bits_o[55]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 19887
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U5169( .A (replay_bits_i[51]),  .B (\DP_OP_712J1_123_5803/n295 ),  .S (info_bits_o[51]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 20072
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U5298( .A (replay_bits_i[57]),  .B (\DP_OP_712J1_123_5803/n301 ),  .S (info_bits_o[57]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 20271
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U5437( .A (replay_bits_i[58]),  .B (\DP_OP_712J1_123_5803/n302 ),  .S (info_bits_o[58]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 20439
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U5564( .A (replay_bits_i[56]),  .B (\DP_OP_712J1_123_5803/n300 ),  .S (info_bits_o[56]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 20586
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U5677( .A (replay_bits_i[59]),  .B (\DP_OP_712J1_123_5803/n303 ),  .S (info_bits_o[59]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 20748
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U5788( .A (replay_bits_i[60]),  .B (\DP_OP_712J1_123_5803/n304 ),  .S (info_bits_o[60]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 20750
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U5789( .A (replay_bits_i[61]),  .B (\DP_OP_712J1_123_5803/n305 ),  .S (info_bits_o[61]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 21126
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U6008( .A (locator_i[65]),  .B (locator_i[69]),  .S (n3379));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27086
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10458( .A (replay_bits_i[50]),  .B (\DP_OP_712J1_123_5803/n294 ),  .S (info_bits_o[50]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27088
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10459( .A (replay_bits_i[49]),  .B (\DP_OP_712J1_123_5803/n293 ),  .S (info_bits_o[49]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27090
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10460( .A (replay_bits_i[48]),  .B (\DP_OP_712J1_123_5803/n292 ),  .S (info_bits_o[48]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27092
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10461( .A (replay_bits_i[47]),  .B (\DP_OP_712J1_123_5803/n291 ),  .S (info_bits_o[47]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27094
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10462( .A (replay_bits_i[46]),  .B (\DP_OP_712J1_123_5803/n290 ),  .S (info_bits_o[46]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27096
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10463( .A (replay_bits_i[45]),  .B (\DP_OP_712J1_123_5803/n289 ),  .S (info_bits_o[45]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27098
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10464( .A (replay_bits_i[44]),  .B (\DP_OP_712J1_123_5803/n288 ),  .S (info_bits_o[44]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27100
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10465( .A (replay_bits_i[43]),  .B (\DP_OP_712J1_123_5803/n287 ),  .S (info_bits_o[43]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27102
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10466( .A (replay_bits_i[42]),  .B (\DP_OP_712J1_123_5803/n286 ),  .S (info_bits_o[42]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27104
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10467( .A (replay_bits_i[41]),  .B (\DP_OP_712J1_123_5803/n285 ),  .S (info_bits_o[41]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27106
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10468( .A (replay_bits_i[40]),  .B (\DP_OP_712J1_123_5803/n284 ),  .S (info_bits_o[40]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27108
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10469( .A (replay_bits_i[39]),  .B (\DP_OP_712J1_123_5803/n283 ),  .S (info_bits_o[39]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27110
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10470( .A (replay_bits_i[38]),  .B (\DP_OP_712J1_123_5803/n282 ),  .S (info_bits_o[38]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27112
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10471( .A (replay_bits_i[37]),  .B (\DP_OP_712J1_123_5803/n281 ),  .S (info_bits_o[37]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27114
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10472( .A (replay_bits_i[36]),  .B (\DP_OP_712J1_123_5803/n280 ),  .S (info_bits_o[36]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27116
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10473( .A (replay_bits_i[35]),  .B (\DP_OP_712J1_123_5803/n279 ),  .S (info_bits_o[35]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27118
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10474( .A (replay_bits_i[34]),  .B (\DP_OP_712J1_123_5803/n278 ),  .S (info_bits_o[34]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27120
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10475( .A (replay_bits_i[33]),  .B (\DP_OP_712J1_123_5803/n277 ),  .S (info_bits_o[33]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27122
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10476( .A (replay_bits_i[32]),  .B (\DP_OP_712J1_123_5803/n276 ),  .S (info_bits_o[32]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27124
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10477( .A (replay_bits_i[31]),  .B (\DP_OP_712J1_123_5803/n275 ),  .S (info_bits_o[31]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27126
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10478( .A (replay_bits_i[30]),  .B (\DP_OP_712J1_123_5803/n274 ),  .S (info_bits_o[30]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27128
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10479( .A (replay_bits_i[29]),  .B (\DP_OP_712J1_123_5803/n273 ),  .S (info_bits_o[29]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27130
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10480( .A (replay_bits_i[28]),  .B (\DP_OP_712J1_123_5803/n272 ),  .S (info_bits_o[28]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27132
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10481( .A (replay_bits_i[27]),  .B (\DP_OP_712J1_123_5803/n271 ),  .S (info_bits_o[27]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27134
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10482( .A (replay_bits_i[26]),  .B (\DP_OP_712J1_123_5803/n270 ),  .S (info_bits_o[26]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27136
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10483( .A (replay_bits_i[25]),  .B (\DP_OP_712J1_123_5803/n269 ),  .S (info_bits_o[25]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27138
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10484( .A (replay_bits_i[24]),  .B (\DP_OP_712J1_123_5803/n268 ),  .S (info_bits_o[24]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27140
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10485( .A (replay_bits_i[23]),  .B (\DP_OP_712J1_123_5803/n253 ),  .S (info_bits_o[23]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27142
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10486( .A (replay_bits_i[22]),  .B (\DP_OP_712J1_123_5803/n252 ),  .S (info_bits_o[22]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27144
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10487( .A (replay_bits_i[21]),  .B (\DP_OP_712J1_123_5803/n255 ),  .S (info_bits_o[21]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27146
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10488( .A (replay_bits_i[20]),  .B (\DP_OP_712J1_123_5803/n254 ),  .S (info_bits_o[20]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27148
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10489( .A (replay_bits_i[19]),  .B (\DP_OP_712J1_123_5803/n257 ),  .S (info_bits_o[19]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27150
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10490( .A (replay_bits_i[18]),  .B (\DP_OP_712J1_123_5803/n256 ),  .S (info_bits_o[18]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27152
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10491( .A (replay_bits_i[17]),  .B (\DP_OP_712J1_123_5803/n259 ),  .S (info_bits_o[17]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27154
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10492( .A (replay_bits_i[16]),  .B (\DP_OP_712J1_123_5803/n258 ),  .S (info_bits_o[16]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27156
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10493( .A (replay_bits_i[15]),  .B (\DP_OP_712J1_123_5803/n261 ),  .S (info_bits_o[15]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27158
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10494( .A (replay_bits_i[14]),  .B (\DP_OP_712J1_123_5803/n260 ),  .S (info_bits_o[14]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27160
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10495( .A (replay_bits_i[13]),  .B (\DP_OP_712J1_123_5803/n263 ),  .S (info_bits_o[13]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27162
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10496( .A (replay_bits_i[12]),  .B (\DP_OP_712J1_123_5803/n262 ),  .S (info_bits_o[12]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27164
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10497( .A (replay_bits_i[11]),  .B (\DP_OP_712J1_123_5803/n265 ),  .S (info_bits_o[11]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27166
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10498( .A (replay_bits_i[10]),  .B (\DP_OP_712J1_123_5803/n264 ),  .S (info_bits_o[10]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27168
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10499( .A (replay_bits_i[9]),  .B (\DP_OP_712J1_123_5803/n267 ),  .S (info_bits_o[9]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27170
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10500( .A (replay_bits_i[8]),  .B (\DP_OP_712J1_123_5803/n266 ),  .S (info_bits_o[8]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27172
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10501( .A (replay_bits_i[7]),  .B (\DP_OP_712J1_123_5803/n245 ),  .S (info_bits_o[7]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27174
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10502( .A (replay_bits_i[6]),  .B (\DP_OP_712J1_123_5803/n244 ),  .S (info_bits_o[6]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27176
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10503( .A (replay_bits_i[5]),  .B (\DP_OP_712J1_123_5803/n247 ),  .S (info_bits_o[5]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27178
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10504( .A (replay_bits_i[4]),  .B (\DP_OP_712J1_123_5803/n246 ),  .S (info_bits_o[4]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27180
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10505( .A (replay_bits_i[3]),  .B (\DP_OP_712J1_123_5803/n249 ),  .S (info_bits_o[3]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27182
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10506( .A (replay_bits_i[2]),  .B (\DP_OP_712J1_123_5803/n248 ),  .S (info_bits_o[2]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27184
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10507( .A (replay_bits_i[1]),  .B (\DP_OP_712J1_123_5803/n251 ),  .S (info_bits_o[1]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 27186
+bch_chien_csechien_13_8_4213_4109_64_13_40_201b, "STP_ADDH_0P5 U10508( .A (replay_bits_i[0]),  .B (\DP_OP_712J1_123_5803/n250 ),  .S (info_bits_o[0]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/runs/compressedgroupfirstchien/netlist.v, 28698
+pbch_unmask_rec_cseload, "STP_ADDH_0P5 U508( .A (n390),  .B (n389),  .S (n392));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+Starting vcs inline pass...
+
+56 modules and 5 UDPs read.
+recompiling module STP_ADDF_V1_0P5
+recompiling module STP_ADDH_0P5
+recompiling module STP_AN2_S_0P5
+recompiling module STP_AN3B_0P5
+recompiling module STP_AN3_0P5
+recompiling module STP_AN4B_0P5
+recompiling module STP_AN4_L_0P5
+recompiling module STP_AO21B_1
+recompiling module STP_AO21_1
+recompiling module STP_AO22_0P5
+recompiling module STP_AO2BB2_0P5
+recompiling module STP_AO32_0P5
+recompiling module STP_AOAI211_0P5
+recompiling module STP_AOI211_0P5
+recompiling module STP_AOI21B_0P5
+recompiling module STP_AOI21_0P75
+recompiling module STP_AOI221_0P5
+recompiling module STP_AOI222_0P5
+recompiling module STP_AOI22_0P5
+recompiling module STP_AOI31_0P5
+recompiling module STP_AOI32_1
+recompiling module STP_BUF_1
+recompiling module STP_EO2_S_0P5
+recompiling module STP_EO3_0P5
+recompiling module STP_FDPRBQ_1
+recompiling module STP_FDPSBQ_1
+recompiling module STP_INV_S_0P65
+recompiling module STP_MAJI3_1
+recompiling module STP_MUXI2_MG_0P5
+recompiling module STP_ND2B_MM_1
+recompiling module STP_ND2_S_1
+recompiling module STP_ND3_0P5
+recompiling module STP_ND4_MM_1
+recompiling module STP_NR2B_V1DG_1
+recompiling module STP_NR2_G_0P5
+recompiling module STP_NR3B_MG_1
+recompiling module STP_NR3_G_0P65
+recompiling module STP_NR4BB_0P5
+recompiling module STP_NR4B_1
+recompiling module STP_NR4_0P5
+recompiling module STP_OA21B_0P5
+recompiling module STP_OA21_1
+recompiling module STP_OA22_DG_1
+recompiling module STP_OA2BB2_0P5
+recompiling module STP_OAI211_0P5
+recompiling module STP_OAI21_0P75
+recompiling module STP_OAI221_0P5
+recompiling module STP_OAI222_0P75
+recompiling module STP_OAI22_0P5
+recompiling module STP_OAI31_G_0P5
+50 of 56 modules done
+recompiling module STP_OAOI211_0P5
+recompiling module STP_OR2_1
+recompiling module STP_OR3_1
+recompiling module bch_chien_csechien_13_8_4213_4109_64_13_40_201b
+recompiling module pbch_unmask_rec_cseload
+recompiling module decoder_pipeline_metrics_tb
+All of 56 modules done
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/compressedgroupfirstchien_gate_pipeline/simv \
+]; then chmod a-x /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/compressedgroupfirstchien_gate_pipeline/simv; \
+fi
+g++  -o /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/compressedgroupfirstchien_gate_pipeline/simv \
+-no-pie    -Wl,--no-as-needed -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib -L/usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib \
+-Wl,-rpath-link=./   objs/amcQw_d.o   _16991_archive_1.so objs/udps/i3rNP.o objs/udps/ay8jE.o \
+objs/udps/Qrx86.o objs/udps/a7I9W.o objs/udps/k7bID.o  SIM_l.o       rmapats_mop.o \
+rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lnuma -lvirsim \
+-lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive          /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/vcs_save_restore_new.o \
+-ldl  -lc -lm -lpthread -ldl 
+/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/compressedgroupfirstchien_gate_pipeline/simv \
+up to date
+CPU time: 3.144 seconds to compile + .978 seconds to elab + .313 seconds to link

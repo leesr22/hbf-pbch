@@ -1,0 +1,29 @@
+{
+  "frequency_MHz": 300,
+  "encoder_target_GBps": 12.8,
+  "decoder_target_GBps": 384,
+  "selected": {
+    "strict_encoder": "strict_piped_h7_c16_d5_crc128",
+    "early_encoder": "final_h5_c16_crc256",
+    "decoder": "compressedgroupfirstchien",
+    "unchanged_latency_decoder": "compressedfirstchien"
+  },
+  "total_GE": {
+    "BCH(t=8), common-optimized": 7010925.858763889,
+    "BCH(t=9), common-optimized": 8065983.841815476,
+    "BCH(t=27), common-optimized": 29870657.44331349,
+    "PBCH(t=8,l=13), original": 12189112.098000001,
+    "PBCH, full exhaustive FWHT": 7941016.514981876,
+    "PBCH, exact early stop": 7676750.182842976,
+    "PBCH, full FWHT / original decoder latency": 8232579.179589019
+  },
+  "relative_to_fair_BCH_t9": {
+    "BCH(t=8), common-optimized": 0.8691966158446809,
+    "BCH(t=9), common-optimized": 1.0,
+    "BCH(t=27), common-optimized": 3.703287538025896,
+    "PBCH(t=8,l=13), original": 1.511174871788052,
+    "PBCH, full exhaustive FWHT": 0.9845068711660755,
+    "PBCH, exact early stop": 0.951743808739779,
+    "PBCH, full FWHT / original decoder latency": 1.02065406291913
+  }
+}

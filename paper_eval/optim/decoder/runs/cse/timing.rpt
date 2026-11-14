@@ -1,0 +1,770 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : pbch_dec_cse
+Version: Q-2019.12-SP5-5
+Date   : Sat Nov 14 22:04:19 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: SSGWC0P9V125C   Library: um28nchslogl35hsl140f_ssgwc0p9v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: core/bch_u/syndrome_u/odd_q_reg[12]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/bch_u/syndrome_u/syndromes_o_reg[200]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_dec_cse       ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_syndrome_13_8_4213_64_13_40_201b
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/bch_u/syndrome_u/odd_q_reg[12]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/bch_u/syndrome_u/odd_q_reg[12]/Q (STP_FDPRBQ_1)
+                                                          0.08       0.08 f
+  core/bch_u/syndrome_u/U311/X (STP_INV_S_0P65)           0.05       0.14 r
+  core/bch_u/syndrome_u/U809/X (STP_AOI22_0P5)            0.08       0.21 f
+  core/bch_u/syndrome_u/U184/X (STP_INV_S_0P65)           0.05       0.26 r
+  core/bch_u/syndrome_u/U86/X (STP_OAI22_0P5)             0.05       0.31 f
+  core/bch_u/syndrome_u/U142/X (STP_OA2BB2_0P5)           0.05       0.37 f
+  core/bch_u/syndrome_u/U1423/X (STP_OR2_1)               0.04       0.41 f
+  core/bch_u/syndrome_u/U173/X (STP_OAI211_0P5)           0.01       0.42 r
+  core/bch_u/syndrome_u/U69/X (STP_OAI21_0P75)            0.03       0.45 f
+  core/bch_u/syndrome_u/U1424/X (STP_ND3_0P5)             0.02       0.47 r
+  core/bch_u/syndrome_u/U1425/X (STP_AOAI211_0P5)         0.03       0.50 f
+  core/bch_u/syndrome_u/U1426/X (STP_EO3_0P5)             0.09       0.59 f
+  core/bch_u/syndrome_u/U1427/X (STP_EO3_0P5)             0.09       0.67 f
+  core/bch_u/syndrome_u/U1428/X (STP_EO3_0P5)             0.09       0.76 f
+  core/bch_u/syndrome_u/U1429/X (STP_EO3_0P5)             0.12       0.88 f
+  core/bch_u/syndrome_u/U180/X (STP_INV_S_0P65)           0.03       0.91 r
+  core/bch_u/syndrome_u/U2088/X (STP_AOI22_0P5)           0.05       0.96 f
+  core/bch_u/syndrome_u/U2114/X (STP_AO2BB2_0P5)          0.06       1.02 f
+  core/bch_u/syndrome_u/U52/X (STP_AN2_S_0P5)             0.04       1.06 f
+  core/bch_u/syndrome_u/U2173/X (STP_EO3_0P5)             0.08       1.14 f
+  core/bch_u/syndrome_u/U2174/X (STP_EO3_0P5)             0.09       1.23 f
+  core/bch_u/syndrome_u/U2175/X (STP_EO3_0P5)             0.09       1.32 f
+  core/bch_u/syndrome_u/U2176/X (STP_EO3_0P5)             0.10       1.42 f
+  core/bch_u/syndrome_u/U290/X (STP_INV_S_0P65)           0.04       1.46 r
+  core/bch_u/syndrome_u/U2250/X (STP_AOI22_0P5)           0.04       1.50 f
+  core/bch_u/syndrome_u/U2251/X (STP_AO2BB2_0P5)          0.07       1.57 f
+  core/bch_u/syndrome_u/U33/X (STP_AN2_S_0P5)             0.04       1.61 f
+  core/bch_u/syndrome_u/U2298/X (STP_EO3_0P5)             0.08       1.69 f
+  core/bch_u/syndrome_u/U2299/X (STP_EO3_0P5)             0.09       1.78 f
+  core/bch_u/syndrome_u/U2300/X (STP_EO3_0P5)             0.12       1.91 f
+  core/bch_u/syndrome_u/U271/X (STP_INV_S_0P65)           0.04       1.95 r
+  core/bch_u/syndrome_u/U19/X (STP_OAI22_0P75)            0.04       1.99 f
+  core/bch_u/syndrome_u/U2370/X (STP_AOI22_0P5)           0.05       2.03 r
+  core/bch_u/syndrome_u/U10/X (STP_ND2_S_0P8)             0.02       2.06 f
+  core/bch_u/syndrome_u/U2441/X (STP_EO3_0P5)             0.09       2.14 f
+  core/bch_u/syndrome_u/U2442/X (STP_EO3_0P5)             0.09       2.23 f
+  core/bch_u/syndrome_u/U2443/X (STP_EO3_0P5)             0.09       2.32 f
+  core/bch_u/syndrome_u/U2444/X (STP_ND3_0P5)             0.02       2.34 r
+  core/bch_u/syndrome_u/U2445/X (STP_AOAI211_0P5)         0.03       2.37 f
+  core/bch_u/syndrome_u/U2446/X (STP_AO2BB2_0P5)          0.03       2.39 r
+  core/bch_u/syndrome_u/syndromes_o_reg[200]/D (STP_FDPRBQ_1)
+                                                          0.00       2.39 r
+  data arrival time                                                  2.39
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/bch_u/syndrome_u/syndromes_o_reg[200]/CK (STP_FDPRBQ_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.69
+
+
+  Startpoint: core/bch_u/syndrome_u/odd_q_reg[12]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/bch_u/syndrome_u/syndromes_o_reg[202]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_dec_cse       ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_syndrome_13_8_4213_64_13_40_201b
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/bch_u/syndrome_u/odd_q_reg[12]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/bch_u/syndrome_u/odd_q_reg[12]/Q (STP_FDPRBQ_1)
+                                                          0.08       0.08 f
+  core/bch_u/syndrome_u/U311/X (STP_INV_S_0P65)           0.05       0.14 r
+  core/bch_u/syndrome_u/U809/X (STP_AOI22_0P5)            0.08       0.21 f
+  core/bch_u/syndrome_u/U184/X (STP_INV_S_0P65)           0.05       0.26 r
+  core/bch_u/syndrome_u/U86/X (STP_OAI22_0P5)             0.05       0.31 f
+  core/bch_u/syndrome_u/U142/X (STP_OA2BB2_0P5)           0.05       0.37 f
+  core/bch_u/syndrome_u/U1423/X (STP_OR2_1)               0.04       0.41 f
+  core/bch_u/syndrome_u/U173/X (STP_OAI211_0P5)           0.01       0.42 r
+  core/bch_u/syndrome_u/U69/X (STP_OAI21_0P75)            0.03       0.45 f
+  core/bch_u/syndrome_u/U1424/X (STP_ND3_0P5)             0.02       0.47 r
+  core/bch_u/syndrome_u/U1425/X (STP_AOAI211_0P5)         0.03       0.50 f
+  core/bch_u/syndrome_u/U1426/X (STP_EO3_0P5)             0.09       0.59 f
+  core/bch_u/syndrome_u/U1427/X (STP_EO3_0P5)             0.09       0.67 f
+  core/bch_u/syndrome_u/U1428/X (STP_EO3_0P5)             0.09       0.76 f
+  core/bch_u/syndrome_u/U1429/X (STP_EO3_0P5)             0.12       0.88 f
+  core/bch_u/syndrome_u/U180/X (STP_INV_S_0P65)           0.03       0.91 r
+  core/bch_u/syndrome_u/U2088/X (STP_AOI22_0P5)           0.05       0.96 f
+  core/bch_u/syndrome_u/U2114/X (STP_AO2BB2_0P5)          0.06       1.02 f
+  core/bch_u/syndrome_u/U52/X (STP_AN2_S_0P5)             0.04       1.06 f
+  core/bch_u/syndrome_u/U2173/X (STP_EO3_0P5)             0.08       1.14 f
+  core/bch_u/syndrome_u/U2174/X (STP_EO3_0P5)             0.09       1.23 f
+  core/bch_u/syndrome_u/U2175/X (STP_EO3_0P5)             0.09       1.32 f
+  core/bch_u/syndrome_u/U2176/X (STP_EO3_0P5)             0.10       1.42 f
+  core/bch_u/syndrome_u/U290/X (STP_INV_S_0P65)           0.04       1.46 r
+  core/bch_u/syndrome_u/U2250/X (STP_AOI22_0P5)           0.04       1.50 f
+  core/bch_u/syndrome_u/U2251/X (STP_AO2BB2_0P5)          0.07       1.57 f
+  core/bch_u/syndrome_u/U33/X (STP_AN2_S_0P5)             0.04       1.61 f
+  core/bch_u/syndrome_u/U2298/X (STP_EO3_0P5)             0.08       1.69 f
+  core/bch_u/syndrome_u/U2299/X (STP_EO3_0P5)             0.09       1.78 f
+  core/bch_u/syndrome_u/U2300/X (STP_EO3_0P5)             0.12       1.91 f
+  core/bch_u/syndrome_u/U271/X (STP_INV_S_0P65)           0.04       1.95 r
+  core/bch_u/syndrome_u/U19/X (STP_OAI22_0P75)            0.04       1.99 f
+  core/bch_u/syndrome_u/U188/X (STP_INV_S_0P65)           0.02       2.01 r
+  core/bch_u/syndrome_u/U2370/X (STP_AOI22_0P5)           0.03       2.04 f
+  core/bch_u/syndrome_u/U9/X (STP_ND2_S_0P8)              0.02       2.06 r
+  core/bch_u/syndrome_u/U2433/X (STP_EO3_0P5)             0.04       2.10 f
+  core/bch_u/syndrome_u/U2434/X (STP_EO3_0P5)             0.09       2.19 f
+  core/bch_u/syndrome_u/U2435/X (STP_EO3_0P5)             0.09       2.28 f
+  core/bch_u/syndrome_u/U3/X (STP_OAI21_0P5)              0.02       2.30 r
+  core/bch_u/syndrome_u/U2436/X (STP_OAI31_G_0P5)         0.02       2.33 f
+  core/bch_u/syndrome_u/U2437/X (STP_AO2BB2_0P5)          0.02       2.35 r
+  core/bch_u/syndrome_u/syndromes_o_reg[202]/D (STP_FDPRBQ_1)
+                                                          0.00       2.35 r
+  data arrival time                                                  2.35
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/bch_u/syndrome_u/syndromes_o_reg[202]/CK (STP_FDPRBQ_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.73
+
+
+  Startpoint: core/bch_u/chien_u/term_q_reg[4][11]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/bch_u/chien_u/success_o_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_dec_cse       ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_13_8_4213_4109_64_13_40_201b
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/bch_u/chien_u/term_q_reg[4][11]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/bch_u/chien_u/term_q_reg[4][11]/Q (STP_FDPRBQ_1)
+                                                          0.08       0.08 r
+  core/bch_u/chien_u/U90/X (STP_INV_S_0P65)               0.08       0.15 f
+  core/bch_u/chien_u/U510/X (STP_AOI22_0P5)               0.19       0.35 r
+  core/bch_u/chien_u/U203/X (STP_INV_S_0P65)              0.11       0.46 f
+  core/bch_u/chien_u/U723/X (STP_AOI22_0P5)               0.16       0.62 r
+  core/bch_u/chien_u/U104/X (STP_INV_S_0P65)              0.09       0.71 f
+  core/bch_u/chien_u/U4882/X (STP_AOI22_0P5)              0.08       0.79 r
+  core/bch_u/chien_u/U5097/X (STP_EO3_0P5)                0.09       0.88 f
+  core/bch_u/chien_u/U5098/X (STP_EO3_0P5)                0.09       0.97 f
+  core/bch_u/chien_u/U5099/X (STP_EO3_0P5)                0.09       1.06 f
+  core/bch_u/chien_u/U5100/X (STP_EO3_0P5)                0.09       1.16 f
+  core/bch_u/chien_u/U5101/X (STP_EO3_0P5)                0.09       1.25 f
+  core/bch_u/chien_u/U5102/X (STP_EO3_0P5)                0.09       1.33 f
+  core/bch_u/chien_u/U44/X (STP_NR4_0P5)                  0.03       1.36 r
+  core/bch_u/chien_u/U5270/X (STP_AN4_L_0P5)              0.07       1.43 r
+  core/bch_u/chien_u/DP_OP_16980J1_123_5199/U95/CO (STP_ADDF_V1_0P5)
+                                                          0.05       1.49 r
+  core/bch_u/chien_u/DP_OP_16980J1_123_5199/U81/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.57 f
+  core/bch_u/chien_u/DP_OP_16980J1_123_5199/U80/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.65 r
+  core/bch_u/chien_u/DP_OP_16980J1_123_5199/U78/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.73 f
+  core/bch_u/chien_u/DP_OP_16980J1_123_5199/U70/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.81 r
+  core/bch_u/chien_u/DP_OP_16980J1_123_5199/U44/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.89 f
+  core/bch_u/chien_u/U6879/X (STP_AO21_1)                 0.03       1.92 f
+  core/bch_u/chien_u/DP_OP_16980J1_123_5199/U31/S (STP_ADDF_V1_0P5)
+                                                          0.07       1.99 f
+  core/bch_u/chien_u/intadd_2/U4/CO (STP_ADDF_V1_0P5)     0.05       2.04 f
+  core/bch_u/chien_u/intadd_2/U3/CO (STP_ADDF_V1_0P5)     0.05       2.09 f
+  core/bch_u/chien_u/intadd_2/U2/CO (STP_ADDF_V1_0P5)     0.05       2.14 f
+  core/bch_u/chien_u/U11069/X (STP_EO3_0P5)               0.09       2.23 f
+  core/bch_u/chien_u/U205/X (STP_NR4_0P5)                 0.04       2.27 r
+  core/bch_u/chien_u/U3/X (STP_ND2_S_0P8)                 0.02       2.29 f
+  core/bch_u/chien_u/U11232/X (STP_OAI32_1)               0.03       2.32 r
+  core/bch_u/chien_u/success_o_reg/D (STP_FDPRBQ_1)       0.00       2.32 r
+  data arrival time                                                  2.32
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/bch_u/chien_u/success_o_reg/CK (STP_FDPRBQ_1)      0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.32
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.76
+
+
+  Startpoint: core/bch_u/syndrome_u/odd_q_reg[12]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/bch_u/syndrome_u/syndromes_o_reg[196]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_dec_cse       ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_syndrome_13_8_4213_64_13_40_201b
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/bch_u/syndrome_u/odd_q_reg[12]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/bch_u/syndrome_u/odd_q_reg[12]/Q (STP_FDPRBQ_1)
+                                                          0.08       0.08 f
+  core/bch_u/syndrome_u/U311/X (STP_INV_S_0P65)           0.05       0.14 r
+  core/bch_u/syndrome_u/U809/X (STP_AOI22_0P5)            0.08       0.21 f
+  core/bch_u/syndrome_u/U184/X (STP_INV_S_0P65)           0.05       0.26 r
+  core/bch_u/syndrome_u/U86/X (STP_OAI22_0P5)             0.05       0.31 f
+  core/bch_u/syndrome_u/U142/X (STP_OA2BB2_0P5)           0.05       0.37 f
+  core/bch_u/syndrome_u/U1423/X (STP_OR2_1)               0.04       0.41 f
+  core/bch_u/syndrome_u/U173/X (STP_OAI211_0P5)           0.01       0.42 r
+  core/bch_u/syndrome_u/U69/X (STP_OAI21_0P75)            0.03       0.45 f
+  core/bch_u/syndrome_u/U1424/X (STP_ND3_0P5)             0.02       0.47 r
+  core/bch_u/syndrome_u/U1425/X (STP_AOAI211_0P5)         0.03       0.50 f
+  core/bch_u/syndrome_u/U1426/X (STP_EO3_0P5)             0.09       0.59 f
+  core/bch_u/syndrome_u/U1427/X (STP_EO3_0P5)             0.09       0.67 f
+  core/bch_u/syndrome_u/U1428/X (STP_EO3_0P5)             0.09       0.76 f
+  core/bch_u/syndrome_u/U1429/X (STP_EO3_0P5)             0.12       0.88 f
+  core/bch_u/syndrome_u/U180/X (STP_INV_S_0P65)           0.03       0.91 r
+  core/bch_u/syndrome_u/U2088/X (STP_AOI22_0P5)           0.05       0.96 f
+  core/bch_u/syndrome_u/U2114/X (STP_AO2BB2_0P5)          0.06       1.02 f
+  core/bch_u/syndrome_u/U52/X (STP_AN2_S_0P5)             0.04       1.06 f
+  core/bch_u/syndrome_u/U2173/X (STP_EO3_0P5)             0.08       1.14 f
+  core/bch_u/syndrome_u/U2174/X (STP_EO3_0P5)             0.09       1.23 f
+  core/bch_u/syndrome_u/U2175/X (STP_EO3_0P5)             0.09       1.32 f
+  core/bch_u/syndrome_u/U2176/X (STP_EO3_0P5)             0.10       1.42 f
+  core/bch_u/syndrome_u/U290/X (STP_INV_S_0P65)           0.04       1.46 r
+  core/bch_u/syndrome_u/U2250/X (STP_AOI22_0P5)           0.04       1.50 f
+  core/bch_u/syndrome_u/U2251/X (STP_AO2BB2_0P5)          0.07       1.57 f
+  core/bch_u/syndrome_u/U33/X (STP_AN2_S_0P5)             0.04       1.61 f
+  core/bch_u/syndrome_u/U2298/X (STP_EO3_0P5)             0.08       1.69 f
+  core/bch_u/syndrome_u/U2299/X (STP_EO3_0P5)             0.09       1.78 f
+  core/bch_u/syndrome_u/U2300/X (STP_EO3_0P5)             0.12       1.91 f
+  core/bch_u/syndrome_u/U271/X (STP_INV_S_0P65)           0.04       1.95 r
+  core/bch_u/syndrome_u/U19/X (STP_OAI22_0P75)            0.04       1.99 f
+  core/bch_u/syndrome_u/U188/X (STP_INV_S_0P65)           0.02       2.01 r
+  core/bch_u/syndrome_u/U11/X (STP_ND2_S_0P8)             0.03       2.03 f
+  core/bch_u/syndrome_u/U2417/X (STP_EO3_0P5)             0.04       2.07 f
+  core/bch_u/syndrome_u/U2420/X (STP_EO3_0P5)             0.09       2.16 f
+  core/bch_u/syndrome_u/U2421/X (STP_EO3_0P5)             0.09       2.25 f
+  core/bch_u/syndrome_u/U4/X (STP_OAI21_0P5)              0.02       2.27 r
+  core/bch_u/syndrome_u/U2422/X (STP_OAI31_G_0P5)         0.02       2.30 f
+  core/bch_u/syndrome_u/U2423/X (STP_AO2BB2_0P5)          0.02       2.32 r
+  core/bch_u/syndrome_u/syndromes_o_reg[196]/D (STP_FDPRBQ_1)
+                                                          0.00       2.32 r
+  data arrival time                                                  2.32
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/bch_u/syndrome_u/syndromes_o_reg[196]/CK (STP_FDPRBQ_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.32
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.76
+
+
+  Startpoint: core/bch_u/syndrome_u/odd_q_reg[12]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/bch_u/syndrome_u/syndromes_o_reg[198]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_dec_cse       ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_syndrome_13_8_4213_64_13_40_201b
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/bch_u/syndrome_u/odd_q_reg[12]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/bch_u/syndrome_u/odd_q_reg[12]/Q (STP_FDPRBQ_1)
+                                                          0.08       0.08 f
+  core/bch_u/syndrome_u/U311/X (STP_INV_S_0P65)           0.05       0.14 r
+  core/bch_u/syndrome_u/U809/X (STP_AOI22_0P5)            0.08       0.21 f
+  core/bch_u/syndrome_u/U184/X (STP_INV_S_0P65)           0.05       0.26 r
+  core/bch_u/syndrome_u/U86/X (STP_OAI22_0P5)             0.05       0.31 f
+  core/bch_u/syndrome_u/U142/X (STP_OA2BB2_0P5)           0.05       0.37 f
+  core/bch_u/syndrome_u/U1423/X (STP_OR2_1)               0.04       0.41 f
+  core/bch_u/syndrome_u/U173/X (STP_OAI211_0P5)           0.01       0.42 r
+  core/bch_u/syndrome_u/U69/X (STP_OAI21_0P75)            0.03       0.45 f
+  core/bch_u/syndrome_u/U1424/X (STP_ND3_0P5)             0.02       0.47 r
+  core/bch_u/syndrome_u/U1425/X (STP_AOAI211_0P5)         0.03       0.50 f
+  core/bch_u/syndrome_u/U1426/X (STP_EO3_0P5)             0.09       0.59 f
+  core/bch_u/syndrome_u/U1427/X (STP_EO3_0P5)             0.09       0.67 f
+  core/bch_u/syndrome_u/U1428/X (STP_EO3_0P5)             0.09       0.76 f
+  core/bch_u/syndrome_u/U1429/X (STP_EO3_0P5)             0.12       0.88 f
+  core/bch_u/syndrome_u/U180/X (STP_INV_S_0P65)           0.03       0.91 r
+  core/bch_u/syndrome_u/U2088/X (STP_AOI22_0P5)           0.05       0.96 f
+  core/bch_u/syndrome_u/U2114/X (STP_AO2BB2_0P5)          0.06       1.02 f
+  core/bch_u/syndrome_u/U52/X (STP_AN2_S_0P5)             0.04       1.06 f
+  core/bch_u/syndrome_u/U2173/X (STP_EO3_0P5)             0.08       1.14 f
+  core/bch_u/syndrome_u/U2174/X (STP_EO3_0P5)             0.09       1.23 f
+  core/bch_u/syndrome_u/U2175/X (STP_EO3_0P5)             0.09       1.32 f
+  core/bch_u/syndrome_u/U2176/X (STP_EO3_0P5)             0.09       1.41 r
+  core/bch_u/syndrome_u/U290/X (STP_INV_S_0P65)           0.04       1.45 f
+  core/bch_u/syndrome_u/U126/X (STP_OA2BB2_0P5)           0.05       1.51 f
+  core/bch_u/syndrome_u/U2292/X (STP_AO2BB2_0P5)          0.05       1.56 f
+  core/bch_u/syndrome_u/U210/X (STP_OA21B_0P5)            0.05       1.60 f
+  core/bch_u/syndrome_u/U2307/X (STP_EO3_0P5)             0.08       1.68 f
+  core/bch_u/syndrome_u/U2308/X (STP_EO3_0P5)             0.09       1.77 f
+  core/bch_u/syndrome_u/U2309/X (STP_EO3_0P5)             0.13       1.90 f
+  core/bch_u/syndrome_u/U117/X (STP_INV_S_0P65)           0.04       1.93 r
+  core/bch_u/syndrome_u/U193/X (STP_ND2_S_0P8)            0.02       1.95 f
+  core/bch_u/syndrome_u/U192/X (STP_OAI21_0P5)            0.02       1.97 r
+  core/bch_u/syndrome_u/U2407/X (STP_OAI31_G_0P5)         0.03       2.00 f
+  core/bch_u/syndrome_u/U2408/X (STP_EO3_0P5)             0.09       2.09 f
+  core/bch_u/syndrome_u/U2409/X (STP_EO3_0P5)             0.09       2.18 f
+  core/bch_u/syndrome_u/U2410/X (STP_EO3_0P5)             0.09       2.27 f
+  core/bch_u/syndrome_u/U2411/X (STP_AO2BB2_0P5)          0.02       2.29 r
+  core/bch_u/syndrome_u/syndromes_o_reg[198]/D (STP_FDPRBQ_1)
+                                                          0.00       2.29 r
+  data arrival time                                                  2.29
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/bch_u/syndrome_u/syndromes_o_reg[198]/CK (STP_FDPRBQ_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.79
+
+
+  Startpoint: core/bch_u/syndrome_u/odd_q_reg[12]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/bch_u/syndrome_u/syndromes_o_reg[203]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_dec_cse       ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_syndrome_13_8_4213_64_13_40_201b
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/bch_u/syndrome_u/odd_q_reg[12]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/bch_u/syndrome_u/odd_q_reg[12]/Q (STP_FDPRBQ_1)
+                                                          0.08       0.08 f
+  core/bch_u/syndrome_u/U311/X (STP_INV_S_0P65)           0.05       0.14 r
+  core/bch_u/syndrome_u/U809/X (STP_AOI22_0P5)            0.08       0.21 f
+  core/bch_u/syndrome_u/U184/X (STP_INV_S_0P65)           0.05       0.26 r
+  core/bch_u/syndrome_u/U86/X (STP_OAI22_0P5)             0.05       0.31 f
+  core/bch_u/syndrome_u/U142/X (STP_OA2BB2_0P5)           0.05       0.37 f
+  core/bch_u/syndrome_u/U1423/X (STP_OR2_1)               0.04       0.41 f
+  core/bch_u/syndrome_u/U173/X (STP_OAI211_0P5)           0.01       0.42 r
+  core/bch_u/syndrome_u/U69/X (STP_OAI21_0P75)            0.03       0.45 f
+  core/bch_u/syndrome_u/U1424/X (STP_ND3_0P5)             0.02       0.47 r
+  core/bch_u/syndrome_u/U1425/X (STP_AOAI211_0P5)         0.03       0.50 f
+  core/bch_u/syndrome_u/U1426/X (STP_EO3_0P5)             0.09       0.59 f
+  core/bch_u/syndrome_u/U1427/X (STP_EO3_0P5)             0.09       0.67 f
+  core/bch_u/syndrome_u/U1428/X (STP_EO3_0P5)             0.09       0.76 f
+  core/bch_u/syndrome_u/U1429/X (STP_EO3_0P5)             0.12       0.88 f
+  core/bch_u/syndrome_u/U180/X (STP_INV_S_0P65)           0.03       0.91 r
+  core/bch_u/syndrome_u/U2088/X (STP_AOI22_0P5)           0.05       0.96 f
+  core/bch_u/syndrome_u/U2114/X (STP_AO2BB2_0P5)          0.06       1.02 f
+  core/bch_u/syndrome_u/U52/X (STP_AN2_S_0P5)             0.04       1.06 f
+  core/bch_u/syndrome_u/U2173/X (STP_EO3_0P5)             0.08       1.14 f
+  core/bch_u/syndrome_u/U2174/X (STP_EO3_0P5)             0.09       1.23 f
+  core/bch_u/syndrome_u/U2175/X (STP_EO3_0P5)             0.09       1.32 f
+  core/bch_u/syndrome_u/U2176/X (STP_EO3_0P5)             0.09       1.41 r
+  core/bch_u/syndrome_u/U290/X (STP_INV_S_0P65)           0.04       1.45 f
+  core/bch_u/syndrome_u/U2255/X (STP_AOAI211_0P5)         0.02       1.47 r
+  core/bch_u/syndrome_u/U2256/X (STP_OAI311_1)            0.04       1.51 f
+  core/bch_u/syndrome_u/U2257/X (STP_EO3_0P5)             0.09       1.61 f
+  core/bch_u/syndrome_u/U2258/X (STP_EO3_0P5)             0.09       1.70 f
+  core/bch_u/syndrome_u/U2259/X (STP_ND3_0P5)             0.02       1.72 r
+  core/bch_u/syndrome_u/U2260/X (STP_AOAI211_0P5)         0.08       1.80 f
+  core/bch_u/syndrome_u/U282/X (STP_INV_S_0P65)           0.07       1.88 r
+  core/bch_u/syndrome_u/U2351/X (STP_AO2BB2_0P5)          0.05       1.93 r
+  core/bch_u/syndrome_u/U2361/X (STP_AO2BB2_0P5)          0.05       1.98 r
+  core/bch_u/syndrome_u/U16/X (STP_ND2_S_0P8)             0.02       2.00 f
+  core/bch_u/syndrome_u/U2376/X (STP_EO3_0P5)             0.09       2.09 f
+  core/bch_u/syndrome_u/U2377/X (STP_EO3_0P5)             0.09       2.17 f
+  core/bch_u/syndrome_u/U2380/X (STP_EO3_0P5)             0.09       2.26 f
+  core/bch_u/syndrome_u/U2381/X (STP_AO2BB2_0P5)          0.02       2.28 r
+  core/bch_u/syndrome_u/syndromes_o_reg[203]/D (STP_FDPRBQ_1)
+                                                          0.00       2.28 r
+  data arrival time                                                  2.28
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/bch_u/syndrome_u/syndromes_o_reg[203]/CK (STP_FDPRBQ_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.28
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.80
+
+
+  Startpoint: core/bch_u/syndrome_u/odd_q_reg[12]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/bch_u/syndrome_u/syndromes_o_reg[199]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_dec_cse       ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_syndrome_13_8_4213_64_13_40_201b
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/bch_u/syndrome_u/odd_q_reg[12]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/bch_u/syndrome_u/odd_q_reg[12]/Q (STP_FDPRBQ_1)
+                                                          0.08       0.08 f
+  core/bch_u/syndrome_u/U311/X (STP_INV_S_0P65)           0.05       0.14 r
+  core/bch_u/syndrome_u/U809/X (STP_AOI22_0P5)            0.08       0.21 f
+  core/bch_u/syndrome_u/U184/X (STP_INV_S_0P65)           0.05       0.26 r
+  core/bch_u/syndrome_u/U86/X (STP_OAI22_0P5)             0.05       0.31 f
+  core/bch_u/syndrome_u/U142/X (STP_OA2BB2_0P5)           0.05       0.37 f
+  core/bch_u/syndrome_u/U1423/X (STP_OR2_1)               0.04       0.41 f
+  core/bch_u/syndrome_u/U173/X (STP_OAI211_0P5)           0.01       0.42 r
+  core/bch_u/syndrome_u/U69/X (STP_OAI21_0P75)            0.03       0.45 f
+  core/bch_u/syndrome_u/U1424/X (STP_ND3_0P5)             0.02       0.47 r
+  core/bch_u/syndrome_u/U1425/X (STP_AOAI211_0P5)         0.03       0.50 f
+  core/bch_u/syndrome_u/U1426/X (STP_EO3_0P5)             0.09       0.59 f
+  core/bch_u/syndrome_u/U1427/X (STP_EO3_0P5)             0.09       0.67 f
+  core/bch_u/syndrome_u/U1428/X (STP_EO3_0P5)             0.09       0.76 f
+  core/bch_u/syndrome_u/U1429/X (STP_EO3_0P5)             0.12       0.88 f
+  core/bch_u/syndrome_u/U180/X (STP_INV_S_0P65)           0.03       0.91 r
+  core/bch_u/syndrome_u/U2088/X (STP_AOI22_0P5)           0.05       0.96 f
+  core/bch_u/syndrome_u/U2114/X (STP_AO2BB2_0P5)          0.06       1.02 f
+  core/bch_u/syndrome_u/U52/X (STP_AN2_S_0P5)             0.04       1.06 f
+  core/bch_u/syndrome_u/U2173/X (STP_EO3_0P5)             0.08       1.14 f
+  core/bch_u/syndrome_u/U2174/X (STP_EO3_0P5)             0.09       1.23 f
+  core/bch_u/syndrome_u/U2175/X (STP_EO3_0P5)             0.09       1.32 f
+  core/bch_u/syndrome_u/U2176/X (STP_EO3_0P5)             0.10       1.42 f
+  core/bch_u/syndrome_u/U290/X (STP_INV_S_0P65)           0.04       1.46 r
+  core/bch_u/syndrome_u/U2250/X (STP_AOI22_0P5)           0.04       1.50 f
+  core/bch_u/syndrome_u/U2280/X (STP_AO2BB2_0P5)          0.06       1.56 f
+  core/bch_u/syndrome_u/U124/X (STP_INV_S_0P65)           0.02       1.58 r
+  core/bch_u/syndrome_u/U2282/X (STP_ND3_0P5)             0.03       1.60 f
+  core/bch_u/syndrome_u/U2283/X (STP_AOAI211_0P5)         0.02       1.62 r
+  core/bch_u/syndrome_u/U2284/X (STP_EO3_0P5)             0.08       1.70 f
+  core/bch_u/syndrome_u/U2285/X (STP_EO3_0P5)             0.09       1.79 f
+  core/bch_u/syndrome_u/U2286/X (STP_EO3_0P5)             0.11       1.90 f
+  core/bch_u/syndrome_u/U200/X (STP_INV_S_0P65)           0.03       1.93 r
+  core/bch_u/syndrome_u/U190/X (STP_ND2_S_0P8)            0.02       1.95 f
+  core/bch_u/syndrome_u/U2385/X (STP_EO3_0P5)             0.09       2.03 f
+  core/bch_u/syndrome_u/U2386/X (STP_EO3_0P5)             0.09       2.12 f
+  core/bch_u/syndrome_u/U2388/X (STP_EO3_0P5)             0.09       2.21 f
+  core/bch_u/syndrome_u/U2395/X (STP_EO3_0P5)             0.04       2.25 f
+  core/bch_u/syndrome_u/U2396/X (STP_AO2BB2_0P5)          0.02       2.27 r
+  core/bch_u/syndrome_u/syndromes_o_reg[199]/D (STP_FDPRBQ_1)
+                                                          0.00       2.27 r
+  data arrival time                                                  2.27
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/bch_u/syndrome_u/syndromes_o_reg[199]/CK (STP_FDPRBQ_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.81
+
+
+  Startpoint: core/bch_u/syndrome_u/odd_q_reg[12]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/bch_u/syndrome_u/syndromes_o_reg[201]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_dec_cse       ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_syndrome_13_8_4213_64_13_40_201b
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/bch_u/syndrome_u/odd_q_reg[12]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/bch_u/syndrome_u/odd_q_reg[12]/Q (STP_FDPRBQ_1)
+                                                          0.08       0.08 f
+  core/bch_u/syndrome_u/U311/X (STP_INV_S_0P65)           0.05       0.14 r
+  core/bch_u/syndrome_u/U809/X (STP_AOI22_0P5)            0.08       0.21 f
+  core/bch_u/syndrome_u/U184/X (STP_INV_S_0P65)           0.05       0.26 r
+  core/bch_u/syndrome_u/U86/X (STP_OAI22_0P5)             0.05       0.31 f
+  core/bch_u/syndrome_u/U142/X (STP_OA2BB2_0P5)           0.05       0.37 f
+  core/bch_u/syndrome_u/U1423/X (STP_OR2_1)               0.04       0.41 f
+  core/bch_u/syndrome_u/U173/X (STP_OAI211_0P5)           0.01       0.42 r
+  core/bch_u/syndrome_u/U69/X (STP_OAI21_0P75)            0.03       0.45 f
+  core/bch_u/syndrome_u/U1424/X (STP_ND3_0P5)             0.02       0.47 r
+  core/bch_u/syndrome_u/U1425/X (STP_AOAI211_0P5)         0.03       0.50 f
+  core/bch_u/syndrome_u/U1426/X (STP_EO3_0P5)             0.09       0.59 f
+  core/bch_u/syndrome_u/U1427/X (STP_EO3_0P5)             0.09       0.67 f
+  core/bch_u/syndrome_u/U1428/X (STP_EO3_0P5)             0.09       0.76 f
+  core/bch_u/syndrome_u/U1429/X (STP_EO3_0P5)             0.12       0.88 f
+  core/bch_u/syndrome_u/U180/X (STP_INV_S_0P65)           0.03       0.91 r
+  core/bch_u/syndrome_u/U2088/X (STP_AOI22_0P5)           0.05       0.96 f
+  core/bch_u/syndrome_u/U2114/X (STP_AO2BB2_0P5)          0.06       1.02 f
+  core/bch_u/syndrome_u/U52/X (STP_AN2_S_0P5)             0.04       1.06 f
+  core/bch_u/syndrome_u/U2173/X (STP_EO3_0P5)             0.08       1.14 f
+  core/bch_u/syndrome_u/U2174/X (STP_EO3_0P5)             0.09       1.23 f
+  core/bch_u/syndrome_u/U2175/X (STP_EO3_0P5)             0.09       1.32 f
+  core/bch_u/syndrome_u/U2176/X (STP_EO3_0P5)             0.10       1.42 f
+  core/bch_u/syndrome_u/U290/X (STP_INV_S_0P65)           0.04       1.46 r
+  core/bch_u/syndrome_u/U2250/X (STP_AOI22_0P5)           0.04       1.50 f
+  core/bch_u/syndrome_u/U2251/X (STP_AO2BB2_0P5)          0.07       1.57 f
+  core/bch_u/syndrome_u/U33/X (STP_AN2_S_0P5)             0.04       1.61 f
+  core/bch_u/syndrome_u/U2298/X (STP_EO3_0P5)             0.08       1.69 f
+  core/bch_u/syndrome_u/U2299/X (STP_EO3_0P5)             0.09       1.78 f
+  core/bch_u/syndrome_u/U2300/X (STP_EO3_0P5)             0.12       1.91 f
+  core/bch_u/syndrome_u/U271/X (STP_INV_S_0P65)           0.04       1.95 r
+  core/bch_u/syndrome_u/U22/X (STP_OAI22_0P75)            0.04       1.99 f
+  core/bch_u/syndrome_u/U2359/X (STP_EO3_0P5)             0.11       2.10 f
+  core/bch_u/syndrome_u/U2360/X (STP_NR2_G_0P5)           0.03       2.12 r
+  core/bch_u/syndrome_u/U2364/X (STP_EO3_0P5)             0.08       2.21 r
+  core/bch_u/syndrome_u/U2372/X (STP_EO3_0P5)             0.04       2.25 f
+  core/bch_u/syndrome_u/U2373/X (STP_AO2BB2_0P5)          0.02       2.27 r
+  core/bch_u/syndrome_u/syndromes_o_reg[201]/D (STP_FDPRBQ_1)
+                                                          0.00       2.27 r
+  data arrival time                                                  2.27
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/bch_u/syndrome_u/syndromes_o_reg[201]/CK (STP_FDPRBQ_1)
+                                                          0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.81
+
+
+  Startpoint: core/bch_u/chien_u/term_q_reg[4][11]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/bch_u/chien_u/roots_q_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_dec_cse       ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_13_8_4213_4109_64_13_40_201b
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/bch_u/chien_u/term_q_reg[4][11]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/bch_u/chien_u/term_q_reg[4][11]/Q (STP_FDPRBQ_1)
+                                                          0.08       0.08 r
+  core/bch_u/chien_u/U90/X (STP_INV_S_0P65)               0.08       0.15 f
+  core/bch_u/chien_u/U510/X (STP_AOI22_0P5)               0.19       0.35 r
+  core/bch_u/chien_u/U203/X (STP_INV_S_0P65)              0.11       0.46 f
+  core/bch_u/chien_u/U723/X (STP_AOI22_0P5)               0.16       0.62 r
+  core/bch_u/chien_u/U104/X (STP_INV_S_0P65)              0.09       0.71 f
+  core/bch_u/chien_u/U4882/X (STP_AOI22_0P5)              0.08       0.79 r
+  core/bch_u/chien_u/U5097/X (STP_EO3_0P5)                0.09       0.88 f
+  core/bch_u/chien_u/U5098/X (STP_EO3_0P5)                0.09       0.97 f
+  core/bch_u/chien_u/U5099/X (STP_EO3_0P5)                0.09       1.06 f
+  core/bch_u/chien_u/U5100/X (STP_EO3_0P5)                0.09       1.16 f
+  core/bch_u/chien_u/U5101/X (STP_EO3_0P5)                0.09       1.25 f
+  core/bch_u/chien_u/U5102/X (STP_EO3_0P5)                0.09       1.33 f
+  core/bch_u/chien_u/U44/X (STP_NR4_0P5)                  0.03       1.36 r
+  core/bch_u/chien_u/U5270/X (STP_AN4_L_0P5)              0.07       1.43 r
+  core/bch_u/chien_u/DP_OP_16980J1_123_5199/U95/CO (STP_ADDF_V1_0P5)
+                                                          0.05       1.49 r
+  core/bch_u/chien_u/DP_OP_16980J1_123_5199/U81/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.57 f
+  core/bch_u/chien_u/DP_OP_16980J1_123_5199/U80/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.65 r
+  core/bch_u/chien_u/DP_OP_16980J1_123_5199/U78/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.73 f
+  core/bch_u/chien_u/DP_OP_16980J1_123_5199/U70/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.81 r
+  core/bch_u/chien_u/DP_OP_16980J1_123_5199/U44/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.89 f
+  core/bch_u/chien_u/U6879/X (STP_AO21_1)                 0.03       1.92 f
+  core/bch_u/chien_u/DP_OP_16980J1_123_5199/U31/S (STP_ADDF_V1_0P5)
+                                                          0.07       1.99 f
+  core/bch_u/chien_u/intadd_2/U4/CO (STP_ADDF_V1_0P5)     0.05       2.04 f
+  core/bch_u/chien_u/intadd_2/U3/CO (STP_ADDF_V1_0P5)     0.05       2.09 f
+  core/bch_u/chien_u/intadd_2/U2/CO (STP_ADDF_V1_0P5)     0.05       2.14 f
+  core/bch_u/chien_u/U11069/X (STP_EO3_0P5)               0.08       2.22 r
+  core/bch_u/chien_u/U216/X (STP_AO22_0P5)                0.04       2.26 r
+  core/bch_u/chien_u/roots_q_reg[4]/D (STP_FDPRBQ_1)      0.00       2.26 r
+  data arrival time                                                  2.26
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/bch_u/chien_u/roots_q_reg[4]/CK (STP_FDPRBQ_1)     0.00       3.13 r
+  library setup time                                     -0.05       3.09
+  data required time                                                 3.09
+  --------------------------------------------------------------------------
+  data required time                                                 3.09
+  data arrival time                                                 -2.26
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.82
+
+
+  Startpoint: core/bch_u/chien_u/term_q_reg[4][11]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/bch_u/chien_u/roots_q_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_dec_cse       ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_13_8_4213_4109_64_13_40_201b
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/bch_u/chien_u/term_q_reg[4][11]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/bch_u/chien_u/term_q_reg[4][11]/Q (STP_FDPRBQ_1)
+                                                          0.08       0.08 r
+  core/bch_u/chien_u/U90/X (STP_INV_S_0P65)               0.08       0.15 f
+  core/bch_u/chien_u/U510/X (STP_AOI22_0P5)               0.19       0.35 r
+  core/bch_u/chien_u/U203/X (STP_INV_S_0P65)              0.11       0.46 f
+  core/bch_u/chien_u/U723/X (STP_AOI22_0P5)               0.16       0.62 r
+  core/bch_u/chien_u/U104/X (STP_INV_S_0P65)              0.09       0.71 f
+  core/bch_u/chien_u/U4882/X (STP_AOI22_0P5)              0.08       0.79 r
+  core/bch_u/chien_u/U5097/X (STP_EO3_0P5)                0.09       0.88 f
+  core/bch_u/chien_u/U5098/X (STP_EO3_0P5)                0.09       0.97 f
+  core/bch_u/chien_u/U5099/X (STP_EO3_0P5)                0.09       1.06 f
+  core/bch_u/chien_u/U5100/X (STP_EO3_0P5)                0.09       1.16 f
+  core/bch_u/chien_u/U5101/X (STP_EO3_0P5)                0.09       1.25 f
+  core/bch_u/chien_u/U5102/X (STP_EO3_0P5)                0.09       1.33 f
+  core/bch_u/chien_u/U44/X (STP_NR4_0P5)                  0.03       1.36 r
+  core/bch_u/chien_u/U5270/X (STP_AN4_L_0P5)              0.07       1.43 r
+  core/bch_u/chien_u/DP_OP_16980J1_123_5199/U95/CO (STP_ADDF_V1_0P5)
+                                                          0.05       1.49 r
+  core/bch_u/chien_u/DP_OP_16980J1_123_5199/U81/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.57 f
+  core/bch_u/chien_u/DP_OP_16980J1_123_5199/U80/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.65 r
+  core/bch_u/chien_u/DP_OP_16980J1_123_5199/U78/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.73 f
+  core/bch_u/chien_u/DP_OP_16980J1_123_5199/U70/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.81 r
+  core/bch_u/chien_u/DP_OP_16980J1_123_5199/U44/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.89 f
+  core/bch_u/chien_u/U6879/X (STP_AO21_1)                 0.03       1.92 f
+  core/bch_u/chien_u/DP_OP_16980J1_123_5199/U31/S (STP_ADDF_V1_0P5)
+                                                          0.07       1.99 f
+  core/bch_u/chien_u/intadd_2/U4/CO (STP_ADDF_V1_0P5)     0.05       2.04 f
+  core/bch_u/chien_u/intadd_2/U3/CO (STP_ADDF_V1_0P5)     0.05       2.09 f
+  core/bch_u/chien_u/intadd_2/U2/S (STP_ADDF_V1_0P5)      0.08       2.17 r
+  core/bch_u/chien_u/U217/X (STP_AO22_0P5)                0.04       2.21 r
+  core/bch_u/chien_u/roots_q_reg[3]/D (STP_FDPRBQ_1)      0.00       2.21 r
+  data arrival time                                                  2.21
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/bch_u/chien_u/roots_q_reg[3]/CK (STP_FDPRBQ_1)     0.00       3.13 r
+  library setup time                                     -0.05       3.09
+  data required time                                                 3.09
+  --------------------------------------------------------------------------
+  data required time                                                 3.09
+  data arrival time                                                 -2.21
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.87
+
+
+1

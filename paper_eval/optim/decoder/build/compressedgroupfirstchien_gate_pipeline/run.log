@@ -1,0 +1,60 @@
+Command: /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/compressedgroupfirstchien_gate_pipeline/simv +vcs+lic+wait +VEC_DIR=/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/vectors/study/pbch_paper/w64 -l /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/compressedgroupfirstchien_gate_pipeline/run.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Nov 14 23:09 2026
+METRIC E2E_frame_0=204
+METRIC E2E_frame_1=204
+METRIC E2E_frame_2=204
+METRIC E2E_frame_3=204
+METRIC E2E_frame_4=204
+METRIC E2E_frame_5=204
+METRIC E2E_frame_6=204
+METRIC E2E_frame_7=204
+METRIC E2E_frame_8=204
+METRIC E2E_frame_9=204
+METRIC E2E_frame_10=204
+METRIC E2E_frame_11=204
+METRIC E2E_frame_12=204
+METRIC E2E_frame_13=204
+METRIC E2E_frame_14=204
+METRIC E2E_frame_15=204
+METRIC E2E_frame_16=204
+METRIC E2E_frame_17=204
+METRIC E2E_frame_18=204
+METRIC E2E_frame_19=204
+METRIC E2E_frame_20=204
+METRIC E2E_frame_21=204
+METRIC E2E_frame_22=204
+METRIC E2E_frame_23=204
+METRIC E2E_frame_24=204
+METRIC start_gap_1=70
+METRIC start_gap_2=70
+METRIC start_gap_3=70
+METRIC start_gap_4=70
+METRIC start_gap_5=70
+METRIC start_gap_6=70
+METRIC start_gap_7=70
+METRIC start_gap_8=70
+METRIC start_gap_9=70
+METRIC start_gap_10=70
+METRIC start_gap_11=70
+METRIC start_gap_12=70
+METRIC start_gap_13=70
+METRIC start_gap_14=70
+METRIC start_gap_15=70
+METRIC start_gap_16=70
+METRIC start_gap_17=70
+METRIC start_gap_18=70
+METRIC start_gap_19=70
+METRIC start_gap_20=70
+METRIC start_gap_21=70
+METRIC start_gap_22=70
+METRIC start_gap_23=70
+METRIC start_gap_24=70
+PASS pipeline frames=25 outputs=1600
+$finish called from file "/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/decoder_pipeline_metrics_tb.sv", line 224.
+$finish at simulation time              7566000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 7566000 ps
+CPU Time:      2.120 seconds;       Data structure size:   1.8Mb
+Sat Nov 14 23:09:30 2026

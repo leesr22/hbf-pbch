@@ -1,0 +1,11 @@
+Command: /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/cseload_unmask/simv +vcs+lic+wait +VEC_DIR=/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/vectors -l /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/cseload_unmask/run.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Nov 14 23:03 2026
+PASS direct/cse/cseload unmask all8192 selectors all4096 positions bits=33554432 with backpressure
+$finish called from file "/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/unmask_tb.sv", line 47.
+$finish at simulation time           1228806000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1228806000 ps
+CPU Time:     12.260 seconds;       Data structure size:   0.0Mb
+Sat Nov 14 23:03:25 2026

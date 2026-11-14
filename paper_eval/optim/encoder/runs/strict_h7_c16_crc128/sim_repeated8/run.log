@@ -1,0 +1,521 @@
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Nov 14 22:41 2026
+START vector=0 cycle=4
+START vector=1 cycle=68
+PASS result=0 selector=33 failures=0 overflow=0 cycle=144
+START vector=2 cycle=144
+PASS result=1 selector=33 failures=0 overflow=0 cycle=220
+START vector=3 cycle=220
+PASS result=2 selector=33 failures=0 overflow=0 cycle=296
+START vector=4 cycle=296
+PASS result=3 selector=33 failures=0 overflow=0 cycle=372
+START vector=5 cycle=372
+PASS result=4 selector=33 failures=0 overflow=0 cycle=448
+START vector=6 cycle=448
+PASS result=5 selector=33 failures=0 overflow=0 cycle=524
+START vector=7 cycle=524
+PASS result=6 selector=33 failures=0 overflow=0 cycle=600
+START vector=8 cycle=600
+PASS result=7 selector=33 failures=0 overflow=0 cycle=676
+START vector=9 cycle=676
+PASS result=8 selector=33 failures=0 overflow=0 cycle=752
+START vector=10 cycle=752
+PASS result=9 selector=33 failures=0 overflow=0 cycle=828
+START vector=11 cycle=828
+PASS result=10 selector=33 failures=0 overflow=0 cycle=904
+START vector=12 cycle=904
+PASS result=11 selector=33 failures=0 overflow=0 cycle=980
+START vector=13 cycle=980
+PASS result=12 selector=33 failures=0 overflow=0 cycle=1056
+START vector=14 cycle=1056
+PASS result=13 selector=33 failures=0 overflow=0 cycle=1132
+START vector=15 cycle=1132
+PASS result=14 selector=33 failures=0 overflow=0 cycle=1208
+START vector=16 cycle=1208
+PASS result=15 selector=33 failures=0 overflow=0 cycle=1284
+START vector=17 cycle=1284
+PASS result=16 selector=33 failures=0 overflow=0 cycle=1360
+START vector=18 cycle=1360
+PASS result=17 selector=33 failures=0 overflow=0 cycle=1436
+START vector=19 cycle=1436
+PASS result=18 selector=33 failures=0 overflow=0 cycle=1512
+START vector=20 cycle=1512
+PASS result=19 selector=33 failures=0 overflow=0 cycle=1588
+START vector=21 cycle=1588
+PASS result=20 selector=33 failures=0 overflow=0 cycle=1664
+START vector=22 cycle=1664
+PASS result=21 selector=33 failures=0 overflow=0 cycle=1740
+START vector=23 cycle=1740
+PASS result=22 selector=33 failures=0 overflow=0 cycle=1816
+START vector=24 cycle=1816
+PASS result=23 selector=33 failures=0 overflow=0 cycle=1892
+START vector=25 cycle=1892
+PASS result=24 selector=33 failures=0 overflow=0 cycle=1968
+START vector=26 cycle=1968
+PASS result=25 selector=33 failures=0 overflow=0 cycle=2044
+START vector=27 cycle=2044
+PASS result=26 selector=33 failures=0 overflow=0 cycle=2120
+START vector=28 cycle=2120
+PASS result=27 selector=33 failures=0 overflow=0 cycle=2196
+START vector=29 cycle=2196
+PASS result=28 selector=33 failures=0 overflow=0 cycle=2272
+START vector=30 cycle=2272
+PASS result=29 selector=33 failures=0 overflow=0 cycle=2348
+START vector=31 cycle=2348
+PASS result=30 selector=33 failures=0 overflow=0 cycle=2424
+START vector=32 cycle=2424
+PASS result=31 selector=33 failures=0 overflow=0 cycle=2500
+START vector=33 cycle=2500
+PASS result=32 selector=33 failures=0 overflow=0 cycle=2576
+START vector=34 cycle=2576
+PASS result=33 selector=33 failures=0 overflow=0 cycle=2652
+START vector=35 cycle=2652
+PASS result=34 selector=33 failures=0 overflow=0 cycle=2728
+START vector=36 cycle=2728
+PASS result=35 selector=33 failures=0 overflow=0 cycle=2804
+START vector=37 cycle=2804
+PASS result=36 selector=33 failures=0 overflow=0 cycle=2880
+START vector=38 cycle=2880
+PASS result=37 selector=33 failures=0 overflow=0 cycle=2956
+START vector=39 cycle=2956
+PASS result=38 selector=33 failures=0 overflow=0 cycle=3032
+START vector=40 cycle=3032
+PASS result=39 selector=33 failures=0 overflow=0 cycle=3108
+START vector=41 cycle=3108
+PASS result=40 selector=33 failures=0 overflow=0 cycle=3184
+START vector=42 cycle=3184
+PASS result=41 selector=33 failures=0 overflow=0 cycle=3260
+START vector=43 cycle=3260
+PASS result=42 selector=33 failures=0 overflow=0 cycle=3336
+START vector=44 cycle=3336
+PASS result=43 selector=33 failures=0 overflow=0 cycle=3412
+START vector=45 cycle=3412
+PASS result=44 selector=33 failures=0 overflow=0 cycle=3488
+START vector=46 cycle=3488
+PASS result=45 selector=33 failures=0 overflow=0 cycle=3564
+START vector=47 cycle=3564
+PASS result=46 selector=33 failures=0 overflow=0 cycle=3640
+START vector=48 cycle=3640
+PASS result=47 selector=33 failures=0 overflow=0 cycle=3716
+START vector=49 cycle=3716
+PASS result=48 selector=33 failures=0 overflow=0 cycle=3792
+START vector=50 cycle=3792
+PASS result=49 selector=33 failures=0 overflow=0 cycle=3868
+START vector=51 cycle=3868
+PASS result=50 selector=33 failures=0 overflow=0 cycle=3944
+START vector=52 cycle=3944
+PASS result=51 selector=33 failures=0 overflow=0 cycle=4020
+START vector=53 cycle=4020
+PASS result=52 selector=33 failures=0 overflow=0 cycle=4096
+START vector=54 cycle=4096
+PASS result=53 selector=33 failures=0 overflow=0 cycle=4172
+START vector=55 cycle=4172
+PASS result=54 selector=33 failures=0 overflow=0 cycle=4248
+START vector=56 cycle=4248
+PASS result=55 selector=33 failures=0 overflow=0 cycle=4324
+START vector=57 cycle=4324
+PASS result=56 selector=33 failures=0 overflow=0 cycle=4400
+START vector=58 cycle=4400
+PASS result=57 selector=33 failures=0 overflow=0 cycle=4476
+START vector=59 cycle=4476
+PASS result=58 selector=33 failures=0 overflow=0 cycle=4552
+START vector=60 cycle=4552
+PASS result=59 selector=33 failures=0 overflow=0 cycle=4628
+START vector=61 cycle=4628
+PASS result=60 selector=33 failures=0 overflow=0 cycle=4704
+START vector=62 cycle=4704
+PASS result=61 selector=33 failures=0 overflow=0 cycle=4780
+START vector=63 cycle=4780
+PASS result=62 selector=33 failures=0 overflow=0 cycle=4856
+START vector=64 cycle=4856
+PASS result=63 selector=33 failures=0 overflow=0 cycle=4932
+START vector=65 cycle=4932
+PASS result=64 selector=33 failures=0 overflow=0 cycle=5008
+START vector=66 cycle=5008
+PASS result=65 selector=33 failures=0 overflow=0 cycle=5084
+START vector=67 cycle=5084
+PASS result=66 selector=33 failures=0 overflow=0 cycle=5160
+START vector=68 cycle=5160
+PASS result=67 selector=33 failures=0 overflow=0 cycle=5236
+START vector=69 cycle=5236
+PASS result=68 selector=33 failures=0 overflow=0 cycle=5312
+START vector=70 cycle=5312
+PASS result=69 selector=33 failures=0 overflow=0 cycle=5388
+START vector=71 cycle=5388
+PASS result=70 selector=33 failures=0 overflow=0 cycle=5464
+START vector=72 cycle=5464
+PASS result=71 selector=33 failures=0 overflow=0 cycle=5540
+START vector=73 cycle=5540
+PASS result=72 selector=33 failures=0 overflow=0 cycle=5616
+START vector=74 cycle=5616
+PASS result=73 selector=33 failures=0 overflow=0 cycle=5692
+START vector=75 cycle=5692
+PASS result=74 selector=33 failures=0 overflow=0 cycle=5768
+START vector=76 cycle=5768
+PASS result=75 selector=33 failures=0 overflow=0 cycle=5844
+START vector=77 cycle=5844
+PASS result=76 selector=33 failures=0 overflow=0 cycle=5920
+START vector=78 cycle=5920
+PASS result=77 selector=33 failures=0 overflow=0 cycle=5996
+START vector=79 cycle=5996
+PASS result=78 selector=33 failures=0 overflow=0 cycle=6072
+START vector=80 cycle=6072
+PASS result=79 selector=33 failures=0 overflow=0 cycle=6148
+START vector=81 cycle=6148
+PASS result=80 selector=33 failures=0 overflow=0 cycle=6224
+START vector=82 cycle=6224
+PASS result=81 selector=33 failures=0 overflow=0 cycle=6300
+START vector=83 cycle=6300
+PASS result=82 selector=33 failures=0 overflow=0 cycle=6376
+START vector=84 cycle=6376
+PASS result=83 selector=33 failures=0 overflow=0 cycle=6452
+START vector=85 cycle=6452
+PASS result=84 selector=33 failures=0 overflow=0 cycle=6528
+START vector=86 cycle=6528
+PASS result=85 selector=33 failures=0 overflow=0 cycle=6604
+START vector=87 cycle=6604
+PASS result=86 selector=33 failures=0 overflow=0 cycle=6680
+START vector=88 cycle=6680
+PASS result=87 selector=33 failures=0 overflow=0 cycle=6756
+START vector=89 cycle=6756
+PASS result=88 selector=33 failures=0 overflow=0 cycle=6832
+START vector=90 cycle=6832
+PASS result=89 selector=33 failures=0 overflow=0 cycle=6908
+START vector=91 cycle=6908
+PASS result=90 selector=33 failures=0 overflow=0 cycle=6984
+START vector=92 cycle=6984
+PASS result=91 selector=33 failures=0 overflow=0 cycle=7060
+START vector=93 cycle=7060
+PASS result=92 selector=33 failures=0 overflow=0 cycle=7136
+START vector=94 cycle=7136
+PASS result=93 selector=33 failures=0 overflow=0 cycle=7212
+START vector=95 cycle=7212
+PASS result=94 selector=33 failures=0 overflow=0 cycle=7288
+START vector=96 cycle=7288
+PASS result=95 selector=33 failures=0 overflow=0 cycle=7364
+START vector=97 cycle=7364
+PASS result=96 selector=33 failures=0 overflow=0 cycle=7440
+START vector=98 cycle=7440
+PASS result=97 selector=33 failures=0 overflow=0 cycle=7516
+START vector=99 cycle=7516
+PASS result=98 selector=33 failures=0 overflow=0 cycle=7592
+START vector=100 cycle=7592
+PASS result=99 selector=33 failures=0 overflow=0 cycle=7668
+START vector=101 cycle=7668
+PASS result=100 selector=33 failures=0 overflow=0 cycle=7744
+START vector=102 cycle=7744
+PASS result=101 selector=33 failures=0 overflow=0 cycle=7820
+START vector=103 cycle=7820
+PASS result=102 selector=33 failures=0 overflow=0 cycle=7896
+START vector=104 cycle=7896
+PASS result=103 selector=33 failures=0 overflow=0 cycle=7972
+START vector=105 cycle=7972
+PASS result=104 selector=33 failures=0 overflow=0 cycle=8048
+START vector=106 cycle=8048
+PASS result=105 selector=33 failures=0 overflow=0 cycle=8124
+START vector=107 cycle=8124
+PASS result=106 selector=33 failures=0 overflow=0 cycle=8200
+START vector=108 cycle=8200
+PASS result=107 selector=33 failures=0 overflow=0 cycle=8276
+START vector=109 cycle=8276
+PASS result=108 selector=33 failures=0 overflow=0 cycle=8352
+START vector=110 cycle=8352
+PASS result=109 selector=33 failures=0 overflow=0 cycle=8428
+START vector=111 cycle=8428
+PASS result=110 selector=33 failures=0 overflow=0 cycle=8504
+START vector=112 cycle=8504
+PASS result=111 selector=33 failures=0 overflow=0 cycle=8580
+START vector=113 cycle=8580
+PASS result=112 selector=33 failures=0 overflow=0 cycle=8656
+START vector=114 cycle=8656
+PASS result=113 selector=33 failures=0 overflow=0 cycle=8732
+START vector=115 cycle=8732
+PASS result=114 selector=33 failures=0 overflow=0 cycle=8808
+START vector=116 cycle=8808
+PASS result=115 selector=33 failures=0 overflow=0 cycle=8884
+START vector=117 cycle=8884
+PASS result=116 selector=33 failures=0 overflow=0 cycle=8960
+START vector=118 cycle=8960
+PASS result=117 selector=33 failures=0 overflow=0 cycle=9036
+START vector=119 cycle=9036
+PASS result=118 selector=33 failures=0 overflow=0 cycle=9112
+START vector=120 cycle=9112
+PASS result=119 selector=33 failures=0 overflow=0 cycle=9188
+START vector=121 cycle=9188
+PASS result=120 selector=33 failures=0 overflow=0 cycle=9264
+START vector=122 cycle=9264
+PASS result=121 selector=33 failures=0 overflow=0 cycle=9340
+START vector=123 cycle=9340
+PASS result=122 selector=33 failures=0 overflow=0 cycle=9416
+START vector=124 cycle=9416
+PASS result=123 selector=33 failures=0 overflow=0 cycle=9492
+START vector=125 cycle=9492
+PASS result=124 selector=33 failures=0 overflow=0 cycle=9568
+START vector=126 cycle=9568
+PASS result=125 selector=33 failures=0 overflow=0 cycle=9644
+START vector=127 cycle=9644
+PASS result=126 selector=33 failures=0 overflow=0 cycle=9720
+PASS result=127 selector=33 failures=0 overflow=0 cycle=9796
+TIMING frame=0 flags=8 start=4 end=144 e2e=140
+TIMING frame=1 flags=8 start=68 end=220 e2e=152
+TIMING frame=2 flags=8 start=144 end=296 e2e=152
+TIMING frame=3 flags=8 start=220 end=372 e2e=152
+TIMING frame=4 flags=8 start=296 end=448 e2e=152
+TIMING frame=5 flags=8 start=372 end=524 e2e=152
+TIMING frame=6 flags=8 start=448 end=600 e2e=152
+TIMING frame=7 flags=8 start=524 end=676 e2e=152
+TIMING frame=8 flags=8 start=600 end=752 e2e=152
+TIMING frame=9 flags=8 start=676 end=828 e2e=152
+TIMING frame=10 flags=8 start=752 end=904 e2e=152
+TIMING frame=11 flags=8 start=828 end=980 e2e=152
+TIMING frame=12 flags=8 start=904 end=1056 e2e=152
+TIMING frame=13 flags=8 start=980 end=1132 e2e=152
+TIMING frame=14 flags=8 start=1056 end=1208 e2e=152
+TIMING frame=15 flags=8 start=1132 end=1284 e2e=152
+TIMING frame=16 flags=8 start=1208 end=1360 e2e=152
+TIMING frame=17 flags=8 start=1284 end=1436 e2e=152
+TIMING frame=18 flags=8 start=1360 end=1512 e2e=152
+TIMING frame=19 flags=8 start=1436 end=1588 e2e=152
+TIMING frame=20 flags=8 start=1512 end=1664 e2e=152
+TIMING frame=21 flags=8 start=1588 end=1740 e2e=152
+TIMING frame=22 flags=8 start=1664 end=1816 e2e=152
+TIMING frame=23 flags=8 start=1740 end=1892 e2e=152
+TIMING frame=24 flags=8 start=1816 end=1968 e2e=152
+TIMING frame=25 flags=8 start=1892 end=2044 e2e=152
+TIMING frame=26 flags=8 start=1968 end=2120 e2e=152
+TIMING frame=27 flags=8 start=2044 end=2196 e2e=152
+TIMING frame=28 flags=8 start=2120 end=2272 e2e=152
+TIMING frame=29 flags=8 start=2196 end=2348 e2e=152
+TIMING frame=30 flags=8 start=2272 end=2424 e2e=152
+TIMING frame=31 flags=8 start=2348 end=2500 e2e=152
+TIMING frame=32 flags=8 start=2424 end=2576 e2e=152
+TIMING frame=33 flags=8 start=2500 end=2652 e2e=152
+TIMING frame=34 flags=8 start=2576 end=2728 e2e=152
+TIMING frame=35 flags=8 start=2652 end=2804 e2e=152
+TIMING frame=36 flags=8 start=2728 end=2880 e2e=152
+TIMING frame=37 flags=8 start=2804 end=2956 e2e=152
+TIMING frame=38 flags=8 start=2880 end=3032 e2e=152
+TIMING frame=39 flags=8 start=2956 end=3108 e2e=152
+TIMING frame=40 flags=8 start=3032 end=3184 e2e=152
+TIMING frame=41 flags=8 start=3108 end=3260 e2e=152
+TIMING frame=42 flags=8 start=3184 end=3336 e2e=152
+TIMING frame=43 flags=8 start=3260 end=3412 e2e=152
+TIMING frame=44 flags=8 start=3336 end=3488 e2e=152
+TIMING frame=45 flags=8 start=3412 end=3564 e2e=152
+TIMING frame=46 flags=8 start=3488 end=3640 e2e=152
+TIMING frame=47 flags=8 start=3564 end=3716 e2e=152
+TIMING frame=48 flags=8 start=3640 end=3792 e2e=152
+TIMING frame=49 flags=8 start=3716 end=3868 e2e=152
+TIMING frame=50 flags=8 start=3792 end=3944 e2e=152
+TIMING frame=51 flags=8 start=3868 end=4020 e2e=152
+TIMING frame=52 flags=8 start=3944 end=4096 e2e=152
+TIMING frame=53 flags=8 start=4020 end=4172 e2e=152
+TIMING frame=54 flags=8 start=4096 end=4248 e2e=152
+TIMING frame=55 flags=8 start=4172 end=4324 e2e=152
+TIMING frame=56 flags=8 start=4248 end=4400 e2e=152
+TIMING frame=57 flags=8 start=4324 end=4476 e2e=152
+TIMING frame=58 flags=8 start=4400 end=4552 e2e=152
+TIMING frame=59 flags=8 start=4476 end=4628 e2e=152
+TIMING frame=60 flags=8 start=4552 end=4704 e2e=152
+TIMING frame=61 flags=8 start=4628 end=4780 e2e=152
+TIMING frame=62 flags=8 start=4704 end=4856 e2e=152
+TIMING frame=63 flags=8 start=4780 end=4932 e2e=152
+TIMING frame=64 flags=8 start=4856 end=5008 e2e=152
+TIMING frame=65 flags=8 start=4932 end=5084 e2e=152
+TIMING frame=66 flags=8 start=5008 end=5160 e2e=152
+TIMING frame=67 flags=8 start=5084 end=5236 e2e=152
+TIMING frame=68 flags=8 start=5160 end=5312 e2e=152
+TIMING frame=69 flags=8 start=5236 end=5388 e2e=152
+TIMING frame=70 flags=8 start=5312 end=5464 e2e=152
+TIMING frame=71 flags=8 start=5388 end=5540 e2e=152
+TIMING frame=72 flags=8 start=5464 end=5616 e2e=152
+TIMING frame=73 flags=8 start=5540 end=5692 e2e=152
+TIMING frame=74 flags=8 start=5616 end=5768 e2e=152
+TIMING frame=75 flags=8 start=5692 end=5844 e2e=152
+TIMING frame=76 flags=8 start=5768 end=5920 e2e=152
+TIMING frame=77 flags=8 start=5844 end=5996 e2e=152
+TIMING frame=78 flags=8 start=5920 end=6072 e2e=152
+TIMING frame=79 flags=8 start=5996 end=6148 e2e=152
+TIMING frame=80 flags=8 start=6072 end=6224 e2e=152
+TIMING frame=81 flags=8 start=6148 end=6300 e2e=152
+TIMING frame=82 flags=8 start=6224 end=6376 e2e=152
+TIMING frame=83 flags=8 start=6300 end=6452 e2e=152
+TIMING frame=84 flags=8 start=6376 end=6528 e2e=152
+TIMING frame=85 flags=8 start=6452 end=6604 e2e=152
+TIMING frame=86 flags=8 start=6528 end=6680 e2e=152
+TIMING frame=87 flags=8 start=6604 end=6756 e2e=152
+TIMING frame=88 flags=8 start=6680 end=6832 e2e=152
+TIMING frame=89 flags=8 start=6756 end=6908 e2e=152
+TIMING frame=90 flags=8 start=6832 end=6984 e2e=152
+TIMING frame=91 flags=8 start=6908 end=7060 e2e=152
+TIMING frame=92 flags=8 start=6984 end=7136 e2e=152
+TIMING frame=93 flags=8 start=7060 end=7212 e2e=152
+TIMING frame=94 flags=8 start=7136 end=7288 e2e=152
+TIMING frame=95 flags=8 start=7212 end=7364 e2e=152
+TIMING frame=96 flags=8 start=7288 end=7440 e2e=152
+TIMING frame=97 flags=8 start=7364 end=7516 e2e=152
+TIMING frame=98 flags=8 start=7440 end=7592 e2e=152
+TIMING frame=99 flags=8 start=7516 end=7668 e2e=152
+TIMING frame=100 flags=8 start=7592 end=7744 e2e=152
+TIMING frame=101 flags=8 start=7668 end=7820 e2e=152
+TIMING frame=102 flags=8 start=7744 end=7896 e2e=152
+TIMING frame=103 flags=8 start=7820 end=7972 e2e=152
+TIMING frame=104 flags=8 start=7896 end=8048 e2e=152
+TIMING frame=105 flags=8 start=7972 end=8124 e2e=152
+TIMING frame=106 flags=8 start=8048 end=8200 e2e=152
+TIMING frame=107 flags=8 start=8124 end=8276 e2e=152
+TIMING frame=108 flags=8 start=8200 end=8352 e2e=152
+TIMING frame=109 flags=8 start=8276 end=8428 e2e=152
+TIMING frame=110 flags=8 start=8352 end=8504 e2e=152
+TIMING frame=111 flags=8 start=8428 end=8580 e2e=152
+TIMING frame=112 flags=8 start=8504 end=8656 e2e=152
+TIMING frame=113 flags=8 start=8580 end=8732 e2e=152
+TIMING frame=114 flags=8 start=8656 end=8808 e2e=152
+TIMING frame=115 flags=8 start=8732 end=8884 e2e=152
+TIMING frame=116 flags=8 start=8808 end=8960 e2e=152
+TIMING frame=117 flags=8 start=8884 end=9036 e2e=152
+TIMING frame=118 flags=8 start=8960 end=9112 e2e=152
+TIMING frame=119 flags=8 start=9036 end=9188 e2e=152
+TIMING frame=120 flags=8 start=9112 end=9264 e2e=152
+TIMING frame=121 flags=8 start=9188 end=9340 e2e=152
+TIMING frame=122 flags=8 start=9264 end=9416 e2e=152
+TIMING frame=123 flags=8 start=9340 end=9492 e2e=152
+TIMING frame=124 flags=8 start=9416 end=9568 e2e=152
+TIMING frame=125 flags=8 start=9492 end=9644 e2e=152
+TIMING frame=126 flags=8 start=9568 end=9720 e2e=152
+TIMING frame=127 flags=8 start=9644 end=9796 e2e=152
+START_GAP 0->1 cycles=64
+START_GAP 1->2 cycles=76
+START_GAP 2->3 cycles=76
+START_GAP 3->4 cycles=76
+START_GAP 4->5 cycles=76
+START_GAP 5->6 cycles=76
+START_GAP 6->7 cycles=76
+START_GAP 7->8 cycles=76
+START_GAP 8->9 cycles=76
+START_GAP 9->10 cycles=76
+START_GAP 10->11 cycles=76
+START_GAP 11->12 cycles=76
+START_GAP 12->13 cycles=76
+START_GAP 13->14 cycles=76
+START_GAP 14->15 cycles=76
+START_GAP 15->16 cycles=76
+START_GAP 16->17 cycles=76
+START_GAP 17->18 cycles=76
+START_GAP 18->19 cycles=76
+START_GAP 19->20 cycles=76
+START_GAP 20->21 cycles=76
+START_GAP 21->22 cycles=76
+START_GAP 22->23 cycles=76
+START_GAP 23->24 cycles=76
+START_GAP 24->25 cycles=76
+START_GAP 25->26 cycles=76
+START_GAP 26->27 cycles=76
+START_GAP 27->28 cycles=76
+START_GAP 28->29 cycles=76
+START_GAP 29->30 cycles=76
+START_GAP 30->31 cycles=76
+START_GAP 31->32 cycles=76
+START_GAP 32->33 cycles=76
+START_GAP 33->34 cycles=76
+START_GAP 34->35 cycles=76
+START_GAP 35->36 cycles=76
+START_GAP 36->37 cycles=76
+START_GAP 37->38 cycles=76
+START_GAP 38->39 cycles=76
+START_GAP 39->40 cycles=76
+START_GAP 40->41 cycles=76
+START_GAP 41->42 cycles=76
+START_GAP 42->43 cycles=76
+START_GAP 43->44 cycles=76
+START_GAP 44->45 cycles=76
+START_GAP 45->46 cycles=76
+START_GAP 46->47 cycles=76
+START_GAP 47->48 cycles=76
+START_GAP 48->49 cycles=76
+START_GAP 49->50 cycles=76
+START_GAP 50->51 cycles=76
+START_GAP 51->52 cycles=76
+START_GAP 52->53 cycles=76
+START_GAP 53->54 cycles=76
+START_GAP 54->55 cycles=76
+START_GAP 55->56 cycles=76
+START_GAP 56->57 cycles=76
+START_GAP 57->58 cycles=76
+START_GAP 58->59 cycles=76
+START_GAP 59->60 cycles=76
+START_GAP 60->61 cycles=76
+START_GAP 61->62 cycles=76
+START_GAP 62->63 cycles=76
+START_GAP 63->64 cycles=76
+START_GAP 64->65 cycles=76
+START_GAP 65->66 cycles=76
+START_GAP 66->67 cycles=76
+START_GAP 67->68 cycles=76
+START_GAP 68->69 cycles=76
+START_GAP 69->70 cycles=76
+START_GAP 70->71 cycles=76
+START_GAP 71->72 cycles=76
+START_GAP 72->73 cycles=76
+START_GAP 73->74 cycles=76
+START_GAP 74->75 cycles=76
+START_GAP 75->76 cycles=76
+START_GAP 76->77 cycles=76
+START_GAP 77->78 cycles=76
+START_GAP 78->79 cycles=76
+START_GAP 79->80 cycles=76
+START_GAP 80->81 cycles=76
+START_GAP 81->82 cycles=76
+START_GAP 82->83 cycles=76
+START_GAP 83->84 cycles=76
+START_GAP 84->85 cycles=76
+START_GAP 85->86 cycles=76
+START_GAP 86->87 cycles=76
+START_GAP 87->88 cycles=76
+START_GAP 88->89 cycles=76
+START_GAP 89->90 cycles=76
+START_GAP 90->91 cycles=76
+START_GAP 91->92 cycles=76
+START_GAP 92->93 cycles=76
+START_GAP 93->94 cycles=76
+START_GAP 94->95 cycles=76
+START_GAP 95->96 cycles=76
+START_GAP 96->97 cycles=76
+START_GAP 97->98 cycles=76
+START_GAP 98->99 cycles=76
+START_GAP 99->100 cycles=76
+START_GAP 100->101 cycles=76
+START_GAP 101->102 cycles=76
+START_GAP 102->103 cycles=76
+START_GAP 103->104 cycles=76
+START_GAP 104->105 cycles=76
+START_GAP 105->106 cycles=76
+START_GAP 106->107 cycles=76
+START_GAP 107->108 cycles=76
+START_GAP 108->109 cycles=76
+START_GAP 109->110 cycles=76
+START_GAP 110->111 cycles=76
+START_GAP 111->112 cycles=76
+START_GAP 112->113 cycles=76
+START_GAP 113->114 cycles=76
+START_GAP 114->115 cycles=76
+START_GAP 115->116 cycles=76
+START_GAP 116->117 cycles=76
+START_GAP 117->118 cycles=76
+START_GAP 118->119 cycles=76
+START_GAP 119->120 cycles=76
+START_GAP 120->121 cycles=76
+START_GAP 121->122 cycles=76
+START_GAP 122->123 cycles=76
+START_GAP 123->124 cycles=76
+START_GAP 124->125 cycles=76
+START_GAP 125->126 cycles=76
+START_GAP 126->127 cycles=76
+PASS pbch_sparse_pipeline_enc vectors=128
+$finish called from file "/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/encoder/regression_tb.sv", line 297.
+$finish at simulation time             39186000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 39186000 ps
+CPU Time:      2.080 seconds;       Data structure size:   1.1Mb
+Sat Nov 14 22:41:21 2026

@@ -1,0 +1,10 @@
+{
+  "mode": "gate",
+  "t": 8,
+  "frames_per_mode": 128,
+  "total_codewords": 256,
+  "no_stall_e2e_cycles": 9,
+  "no_stall_ii_cycles": 9,
+  "golden_model": "model.ecc.BCH.encode",
+  "random_output_stalls_pass": true
+}

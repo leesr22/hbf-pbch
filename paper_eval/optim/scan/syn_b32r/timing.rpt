@@ -1,0 +1,479 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : pbch_scan_label_b32r
+Version: Q-2019.12-SP5-5
+Date   : Sat Nov 14 22:05:41 2026
+****************************************
+
+Operating Conditions: SSGWC0P9V125C   Library: um28nchslogl35hsl140f_ssgwc0p9v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: position_i[1]
+              (input port clocked by clk)
+  Endpoint: label_o[9] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_scan_label_b32r
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.40       0.40 f
+  position_i[1] (in)                       0.00       0.40 f
+  U2144/X (STP_NR2_6)                      0.01       0.41 r
+  U2017/X (STP_INV_2)                      0.01       0.42 f
+  U2807/X (STP_ND2_G_1)                    0.01       0.43 r
+  U2546/X (STP_NR2_1P5)                    0.01       0.45 f
+  U2301/X (STP_NR2_1)                      0.03       0.47 r
+  U2789/X (STP_NR2B_1)                     0.04       0.51 r
+  U2540/X (STP_ND2_S_3)                    0.02       0.53 f
+  U2538/X (STP_NR2_G_2P5)                  0.02       0.55 r
+  U2536/X (STP_NR2_G_0P8)                  0.02       0.57 f
+  U2930/X (STP_NR2B_1)                     0.02       0.58 r
+  U2074/X (STP_BUF_U_1)                    0.04       0.62 r
+  U2140/X (STP_INV_S_1)                    0.03       0.65 f
+  U2942/X (STP_NR2_1)                      0.04       0.69 r
+  U2943/X (STP_INV_S_1)                    0.03       0.73 f
+  U2273/X (STP_NR2_G_0P8)                  0.03       0.76 r
+  U2134/X (STP_INV_S_1)                    0.02       0.78 f
+  U2573/X (STP_NR2_G_0P5)                  0.05       0.83 r
+  U2568/X (STP_INV_S_0P65)                 0.03       0.86 f
+  U3082/X (STP_AOI22_0P5)                  0.04       0.89 r
+  U3316/X (STP_AOI211_0P5)                 0.02       0.91 f
+  U2776/X (STP_ND4_MM_1)                   0.02       0.94 r
+  U2027/X (STP_OAI31_G_0P5)                0.06       1.00 f
+  U2022/X (STP_AO2BB2_0P5)                 0.07       1.07 f
+  U2109/X (STP_INV_S_0P65)                 0.03       1.10 r
+  U3335/X (STP_EO3_0P5)                    0.08       1.18 f
+  U3336/X (STP_EO3_0P5)                    0.09       1.27 f
+  U2393/X (STP_EO3_1)                      0.08       1.35 r
+  U2059/X (STP_AOI22_1P5)                  0.03       1.38 f
+  U2056/X (STP_INV_1P5)                    0.02       1.40 r
+  U2376/X (STP_OAI22_2)                    0.03       1.43 f
+  U2372/X (STP_AO2BB2_V3_1)                0.05       1.48 f
+  U2202/X (STP_INV_S_0P65)                 0.02       1.50 r
+  U2093/X (STP_AOI22_1)                    0.03       1.53 f
+  U3340/X (STP_AO2BB2_V3_1)                0.04       1.57 f
+  U3438/X (STP_EO3_0P5)                    0.10       1.67 f
+  U2193/X (STP_EO3_0P5)                    0.09       1.75 f
+  U2878/X (STP_EO3_0P5)                    0.09       1.84 r
+  U2550/X (STP_AOI22_2)                    0.03       1.87 f
+  U2048/X (STP_INV_S_1P25)                 0.02       1.89 r
+  U2549/X (STP_OAI22_V3S_1)                0.04       1.94 f
+  U3449/X (STP_OA2BB2_1)                   0.05       1.99 f
+  U3537/X (STP_EO3_0P5)                    0.10       2.08 f
+  U2343/X (STP_AO2BB2_V3_1)                0.04       2.12 f
+  U2342/X (STP_AOI22_1P5)                  0.03       2.15 r
+  U2884/X (STP_EO3_0P5)                    0.09       2.24 r
+  U3540/X (STP_EO3_0P5)                    0.04       2.28 f
+  U2336/X (STP_AOI22_1)                    0.03       2.31 r
+  U2335/X (STP_INV_S_1P25)                 0.02       2.34 f
+  U3746/X (STP_AO2BB2_2)                   0.04       2.38 f
+  U3747/X (STP_EO3_2)                      0.04       2.42 r
+  U3748/X (STP_NR2_1)                      0.02       2.44 f
+  U2153/X (STP_AOI21_1P5)                  0.03       2.47 r
+  U2309/X (STP_AOI211_0P75)                0.02       2.49 f
+  U2557/X (STP_AOI31_1)                    0.02       2.51 r
+  U2149/X (STP_OAI31_G_0P75)               0.03       2.54 f
+  U3764/X (STP_AO2BB2_V3_1)                0.04       2.58 f
+  U2888/X (STP_EO3_0P5)                    0.09       2.67 f
+  U2146/X (STP_NR2_G_0P8)                  0.02       2.69 r
+  U3860/X (STP_OAI21_0P5)                  0.02       2.71 f
+  U3875/X (STP_AOAI211_0P5)                0.02       2.73 r
+  label_o[9] (out)                         0.00       2.73 r
+  data arrival time                                   2.73
+
+  clock clk (rise edge)                    3.33       3.33
+  clock network delay (ideal)              0.00       3.33
+  clock uncertainty                       -0.20       3.13
+  output external delay                   -0.40       2.73
+  data required time                                  2.73
+  -----------------------------------------------------------
+  data required time                                  2.73
+  data arrival time                                  -2.73
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: position_i[1]
+              (input port clocked by clk)
+  Endpoint: label_o[12]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_scan_label_b32r
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.40       0.40 f
+  position_i[1] (in)                       0.00       0.40 f
+  U2144/X (STP_NR2_6)                      0.01       0.41 r
+  U2017/X (STP_INV_2)                      0.01       0.42 f
+  U2807/X (STP_ND2_G_1)                    0.01       0.43 r
+  U2546/X (STP_NR2_1P5)                    0.01       0.45 f
+  U2301/X (STP_NR2_1)                      0.03       0.47 r
+  U2789/X (STP_NR2B_1)                     0.04       0.51 r
+  U2540/X (STP_ND2_S_3)                    0.02       0.53 f
+  U2538/X (STP_NR2_G_2P5)                  0.02       0.55 r
+  U2535/X (STP_ND2_G_2)                    0.02       0.57 f
+  U2142/X (STP_NR2_3)                      0.02       0.59 r
+  U2531/X (STP_INV_1P5)                    0.02       0.61 f
+  U2528/X (STP_OAI21_3)                    0.02       0.63 r
+  U2937/X (STP_AN2_3)                      0.04       0.67 r
+  U2512/X (STP_INV_6)                      0.02       0.69 f
+  U2504/X (STP_NR2_1)                      0.04       0.73 r
+  U2067/X (STP_INV_2)                      0.03       0.76 f
+  U2014/X (STP_NR2_1)                      0.05       0.81 r
+  U2970/X (STP_INV_S_1)                    0.04       0.84 f
+  U3214/X (STP_AO2BB2_0P5)                 0.02       0.87 r
+  U3215/X (STP_AOI211_0P5)                 0.02       0.88 f
+  U2707/X (STP_OAI211_0P5)                 0.02       0.90 r
+  U3216/X (STP_AOI22_0P5)                  0.03       0.93 f
+  U3217/X (STP_ND4B_1)                     0.02       0.95 r
+  U2240/X (STP_OAI31_G_0P75)               0.03       0.98 f
+  U2403/X (STP_INV_S_0P65)                 0.03       1.00 r
+  U3219/X (STP_OAI22_0P5)                  0.03       1.03 f
+  U2232/X (STP_BUF_1)                      0.04       1.07 f
+  U3245/X (STP_AO2BB2_0P5)                 0.05       1.12 f
+  U3246/X (STP_INV_S_0P65)                 0.02       1.14 r
+  U3283/X (STP_OAI22_0P5)                  0.03       1.17 f
+  U2385/X (STP_EO3_0P5)                    0.09       1.27 f
+  U2383/X (STP_EO3_0P5)                    0.09       1.36 f
+  U2210/X (STP_AOI22_1)                    0.04       1.40 r
+  U2013/X (STP_INV_S_1)                    0.03       1.43 f
+  U2371/X (STP_OAI22_2)                    0.03       1.46 r
+  U2750/X (STP_AO2BB2_0P5)                 0.04       1.50 r
+  U2763/X (STP_INV_S_0P65)                 0.02       1.52 f
+  U3427/X (STP_OAI22_0P5)                  0.04       1.56 r
+  U3428/X (STP_INV_S_0P65)                 0.03       1.59 f
+  U3429/X (STP_OA2BB2_0P5)                 0.04       1.64 f
+  U3430/X (STP_EO3_0P5)                    0.10       1.73 f
+  U2359/X (STP_EO3_1)                      0.07       1.80 r
+  U2180/X (STP_AOI22_1)                    0.03       1.83 f
+  U2178/X (STP_INV_S_1P25)                 0.02       1.86 r
+  U2347/X (STP_OAI22_0P75)                 0.04       1.89 f
+  U3431/X (STP_AO2BB2_0P5)                 0.06       1.95 f
+  U2880/X (STP_AO2BB2_0P5)                 0.06       2.01 f
+  U2877/X (STP_EO3_0P5)                    0.10       2.11 f
+  U2341/X (STP_EO3_0P5)                    0.10       2.20 f
+  U2340/X (STP_AO2BB2_V3_1)                0.04       2.24 f
+  U2338/X (STP_AOI22_1P5)                  0.03       2.27 r
+  U3672/X (STP_AO2BB2_V3_1)                0.03       2.30 f
+  U3827/X (STP_EO3_0P5)                    0.09       2.39 f
+  U2796/X (STP_ND2B_1)                     0.04       2.43 f
+  U2886/X (STP_OAI21_1)                    0.02       2.45 r
+  U2323/X (STP_INV_S_1P25)                 0.02       2.47 f
+  U2316/X (STP_EO3_1)                      0.08       2.55 f
+  U2862/X (STP_EO3_0P5)                    0.09       2.64 f
+  U2863/X (STP_AOI21_0P75)                 0.02       2.66 r
+  U3898/X (STP_OAI21_0P5)                  0.03       2.69 f
+  U2305/X (STP_OAI21_0P75)                 0.02       2.72 r
+  U3915/X (STP_AOAI211_0P5)                0.02       2.73 f
+  label_o[12] (out)                        0.00       2.73 f
+  data arrival time                                   2.73
+
+  clock clk (rise edge)                    3.33       3.33
+  clock network delay (ideal)              0.00       3.33
+  clock uncertainty                       -0.20       3.13
+  output external delay                   -0.40       2.73
+  data required time                                  2.73
+  -----------------------------------------------------------
+  data required time                                  2.73
+  data arrival time                                  -2.73
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: position_i[1]
+              (input port clocked by clk)
+  Endpoint: label_o[11]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_scan_label_b32r
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.40       0.40 f
+  position_i[1] (in)                       0.00       0.40 f
+  U2144/X (STP_NR2_6)                      0.01       0.41 r
+  U2017/X (STP_INV_2)                      0.01       0.42 f
+  U2807/X (STP_ND2_G_1)                    0.01       0.43 r
+  U2546/X (STP_NR2_1P5)                    0.01       0.45 f
+  U2301/X (STP_NR2_1)                      0.03       0.47 r
+  U2789/X (STP_NR2B_1)                     0.04       0.51 r
+  U2540/X (STP_ND2_S_3)                    0.02       0.53 f
+  U2538/X (STP_NR2_G_2P5)                  0.02       0.55 r
+  U2535/X (STP_ND2_G_2)                    0.02       0.57 f
+  U2142/X (STP_NR2_3)                      0.02       0.59 r
+  U2531/X (STP_INV_1P5)                    0.02       0.61 f
+  U2528/X (STP_OAI21_3)                    0.02       0.63 r
+  U2937/X (STP_AN2_3)                      0.04       0.67 r
+  U2512/X (STP_INV_6)                      0.02       0.69 f
+  U2747/X (STP_ND2_S_5)                    0.04       0.73 r
+  U2482/X (STP_INV_7P5)                    0.02       0.75 f
+  U2263/X (STP_NR2_G_0P8)                  0.03       0.78 r
+  U3016/X (STP_NR2_G_0P5)                  0.03       0.81 f
+  U2256/X (STP_INV_S_0P65)                 0.02       0.83 r
+  U3158/X (STP_OAI211_0P5)                 0.03       0.86 f
+  U3159/X (STP_NR4_0P5)                    0.04       0.91 r
+  U3160/X (STP_AOAI211_0P5)                0.03       0.94 f
+  U2246/X (STP_OAI22_V3S_1)                0.05       0.98 r
+  U2063/X (STP_AO2BB2_0P5)                 0.05       1.03 f
+  U2114/X (STP_INV_S_1)                    0.03       1.06 r
+  U2402/X (STP_AOI22_0P75)                 0.04       1.10 f
+  U3287/X (STP_AO2BB2_0P5)                 0.05       1.15 f
+  U3288/X (STP_AO2BB2_0P5)                 0.06       1.21 f
+  U2767/X (STP_EO3_0P5)                    0.09       1.30 f
+  U2879/X (STP_EO3_0P5)                    0.08       1.39 r
+  U2107/X (STP_AOI22_1)                    0.04       1.42 f
+  U2060/X (STP_INV_1P5)                    0.02       1.45 r
+  U2211/X (STP_OAI22_V3S_1)                0.04       1.49 f
+  U2208/X (STP_AO2BB2_1)                   0.05       1.54 f
+  U2207/X (STP_INV_S_0P65)                 0.02       1.56 r
+  U2203/X (STP_OAI22_0P5)                  0.04       1.60 f
+  U3412/X (STP_EO3_0P5)                    0.10       1.70 f
+  U3413/X (STP_EO3_0P5)                    0.08       1.77 r
+  U2033/X (STP_AOI22_0P5)                  0.05       1.82 f
+  U3499/X (STP_AO2BB2_0P5)                 0.07       1.89 f
+  U3500/X (STP_AO2BB2_0P5)                 0.05       1.95 f
+  U3516/X (STP_EO3_0P5)                    0.09       2.04 f
+  U3517/X (STP_EO3_0P5)                    0.08       2.12 r
+  U2651/X (STP_AOI21_0P75)                 0.02       2.14 f
+  U3518/X (STP_OA21_1)                     0.04       2.18 f
+  U3519/X (STP_AO2BB2_0P5)                 0.05       2.23 f
+  U3520/X (STP_AO2BB2_V3_1)                0.04       2.28 f
+  U3521/X (STP_AO2BB2_0P5)                 0.05       2.33 f
+  U2833/X (STP_EO3_0P5)                    0.09       2.42 f
+  U2317/X (STP_ND2_S_1)                    0.02       2.44 r
+  U2832/X (STP_EN2_0P5)                    0.06       2.50 f
+  U2077/X (STP_EO3_0P5)                    0.09       2.60 f
+  U2307/X (STP_AO2BB2_1)                   0.05       2.64 f
+  U2867/X (STP_AO2BB2_0P5)                 0.05       2.69 f
+  U2147/X (STP_OAI21_0P5)                  0.02       2.71 r
+  U3894/X (STP_AOAI211_0P5)                0.02       2.73 f
+  label_o[11] (out)                        0.00       2.73 f
+  data arrival time                                   2.73
+
+  clock clk (rise edge)                    3.33       3.33
+  clock network delay (ideal)              0.00       3.33
+  clock uncertainty                       -0.20       3.13
+  output external delay                   -0.40       2.73
+  data required time                                  2.73
+  -----------------------------------------------------------
+  data required time                                  2.73
+  data arrival time                                  -2.73
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: position_i[1]
+              (input port clocked by clk)
+  Endpoint: label_o[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_scan_label_b32r
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.40       0.40 f
+  position_i[1] (in)                       0.00       0.40 f
+  U2144/X (STP_NR2_6)                      0.01       0.41 r
+  U2017/X (STP_INV_2)                      0.01       0.42 f
+  U2807/X (STP_ND2_G_1)                    0.01       0.43 r
+  U2546/X (STP_NR2_1P5)                    0.01       0.45 f
+  U2301/X (STP_NR2_1)                      0.03       0.47 r
+  U2789/X (STP_NR2B_1)                     0.04       0.51 r
+  U2540/X (STP_ND2_S_3)                    0.02       0.53 f
+  U2538/X (STP_NR2_G_2P5)                  0.02       0.55 r
+  U2535/X (STP_ND2_G_2)                    0.02       0.57 f
+  U2142/X (STP_NR2_3)                      0.02       0.59 r
+  U2531/X (STP_INV_1P5)                    0.02       0.61 f
+  U2528/X (STP_OAI21_3)                    0.02       0.63 r
+  U2937/X (STP_AN2_3)                      0.04       0.67 r
+  U2512/X (STP_INV_6)                      0.02       0.69 f
+  U2504/X (STP_NR2_1)                      0.04       0.73 r
+  U2067/X (STP_INV_2)                      0.03       0.76 f
+  U2014/X (STP_NR2_1)                      0.05       0.81 r
+  U2970/X (STP_INV_S_1)                    0.04       0.84 f
+  U3214/X (STP_AO2BB2_0P5)                 0.02       0.87 r
+  U3215/X (STP_AOI211_0P5)                 0.02       0.88 f
+  U2707/X (STP_OAI211_0P5)                 0.02       0.90 r
+  U3216/X (STP_AOI22_0P5)                  0.03       0.93 f
+  U3217/X (STP_ND4B_1)                     0.02       0.95 r
+  U2240/X (STP_OAI31_G_0P75)               0.03       0.98 f
+  U2403/X (STP_INV_S_0P65)                 0.03       1.00 r
+  U3219/X (STP_OAI22_0P5)                  0.03       1.03 f
+  U2232/X (STP_BUF_1)                      0.04       1.07 f
+  U3245/X (STP_AO2BB2_0P5)                 0.05       1.12 f
+  U3246/X (STP_INV_S_0P65)                 0.02       1.14 r
+  U3283/X (STP_OAI22_0P5)                  0.03       1.17 f
+  U2385/X (STP_EO3_0P5)                    0.09       1.27 f
+  U2383/X (STP_EO3_0P5)                    0.09       1.36 f
+  U2210/X (STP_AOI22_1)                    0.04       1.40 r
+  U2013/X (STP_INV_S_1)                    0.03       1.43 f
+  U2371/X (STP_OAI22_2)                    0.03       1.46 r
+  U2750/X (STP_AO2BB2_0P5)                 0.04       1.50 r
+  U2763/X (STP_INV_S_0P65)                 0.02       1.52 f
+  U3427/X (STP_OAI22_0P5)                  0.04       1.56 r
+  U3428/X (STP_INV_S_0P65)                 0.03       1.59 f
+  U3429/X (STP_OA2BB2_0P5)                 0.04       1.64 f
+  U3430/X (STP_EO3_0P5)                    0.10       1.73 f
+  U2359/X (STP_EO3_1)                      0.07       1.80 r
+  U2180/X (STP_AOI22_1)                    0.03       1.83 f
+  U2178/X (STP_INV_S_1P25)                 0.02       1.86 r
+  U2347/X (STP_OAI22_0P75)                 0.04       1.89 f
+  U2882/X (STP_AO2BB2_0P5)                 0.07       1.96 f
+  U3464/X (STP_AO2BB2_V3_1)                0.04       2.01 f
+  U2785/X (STP_EO3_0P5)                    0.09       2.10 f
+  U3465/X (STP_AO2BB2_0P5)                 0.05       2.15 f
+  U2786/X (STP_NR2_G_0P5)                  0.02       2.17 r
+  U2046/X (STP_AOI211_0P75)                0.02       2.19 f
+  U3471/X (STP_ND2_G_1)                    0.02       2.21 r
+  U3472/X (STP_OAI21_0P5)                  0.03       2.24 f
+  U2330/X (STP_AO2BB2_V3_1)                0.06       2.30 f
+  U2558/X (STP_AO2BB2_V3_1)                0.05       2.34 f
+  U3776/X (STP_EO3_0P5)                    0.09       2.44 f
+  U3777/X (STP_EO3_0P5)                    0.09       2.53 f
+  U3778/X (STP_AOI22_0P5)                  0.03       2.56 r
+  U3779/X (STP_EO3_0P5)                    0.09       2.65 r
+  U2075/X (STP_OAI211_1)                   0.03       2.68 f
+  U3791/X (STP_AOI21_0P75)                 0.02       2.70 r
+  U3794/X (STP_OAI211_0P5)                 0.02       2.72 f
+  label_o[0] (out)                         0.00       2.72 f
+  data arrival time                                   2.72
+
+  clock clk (rise edge)                    3.33       3.33
+  clock network delay (ideal)              0.00       3.33
+  clock uncertainty                       -0.20       3.13
+  output external delay                   -0.40       2.73
+  data required time                                  2.73
+  -----------------------------------------------------------
+  data required time                                  2.73
+  data arrival time                                  -2.72
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: position_i[1]
+              (input port clocked by clk)
+  Endpoint: label_o[5] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_scan_label_b32r
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.40       0.40 f
+  position_i[1] (in)                       0.00       0.40 f
+  U2144/X (STP_NR2_6)                      0.01       0.41 r
+  U2017/X (STP_INV_2)                      0.01       0.42 f
+  U2807/X (STP_ND2_G_1)                    0.01       0.43 r
+  U2546/X (STP_NR2_1P5)                    0.01       0.45 f
+  U2301/X (STP_NR2_1)                      0.03       0.47 r
+  U2789/X (STP_NR2B_1)                     0.04       0.51 r
+  U2540/X (STP_ND2_S_3)                    0.02       0.53 f
+  U2538/X (STP_NR2_G_2P5)                  0.02       0.55 r
+  U2535/X (STP_ND2_G_2)                    0.02       0.57 f
+  U2142/X (STP_NR2_3)                      0.02       0.59 r
+  U2531/X (STP_INV_1P5)                    0.02       0.61 f
+  U2528/X (STP_OAI21_3)                    0.02       0.63 r
+  U2937/X (STP_AN2_3)                      0.04       0.67 r
+  U2512/X (STP_INV_6)                      0.02       0.69 f
+  U2504/X (STP_NR2_1)                      0.04       0.73 r
+  U2067/X (STP_INV_2)                      0.03       0.76 f
+  U2014/X (STP_NR2_1)                      0.05       0.81 r
+  U2970/X (STP_INV_S_1)                    0.04       0.84 f
+  U3214/X (STP_AO2BB2_0P5)                 0.02       0.87 r
+  U3215/X (STP_AOI211_0P5)                 0.02       0.88 f
+  U2707/X (STP_OAI211_0P5)                 0.02       0.90 r
+  U3216/X (STP_AOI22_0P5)                  0.03       0.93 f
+  U3217/X (STP_ND4B_1)                     0.02       0.95 r
+  U2240/X (STP_OAI31_G_0P75)               0.03       0.98 f
+  U2403/X (STP_INV_S_0P65)                 0.03       1.00 r
+  U3219/X (STP_OAI22_0P5)                  0.03       1.03 f
+  U2232/X (STP_BUF_1)                      0.04       1.07 f
+  U3245/X (STP_AO2BB2_0P5)                 0.05       1.12 f
+  U3246/X (STP_INV_S_0P65)                 0.02       1.14 r
+  U3283/X (STP_OAI22_0P5)                  0.03       1.17 f
+  U2385/X (STP_EO3_0P5)                    0.09       1.27 f
+  U2383/X (STP_EO3_0P5)                    0.09       1.36 f
+  U2210/X (STP_AOI22_1)                    0.04       1.40 r
+  U2013/X (STP_INV_S_1)                    0.03       1.43 f
+  U2371/X (STP_OAI22_2)                    0.03       1.46 r
+  U2750/X (STP_AO2BB2_0P5)                 0.04       1.50 r
+  U2763/X (STP_INV_S_0P65)                 0.02       1.52 f
+  U3427/X (STP_OAI22_0P5)                  0.04       1.56 r
+  U3428/X (STP_INV_S_0P65)                 0.03       1.59 f
+  U3429/X (STP_OA2BB2_0P5)                 0.04       1.64 f
+  U3430/X (STP_EO3_0P5)                    0.10       1.73 f
+  U2359/X (STP_EO3_1)                      0.07       1.80 r
+  U2180/X (STP_AOI22_1)                    0.03       1.83 f
+  U2178/X (STP_INV_S_1P25)                 0.02       1.86 r
+  U2347/X (STP_OAI22_0P75)                 0.04       1.89 f
+  U2882/X (STP_AO2BB2_0P5)                 0.07       1.96 f
+  U3464/X (STP_AO2BB2_V3_1)                0.04       2.01 f
+  U2785/X (STP_EO3_0P5)                    0.09       2.10 f
+  U3465/X (STP_AO2BB2_0P5)                 0.05       2.15 f
+  U2786/X (STP_NR2_G_0P5)                  0.02       2.17 r
+  U2046/X (STP_AOI211_0P75)                0.02       2.19 f
+  U3471/X (STP_ND2_G_1)                    0.02       2.21 r
+  U3472/X (STP_OAI21_0P5)                  0.03       2.24 f
+  U2330/X (STP_AO2BB2_V3_1)                0.06       2.30 f
+  U2558/X (STP_AO2BB2_V3_1)                0.05       2.34 f
+  U3776/X (STP_EO3_0P5)                    0.09       2.44 f
+  U3777/X (STP_EO3_0P5)                    0.09       2.53 f
+  U3778/X (STP_AOI22_0P5)                  0.03       2.56 r
+  U3779/X (STP_EO3_0P5)                    0.09       2.65 r
+  U3812/X (STP_AOI21_0P75)                 0.02       2.66 f
+  U3819/X (STP_OAOI211_0P5)                0.02       2.69 r
+  U3820/X (STP_OAI211_0P5)                 0.03       2.71 f
+  label_o[5] (out)                         0.00       2.71 f
+  data arrival time                                   2.71
+
+  clock clk (rise edge)                    3.33       3.33
+  clock network delay (ideal)              0.00       3.33
+  clock uncertainty                       -0.20       3.13
+  output external delay                   -0.40       2.73
+  data required time                                  2.73
+  -----------------------------------------------------------
+  data required time                                  2.73
+  data arrival time                                  -2.71
+  -----------------------------------------------------------
+  slack (MET)                                         0.02
+
+
+1

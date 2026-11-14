@@ -1,0 +1,6 @@
+result=PASS
+area_um2=25720.967693
+slack_ns=0.118413
+nand2_ge=51033.6660575
+frequency_MHz=300
+library=/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db

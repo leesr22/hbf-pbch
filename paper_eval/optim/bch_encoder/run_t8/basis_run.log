@@ -1,0 +1,10 @@
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Nov 14 22:06 2026
+PASS BCH t=8 all 616 state/data basis vectors
+$finish called from file "/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/bch_encoder/bch_remainder_cse_t8_tb.sv", line 29.
+$finish at simulation time               617000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 617000 ps
+CPU Time:      0.430 seconds;       Data structure size:   0.0Mb
+Sat Nov 14 22:06:35 2026

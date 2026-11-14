@@ -1,0 +1,1002 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : fwht_h5_c8_e1_f1
+Version: Q-2019.12-SP5-5
+Date   : Sat Nov 14 22:00:27 2026
+****************************************
+
+Operating Conditions: SSGWC0P9V125C   Library: um28nchslogl35hsl140f_ssgwc0p9v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: core/chunk_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/value_q_reg[1][6][6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fwht_h5_c8_e1_f1   ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_HIGH_L5_CHUNK8_EARLY_EXIT1_FUSE_INPUT1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT2_13
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT4_6
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT8_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/chunk_q_reg[0]/CK (STP_FDPRBQ_1)                   0.00       0.00 r
+  core/chunk_q_reg[0]/Q (STP_FDPRBQ_1)                    0.05       0.05 f
+  core/U429/X (STP_NR2_G_0P8)                             0.17       0.22 r
+  core/U1501/X (STP_BUF_1)                                0.10       0.31 r
+  core/U2141/X (STP_BUF_1)                                0.12       0.44 r
+  core/U3820/X (STP_AOI22_0P5)                            0.04       0.48 f
+  core/U620/X (STP_AOI21_0P75)                            0.03       0.51 r
+  core/U3822/X (STP_EO3_0P5)                              0.08       0.58 f
+  core/U3823/X (STP_EO3_0P5)                              0.09       0.67 f
+  core/U3824/X (STP_EO3_0P5)                              0.09       0.76 f
+  core/U3825/X (STP_EO3_0P5)                              0.22       0.98 r
+  core/histogram[28].sum_u/positive_i[5] (sparse_signed_sum_tree_COUNT8_3)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/positive_i[1] (sparse_signed_sum_tree_COUNT4_6)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/positive_i[1] (sparse_signed_sum_tree_COUNT2_13)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/positive_i[0] (sparse_signed_sum_tree_COUNT1_26)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/U3/X (STP_NR2B_V1DG_1)
+                                                          0.05       1.02 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/sum_o[1] (sparse_signed_sum_tree_COUNT1_26)
+                                                          0.00       1.02 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/U4/S (STP_ADDF_V1_0P5)
+                                                          0.09       1.11 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/U2/X (STP_INV_S_0P65)
+                                                          0.02       1.13 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/sum_o[1] (sparse_signed_sum_tree_COUNT2_13)
+                                                          0.00       1.13 f
+  core/histogram[28].sum_u/branch.right_u/U6/CO (STP_ADDF_V1_0P5)
+                                                          0.05       1.18 f
+  core/histogram[28].sum_u/branch.right_u/U5/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.26 r
+  core/histogram[28].sum_u/branch.right_u/sum_o[2] (sparse_signed_sum_tree_COUNT4_6)
+                                                          0.00       1.26 r
+  core/histogram[28].sum_u/intadd_109/U3/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.34 f
+  core/histogram[28].sum_u/sum_o[2] (sparse_signed_sum_tree_COUNT8_3)
+                                                          0.00       1.34 f
+  core/intadd_103/U4/CO (STP_ADDF_V1_0P5)                 0.05       1.40 f
+  core/intadd_103/U3/S (STP_ADDF_V1_0P5)                  0.08       1.48 r
+  core/U744/X (STP_INV_S_0P65)                            0.02       1.50 f
+  core/U441/X (STP_OA2BB2_0P5)                            0.05       1.54 f
+  core/U435/X (STP_INV_S_0P65)                            0.02       1.56 r
+  core/U3214/X (STP_AOI22_0P5)                            0.03       1.59 f
+  core/U3605/CO (STP_ADDF_V1_0P5)                         0.06       1.64 f
+  core/U3607/CO (STP_ADDF_V1_0P5)                         0.05       1.69 f
+  core/U3217/X (STP_EO3_0P5)                              0.08       1.78 f
+  core/U3218/X (STP_EO3_0P5)                              0.09       1.86 f
+  core/U3219/X (STP_EO3_0P5)                              0.09       1.95 f
+  core/U3220/X (STP_EO3_0P5)                              0.09       2.04 f
+  core/U3221/X (STP_EO3_0P5)                              0.09       2.14 f
+  core/U3222/X (STP_AO2BB2_0P5)                           0.04       2.18 f
+  core/U873/X (STP_OA2BB2_0P5)                            0.05       2.23 f
+  core/U3299/X (STP_EO3_0P5)                              0.09       2.32 f
+  core/U3300/X (STP_EO3_0P5)                              0.10       2.42 f
+  core/U3350/X (STP_EO3_0P5)                              0.09       2.51 f
+  core/U1147/X (STP_INV_S_0P65)                           0.02       2.53 r
+  core/U3362/X (STP_EO3_0P5)                              0.08       2.61 r
+  core/U3363/X (STP_AO2BB2_0P5)                           0.04       2.64 r
+  core/value_q_reg[1][6][6]/D (STP_FDPHQ_1)               0.00       2.64 r
+  data arrival time                                                  2.64
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/value_q_reg[1][6][6]/CK (STP_FDPHQ_1)              0.00       3.13 r
+  library setup time                                     -0.06       3.07
+  data required time                                                 3.07
+  --------------------------------------------------------------------------
+  data required time                                                 3.07
+  data arrival time                                                 -2.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.43
+
+
+  Startpoint: core/chunk_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/value_q_reg[1][22][6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fwht_h5_c8_e1_f1   ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_HIGH_L5_CHUNK8_EARLY_EXIT1_FUSE_INPUT1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT2_13
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT4_6
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT8_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/chunk_q_reg[0]/CK (STP_FDPRBQ_1)                   0.00       0.00 r
+  core/chunk_q_reg[0]/Q (STP_FDPRBQ_1)                    0.05       0.05 f
+  core/U429/X (STP_NR2_G_0P8)                             0.17       0.22 r
+  core/U1501/X (STP_BUF_1)                                0.10       0.31 r
+  core/U2141/X (STP_BUF_1)                                0.12       0.44 r
+  core/U3820/X (STP_AOI22_0P5)                            0.04       0.48 f
+  core/U620/X (STP_AOI21_0P75)                            0.03       0.51 r
+  core/U3822/X (STP_EO3_0P5)                              0.08       0.58 f
+  core/U3823/X (STP_EO3_0P5)                              0.09       0.67 f
+  core/U3824/X (STP_EO3_0P5)                              0.09       0.76 f
+  core/U3825/X (STP_EO3_0P5)                              0.22       0.98 r
+  core/histogram[28].sum_u/positive_i[5] (sparse_signed_sum_tree_COUNT8_3)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/positive_i[1] (sparse_signed_sum_tree_COUNT4_6)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/positive_i[1] (sparse_signed_sum_tree_COUNT2_13)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/positive_i[0] (sparse_signed_sum_tree_COUNT1_26)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/U3/X (STP_NR2B_V1DG_1)
+                                                          0.05       1.02 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/sum_o[1] (sparse_signed_sum_tree_COUNT1_26)
+                                                          0.00       1.02 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/U4/S (STP_ADDF_V1_0P5)
+                                                          0.09       1.11 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/U2/X (STP_INV_S_0P65)
+                                                          0.02       1.13 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/sum_o[1] (sparse_signed_sum_tree_COUNT2_13)
+                                                          0.00       1.13 f
+  core/histogram[28].sum_u/branch.right_u/U6/CO (STP_ADDF_V1_0P5)
+                                                          0.05       1.18 f
+  core/histogram[28].sum_u/branch.right_u/U5/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.26 r
+  core/histogram[28].sum_u/branch.right_u/sum_o[2] (sparse_signed_sum_tree_COUNT4_6)
+                                                          0.00       1.26 r
+  core/histogram[28].sum_u/intadd_109/U3/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.34 f
+  core/histogram[28].sum_u/sum_o[2] (sparse_signed_sum_tree_COUNT8_3)
+                                                          0.00       1.34 f
+  core/intadd_103/U4/CO (STP_ADDF_V1_0P5)                 0.05       1.40 f
+  core/intadd_103/U3/S (STP_ADDF_V1_0P5)                  0.08       1.48 r
+  core/U744/X (STP_INV_S_0P65)                            0.02       1.50 f
+  core/U441/X (STP_OA2BB2_0P5)                            0.05       1.54 f
+  core/U435/X (STP_INV_S_0P65)                            0.02       1.56 r
+  core/U3214/X (STP_AOI22_0P5)                            0.03       1.59 f
+  core/U3605/CO (STP_ADDF_V1_0P5)                         0.06       1.64 f
+  core/U3607/CO (STP_ADDF_V1_0P5)                         0.05       1.69 f
+  core/U3217/X (STP_EO3_0P5)                              0.08       1.78 f
+  core/U3218/X (STP_EO3_0P5)                              0.09       1.86 f
+  core/U3219/X (STP_EO3_0P5)                              0.09       1.95 f
+  core/U3220/X (STP_EO3_0P5)                              0.09       2.04 f
+  core/U3221/X (STP_EO3_0P5)                              0.09       2.14 f
+  core/U3222/X (STP_AO2BB2_0P5)                           0.04       2.18 f
+  core/U873/X (STP_OA2BB2_0P5)                            0.05       2.23 f
+  core/U3299/X (STP_EO3_0P5)                              0.09       2.32 f
+  core/U3300/X (STP_EO3_0P5)                              0.10       2.42 f
+  core/U3350/X (STP_EO3_0P5)                              0.09       2.51 f
+  core/U1147/X (STP_INV_S_0P65)                           0.02       2.53 r
+  core/U3362/X (STP_EO3_0P5)                              0.08       2.61 r
+  core/U3379/X (STP_AO2BB2_0P5)                           0.04       2.64 r
+  core/value_q_reg[1][22][6]/D (STP_FDPHQ_1)              0.00       2.64 r
+  data arrival time                                                  2.64
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/value_q_reg[1][22][6]/CK (STP_FDPHQ_1)             0.00       3.13 r
+  library setup time                                     -0.06       3.07
+  data required time                                                 3.07
+  --------------------------------------------------------------------------
+  data required time                                                 3.07
+  data arrival time                                                 -2.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.43
+
+
+  Startpoint: core/chunk_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/value_q_reg[1][14][6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fwht_h5_c8_e1_f1   ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_HIGH_L5_CHUNK8_EARLY_EXIT1_FUSE_INPUT1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT2_13
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT4_6
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT8_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/chunk_q_reg[0]/CK (STP_FDPRBQ_1)                   0.00       0.00 r
+  core/chunk_q_reg[0]/Q (STP_FDPRBQ_1)                    0.05       0.05 f
+  core/U429/X (STP_NR2_G_0P8)                             0.17       0.22 r
+  core/U1501/X (STP_BUF_1)                                0.10       0.31 r
+  core/U2141/X (STP_BUF_1)                                0.12       0.44 r
+  core/U3820/X (STP_AOI22_0P5)                            0.04       0.48 f
+  core/U620/X (STP_AOI21_0P75)                            0.03       0.51 r
+  core/U3822/X (STP_EO3_0P5)                              0.08       0.58 f
+  core/U3823/X (STP_EO3_0P5)                              0.09       0.67 f
+  core/U3824/X (STP_EO3_0P5)                              0.09       0.76 f
+  core/U3825/X (STP_EO3_0P5)                              0.22       0.98 r
+  core/histogram[28].sum_u/positive_i[5] (sparse_signed_sum_tree_COUNT8_3)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/positive_i[1] (sparse_signed_sum_tree_COUNT4_6)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/positive_i[1] (sparse_signed_sum_tree_COUNT2_13)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/positive_i[0] (sparse_signed_sum_tree_COUNT1_26)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/U3/X (STP_NR2B_V1DG_1)
+                                                          0.05       1.02 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/sum_o[1] (sparse_signed_sum_tree_COUNT1_26)
+                                                          0.00       1.02 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/U4/S (STP_ADDF_V1_0P5)
+                                                          0.09       1.11 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/U2/X (STP_INV_S_0P65)
+                                                          0.02       1.13 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/sum_o[1] (sparse_signed_sum_tree_COUNT2_13)
+                                                          0.00       1.13 f
+  core/histogram[28].sum_u/branch.right_u/U6/CO (STP_ADDF_V1_0P5)
+                                                          0.05       1.18 f
+  core/histogram[28].sum_u/branch.right_u/U5/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.26 r
+  core/histogram[28].sum_u/branch.right_u/sum_o[2] (sparse_signed_sum_tree_COUNT4_6)
+                                                          0.00       1.26 r
+  core/histogram[28].sum_u/intadd_109/U3/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.34 f
+  core/histogram[28].sum_u/sum_o[2] (sparse_signed_sum_tree_COUNT8_3)
+                                                          0.00       1.34 f
+  core/intadd_103/U4/CO (STP_ADDF_V1_0P5)                 0.05       1.40 f
+  core/intadd_103/U3/S (STP_ADDF_V1_0P5)                  0.08       1.48 r
+  core/U744/X (STP_INV_S_0P65)                            0.02       1.50 f
+  core/U441/X (STP_OA2BB2_0P5)                            0.05       1.54 f
+  core/U435/X (STP_INV_S_0P65)                            0.02       1.56 r
+  core/U3214/X (STP_AOI22_0P5)                            0.03       1.59 f
+  core/U3605/CO (STP_ADDF_V1_0P5)                         0.06       1.64 f
+  core/U3607/CO (STP_ADDF_V1_0P5)                         0.05       1.69 f
+  core/U3217/X (STP_EO3_0P5)                              0.08       1.78 f
+  core/U3218/X (STP_EO3_0P5)                              0.09       1.86 f
+  core/U3219/X (STP_EO3_0P5)                              0.09       1.95 f
+  core/U3220/X (STP_EO3_0P5)                              0.09       2.04 f
+  core/U3221/X (STP_EO3_0P5)                              0.09       2.14 f
+  core/U3222/X (STP_AO2BB2_0P5)                           0.04       2.18 f
+  core/U873/X (STP_OA2BB2_0P5)                            0.05       2.23 f
+  core/U3299/X (STP_EO3_0P5)                              0.09       2.32 f
+  core/U3300/X (STP_EO3_0P5)                              0.10       2.42 f
+  core/U3350/X (STP_EO3_0P5)                              0.09       2.51 f
+  core/U1147/X (STP_INV_S_0P65)                           0.02       2.53 r
+  core/U3355/X (STP_EO3_0P5)                              0.08       2.61 r
+  core/U3364/X (STP_AO2BB2_0P5)                           0.04       2.64 r
+  core/value_q_reg[1][14][6]/D (STP_FDPHQ_1)              0.00       2.64 r
+  data arrival time                                                  2.64
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/value_q_reg[1][14][6]/CK (STP_FDPHQ_1)             0.00       3.13 r
+  library setup time                                     -0.06       3.07
+  data required time                                                 3.07
+  --------------------------------------------------------------------------
+  data required time                                                 3.07
+  data arrival time                                                 -2.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.43
+
+
+  Startpoint: core/chunk_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/value_q_reg[1][30][6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fwht_h5_c8_e1_f1   ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_HIGH_L5_CHUNK8_EARLY_EXIT1_FUSE_INPUT1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT2_13
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT4_6
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT8_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/chunk_q_reg[0]/CK (STP_FDPRBQ_1)                   0.00       0.00 r
+  core/chunk_q_reg[0]/Q (STP_FDPRBQ_1)                    0.05       0.05 f
+  core/U429/X (STP_NR2_G_0P8)                             0.17       0.22 r
+  core/U1501/X (STP_BUF_1)                                0.10       0.31 r
+  core/U2141/X (STP_BUF_1)                                0.12       0.44 r
+  core/U3820/X (STP_AOI22_0P5)                            0.04       0.48 f
+  core/U620/X (STP_AOI21_0P75)                            0.03       0.51 r
+  core/U3822/X (STP_EO3_0P5)                              0.08       0.58 f
+  core/U3823/X (STP_EO3_0P5)                              0.09       0.67 f
+  core/U3824/X (STP_EO3_0P5)                              0.09       0.76 f
+  core/U3825/X (STP_EO3_0P5)                              0.22       0.98 r
+  core/histogram[28].sum_u/positive_i[5] (sparse_signed_sum_tree_COUNT8_3)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/positive_i[1] (sparse_signed_sum_tree_COUNT4_6)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/positive_i[1] (sparse_signed_sum_tree_COUNT2_13)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/positive_i[0] (sparse_signed_sum_tree_COUNT1_26)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/U3/X (STP_NR2B_V1DG_1)
+                                                          0.05       1.02 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/sum_o[1] (sparse_signed_sum_tree_COUNT1_26)
+                                                          0.00       1.02 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/U4/S (STP_ADDF_V1_0P5)
+                                                          0.09       1.11 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/U2/X (STP_INV_S_0P65)
+                                                          0.02       1.13 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/sum_o[1] (sparse_signed_sum_tree_COUNT2_13)
+                                                          0.00       1.13 f
+  core/histogram[28].sum_u/branch.right_u/U6/CO (STP_ADDF_V1_0P5)
+                                                          0.05       1.18 f
+  core/histogram[28].sum_u/branch.right_u/U5/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.26 r
+  core/histogram[28].sum_u/branch.right_u/sum_o[2] (sparse_signed_sum_tree_COUNT4_6)
+                                                          0.00       1.26 r
+  core/histogram[28].sum_u/intadd_109/U3/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.34 f
+  core/histogram[28].sum_u/sum_o[2] (sparse_signed_sum_tree_COUNT8_3)
+                                                          0.00       1.34 f
+  core/intadd_103/U4/CO (STP_ADDF_V1_0P5)                 0.05       1.40 f
+  core/intadd_103/U3/S (STP_ADDF_V1_0P5)                  0.08       1.48 r
+  core/U744/X (STP_INV_S_0P65)                            0.02       1.50 f
+  core/U441/X (STP_OA2BB2_0P5)                            0.05       1.54 f
+  core/U435/X (STP_INV_S_0P65)                            0.02       1.56 r
+  core/U3214/X (STP_AOI22_0P5)                            0.03       1.59 f
+  core/U3605/CO (STP_ADDF_V1_0P5)                         0.06       1.64 f
+  core/U3607/CO (STP_ADDF_V1_0P5)                         0.05       1.69 f
+  core/U3217/X (STP_EO3_0P5)                              0.08       1.78 f
+  core/U3218/X (STP_EO3_0P5)                              0.09       1.86 f
+  core/U3219/X (STP_EO3_0P5)                              0.09       1.95 f
+  core/U3220/X (STP_EO3_0P5)                              0.09       2.04 f
+  core/U3221/X (STP_EO3_0P5)                              0.09       2.14 f
+  core/U3222/X (STP_AO2BB2_0P5)                           0.04       2.18 f
+  core/U873/X (STP_OA2BB2_0P5)                            0.05       2.23 f
+  core/U3299/X (STP_EO3_0P5)                              0.09       2.32 f
+  core/U3300/X (STP_EO3_0P5)                              0.10       2.42 f
+  core/U3350/X (STP_EO3_0P5)                              0.09       2.51 f
+  core/U1147/X (STP_INV_S_0P65)                           0.02       2.53 r
+  core/U3355/X (STP_EO3_0P5)                              0.08       2.61 r
+  core/U3356/X (STP_AO2BB2_0P5)                           0.04       2.64 r
+  core/value_q_reg[1][30][6]/D (STP_FDPHQ_1)              0.00       2.64 r
+  data arrival time                                                  2.64
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/value_q_reg[1][30][6]/CK (STP_FDPHQ_1)             0.00       3.13 r
+  library setup time                                     -0.06       3.07
+  data required time                                                 3.07
+  --------------------------------------------------------------------------
+  data required time                                                 3.07
+  data arrival time                                                 -2.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.43
+
+
+  Startpoint: core/chunk_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/value_q_reg[1][8][6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fwht_h5_c8_e1_f1   ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_HIGH_L5_CHUNK8_EARLY_EXIT1_FUSE_INPUT1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT2_13
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT4_6
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT8_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/chunk_q_reg[0]/CK (STP_FDPRBQ_1)                   0.00       0.00 r
+  core/chunk_q_reg[0]/Q (STP_FDPRBQ_1)                    0.05       0.05 f
+  core/U429/X (STP_NR2_G_0P8)                             0.17       0.22 r
+  core/U1501/X (STP_BUF_1)                                0.10       0.31 r
+  core/U2141/X (STP_BUF_1)                                0.12       0.44 r
+  core/U3820/X (STP_AOI22_0P5)                            0.04       0.48 f
+  core/U620/X (STP_AOI21_0P75)                            0.03       0.51 r
+  core/U3822/X (STP_EO3_0P5)                              0.08       0.58 f
+  core/U3823/X (STP_EO3_0P5)                              0.09       0.67 f
+  core/U3824/X (STP_EO3_0P5)                              0.09       0.76 f
+  core/U3825/X (STP_EO3_0P5)                              0.22       0.98 r
+  core/histogram[28].sum_u/positive_i[5] (sparse_signed_sum_tree_COUNT8_3)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/positive_i[1] (sparse_signed_sum_tree_COUNT4_6)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/positive_i[1] (sparse_signed_sum_tree_COUNT2_13)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/positive_i[0] (sparse_signed_sum_tree_COUNT1_26)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/U3/X (STP_NR2B_V1DG_1)
+                                                          0.05       1.02 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/sum_o[1] (sparse_signed_sum_tree_COUNT1_26)
+                                                          0.00       1.02 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/U4/S (STP_ADDF_V1_0P5)
+                                                          0.09       1.11 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/U2/X (STP_INV_S_0P65)
+                                                          0.02       1.13 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/sum_o[1] (sparse_signed_sum_tree_COUNT2_13)
+                                                          0.00       1.13 f
+  core/histogram[28].sum_u/branch.right_u/U6/CO (STP_ADDF_V1_0P5)
+                                                          0.05       1.18 f
+  core/histogram[28].sum_u/branch.right_u/U5/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.26 r
+  core/histogram[28].sum_u/branch.right_u/sum_o[2] (sparse_signed_sum_tree_COUNT4_6)
+                                                          0.00       1.26 r
+  core/histogram[28].sum_u/intadd_109/U3/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.34 f
+  core/histogram[28].sum_u/sum_o[2] (sparse_signed_sum_tree_COUNT8_3)
+                                                          0.00       1.34 f
+  core/intadd_103/U4/CO (STP_ADDF_V1_0P5)                 0.05       1.40 f
+  core/intadd_103/U3/S (STP_ADDF_V1_0P5)                  0.08       1.48 r
+  core/U744/X (STP_INV_S_0P65)                            0.02       1.50 f
+  core/U441/X (STP_OA2BB2_0P5)                            0.05       1.54 f
+  core/U435/X (STP_INV_S_0P65)                            0.02       1.56 r
+  core/U3214/X (STP_AOI22_0P5)                            0.03       1.59 f
+  core/U3605/CO (STP_ADDF_V1_0P5)                         0.06       1.64 f
+  core/U3607/CO (STP_ADDF_V1_0P5)                         0.05       1.69 f
+  core/U3217/X (STP_EO3_0P5)                              0.08       1.78 f
+  core/U3218/X (STP_EO3_0P5)                              0.09       1.86 f
+  core/U3219/X (STP_EO3_0P5)                              0.09       1.95 f
+  core/U3220/X (STP_EO3_0P5)                              0.09       2.04 f
+  core/U3221/X (STP_EO3_0P5)                              0.09       2.14 f
+  core/U3222/X (STP_AO2BB2_0P5)                           0.04       2.18 f
+  core/U873/X (STP_OA2BB2_0P5)                            0.05       2.23 f
+  core/U3238/X (STP_EO3_0P5)                              0.04       2.27 f
+  core/U3239/X (STP_EO3_0P5)                              0.10       2.36 f
+  core/U3284/X (STP_EO3_0P5)                              0.10       2.46 f
+  core/U3326/X (STP_EO3_0P5)                              0.09       2.55 f
+  core/U1456/X (STP_INV_S_0P65)                           0.02       2.57 r
+  core/U17/X (STP_EO2_1)                                  0.05       2.62 f
+  core/value_q_reg[1][8][6]/D (STP_FDPHQ_1)               0.00       2.62 f
+  data arrival time                                                  2.62
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/value_q_reg[1][8][6]/CK (STP_FDPHQ_1)              0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.46
+
+
+  Startpoint: core/chunk_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/value_q_reg[1][24][6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fwht_h5_c8_e1_f1   ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_HIGH_L5_CHUNK8_EARLY_EXIT1_FUSE_INPUT1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT2_13
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT4_6
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT8_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/chunk_q_reg[0]/CK (STP_FDPRBQ_1)                   0.00       0.00 r
+  core/chunk_q_reg[0]/Q (STP_FDPRBQ_1)                    0.05       0.05 f
+  core/U429/X (STP_NR2_G_0P8)                             0.17       0.22 r
+  core/U1501/X (STP_BUF_1)                                0.10       0.31 r
+  core/U2141/X (STP_BUF_1)                                0.12       0.44 r
+  core/U3820/X (STP_AOI22_0P5)                            0.04       0.48 f
+  core/U620/X (STP_AOI21_0P75)                            0.03       0.51 r
+  core/U3822/X (STP_EO3_0P5)                              0.08       0.58 f
+  core/U3823/X (STP_EO3_0P5)                              0.09       0.67 f
+  core/U3824/X (STP_EO3_0P5)                              0.09       0.76 f
+  core/U3825/X (STP_EO3_0P5)                              0.22       0.98 r
+  core/histogram[28].sum_u/positive_i[5] (sparse_signed_sum_tree_COUNT8_3)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/positive_i[1] (sparse_signed_sum_tree_COUNT4_6)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/positive_i[1] (sparse_signed_sum_tree_COUNT2_13)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/positive_i[0] (sparse_signed_sum_tree_COUNT1_26)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/U3/X (STP_NR2B_V1DG_1)
+                                                          0.05       1.02 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/sum_o[1] (sparse_signed_sum_tree_COUNT1_26)
+                                                          0.00       1.02 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/U4/S (STP_ADDF_V1_0P5)
+                                                          0.09       1.11 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/U2/X (STP_INV_S_0P65)
+                                                          0.02       1.13 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/sum_o[1] (sparse_signed_sum_tree_COUNT2_13)
+                                                          0.00       1.13 f
+  core/histogram[28].sum_u/branch.right_u/U6/CO (STP_ADDF_V1_0P5)
+                                                          0.05       1.18 f
+  core/histogram[28].sum_u/branch.right_u/U5/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.26 r
+  core/histogram[28].sum_u/branch.right_u/sum_o[2] (sparse_signed_sum_tree_COUNT4_6)
+                                                          0.00       1.26 r
+  core/histogram[28].sum_u/intadd_109/U3/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.34 f
+  core/histogram[28].sum_u/sum_o[2] (sparse_signed_sum_tree_COUNT8_3)
+                                                          0.00       1.34 f
+  core/intadd_103/U4/CO (STP_ADDF_V1_0P5)                 0.05       1.40 f
+  core/intadd_103/U3/S (STP_ADDF_V1_0P5)                  0.08       1.48 r
+  core/U744/X (STP_INV_S_0P65)                            0.02       1.50 f
+  core/U441/X (STP_OA2BB2_0P5)                            0.05       1.54 f
+  core/U435/X (STP_INV_S_0P65)                            0.02       1.56 r
+  core/U3214/X (STP_AOI22_0P5)                            0.03       1.59 f
+  core/U3605/CO (STP_ADDF_V1_0P5)                         0.06       1.64 f
+  core/U3607/CO (STP_ADDF_V1_0P5)                         0.05       1.69 f
+  core/U3217/X (STP_EO3_0P5)                              0.08       1.78 f
+  core/U3218/X (STP_EO3_0P5)                              0.09       1.86 f
+  core/U3219/X (STP_EO3_0P5)                              0.09       1.95 f
+  core/U3220/X (STP_EO3_0P5)                              0.09       2.04 f
+  core/U3221/X (STP_EO3_0P5)                              0.09       2.14 f
+  core/U3222/X (STP_AO2BB2_0P5)                           0.04       2.18 f
+  core/U873/X (STP_OA2BB2_0P5)                            0.05       2.23 f
+  core/U3238/X (STP_EO3_0P5)                              0.04       2.27 f
+  core/U3239/X (STP_EO3_0P5)                              0.10       2.36 f
+  core/U3284/X (STP_EO3_0P5)                              0.10       2.46 f
+  core/U3326/X (STP_EO3_0P5)                              0.09       2.55 f
+  core/U1456/X (STP_INV_S_0P65)                           0.02       2.57 r
+  core/U3327/X (STP_AO2BB2_0P5)                           0.03       2.61 r
+  core/value_q_reg[1][24][6]/D (STP_FDPHQ_1)              0.00       2.61 r
+  data arrival time                                                  2.61
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/value_q_reg[1][24][6]/CK (STP_FDPHQ_1)             0.00       3.13 r
+  library setup time                                     -0.06       3.07
+  data required time                                                 3.07
+  --------------------------------------------------------------------------
+  data required time                                                 3.07
+  data arrival time                                                 -2.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.47
+
+
+  Startpoint: core/chunk_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/value_q_reg[1][10][6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fwht_h5_c8_e1_f1   ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_HIGH_L5_CHUNK8_EARLY_EXIT1_FUSE_INPUT1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT2_13
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT4_6
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT8_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/chunk_q_reg[0]/CK (STP_FDPRBQ_1)                   0.00       0.00 r
+  core/chunk_q_reg[0]/Q (STP_FDPRBQ_1)                    0.05       0.05 f
+  core/U429/X (STP_NR2_G_0P8)                             0.17       0.22 r
+  core/U1501/X (STP_BUF_1)                                0.10       0.31 r
+  core/U2141/X (STP_BUF_1)                                0.12       0.44 r
+  core/U3820/X (STP_AOI22_0P5)                            0.04       0.48 f
+  core/U620/X (STP_AOI21_0P75)                            0.03       0.51 r
+  core/U3822/X (STP_EO3_0P5)                              0.08       0.58 f
+  core/U3823/X (STP_EO3_0P5)                              0.09       0.67 f
+  core/U3824/X (STP_EO3_0P5)                              0.09       0.76 f
+  core/U3825/X (STP_EO3_0P5)                              0.22       0.98 r
+  core/histogram[28].sum_u/positive_i[5] (sparse_signed_sum_tree_COUNT8_3)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/positive_i[1] (sparse_signed_sum_tree_COUNT4_6)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/positive_i[1] (sparse_signed_sum_tree_COUNT2_13)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/positive_i[0] (sparse_signed_sum_tree_COUNT1_26)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/U3/X (STP_NR2B_V1DG_1)
+                                                          0.05       1.02 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/sum_o[1] (sparse_signed_sum_tree_COUNT1_26)
+                                                          0.00       1.02 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/U4/S (STP_ADDF_V1_0P5)
+                                                          0.09       1.11 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/U2/X (STP_INV_S_0P65)
+                                                          0.02       1.13 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/sum_o[1] (sparse_signed_sum_tree_COUNT2_13)
+                                                          0.00       1.13 f
+  core/histogram[28].sum_u/branch.right_u/U6/CO (STP_ADDF_V1_0P5)
+                                                          0.05       1.18 f
+  core/histogram[28].sum_u/branch.right_u/U5/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.26 r
+  core/histogram[28].sum_u/branch.right_u/sum_o[2] (sparse_signed_sum_tree_COUNT4_6)
+                                                          0.00       1.26 r
+  core/histogram[28].sum_u/intadd_109/U3/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.34 f
+  core/histogram[28].sum_u/sum_o[2] (sparse_signed_sum_tree_COUNT8_3)
+                                                          0.00       1.34 f
+  core/intadd_103/U4/CO (STP_ADDF_V1_0P5)                 0.05       1.40 f
+  core/intadd_103/U3/S (STP_ADDF_V1_0P5)                  0.08       1.48 r
+  core/U744/X (STP_INV_S_0P65)                            0.02       1.50 f
+  core/U441/X (STP_OA2BB2_0P5)                            0.05       1.54 f
+  core/U435/X (STP_INV_S_0P65)                            0.02       1.56 r
+  core/U3214/X (STP_AOI22_0P5)                            0.03       1.59 f
+  core/U3605/CO (STP_ADDF_V1_0P5)                         0.06       1.64 f
+  core/U3607/CO (STP_ADDF_V1_0P5)                         0.05       1.69 f
+  core/U3217/X (STP_EO3_0P5)                              0.08       1.78 f
+  core/U3218/X (STP_EO3_0P5)                              0.09       1.86 f
+  core/U3219/X (STP_EO3_0P5)                              0.09       1.95 f
+  core/U3220/X (STP_EO3_0P5)                              0.09       2.04 f
+  core/U3221/X (STP_EO3_0P5)                              0.09       2.14 f
+  core/U3222/X (STP_AO2BB2_0P5)                           0.04       2.18 f
+  core/U873/X (STP_OA2BB2_0P5)                            0.05       2.23 f
+  core/U3299/X (STP_EO3_0P5)                              0.09       2.32 f
+  core/U3300/X (STP_EO3_0P5)                              0.10       2.42 f
+  core/U3302/X (STP_EO3_0P5)                              0.05       2.46 f
+  core/U3312/X (STP_EO3_0P5)                              0.06       2.52 r
+  core/U25/X (STP_OAI21_0P5)                              0.03       2.55 f
+  core/U3321/X (STP_OAI31_G_0P5)                          0.01       2.56 r
+  core/value_q_reg[1][10][6]/D (STP_FDPHQ_1)              0.00       2.56 r
+  data arrival time                                                  2.56
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/value_q_reg[1][10][6]/CK (STP_FDPHQ_1)             0.00       3.13 r
+  library setup time                                     -0.06       3.07
+  data required time                                                 3.07
+  --------------------------------------------------------------------------
+  data required time                                                 3.07
+  data arrival time                                                 -2.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: core/chunk_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/value_q_reg[1][26][6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fwht_h5_c8_e1_f1   ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_HIGH_L5_CHUNK8_EARLY_EXIT1_FUSE_INPUT1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT2_13
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT4_6
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT8_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/chunk_q_reg[0]/CK (STP_FDPRBQ_1)                   0.00       0.00 r
+  core/chunk_q_reg[0]/Q (STP_FDPRBQ_1)                    0.05       0.05 f
+  core/U429/X (STP_NR2_G_0P8)                             0.17       0.22 r
+  core/U1501/X (STP_BUF_1)                                0.10       0.31 r
+  core/U2141/X (STP_BUF_1)                                0.12       0.44 r
+  core/U3820/X (STP_AOI22_0P5)                            0.04       0.48 f
+  core/U620/X (STP_AOI21_0P75)                            0.03       0.51 r
+  core/U3822/X (STP_EO3_0P5)                              0.08       0.58 f
+  core/U3823/X (STP_EO3_0P5)                              0.09       0.67 f
+  core/U3824/X (STP_EO3_0P5)                              0.09       0.76 f
+  core/U3825/X (STP_EO3_0P5)                              0.22       0.98 r
+  core/histogram[28].sum_u/positive_i[5] (sparse_signed_sum_tree_COUNT8_3)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/positive_i[1] (sparse_signed_sum_tree_COUNT4_6)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/positive_i[1] (sparse_signed_sum_tree_COUNT2_13)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/positive_i[0] (sparse_signed_sum_tree_COUNT1_26)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/U3/X (STP_NR2B_V1DG_1)
+                                                          0.05       1.02 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/sum_o[1] (sparse_signed_sum_tree_COUNT1_26)
+                                                          0.00       1.02 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/U4/S (STP_ADDF_V1_0P5)
+                                                          0.09       1.11 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/U2/X (STP_INV_S_0P65)
+                                                          0.02       1.13 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/sum_o[1] (sparse_signed_sum_tree_COUNT2_13)
+                                                          0.00       1.13 f
+  core/histogram[28].sum_u/branch.right_u/U6/CO (STP_ADDF_V1_0P5)
+                                                          0.05       1.18 f
+  core/histogram[28].sum_u/branch.right_u/U5/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.26 r
+  core/histogram[28].sum_u/branch.right_u/sum_o[2] (sparse_signed_sum_tree_COUNT4_6)
+                                                          0.00       1.26 r
+  core/histogram[28].sum_u/intadd_109/U3/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.34 f
+  core/histogram[28].sum_u/sum_o[2] (sparse_signed_sum_tree_COUNT8_3)
+                                                          0.00       1.34 f
+  core/intadd_103/U4/CO (STP_ADDF_V1_0P5)                 0.05       1.40 f
+  core/intadd_103/U3/S (STP_ADDF_V1_0P5)                  0.08       1.48 r
+  core/U744/X (STP_INV_S_0P65)                            0.02       1.50 f
+  core/U441/X (STP_OA2BB2_0P5)                            0.05       1.54 f
+  core/U435/X (STP_INV_S_0P65)                            0.02       1.56 r
+  core/U3214/X (STP_AOI22_0P5)                            0.03       1.59 f
+  core/U3605/CO (STP_ADDF_V1_0P5)                         0.06       1.64 f
+  core/U3607/CO (STP_ADDF_V1_0P5)                         0.05       1.69 f
+  core/U3217/X (STP_EO3_0P5)                              0.08       1.78 f
+  core/U3218/X (STP_EO3_0P5)                              0.09       1.86 f
+  core/U3219/X (STP_EO3_0P5)                              0.09       1.95 f
+  core/U3220/X (STP_EO3_0P5)                              0.09       2.04 f
+  core/U3221/X (STP_EO3_0P5)                              0.09       2.14 f
+  core/U3222/X (STP_AO2BB2_0P5)                           0.04       2.18 f
+  core/U873/X (STP_OA2BB2_0P5)                            0.05       2.23 f
+  core/U3299/X (STP_EO3_0P5)                              0.09       2.32 f
+  core/U3300/X (STP_EO3_0P5)                              0.10       2.42 f
+  core/U3302/X (STP_EO3_0P5)                              0.06       2.47 r
+  core/U3312/X (STP_EO3_0P5)                              0.05       2.52 f
+  core/U3318/X (STP_AO2BB2_0P5)                           0.04       2.57 f
+  core/value_q_reg[1][26][6]/D (STP_FDPHQ_1)              0.00       2.57 f
+  data arrival time                                                  2.57
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/value_q_reg[1][26][6]/CK (STP_FDPHQ_1)             0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: core/chunk_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/value_q_reg[1][2][6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fwht_h5_c8_e1_f1   ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_HIGH_L5_CHUNK8_EARLY_EXIT1_FUSE_INPUT1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT2_13
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT4_6
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT8_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/chunk_q_reg[0]/CK (STP_FDPRBQ_1)                   0.00       0.00 r
+  core/chunk_q_reg[0]/Q (STP_FDPRBQ_1)                    0.05       0.05 f
+  core/U429/X (STP_NR2_G_0P8)                             0.17       0.22 r
+  core/U1501/X (STP_BUF_1)                                0.10       0.31 r
+  core/U2141/X (STP_BUF_1)                                0.12       0.44 r
+  core/U3820/X (STP_AOI22_0P5)                            0.04       0.48 f
+  core/U620/X (STP_AOI21_0P75)                            0.03       0.51 r
+  core/U3822/X (STP_EO3_0P5)                              0.08       0.58 f
+  core/U3823/X (STP_EO3_0P5)                              0.09       0.67 f
+  core/U3824/X (STP_EO3_0P5)                              0.09       0.76 f
+  core/U3825/X (STP_EO3_0P5)                              0.22       0.98 r
+  core/histogram[28].sum_u/positive_i[5] (sparse_signed_sum_tree_COUNT8_3)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/positive_i[1] (sparse_signed_sum_tree_COUNT4_6)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/positive_i[1] (sparse_signed_sum_tree_COUNT2_13)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/positive_i[0] (sparse_signed_sum_tree_COUNT1_26)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/U3/X (STP_NR2B_V1DG_1)
+                                                          0.05       1.02 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/sum_o[1] (sparse_signed_sum_tree_COUNT1_26)
+                                                          0.00       1.02 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/U4/S (STP_ADDF_V1_0P5)
+                                                          0.09       1.11 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/U2/X (STP_INV_S_0P65)
+                                                          0.02       1.13 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/sum_o[1] (sparse_signed_sum_tree_COUNT2_13)
+                                                          0.00       1.13 f
+  core/histogram[28].sum_u/branch.right_u/U6/CO (STP_ADDF_V1_0P5)
+                                                          0.05       1.18 f
+  core/histogram[28].sum_u/branch.right_u/U5/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.26 r
+  core/histogram[28].sum_u/branch.right_u/sum_o[2] (sparse_signed_sum_tree_COUNT4_6)
+                                                          0.00       1.26 r
+  core/histogram[28].sum_u/intadd_109/U3/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.34 f
+  core/histogram[28].sum_u/sum_o[2] (sparse_signed_sum_tree_COUNT8_3)
+                                                          0.00       1.34 f
+  core/intadd_103/U4/CO (STP_ADDF_V1_0P5)                 0.05       1.40 f
+  core/intadd_103/U3/S (STP_ADDF_V1_0P5)                  0.08       1.48 r
+  core/U744/X (STP_INV_S_0P65)                            0.02       1.50 f
+  core/U441/X (STP_OA2BB2_0P5)                            0.05       1.54 f
+  core/U435/X (STP_INV_S_0P65)                            0.02       1.56 r
+  core/U3214/X (STP_AOI22_0P5)                            0.03       1.59 f
+  core/U3605/CO (STP_ADDF_V1_0P5)                         0.06       1.64 f
+  core/U3607/CO (STP_ADDF_V1_0P5)                         0.05       1.69 f
+  core/U3217/X (STP_EO3_0P5)                              0.08       1.78 f
+  core/U3218/X (STP_EO3_0P5)                              0.09       1.86 f
+  core/U3219/X (STP_EO3_0P5)                              0.09       1.95 f
+  core/U3220/X (STP_EO3_0P5)                              0.09       2.04 f
+  core/U3221/X (STP_EO3_0P5)                              0.09       2.14 f
+  core/U3222/X (STP_AO2BB2_0P5)                           0.04       2.18 f
+  core/U873/X (STP_OA2BB2_0P5)                            0.05       2.23 f
+  core/U3299/X (STP_EO3_0P5)                              0.09       2.32 f
+  core/U3300/X (STP_EO3_0P5)                              0.10       2.42 f
+  core/U3302/X (STP_EO3_0P5)                              0.06       2.47 r
+  core/U3303/X (STP_EO3_0P5)                              0.05       2.52 f
+  core/U3304/X (STP_AO2BB2_0P5)                           0.04       2.57 f
+  core/value_q_reg[1][2][6]/D (STP_FDPHQ_1)               0.00       2.57 f
+  data arrival time                                                  2.57
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/value_q_reg[1][2][6]/CK (STP_FDPHQ_1)              0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: core/chunk_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/value_q_reg[1][18][6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fwht_h5_c8_e1_f1   ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  selector_search_fwht_compact_HIGH_L5_CHUNK8_EARLY_EXIT1_FUSE_INPUT1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT2_13
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT4_6
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  sparse_signed_sum_tree_COUNT8_3
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/chunk_q_reg[0]/CK (STP_FDPRBQ_1)                   0.00       0.00 r
+  core/chunk_q_reg[0]/Q (STP_FDPRBQ_1)                    0.05       0.05 f
+  core/U429/X (STP_NR2_G_0P8)                             0.17       0.22 r
+  core/U1501/X (STP_BUF_1)                                0.10       0.31 r
+  core/U2141/X (STP_BUF_1)                                0.12       0.44 r
+  core/U3820/X (STP_AOI22_0P5)                            0.04       0.48 f
+  core/U620/X (STP_AOI21_0P75)                            0.03       0.51 r
+  core/U3822/X (STP_EO3_0P5)                              0.08       0.58 f
+  core/U3823/X (STP_EO3_0P5)                              0.09       0.67 f
+  core/U3824/X (STP_EO3_0P5)                              0.09       0.76 f
+  core/U3825/X (STP_EO3_0P5)                              0.22       0.98 r
+  core/histogram[28].sum_u/positive_i[5] (sparse_signed_sum_tree_COUNT8_3)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/positive_i[1] (sparse_signed_sum_tree_COUNT4_6)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/positive_i[1] (sparse_signed_sum_tree_COUNT2_13)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/positive_i[0] (sparse_signed_sum_tree_COUNT1_26)
+                                                          0.00       0.98 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/U3/X (STP_NR2B_V1DG_1)
+                                                          0.05       1.02 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u/sum_o[1] (sparse_signed_sum_tree_COUNT1_26)
+                                                          0.00       1.02 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/U4/S (STP_ADDF_V1_0P5)
+                                                          0.09       1.11 r
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/U2/X (STP_INV_S_0P65)
+                                                          0.02       1.13 f
+  core/histogram[28].sum_u/branch.right_u/branch.left_u/sum_o[1] (sparse_signed_sum_tree_COUNT2_13)
+                                                          0.00       1.13 f
+  core/histogram[28].sum_u/branch.right_u/U6/CO (STP_ADDF_V1_0P5)
+                                                          0.05       1.18 f
+  core/histogram[28].sum_u/branch.right_u/U5/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.26 r
+  core/histogram[28].sum_u/branch.right_u/sum_o[2] (sparse_signed_sum_tree_COUNT4_6)
+                                                          0.00       1.26 r
+  core/histogram[28].sum_u/intadd_109/U3/S (STP_ADDF_V1_0P5)
+                                                          0.08       1.34 f
+  core/histogram[28].sum_u/sum_o[2] (sparse_signed_sum_tree_COUNT8_3)
+                                                          0.00       1.34 f
+  core/intadd_103/U4/CO (STP_ADDF_V1_0P5)                 0.05       1.40 f
+  core/intadd_103/U3/S (STP_ADDF_V1_0P5)                  0.08       1.48 r
+  core/U744/X (STP_INV_S_0P65)                            0.02       1.50 f
+  core/U441/X (STP_OA2BB2_0P5)                            0.05       1.54 f
+  core/U435/X (STP_INV_S_0P65)                            0.02       1.56 r
+  core/U3214/X (STP_AOI22_0P5)                            0.03       1.59 f
+  core/U3605/CO (STP_ADDF_V1_0P5)                         0.06       1.64 f
+  core/U3607/CO (STP_ADDF_V1_0P5)                         0.05       1.69 f
+  core/U3217/X (STP_EO3_0P5)                              0.08       1.78 f
+  core/U3218/X (STP_EO3_0P5)                              0.09       1.86 f
+  core/U3219/X (STP_EO3_0P5)                              0.09       1.95 f
+  core/U3220/X (STP_EO3_0P5)                              0.09       2.04 f
+  core/U3221/X (STP_EO3_0P5)                              0.09       2.14 f
+  core/U3222/X (STP_AO2BB2_0P5)                           0.04       2.18 f
+  core/U873/X (STP_OA2BB2_0P5)                            0.05       2.23 f
+  core/U3299/X (STP_EO3_0P5)                              0.09       2.32 f
+  core/U3300/X (STP_EO3_0P5)                              0.10       2.42 f
+  core/U3302/X (STP_EO3_0P5)                              0.06       2.47 r
+  core/U3303/X (STP_EO3_0P5)                              0.05       2.52 f
+  core/U3305/X (STP_AO2BB2_0P5)                           0.04       2.57 f
+  core/value_q_reg[1][18][6]/D (STP_FDPHQ_1)              0.00       2.57 f
+  data arrival time                                                  2.57
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/value_q_reg[1][18][6]/CK (STP_FDPHQ_1)             0.00       3.13 r
+  library setup time                                     -0.05       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -2.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+1

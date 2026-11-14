@@ -1,0 +1,10 @@
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Nov 14 23:03 2026
+PASS mapped/golden BCH R=117 frames=128 beats=1152 random output stalls
+$finish called from file "/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/bch_encoder/encoder_pipeline_tb.sv", line 73.
+$finish at simulation time              4422551
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 4422551 ps
+CPU Time:      0.900 seconds;       Data structure size:   0.0Mb
+Sat Nov 14 23:03:12 2026

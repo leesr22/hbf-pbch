@@ -1,0 +1,44 @@
+ 
+****************************************
+Report : area
+Design : pbch_scan_label_bcase
+Version: Q-2019.12-SP5-5
+Date   : Sat Nov 14 22:03:34 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    um28nchslogl35hsl140f_ssgwc0p9v125c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db)
+
+Number of ports:                           26
+Number of nets:                          8769
+Number of cells:                         8756
+Number of combinational cells:           8756
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                       1284
+Number of references:                      45
+
+Combinational area:               5641.271948
+Buf/Inv area:                      431.423994
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  5641.271948
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+pbch_scan_label_bcase             5641.2719    100.0  5641.2719     0.0000  0.0000  pbch_scan_label_bcase
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+Total                                                 5641.2719     0.0000  0.0000
+
+1

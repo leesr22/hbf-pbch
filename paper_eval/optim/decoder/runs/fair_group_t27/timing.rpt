@@ -1,0 +1,678 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : pbch_dec_fair_group_t27
+Version: Q-2019.12-SP5-5
+Date   : Sat Nov 14 23:16:05 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: SSGWC0P9V125C   Library: um28nchslogl35hsl140f_ssgwc0p9v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: core/chien_u/term_q_reg[14][8]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/chien_u/success_o_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_dec_fair_group_t27
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_fair_chien_t27_13_27_4447_4096_64_0_31_201b
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/chien_u/term_q_reg[14][8]/CK (STP_FDPRBQ_1)        0.00 #     0.00 r
+  core/chien_u/term_q_reg[14][8]/Q (STP_FDPRBQ_1)         0.08       0.08 r
+  core/chien_u/U822/X (STP_INV_S_0P65)                    0.08       0.15 f
+  core/chien_u/U2203/X (STP_AOI22_0P5)                    0.15       0.31 r
+  core/chien_u/U150/X (STP_INV_S_0P65)                    0.10       0.41 f
+  core/chien_u/U2204/X (STP_AOI22_0P5)                    0.17       0.58 r
+  core/chien_u/U111/X (STP_INV_S_0P65)                    0.10       0.68 f
+  core/chien_u/U5445/X (STP_AOI22_0P5)                    0.11       0.79 r
+  core/chien_u/U58/X (STP_INV_S_0P65)                     0.05       0.84 f
+  core/chien_u/U5446/X (STP_AOI22_0P5)                    0.05       0.89 r
+  core/chien_u/U20478/X (STP_EO3_0P5)                     0.09       0.97 f
+  core/chien_u/U20479/X (STP_EO3_0P5)                     0.09       1.07 f
+  core/chien_u/U20480/X (STP_EO3_0P5)                     0.09       1.15 f
+  core/chien_u/U20481/X (STP_EO3_0P5)                     0.09       1.24 f
+  core/chien_u/U20482/X (STP_EO3_0P5)                     0.09       1.33 f
+  core/chien_u/U20483/X (STP_EO3_0P5)                     0.09       1.42 f
+  core/chien_u/U20484/X (STP_EO3_0P5)                     0.09       1.51 f
+  core/chien_u/U20512/X (STP_AOI211_0P5)                  0.03       1.54 r
+  core/chien_u/U18/X (STP_OAI21_0P5)                      0.03       1.57 f
+  core/chien_u/U628/X (STP_NR4_0P5)                       0.06       1.63 r
+  core/chien_u/U22010/CO (STP_ADDF_V1_0P5)                0.06       1.69 r
+  core/chien_u/U23883/S (STP_ADDF_V1_0P5)                 0.08       1.77 f
+  core/chien_u/U20777/S (STP_ADDF_V1_0P5)                 0.08       1.85 r
+  core/chien_u/intadd_4/U5/S (STP_ADDF_V1_0P5)            0.09       1.93 f
+  core/chien_u/intadd_10/U3/CO (STP_ADDF_V1_0P5)          0.06       1.99 f
+  core/chien_u/intadd_10/U2/CO (STP_ADDF_V1_0P5)          0.06       2.05 f
+  core/chien_u/intadd_4/U3/S (STP_ADDF_V1_0P5)            0.09       2.13 r
+  core/chien_u/intadd_5/U2/CO (STP_ADDF_V1_0P5)           0.05       2.19 r
+  core/chien_u/intadd_4/U2/S (STP_ADDF_V1_0P5)            0.08       2.27 f
+  core/chien_u/U5/X (STP_ND2_S_0P8)                       0.02       2.28 r
+  core/chien_u/U12791/X (STP_AOAI211_0P5)                 0.04       2.32 f
+  core/chien_u/intadd_6/U2/S (STP_ADDF_V1_0P5)            0.08       2.40 f
+  core/chien_u/U551/X (STP_INV_S_0P65)                    0.02       2.42 r
+  core/chien_u/U3/X (STP_OAI22_0P75)                      0.02       2.44 f
+  core/chien_u/U34690/X (STP_AOI221_0P5)                  0.04       2.47 r
+  core/chien_u/U41/X (STP_OAI211_0P5)                     0.03       2.51 f
+  core/chien_u/U889/X (STP_NR4_0P5)                       0.05       2.55 r
+  core/chien_u/U34692/X (STP_OAI2111_1)                   0.04       2.60 f
+  core/chien_u/U34693/X (STP_AO21B_1)                     0.02       2.61 r
+  core/chien_u/success_o_reg/D (STP_FDPRBQ_1)             0.00       2.61 r
+  data arrival time                                                  2.61
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/chien_u/success_o_reg/CK (STP_FDPRBQ_1)            0.00       3.13 r
+  library setup time                                     -0.05       3.09
+  data required time                                                 3.09
+  --------------------------------------------------------------------------
+  data required time                                                 3.09
+  data arrival time                                                 -2.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.47
+
+
+  Startpoint: core/chien_u/term_q_reg[14][8]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/chien_u/roots_q_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_dec_fair_group_t27
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_fair_chien_t27_13_27_4447_4096_64_0_31_201b
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/chien_u/term_q_reg[14][8]/CK (STP_FDPRBQ_1)        0.00 #     0.00 r
+  core/chien_u/term_q_reg[14][8]/Q (STP_FDPRBQ_1)         0.08       0.08 r
+  core/chien_u/U822/X (STP_INV_S_0P65)                    0.08       0.15 f
+  core/chien_u/U2203/X (STP_AOI22_0P5)                    0.15       0.31 r
+  core/chien_u/U150/X (STP_INV_S_0P65)                    0.10       0.41 f
+  core/chien_u/U2204/X (STP_AOI22_0P5)                    0.17       0.58 r
+  core/chien_u/U111/X (STP_INV_S_0P65)                    0.10       0.68 f
+  core/chien_u/U5445/X (STP_AOI22_0P5)                    0.11       0.79 r
+  core/chien_u/U58/X (STP_INV_S_0P65)                     0.05       0.84 f
+  core/chien_u/U5446/X (STP_AOI22_0P5)                    0.05       0.89 r
+  core/chien_u/U20478/X (STP_EO3_0P5)                     0.09       0.97 f
+  core/chien_u/U20479/X (STP_EO3_0P5)                     0.09       1.07 f
+  core/chien_u/U20480/X (STP_EO3_0P5)                     0.09       1.15 f
+  core/chien_u/U20481/X (STP_EO3_0P5)                     0.09       1.24 f
+  core/chien_u/U20482/X (STP_EO3_0P5)                     0.09       1.33 f
+  core/chien_u/U20483/X (STP_EO3_0P5)                     0.09       1.42 f
+  core/chien_u/U20484/X (STP_EO3_0P5)                     0.09       1.51 f
+  core/chien_u/U20512/X (STP_AOI211_0P5)                  0.03       1.54 r
+  core/chien_u/U18/X (STP_OAI21_0P5)                      0.03       1.57 f
+  core/chien_u/U628/X (STP_NR4_0P5)                       0.06       1.63 r
+  core/chien_u/U22010/CO (STP_ADDF_V1_0P5)                0.06       1.69 r
+  core/chien_u/U23883/S (STP_ADDF_V1_0P5)                 0.08       1.77 f
+  core/chien_u/U20777/S (STP_ADDF_V1_0P5)                 0.08       1.85 r
+  core/chien_u/intadd_4/U5/S (STP_ADDF_V1_0P5)            0.09       1.93 f
+  core/chien_u/intadd_10/U3/CO (STP_ADDF_V1_0P5)          0.06       1.99 f
+  core/chien_u/intadd_10/U2/CO (STP_ADDF_V1_0P5)          0.06       2.05 f
+  core/chien_u/intadd_4/U3/S (STP_ADDF_V1_0P5)            0.09       2.13 r
+  core/chien_u/intadd_5/U2/CO (STP_ADDF_V1_0P5)           0.05       2.19 r
+  core/chien_u/intadd_4/U2/S (STP_ADDF_V1_0P5)            0.08       2.27 f
+  core/chien_u/U5/X (STP_ND2_S_0P8)                       0.02       2.28 r
+  core/chien_u/U12791/X (STP_AOAI211_0P5)                 0.04       2.32 f
+  core/chien_u/intadd_6/U2/CO (STP_ADDF_V1_0P5)           0.06       2.39 f
+  core/chien_u/U34681/X (STP_AO2BB2_0P5)                  0.04       2.43 f
+  core/chien_u/U34682/X (STP_NR2_G_0P5)                   0.03       2.46 r
+  core/chien_u/U34683/X (STP_AOAI211_0P5)                 0.02       2.48 f
+  core/chien_u/U34684/X (STP_AO21B_1)                     0.02       2.50 r
+  core/chien_u/roots_q_reg[5]/D (STP_FDPRBQ_1)            0.00       2.50 r
+  data arrival time                                                  2.50
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/chien_u/roots_q_reg[5]/CK (STP_FDPRBQ_1)           0.00       3.13 r
+  library setup time                                     -0.05       3.09
+  data required time                                                 3.09
+  --------------------------------------------------------------------------
+  data required time                                                 3.09
+  data arrival time                                                 -2.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.59
+
+
+  Startpoint: core/chien_u/term_q_reg[14][8]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/chien_u/error_count_o_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_dec_fair_group_t27
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_fair_chien_t27_13_27_4447_4096_64_0_31_201b
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/chien_u/term_q_reg[14][8]/CK (STP_FDPRBQ_1)        0.00 #     0.00 r
+  core/chien_u/term_q_reg[14][8]/Q (STP_FDPRBQ_1)         0.08       0.08 r
+  core/chien_u/U822/X (STP_INV_S_0P65)                    0.08       0.15 f
+  core/chien_u/U2203/X (STP_AOI22_0P5)                    0.15       0.31 r
+  core/chien_u/U150/X (STP_INV_S_0P65)                    0.10       0.41 f
+  core/chien_u/U2204/X (STP_AOI22_0P5)                    0.17       0.58 r
+  core/chien_u/U111/X (STP_INV_S_0P65)                    0.10       0.68 f
+  core/chien_u/U5445/X (STP_AOI22_0P5)                    0.11       0.79 r
+  core/chien_u/U58/X (STP_INV_S_0P65)                     0.05       0.84 f
+  core/chien_u/U5446/X (STP_AOI22_0P5)                    0.05       0.89 r
+  core/chien_u/U20478/X (STP_EO3_0P5)                     0.09       0.97 f
+  core/chien_u/U20479/X (STP_EO3_0P5)                     0.09       1.07 f
+  core/chien_u/U20480/X (STP_EO3_0P5)                     0.09       1.15 f
+  core/chien_u/U20481/X (STP_EO3_0P5)                     0.09       1.24 f
+  core/chien_u/U20482/X (STP_EO3_0P5)                     0.09       1.33 f
+  core/chien_u/U20483/X (STP_EO3_0P5)                     0.09       1.42 f
+  core/chien_u/U20484/X (STP_EO3_0P5)                     0.09       1.51 f
+  core/chien_u/U20512/X (STP_AOI211_0P5)                  0.03       1.54 r
+  core/chien_u/U18/X (STP_OAI21_0P5)                      0.03       1.57 f
+  core/chien_u/U628/X (STP_NR4_0P5)                       0.06       1.63 r
+  core/chien_u/U22010/CO (STP_ADDF_V1_0P5)                0.06       1.69 r
+  core/chien_u/U23883/S (STP_ADDF_V1_0P5)                 0.08       1.77 f
+  core/chien_u/U20777/S (STP_ADDF_V1_0P5)                 0.08       1.85 r
+  core/chien_u/intadd_4/U5/S (STP_ADDF_V1_0P5)            0.09       1.93 f
+  core/chien_u/intadd_10/U3/CO (STP_ADDF_V1_0P5)          0.06       1.99 f
+  core/chien_u/intadd_10/U2/CO (STP_ADDF_V1_0P5)          0.06       2.05 f
+  core/chien_u/intadd_4/U3/S (STP_ADDF_V1_0P5)            0.09       2.13 r
+  core/chien_u/intadd_5/U2/CO (STP_ADDF_V1_0P5)           0.05       2.19 r
+  core/chien_u/intadd_4/U2/S (STP_ADDF_V1_0P5)            0.08       2.27 f
+  core/chien_u/U5/X (STP_ND2_S_0P8)                       0.02       2.28 r
+  core/chien_u/U12791/X (STP_AOAI211_0P5)                 0.04       2.32 f
+  core/chien_u/intadd_6/U2/S (STP_ADDF_V1_0P5)            0.09       2.42 r
+  core/chien_u/U892/X (STP_AO22_0P5)                      0.04       2.46 r
+  core/chien_u/error_count_o_reg[4]/D (STP_FDPRBQ_1)      0.00       2.46 r
+  data arrival time                                                  2.46
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/chien_u/error_count_o_reg[4]/CK (STP_FDPRBQ_1)     0.00       3.13 r
+  library setup time                                     -0.05       3.09
+  data required time                                                 3.09
+  --------------------------------------------------------------------------
+  data required time                                                 3.09
+  data arrival time                                                 -2.46
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.63
+
+
+  Startpoint: core/chien_u/term_q_reg[14][8]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/chien_u/roots_q_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_dec_fair_group_t27
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_fair_chien_t27_13_27_4447_4096_64_0_31_201b
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/chien_u/term_q_reg[14][8]/CK (STP_FDPRBQ_1)        0.00 #     0.00 r
+  core/chien_u/term_q_reg[14][8]/Q (STP_FDPRBQ_1)         0.08       0.08 r
+  core/chien_u/U822/X (STP_INV_S_0P65)                    0.08       0.15 f
+  core/chien_u/U2203/X (STP_AOI22_0P5)                    0.15       0.31 r
+  core/chien_u/U150/X (STP_INV_S_0P65)                    0.10       0.41 f
+  core/chien_u/U2204/X (STP_AOI22_0P5)                    0.17       0.58 r
+  core/chien_u/U111/X (STP_INV_S_0P65)                    0.10       0.68 f
+  core/chien_u/U5445/X (STP_AOI22_0P5)                    0.11       0.79 r
+  core/chien_u/U58/X (STP_INV_S_0P65)                     0.05       0.84 f
+  core/chien_u/U5446/X (STP_AOI22_0P5)                    0.05       0.89 r
+  core/chien_u/U20478/X (STP_EO3_0P5)                     0.09       0.97 f
+  core/chien_u/U20479/X (STP_EO3_0P5)                     0.09       1.07 f
+  core/chien_u/U20480/X (STP_EO3_0P5)                     0.09       1.15 f
+  core/chien_u/U20481/X (STP_EO3_0P5)                     0.09       1.24 f
+  core/chien_u/U20482/X (STP_EO3_0P5)                     0.09       1.33 f
+  core/chien_u/U20483/X (STP_EO3_0P5)                     0.09       1.42 f
+  core/chien_u/U20484/X (STP_EO3_0P5)                     0.09       1.51 f
+  core/chien_u/U20512/X (STP_AOI211_0P5)                  0.03       1.54 r
+  core/chien_u/U18/X (STP_OAI21_0P5)                      0.03       1.57 f
+  core/chien_u/U628/X (STP_NR4_0P5)                       0.06       1.63 r
+  core/chien_u/U22010/CO (STP_ADDF_V1_0P5)                0.06       1.69 r
+  core/chien_u/U23883/S (STP_ADDF_V1_0P5)                 0.08       1.77 f
+  core/chien_u/U20777/S (STP_ADDF_V1_0P5)                 0.08       1.85 r
+  core/chien_u/intadd_4/U5/S (STP_ADDF_V1_0P5)            0.09       1.93 f
+  core/chien_u/intadd_10/U3/CO (STP_ADDF_V1_0P5)          0.06       1.99 f
+  core/chien_u/intadd_10/U2/CO (STP_ADDF_V1_0P5)          0.06       2.05 f
+  core/chien_u/intadd_4/U3/S (STP_ADDF_V1_0P5)            0.09       2.13 r
+  core/chien_u/intadd_5/U2/CO (STP_ADDF_V1_0P5)           0.05       2.19 r
+  core/chien_u/intadd_4/U2/S (STP_ADDF_V1_0P5)            0.08       2.27 f
+  core/chien_u/U5/X (STP_ND2_S_0P8)                       0.02       2.28 r
+  core/chien_u/U12791/X (STP_AOAI211_0P5)                 0.04       2.32 f
+  core/chien_u/intadd_6/U2/S (STP_ADDF_V1_0P5)            0.09       2.42 r
+  core/chien_u/U893/X (STP_AO22_0P5)                      0.04       2.46 r
+  core/chien_u/roots_q_reg[4]/D (STP_FDPRBQ_1)            0.00       2.46 r
+  data arrival time                                                  2.46
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/chien_u/roots_q_reg[4]/CK (STP_FDPRBQ_1)           0.00       3.13 r
+  library setup time                                     -0.05       3.09
+  data required time                                                 3.09
+  --------------------------------------------------------------------------
+  data required time                                                 3.09
+  data arrival time                                                 -2.46
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.63
+
+
+  Startpoint: core/chien_u/term_q_reg[14][8]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/chien_u/error_count_o_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_dec_fair_group_t27
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_fair_chien_t27_13_27_4447_4096_64_0_31_201b
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/chien_u/term_q_reg[14][8]/CK (STP_FDPRBQ_1)        0.00 #     0.00 r
+  core/chien_u/term_q_reg[14][8]/Q (STP_FDPRBQ_1)         0.08       0.08 r
+  core/chien_u/U822/X (STP_INV_S_0P65)                    0.08       0.15 f
+  core/chien_u/U2203/X (STP_AOI22_0P5)                    0.15       0.31 r
+  core/chien_u/U150/X (STP_INV_S_0P65)                    0.10       0.41 f
+  core/chien_u/U2204/X (STP_AOI22_0P5)                    0.17       0.58 r
+  core/chien_u/U111/X (STP_INV_S_0P65)                    0.10       0.68 f
+  core/chien_u/U5445/X (STP_AOI22_0P5)                    0.11       0.79 r
+  core/chien_u/U58/X (STP_INV_S_0P65)                     0.05       0.84 f
+  core/chien_u/U5446/X (STP_AOI22_0P5)                    0.05       0.89 r
+  core/chien_u/U20478/X (STP_EO3_0P5)                     0.09       0.97 f
+  core/chien_u/U20479/X (STP_EO3_0P5)                     0.09       1.07 f
+  core/chien_u/U20480/X (STP_EO3_0P5)                     0.09       1.15 f
+  core/chien_u/U20481/X (STP_EO3_0P5)                     0.09       1.24 f
+  core/chien_u/U20482/X (STP_EO3_0P5)                     0.09       1.33 f
+  core/chien_u/U20483/X (STP_EO3_0P5)                     0.09       1.42 f
+  core/chien_u/U20484/X (STP_EO3_0P5)                     0.09       1.51 f
+  core/chien_u/U20512/X (STP_AOI211_0P5)                  0.03       1.54 r
+  core/chien_u/U18/X (STP_OAI21_0P5)                      0.03       1.57 f
+  core/chien_u/U628/X (STP_NR4_0P5)                       0.06       1.63 r
+  core/chien_u/U22010/CO (STP_ADDF_V1_0P5)                0.06       1.69 r
+  core/chien_u/U23883/S (STP_ADDF_V1_0P5)                 0.08       1.77 f
+  core/chien_u/U20777/S (STP_ADDF_V1_0P5)                 0.08       1.85 r
+  core/chien_u/intadd_4/U5/S (STP_ADDF_V1_0P5)            0.09       1.93 f
+  core/chien_u/intadd_10/U3/CO (STP_ADDF_V1_0P5)          0.06       1.99 f
+  core/chien_u/intadd_10/U2/CO (STP_ADDF_V1_0P5)          0.06       2.05 f
+  core/chien_u/intadd_4/U3/S (STP_ADDF_V1_0P5)            0.09       2.13 r
+  core/chien_u/intadd_5/U2/S (STP_ADDF_V1_0P5)            0.08       2.21 f
+  core/chien_u/U34680/X (STP_AO21B_1)                     0.03       2.25 f
+  core/chien_u/intadd_6/U3/S (STP_ADDF_V1_0P5)            0.09       2.33 r
+  core/chien_u/U891/X (STP_AO22_0P5)                      0.04       2.37 r
+  core/chien_u/error_count_o_reg[3]/D (STP_FDPRBQ_1)      0.00       2.37 r
+  data arrival time                                                  2.37
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/chien_u/error_count_o_reg[3]/CK (STP_FDPRBQ_1)     0.00       3.13 r
+  library setup time                                     -0.05       3.09
+  data required time                                                 3.09
+  --------------------------------------------------------------------------
+  data required time                                                 3.09
+  data arrival time                                                 -2.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.71
+
+
+  Startpoint: core/chien_u/term_q_reg[14][8]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/chien_u/roots_q_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_dec_fair_group_t27
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_fair_chien_t27_13_27_4447_4096_64_0_31_201b
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/chien_u/term_q_reg[14][8]/CK (STP_FDPRBQ_1)        0.00 #     0.00 r
+  core/chien_u/term_q_reg[14][8]/Q (STP_FDPRBQ_1)         0.08       0.08 r
+  core/chien_u/U822/X (STP_INV_S_0P65)                    0.08       0.15 f
+  core/chien_u/U2203/X (STP_AOI22_0P5)                    0.15       0.31 r
+  core/chien_u/U150/X (STP_INV_S_0P65)                    0.10       0.41 f
+  core/chien_u/U2204/X (STP_AOI22_0P5)                    0.17       0.58 r
+  core/chien_u/U111/X (STP_INV_S_0P65)                    0.10       0.68 f
+  core/chien_u/U5445/X (STP_AOI22_0P5)                    0.11       0.79 r
+  core/chien_u/U58/X (STP_INV_S_0P65)                     0.05       0.84 f
+  core/chien_u/U5446/X (STP_AOI22_0P5)                    0.05       0.89 r
+  core/chien_u/U20478/X (STP_EO3_0P5)                     0.09       0.97 f
+  core/chien_u/U20479/X (STP_EO3_0P5)                     0.09       1.07 f
+  core/chien_u/U20480/X (STP_EO3_0P5)                     0.09       1.15 f
+  core/chien_u/U20481/X (STP_EO3_0P5)                     0.09       1.24 f
+  core/chien_u/U20482/X (STP_EO3_0P5)                     0.09       1.33 f
+  core/chien_u/U20483/X (STP_EO3_0P5)                     0.09       1.42 f
+  core/chien_u/U20484/X (STP_EO3_0P5)                     0.09       1.51 f
+  core/chien_u/U20512/X (STP_AOI211_0P5)                  0.03       1.54 r
+  core/chien_u/U18/X (STP_OAI21_0P5)                      0.03       1.57 f
+  core/chien_u/U628/X (STP_NR4_0P5)                       0.06       1.63 r
+  core/chien_u/U22010/CO (STP_ADDF_V1_0P5)                0.06       1.69 r
+  core/chien_u/U23883/S (STP_ADDF_V1_0P5)                 0.08       1.77 f
+  core/chien_u/U20777/S (STP_ADDF_V1_0P5)                 0.08       1.85 r
+  core/chien_u/intadd_4/U5/S (STP_ADDF_V1_0P5)            0.09       1.93 f
+  core/chien_u/intadd_10/U3/CO (STP_ADDF_V1_0P5)          0.06       1.99 f
+  core/chien_u/intadd_10/U2/CO (STP_ADDF_V1_0P5)          0.06       2.05 f
+  core/chien_u/intadd_4/U3/S (STP_ADDF_V1_0P5)            0.09       2.13 r
+  core/chien_u/intadd_5/U2/S (STP_ADDF_V1_0P5)            0.08       2.21 f
+  core/chien_u/U34680/X (STP_AO21B_1)                     0.03       2.25 f
+  core/chien_u/intadd_6/U3/S (STP_ADDF_V1_0P5)            0.09       2.33 r
+  core/chien_u/U894/X (STP_AO22_0P5)                      0.04       2.37 r
+  core/chien_u/roots_q_reg[3]/D (STP_FDPRBQ_1)            0.00       2.37 r
+  data arrival time                                                  2.37
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/chien_u/roots_q_reg[3]/CK (STP_FDPRBQ_1)           0.00       3.13 r
+  library setup time                                     -0.05       3.09
+  data required time                                                 3.09
+  --------------------------------------------------------------------------
+  data required time                                                 3.09
+  data arrival time                                                 -2.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.71
+
+
+  Startpoint: core/chien_u/term_q_reg[14][8]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/chien_u/error_count_o_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_dec_fair_group_t27
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_fair_chien_t27_13_27_4447_4096_64_0_31_201b
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/chien_u/term_q_reg[14][8]/CK (STP_FDPRBQ_1)        0.00 #     0.00 r
+  core/chien_u/term_q_reg[14][8]/Q (STP_FDPRBQ_1)         0.08       0.08 r
+  core/chien_u/U822/X (STP_INV_S_0P65)                    0.08       0.15 f
+  core/chien_u/U2203/X (STP_AOI22_0P5)                    0.15       0.31 r
+  core/chien_u/U150/X (STP_INV_S_0P65)                    0.10       0.41 f
+  core/chien_u/U2204/X (STP_AOI22_0P5)                    0.17       0.58 r
+  core/chien_u/U111/X (STP_INV_S_0P65)                    0.10       0.68 f
+  core/chien_u/U5445/X (STP_AOI22_0P5)                    0.11       0.79 r
+  core/chien_u/U58/X (STP_INV_S_0P65)                     0.05       0.84 f
+  core/chien_u/U5446/X (STP_AOI22_0P5)                    0.05       0.89 r
+  core/chien_u/U20478/X (STP_EO3_0P5)                     0.09       0.97 f
+  core/chien_u/U20479/X (STP_EO3_0P5)                     0.09       1.07 f
+  core/chien_u/U20480/X (STP_EO3_0P5)                     0.09       1.15 f
+  core/chien_u/U20481/X (STP_EO3_0P5)                     0.09       1.24 f
+  core/chien_u/U20482/X (STP_EO3_0P5)                     0.09       1.33 f
+  core/chien_u/U20483/X (STP_EO3_0P5)                     0.09       1.42 f
+  core/chien_u/U20484/X (STP_EO3_0P5)                     0.09       1.51 f
+  core/chien_u/U20512/X (STP_AOI211_0P5)                  0.03       1.54 r
+  core/chien_u/U18/X (STP_OAI21_0P5)                      0.03       1.57 f
+  core/chien_u/U628/X (STP_NR4_0P5)                       0.06       1.63 r
+  core/chien_u/U22010/CO (STP_ADDF_V1_0P5)                0.06       1.69 r
+  core/chien_u/U23883/S (STP_ADDF_V1_0P5)                 0.08       1.77 f
+  core/chien_u/U20777/S (STP_ADDF_V1_0P5)                 0.08       1.85 r
+  core/chien_u/intadd_4/U5/S (STP_ADDF_V1_0P5)            0.09       1.93 f
+  core/chien_u/intadd_10/U3/CO (STP_ADDF_V1_0P5)          0.06       1.99 f
+  core/chien_u/intadd_10/U2/S (STP_ADDF_V1_0P5)           0.08       2.07 r
+  core/chien_u/intadd_5/U3/S (STP_ADDF_V1_0P5)            0.08       2.15 f
+  core/chien_u/U34679/X (STP_AO21_1)                      0.04       2.19 f
+  core/chien_u/intadd_6/U4/S (STP_ADDF_V1_0P5)            0.08       2.27 r
+  core/chien_u/U890/X (STP_AO22_0P5)                      0.04       2.31 r
+  core/chien_u/error_count_o_reg[2]/D (STP_FDPRBQ_1)      0.00       2.31 r
+  data arrival time                                                  2.31
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/chien_u/error_count_o_reg[2]/CK (STP_FDPRBQ_1)     0.00       3.13 r
+  library setup time                                     -0.05       3.09
+  data required time                                                 3.09
+  --------------------------------------------------------------------------
+  data required time                                                 3.09
+  data arrival time                                                 -2.31
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.78
+
+
+  Startpoint: core/chien_u/term_q_reg[14][8]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/chien_u/roots_q_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_dec_fair_group_t27
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_fair_chien_t27_13_27_4447_4096_64_0_31_201b
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/chien_u/term_q_reg[14][8]/CK (STP_FDPRBQ_1)        0.00 #     0.00 r
+  core/chien_u/term_q_reg[14][8]/Q (STP_FDPRBQ_1)         0.08       0.08 r
+  core/chien_u/U822/X (STP_INV_S_0P65)                    0.08       0.15 f
+  core/chien_u/U2203/X (STP_AOI22_0P5)                    0.15       0.31 r
+  core/chien_u/U150/X (STP_INV_S_0P65)                    0.10       0.41 f
+  core/chien_u/U2204/X (STP_AOI22_0P5)                    0.17       0.58 r
+  core/chien_u/U111/X (STP_INV_S_0P65)                    0.10       0.68 f
+  core/chien_u/U5445/X (STP_AOI22_0P5)                    0.11       0.79 r
+  core/chien_u/U58/X (STP_INV_S_0P65)                     0.05       0.84 f
+  core/chien_u/U5446/X (STP_AOI22_0P5)                    0.05       0.89 r
+  core/chien_u/U20478/X (STP_EO3_0P5)                     0.09       0.97 f
+  core/chien_u/U20479/X (STP_EO3_0P5)                     0.09       1.07 f
+  core/chien_u/U20480/X (STP_EO3_0P5)                     0.09       1.15 f
+  core/chien_u/U20481/X (STP_EO3_0P5)                     0.09       1.24 f
+  core/chien_u/U20482/X (STP_EO3_0P5)                     0.09       1.33 f
+  core/chien_u/U20483/X (STP_EO3_0P5)                     0.09       1.42 f
+  core/chien_u/U20484/X (STP_EO3_0P5)                     0.09       1.51 f
+  core/chien_u/U20512/X (STP_AOI211_0P5)                  0.03       1.54 r
+  core/chien_u/U18/X (STP_OAI21_0P5)                      0.03       1.57 f
+  core/chien_u/U628/X (STP_NR4_0P5)                       0.06       1.63 r
+  core/chien_u/U22010/CO (STP_ADDF_V1_0P5)                0.06       1.69 r
+  core/chien_u/U23883/S (STP_ADDF_V1_0P5)                 0.08       1.77 f
+  core/chien_u/U20777/S (STP_ADDF_V1_0P5)                 0.08       1.85 r
+  core/chien_u/intadd_4/U5/S (STP_ADDF_V1_0P5)            0.09       1.93 f
+  core/chien_u/intadd_10/U3/CO (STP_ADDF_V1_0P5)          0.06       1.99 f
+  core/chien_u/intadd_10/U2/S (STP_ADDF_V1_0P5)           0.08       2.07 r
+  core/chien_u/intadd_5/U3/S (STP_ADDF_V1_0P5)            0.08       2.15 f
+  core/chien_u/U34679/X (STP_AO21_1)                      0.04       2.19 f
+  core/chien_u/intadd_6/U4/S (STP_ADDF_V1_0P5)            0.08       2.27 r
+  core/chien_u/U895/X (STP_AO22_0P5)                      0.04       2.31 r
+  core/chien_u/roots_q_reg[2]/D (STP_FDPRBQ_1)            0.00       2.31 r
+  data arrival time                                                  2.31
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/chien_u/roots_q_reg[2]/CK (STP_FDPRBQ_1)           0.00       3.13 r
+  library setup time                                     -0.05       3.09
+  data required time                                                 3.09
+  --------------------------------------------------------------------------
+  data required time                                                 3.09
+  data arrival time                                                 -2.31
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.78
+
+
+  Startpoint: core/chien_u/term_q_reg[14][8]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/chien_u/error_count_o_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_dec_fair_group_t27
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_fair_chien_t27_13_27_4447_4096_64_0_31_201b
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/chien_u/term_q_reg[14][8]/CK (STP_FDPRBQ_1)        0.00 #     0.00 r
+  core/chien_u/term_q_reg[14][8]/Q (STP_FDPRBQ_1)         0.08       0.08 r
+  core/chien_u/U822/X (STP_INV_S_0P65)                    0.08       0.15 f
+  core/chien_u/U2203/X (STP_AOI22_0P5)                    0.15       0.31 r
+  core/chien_u/U150/X (STP_INV_S_0P65)                    0.10       0.41 f
+  core/chien_u/U2204/X (STP_AOI22_0P5)                    0.17       0.58 r
+  core/chien_u/U111/X (STP_INV_S_0P65)                    0.10       0.68 f
+  core/chien_u/U5445/X (STP_AOI22_0P5)                    0.11       0.79 r
+  core/chien_u/U58/X (STP_INV_S_0P65)                     0.05       0.84 f
+  core/chien_u/U5446/X (STP_AOI22_0P5)                    0.05       0.89 r
+  core/chien_u/U20478/X (STP_EO3_0P5)                     0.09       0.97 f
+  core/chien_u/U20479/X (STP_EO3_0P5)                     0.09       1.07 f
+  core/chien_u/U20480/X (STP_EO3_0P5)                     0.09       1.15 f
+  core/chien_u/U20481/X (STP_EO3_0P5)                     0.09       1.24 f
+  core/chien_u/U20482/X (STP_EO3_0P5)                     0.09       1.33 f
+  core/chien_u/U20483/X (STP_EO3_0P5)                     0.09       1.42 f
+  core/chien_u/U20484/X (STP_EO3_0P5)                     0.09       1.51 f
+  core/chien_u/U20512/X (STP_AOI211_0P5)                  0.03       1.54 r
+  core/chien_u/U18/X (STP_OAI21_0P5)                      0.03       1.57 f
+  core/chien_u/U628/X (STP_NR4_0P5)                       0.06       1.63 r
+  core/chien_u/U22010/CO (STP_ADDF_V1_0P5)                0.06       1.69 r
+  core/chien_u/U23883/S (STP_ADDF_V1_0P5)                 0.08       1.77 f
+  core/chien_u/U20777/S (STP_ADDF_V1_0P5)                 0.08       1.85 r
+  core/chien_u/intadd_4/U5/S (STP_ADDF_V1_0P5)            0.09       1.93 f
+  core/chien_u/intadd_10/U3/S (STP_ADDF_V1_0P5)           0.09       2.02 r
+  core/chien_u/intadd_5/U4/S (STP_ADDF_V1_0P5)            0.08       2.10 f
+  core/chien_u/U34677/X (STP_AO21B_1)                     0.03       2.13 f
+  core/chien_u/intadd_6/U5/S (STP_ADDF_V1_0P5)            0.08       2.21 r
+  core/chien_u/U887/X (STP_AO32_0P5)                      0.05       2.27 r
+  core/chien_u/error_count_o_reg[1]/D (STP_FDPRBQ_1)      0.00       2.27 r
+  data arrival time                                                  2.27
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/chien_u/error_count_o_reg[1]/CK (STP_FDPRBQ_1)     0.00       3.13 r
+  library setup time                                     -0.05       3.09
+  data required time                                                 3.09
+  --------------------------------------------------------------------------
+  data required time                                                 3.09
+  data arrival time                                                 -2.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.82
+
+
+  Startpoint: core/chien_u/term_q_reg[14][8]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/chien_u/roots_q_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_dec_fair_group_t27
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_fair_chien_t27_13_27_4447_4096_64_0_31_201b
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/chien_u/term_q_reg[14][8]/CK (STP_FDPRBQ_1)        0.00 #     0.00 r
+  core/chien_u/term_q_reg[14][8]/Q (STP_FDPRBQ_1)         0.08       0.08 r
+  core/chien_u/U822/X (STP_INV_S_0P65)                    0.08       0.15 f
+  core/chien_u/U2203/X (STP_AOI22_0P5)                    0.15       0.31 r
+  core/chien_u/U150/X (STP_INV_S_0P65)                    0.10       0.41 f
+  core/chien_u/U2204/X (STP_AOI22_0P5)                    0.17       0.58 r
+  core/chien_u/U111/X (STP_INV_S_0P65)                    0.10       0.68 f
+  core/chien_u/U5445/X (STP_AOI22_0P5)                    0.11       0.79 r
+  core/chien_u/U58/X (STP_INV_S_0P65)                     0.05       0.84 f
+  core/chien_u/U5446/X (STP_AOI22_0P5)                    0.05       0.89 r
+  core/chien_u/U20478/X (STP_EO3_0P5)                     0.09       0.97 f
+  core/chien_u/U20479/X (STP_EO3_0P5)                     0.09       1.07 f
+  core/chien_u/U20480/X (STP_EO3_0P5)                     0.09       1.15 f
+  core/chien_u/U20481/X (STP_EO3_0P5)                     0.09       1.24 f
+  core/chien_u/U20482/X (STP_EO3_0P5)                     0.09       1.33 f
+  core/chien_u/U20483/X (STP_EO3_0P5)                     0.09       1.42 f
+  core/chien_u/U20484/X (STP_EO3_0P5)                     0.09       1.51 f
+  core/chien_u/U20512/X (STP_AOI211_0P5)                  0.03       1.54 r
+  core/chien_u/U18/X (STP_OAI21_0P5)                      0.03       1.57 f
+  core/chien_u/U628/X (STP_NR4_0P5)                       0.06       1.63 r
+  core/chien_u/U22010/CO (STP_ADDF_V1_0P5)                0.06       1.69 r
+  core/chien_u/U23883/S (STP_ADDF_V1_0P5)                 0.08       1.77 f
+  core/chien_u/U20777/S (STP_ADDF_V1_0P5)                 0.08       1.85 r
+  core/chien_u/intadd_4/U5/S (STP_ADDF_V1_0P5)            0.09       1.93 f
+  core/chien_u/intadd_10/U3/S (STP_ADDF_V1_0P5)           0.09       2.02 r
+  core/chien_u/intadd_5/U4/S (STP_ADDF_V1_0P5)            0.08       2.10 f
+  core/chien_u/U34677/X (STP_AO21B_1)                     0.03       2.13 f
+  core/chien_u/intadd_6/U5/S (STP_ADDF_V1_0P5)            0.08       2.21 r
+  core/chien_u/U888/X (STP_AO22_0P5)                      0.04       2.25 r
+  core/chien_u/roots_q_reg[1]/D (STP_FDPRBQ_1)            0.00       2.25 r
+  data arrival time                                                  2.25
+
+  clock clk (rise edge)                                   3.33       3.33
+  clock network delay (ideal)                             0.00       3.33
+  clock uncertainty                                      -0.20       3.13
+  core/chien_u/roots_q_reg[1]/CK (STP_FDPRBQ_1)           0.00       3.13 r
+  library setup time                                     -0.05       3.09
+  data required time                                                 3.09
+  --------------------------------------------------------------------------
+  data required time                                                 3.09
+  data arrival time                                                 -2.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.84
+
+
+1

@@ -1,0 +1,11 @@
+Command: /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/scan/./scan_simv -l scan_run.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Nov 14 21:53 2026
+PASS all 4213 positions for b16,b32,b64
+$finish called from file "scan_label_tb.sv", line 19.
+$finish at simulation time              4213000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 4213000 ps
+CPU Time:      0.710 seconds;       Data structure size:   0.0Mb
+Sat Nov 14 21:53:44 2026

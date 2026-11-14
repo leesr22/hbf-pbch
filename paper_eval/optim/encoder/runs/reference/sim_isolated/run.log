@@ -1,0 +1,21 @@
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Nov 14 22:20 2026
+START vector=0 cycle=4
+PASS result=0 selector=0 failures=0 overflow=0 cycle=104
+START vector=1 cycle=105
+PASS result=1 selector=33 failures=0 overflow=0 cycle=222
+START vector=2 cycle=223
+PASS result=2 selector=17ed failures=5 overflow=0 cycle=386
+TIMING frame=0 flags=0 start=4 end=104 e2e=100
+TIMING frame=1 flags=8 start=105 end=222 e2e=117
+TIMING frame=2 flags=32 start=223 end=386 e2e=163
+START_GAP 0->1 cycles=101
+START_GAP 1->2 cycles=118
+PASS pbch_sparse_pipeline_enc vectors=3
+$finish called from file "/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/encoder/regression_tb.sv", line 257.
+$finish at simulation time              1546000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1546000 ps
+CPU Time:      0.400 seconds;       Data structure size:   0.7Mb
+Sat Nov 14 22:20:57 2026

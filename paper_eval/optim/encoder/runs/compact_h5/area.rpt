@@ -1,0 +1,1015 @@
+ 
+****************************************
+Report : area
+Design : pbch_encoder_compact_h5
+Version: Q-2019.12-SP5-5
+Date   : Sat Nov 14 22:01:13 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'pbch_encoder_compact_h5' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    um28nchslogl35hsl140f_ssgwc0p9v125c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db)
+
+Number of ports:                         9691
+Number of nets:                         37574
+Number of cells:                        28300
+Number of combinational cells:          25084
+Number of sequential cells:              2730
+Number of macros/black boxes:               0
+Number of buf/inv:                       4872
+Number of references:                       2
+
+Combinational area:              23366.111700
+Buf/Inv area:                     1647.239978
+Noncombinational area:            7578.815925
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 30944.927626
+Total area:                 undefined
+
+The above information was reported from the logical library. The following are from the physical library:
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  ----------------------------------------------------------------------
+pbch_encoder_compact_h5           30944.9276    100.0      0.6720     0.0000  0.0000  pbch_encoder_compact_h5
+core                              30944.2556    100.0  10755.3598  2627.3520  0.0000  pbch_encoder_core_compact_h5_4096_13_104_512_128_32_2_5_5_3
+core/grouped_block_fwht_search.search_u
+                                   9965.7600     32.2   4708.2000  3204.2640  0.0000  selector_search_fwht_compact_L13_N4213_MAX_FLAGS32_HIGH_L5_PIPE_GROUP5
+core/grouped_block_fwht_search.search_u/histogram[0].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_31
+core/grouped_block_fwht_search.search_u/histogram[0].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_63
+core/grouped_block_fwht_search.search_u/histogram[0].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_127
+core/grouped_block_fwht_search.search_u/histogram[0].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_255
+core/grouped_block_fwht_search.search_u/histogram[0].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_254
+core/grouped_block_fwht_search.search_u/histogram[0].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_126
+core/grouped_block_fwht_search.search_u/histogram[0].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_253
+core/grouped_block_fwht_search.search_u/histogram[0].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_252
+core/grouped_block_fwht_search.search_u/histogram[0].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_62
+core/grouped_block_fwht_search.search_u/histogram[0].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_125
+core/grouped_block_fwht_search.search_u/histogram[0].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_251
+core/grouped_block_fwht_search.search_u/histogram[0].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_250
+core/grouped_block_fwht_search.search_u/histogram[0].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_124
+core/grouped_block_fwht_search.search_u/histogram[0].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_249
+core/grouped_block_fwht_search.search_u/histogram[0].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_248
+core/grouped_block_fwht_search.search_u/histogram[10].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_21
+core/grouped_block_fwht_search.search_u/histogram[10].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_43
+core/grouped_block_fwht_search.search_u/histogram[10].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_87
+core/grouped_block_fwht_search.search_u/histogram[10].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_175
+core/grouped_block_fwht_search.search_u/histogram[10].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_174
+core/grouped_block_fwht_search.search_u/histogram[10].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_86
+core/grouped_block_fwht_search.search_u/histogram[10].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_173
+core/grouped_block_fwht_search.search_u/histogram[10].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_172
+core/grouped_block_fwht_search.search_u/histogram[10].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_42
+core/grouped_block_fwht_search.search_u/histogram[10].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_85
+core/grouped_block_fwht_search.search_u/histogram[10].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_171
+core/grouped_block_fwht_search.search_u/histogram[10].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_170
+core/grouped_block_fwht_search.search_u/histogram[10].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_84
+core/grouped_block_fwht_search.search_u/histogram[10].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_169
+core/grouped_block_fwht_search.search_u/histogram[10].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_168
+core/grouped_block_fwht_search.search_u/histogram[11].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_20
+core/grouped_block_fwht_search.search_u/histogram[11].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_41
+core/grouped_block_fwht_search.search_u/histogram[11].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_83
+core/grouped_block_fwht_search.search_u/histogram[11].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_167
+core/grouped_block_fwht_search.search_u/histogram[11].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_166
+core/grouped_block_fwht_search.search_u/histogram[11].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_82
+core/grouped_block_fwht_search.search_u/histogram[11].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_165
+core/grouped_block_fwht_search.search_u/histogram[11].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_164
+core/grouped_block_fwht_search.search_u/histogram[11].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_40
+core/grouped_block_fwht_search.search_u/histogram[11].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_81
+core/grouped_block_fwht_search.search_u/histogram[11].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_163
+core/grouped_block_fwht_search.search_u/histogram[11].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_162
+core/grouped_block_fwht_search.search_u/histogram[11].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_80
+core/grouped_block_fwht_search.search_u/histogram[11].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_161
+core/grouped_block_fwht_search.search_u/histogram[11].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_160
+core/grouped_block_fwht_search.search_u/histogram[12].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_19
+core/grouped_block_fwht_search.search_u/histogram[12].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_39
+core/grouped_block_fwht_search.search_u/histogram[12].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_79
+core/grouped_block_fwht_search.search_u/histogram[12].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_159
+core/grouped_block_fwht_search.search_u/histogram[12].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_158
+core/grouped_block_fwht_search.search_u/histogram[12].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_78
+core/grouped_block_fwht_search.search_u/histogram[12].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_157
+core/grouped_block_fwht_search.search_u/histogram[12].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_156
+core/grouped_block_fwht_search.search_u/histogram[12].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_38
+core/grouped_block_fwht_search.search_u/histogram[12].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_77
+core/grouped_block_fwht_search.search_u/histogram[12].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_155
+core/grouped_block_fwht_search.search_u/histogram[12].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_154
+core/grouped_block_fwht_search.search_u/histogram[12].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_76
+core/grouped_block_fwht_search.search_u/histogram[12].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_153
+core/grouped_block_fwht_search.search_u/histogram[12].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_152
+core/grouped_block_fwht_search.search_u/histogram[13].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_18
+core/grouped_block_fwht_search.search_u/histogram[13].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_37
+core/grouped_block_fwht_search.search_u/histogram[13].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_75
+core/grouped_block_fwht_search.search_u/histogram[13].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_151
+core/grouped_block_fwht_search.search_u/histogram[13].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_150
+core/grouped_block_fwht_search.search_u/histogram[13].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_74
+core/grouped_block_fwht_search.search_u/histogram[13].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_149
+core/grouped_block_fwht_search.search_u/histogram[13].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_148
+core/grouped_block_fwht_search.search_u/histogram[13].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_36
+core/grouped_block_fwht_search.search_u/histogram[13].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_73
+core/grouped_block_fwht_search.search_u/histogram[13].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_147
+core/grouped_block_fwht_search.search_u/histogram[13].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_146
+core/grouped_block_fwht_search.search_u/histogram[13].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_72
+core/grouped_block_fwht_search.search_u/histogram[13].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_145
+core/grouped_block_fwht_search.search_u/histogram[13].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_144
+core/grouped_block_fwht_search.search_u/histogram[14].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_17
+core/grouped_block_fwht_search.search_u/histogram[14].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_35
+core/grouped_block_fwht_search.search_u/histogram[14].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_71
+core/grouped_block_fwht_search.search_u/histogram[14].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_143
+core/grouped_block_fwht_search.search_u/histogram[14].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_142
+core/grouped_block_fwht_search.search_u/histogram[14].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_70
+core/grouped_block_fwht_search.search_u/histogram[14].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_141
+core/grouped_block_fwht_search.search_u/histogram[14].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_140
+core/grouped_block_fwht_search.search_u/histogram[14].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_34
+core/grouped_block_fwht_search.search_u/histogram[14].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_69
+core/grouped_block_fwht_search.search_u/histogram[14].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_139
+core/grouped_block_fwht_search.search_u/histogram[14].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_138
+core/grouped_block_fwht_search.search_u/histogram[14].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_68
+core/grouped_block_fwht_search.search_u/histogram[14].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_137
+core/grouped_block_fwht_search.search_u/histogram[14].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_136
+core/grouped_block_fwht_search.search_u/histogram[15].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_16
+core/grouped_block_fwht_search.search_u/histogram[15].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_33
+core/grouped_block_fwht_search.search_u/histogram[15].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_67
+core/grouped_block_fwht_search.search_u/histogram[15].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_135
+core/grouped_block_fwht_search.search_u/histogram[15].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_134
+core/grouped_block_fwht_search.search_u/histogram[15].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_66
+core/grouped_block_fwht_search.search_u/histogram[15].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_133
+core/grouped_block_fwht_search.search_u/histogram[15].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_132
+core/grouped_block_fwht_search.search_u/histogram[15].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_32
+core/grouped_block_fwht_search.search_u/histogram[15].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_65
+core/grouped_block_fwht_search.search_u/histogram[15].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_131
+core/grouped_block_fwht_search.search_u/histogram[15].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_130
+core/grouped_block_fwht_search.search_u/histogram[15].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_64
+core/grouped_block_fwht_search.search_u/histogram[15].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_129
+core/grouped_block_fwht_search.search_u/histogram[15].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_128
+core/grouped_block_fwht_search.search_u/histogram[16].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_15
+core/grouped_block_fwht_search.search_u/histogram[16].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_31
+core/grouped_block_fwht_search.search_u/histogram[16].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_63
+core/grouped_block_fwht_search.search_u/histogram[16].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_127
+core/grouped_block_fwht_search.search_u/histogram[16].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_126
+core/grouped_block_fwht_search.search_u/histogram[16].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_62
+core/grouped_block_fwht_search.search_u/histogram[16].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_125
+core/grouped_block_fwht_search.search_u/histogram[16].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_124
+core/grouped_block_fwht_search.search_u/histogram[16].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_30
+core/grouped_block_fwht_search.search_u/histogram[16].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_61
+core/grouped_block_fwht_search.search_u/histogram[16].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_123
+core/grouped_block_fwht_search.search_u/histogram[16].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_122
+core/grouped_block_fwht_search.search_u/histogram[16].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_60
+core/grouped_block_fwht_search.search_u/histogram[16].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_121
+core/grouped_block_fwht_search.search_u/histogram[16].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_120
+core/grouped_block_fwht_search.search_u/histogram[17].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_14
+core/grouped_block_fwht_search.search_u/histogram[17].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_29
+core/grouped_block_fwht_search.search_u/histogram[17].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_59
+core/grouped_block_fwht_search.search_u/histogram[17].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_119
+core/grouped_block_fwht_search.search_u/histogram[17].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_118
+core/grouped_block_fwht_search.search_u/histogram[17].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_58
+core/grouped_block_fwht_search.search_u/histogram[17].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_117
+core/grouped_block_fwht_search.search_u/histogram[17].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_116
+core/grouped_block_fwht_search.search_u/histogram[17].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_28
+core/grouped_block_fwht_search.search_u/histogram[17].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_57
+core/grouped_block_fwht_search.search_u/histogram[17].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_115
+core/grouped_block_fwht_search.search_u/histogram[17].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_114
+core/grouped_block_fwht_search.search_u/histogram[17].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_56
+core/grouped_block_fwht_search.search_u/histogram[17].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_113
+core/grouped_block_fwht_search.search_u/histogram[17].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_112
+core/grouped_block_fwht_search.search_u/histogram[18].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_13
+core/grouped_block_fwht_search.search_u/histogram[18].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_27
+core/grouped_block_fwht_search.search_u/histogram[18].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_55
+core/grouped_block_fwht_search.search_u/histogram[18].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_111
+core/grouped_block_fwht_search.search_u/histogram[18].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_110
+core/grouped_block_fwht_search.search_u/histogram[18].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_54
+core/grouped_block_fwht_search.search_u/histogram[18].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_109
+core/grouped_block_fwht_search.search_u/histogram[18].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_108
+core/grouped_block_fwht_search.search_u/histogram[18].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_26
+core/grouped_block_fwht_search.search_u/histogram[18].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_53
+core/grouped_block_fwht_search.search_u/histogram[18].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_107
+core/grouped_block_fwht_search.search_u/histogram[18].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_106
+core/grouped_block_fwht_search.search_u/histogram[18].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_52
+core/grouped_block_fwht_search.search_u/histogram[18].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_105
+core/grouped_block_fwht_search.search_u/histogram[18].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_104
+core/grouped_block_fwht_search.search_u/histogram[19].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_12
+core/grouped_block_fwht_search.search_u/histogram[19].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_25
+core/grouped_block_fwht_search.search_u/histogram[19].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_51
+core/grouped_block_fwht_search.search_u/histogram[19].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_103
+core/grouped_block_fwht_search.search_u/histogram[19].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_102
+core/grouped_block_fwht_search.search_u/histogram[19].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_50
+core/grouped_block_fwht_search.search_u/histogram[19].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_101
+core/grouped_block_fwht_search.search_u/histogram[19].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_100
+core/grouped_block_fwht_search.search_u/histogram[19].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_24
+core/grouped_block_fwht_search.search_u/histogram[19].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_49
+core/grouped_block_fwht_search.search_u/histogram[19].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_99
+core/grouped_block_fwht_search.search_u/histogram[19].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_98
+core/grouped_block_fwht_search.search_u/histogram[19].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_48
+core/grouped_block_fwht_search.search_u/histogram[19].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_97
+core/grouped_block_fwht_search.search_u/histogram[19].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_96
+core/grouped_block_fwht_search.search_u/histogram[1].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_30
+core/grouped_block_fwht_search.search_u/histogram[1].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_61
+core/grouped_block_fwht_search.search_u/histogram[1].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_123
+core/grouped_block_fwht_search.search_u/histogram[1].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_247
+core/grouped_block_fwht_search.search_u/histogram[1].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_246
+core/grouped_block_fwht_search.search_u/histogram[1].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_122
+core/grouped_block_fwht_search.search_u/histogram[1].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_245
+core/grouped_block_fwht_search.search_u/histogram[1].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_244
+core/grouped_block_fwht_search.search_u/histogram[1].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_60
+core/grouped_block_fwht_search.search_u/histogram[1].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_121
+core/grouped_block_fwht_search.search_u/histogram[1].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_243
+core/grouped_block_fwht_search.search_u/histogram[1].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_242
+core/grouped_block_fwht_search.search_u/histogram[1].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_120
+core/grouped_block_fwht_search.search_u/histogram[1].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_241
+core/grouped_block_fwht_search.search_u/histogram[1].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_240
+core/grouped_block_fwht_search.search_u/histogram[20].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_11
+core/grouped_block_fwht_search.search_u/histogram[20].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_23
+core/grouped_block_fwht_search.search_u/histogram[20].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_47
+core/grouped_block_fwht_search.search_u/histogram[20].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_95
+core/grouped_block_fwht_search.search_u/histogram[20].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_94
+core/grouped_block_fwht_search.search_u/histogram[20].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_46
+core/grouped_block_fwht_search.search_u/histogram[20].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_93
+core/grouped_block_fwht_search.search_u/histogram[20].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_92
+core/grouped_block_fwht_search.search_u/histogram[20].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_22
+core/grouped_block_fwht_search.search_u/histogram[20].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_45
+core/grouped_block_fwht_search.search_u/histogram[20].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_91
+core/grouped_block_fwht_search.search_u/histogram[20].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_90
+core/grouped_block_fwht_search.search_u/histogram[20].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_44
+core/grouped_block_fwht_search.search_u/histogram[20].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_89
+core/grouped_block_fwht_search.search_u/histogram[20].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_88
+core/grouped_block_fwht_search.search_u/histogram[21].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_10
+core/grouped_block_fwht_search.search_u/histogram[21].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_21
+core/grouped_block_fwht_search.search_u/histogram[21].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_43
+core/grouped_block_fwht_search.search_u/histogram[21].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_87
+core/grouped_block_fwht_search.search_u/histogram[21].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_86
+core/grouped_block_fwht_search.search_u/histogram[21].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_42
+core/grouped_block_fwht_search.search_u/histogram[21].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_85
+core/grouped_block_fwht_search.search_u/histogram[21].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_84
+core/grouped_block_fwht_search.search_u/histogram[21].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_20
+core/grouped_block_fwht_search.search_u/histogram[21].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_41
+core/grouped_block_fwht_search.search_u/histogram[21].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_83
+core/grouped_block_fwht_search.search_u/histogram[21].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_82
+core/grouped_block_fwht_search.search_u/histogram[21].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_40
+core/grouped_block_fwht_search.search_u/histogram[21].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_81
+core/grouped_block_fwht_search.search_u/histogram[21].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_80
+core/grouped_block_fwht_search.search_u/histogram[22].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_9
+core/grouped_block_fwht_search.search_u/histogram[22].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_19
+core/grouped_block_fwht_search.search_u/histogram[22].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_39
+core/grouped_block_fwht_search.search_u/histogram[22].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_79
+core/grouped_block_fwht_search.search_u/histogram[22].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_78
+core/grouped_block_fwht_search.search_u/histogram[22].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_38
+core/grouped_block_fwht_search.search_u/histogram[22].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_77
+core/grouped_block_fwht_search.search_u/histogram[22].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_76
+core/grouped_block_fwht_search.search_u/histogram[22].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_18
+core/grouped_block_fwht_search.search_u/histogram[22].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_37
+core/grouped_block_fwht_search.search_u/histogram[22].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_75
+core/grouped_block_fwht_search.search_u/histogram[22].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_74
+core/grouped_block_fwht_search.search_u/histogram[22].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_36
+core/grouped_block_fwht_search.search_u/histogram[22].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_73
+core/grouped_block_fwht_search.search_u/histogram[22].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_72
+core/grouped_block_fwht_search.search_u/histogram[23].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_8
+core/grouped_block_fwht_search.search_u/histogram[23].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_17
+core/grouped_block_fwht_search.search_u/histogram[23].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_35
+core/grouped_block_fwht_search.search_u/histogram[23].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_71
+core/grouped_block_fwht_search.search_u/histogram[23].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_70
+core/grouped_block_fwht_search.search_u/histogram[23].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_34
+core/grouped_block_fwht_search.search_u/histogram[23].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_69
+core/grouped_block_fwht_search.search_u/histogram[23].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_68
+core/grouped_block_fwht_search.search_u/histogram[23].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_16
+core/grouped_block_fwht_search.search_u/histogram[23].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_33
+core/grouped_block_fwht_search.search_u/histogram[23].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_67
+core/grouped_block_fwht_search.search_u/histogram[23].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_66
+core/grouped_block_fwht_search.search_u/histogram[23].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_32
+core/grouped_block_fwht_search.search_u/histogram[23].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_65
+core/grouped_block_fwht_search.search_u/histogram[23].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_64
+core/grouped_block_fwht_search.search_u/histogram[24].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_7
+core/grouped_block_fwht_search.search_u/histogram[24].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_15
+core/grouped_block_fwht_search.search_u/histogram[24].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_31
+core/grouped_block_fwht_search.search_u/histogram[24].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_63
+core/grouped_block_fwht_search.search_u/histogram[24].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_62
+core/grouped_block_fwht_search.search_u/histogram[24].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_30
+core/grouped_block_fwht_search.search_u/histogram[24].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_61
+core/grouped_block_fwht_search.search_u/histogram[24].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_60
+core/grouped_block_fwht_search.search_u/histogram[24].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_14
+core/grouped_block_fwht_search.search_u/histogram[24].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_29
+core/grouped_block_fwht_search.search_u/histogram[24].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_59
+core/grouped_block_fwht_search.search_u/histogram[24].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_58
+core/grouped_block_fwht_search.search_u/histogram[24].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_28
+core/grouped_block_fwht_search.search_u/histogram[24].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_57
+core/grouped_block_fwht_search.search_u/histogram[24].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_56
+core/grouped_block_fwht_search.search_u/histogram[25].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_6
+core/grouped_block_fwht_search.search_u/histogram[25].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_13
+core/grouped_block_fwht_search.search_u/histogram[25].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_27
+core/grouped_block_fwht_search.search_u/histogram[25].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_55
+core/grouped_block_fwht_search.search_u/histogram[25].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_54
+core/grouped_block_fwht_search.search_u/histogram[25].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_26
+core/grouped_block_fwht_search.search_u/histogram[25].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_53
+core/grouped_block_fwht_search.search_u/histogram[25].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_52
+core/grouped_block_fwht_search.search_u/histogram[25].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_12
+core/grouped_block_fwht_search.search_u/histogram[25].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_25
+core/grouped_block_fwht_search.search_u/histogram[25].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_51
+core/grouped_block_fwht_search.search_u/histogram[25].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_50
+core/grouped_block_fwht_search.search_u/histogram[25].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_24
+core/grouped_block_fwht_search.search_u/histogram[25].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_49
+core/grouped_block_fwht_search.search_u/histogram[25].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_48
+core/grouped_block_fwht_search.search_u/histogram[26].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_5
+core/grouped_block_fwht_search.search_u/histogram[26].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_11
+core/grouped_block_fwht_search.search_u/histogram[26].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_23
+core/grouped_block_fwht_search.search_u/histogram[26].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_47
+core/grouped_block_fwht_search.search_u/histogram[26].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_46
+core/grouped_block_fwht_search.search_u/histogram[26].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_22
+core/grouped_block_fwht_search.search_u/histogram[26].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_45
+core/grouped_block_fwht_search.search_u/histogram[26].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_44
+core/grouped_block_fwht_search.search_u/histogram[26].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_10
+core/grouped_block_fwht_search.search_u/histogram[26].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_21
+core/grouped_block_fwht_search.search_u/histogram[26].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_43
+core/grouped_block_fwht_search.search_u/histogram[26].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_42
+core/grouped_block_fwht_search.search_u/histogram[26].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_20
+core/grouped_block_fwht_search.search_u/histogram[26].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_41
+core/grouped_block_fwht_search.search_u/histogram[26].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_40
+core/grouped_block_fwht_search.search_u/histogram[27].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_4
+core/grouped_block_fwht_search.search_u/histogram[27].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_9
+core/grouped_block_fwht_search.search_u/histogram[27].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_19
+core/grouped_block_fwht_search.search_u/histogram[27].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_39
+core/grouped_block_fwht_search.search_u/histogram[27].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_38
+core/grouped_block_fwht_search.search_u/histogram[27].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_18
+core/grouped_block_fwht_search.search_u/histogram[27].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_37
+core/grouped_block_fwht_search.search_u/histogram[27].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_36
+core/grouped_block_fwht_search.search_u/histogram[27].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_8
+core/grouped_block_fwht_search.search_u/histogram[27].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_17
+core/grouped_block_fwht_search.search_u/histogram[27].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_35
+core/grouped_block_fwht_search.search_u/histogram[27].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_34
+core/grouped_block_fwht_search.search_u/histogram[27].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_16
+core/grouped_block_fwht_search.search_u/histogram[27].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_33
+core/grouped_block_fwht_search.search_u/histogram[27].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_32
+core/grouped_block_fwht_search.search_u/histogram[28].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_3
+core/grouped_block_fwht_search.search_u/histogram[28].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_7
+core/grouped_block_fwht_search.search_u/histogram[28].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_15
+core/grouped_block_fwht_search.search_u/histogram[28].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_31
+core/grouped_block_fwht_search.search_u/histogram[28].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_30
+core/grouped_block_fwht_search.search_u/histogram[28].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_14
+core/grouped_block_fwht_search.search_u/histogram[28].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_29
+core/grouped_block_fwht_search.search_u/histogram[28].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_28
+core/grouped_block_fwht_search.search_u/histogram[28].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_6
+core/grouped_block_fwht_search.search_u/histogram[28].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_13
+core/grouped_block_fwht_search.search_u/histogram[28].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_27
+core/grouped_block_fwht_search.search_u/histogram[28].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_26
+core/grouped_block_fwht_search.search_u/histogram[28].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_12
+core/grouped_block_fwht_search.search_u/histogram[28].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_25
+core/grouped_block_fwht_search.search_u/histogram[28].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_24
+core/grouped_block_fwht_search.search_u/histogram[29].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_2
+core/grouped_block_fwht_search.search_u/histogram[29].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_5
+core/grouped_block_fwht_search.search_u/histogram[29].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_11
+core/grouped_block_fwht_search.search_u/histogram[29].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_23
+core/grouped_block_fwht_search.search_u/histogram[29].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_22
+core/grouped_block_fwht_search.search_u/histogram[29].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_10
+core/grouped_block_fwht_search.search_u/histogram[29].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_21
+core/grouped_block_fwht_search.search_u/histogram[29].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_20
+core/grouped_block_fwht_search.search_u/histogram[29].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_4
+core/grouped_block_fwht_search.search_u/histogram[29].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_9
+core/grouped_block_fwht_search.search_u/histogram[29].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_19
+core/grouped_block_fwht_search.search_u/histogram[29].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_18
+core/grouped_block_fwht_search.search_u/histogram[29].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_8
+core/grouped_block_fwht_search.search_u/histogram[29].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_17
+core/grouped_block_fwht_search.search_u/histogram[29].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_16
+core/grouped_block_fwht_search.search_u/histogram[2].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_29
+core/grouped_block_fwht_search.search_u/histogram[2].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_59
+core/grouped_block_fwht_search.search_u/histogram[2].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_119
+core/grouped_block_fwht_search.search_u/histogram[2].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_239
+core/grouped_block_fwht_search.search_u/histogram[2].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_238
+core/grouped_block_fwht_search.search_u/histogram[2].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_118
+core/grouped_block_fwht_search.search_u/histogram[2].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_237
+core/grouped_block_fwht_search.search_u/histogram[2].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_236
+core/grouped_block_fwht_search.search_u/histogram[2].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_58
+core/grouped_block_fwht_search.search_u/histogram[2].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_117
+core/grouped_block_fwht_search.search_u/histogram[2].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_235
+core/grouped_block_fwht_search.search_u/histogram[2].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_234
+core/grouped_block_fwht_search.search_u/histogram[2].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_116
+core/grouped_block_fwht_search.search_u/histogram[2].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_233
+core/grouped_block_fwht_search.search_u/histogram[2].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_232
+core/grouped_block_fwht_search.search_u/histogram[30].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_1
+core/grouped_block_fwht_search.search_u/histogram[30].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_3
+core/grouped_block_fwht_search.search_u/histogram[30].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_7
+core/grouped_block_fwht_search.search_u/histogram[30].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_15
+core/grouped_block_fwht_search.search_u/histogram[30].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_14
+core/grouped_block_fwht_search.search_u/histogram[30].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_6
+core/grouped_block_fwht_search.search_u/histogram[30].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_13
+core/grouped_block_fwht_search.search_u/histogram[30].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_12
+core/grouped_block_fwht_search.search_u/histogram[30].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_2
+core/grouped_block_fwht_search.search_u/histogram[30].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_5
+core/grouped_block_fwht_search.search_u/histogram[30].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_11
+core/grouped_block_fwht_search.search_u/histogram[30].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_10
+core/grouped_block_fwht_search.search_u/histogram[30].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_4
+core/grouped_block_fwht_search.search_u/histogram[30].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_9
+core/grouped_block_fwht_search.search_u/histogram[30].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_8
+core/grouped_block_fwht_search.search_u/histogram[31].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_0
+core/grouped_block_fwht_search.search_u/histogram[31].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_1
+core/grouped_block_fwht_search.search_u/histogram[31].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_3
+core/grouped_block_fwht_search.search_u/histogram[31].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_7
+core/grouped_block_fwht_search.search_u/histogram[31].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_6
+core/grouped_block_fwht_search.search_u/histogram[31].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_2
+core/grouped_block_fwht_search.search_u/histogram[31].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_5
+core/grouped_block_fwht_search.search_u/histogram[31].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_4
+core/grouped_block_fwht_search.search_u/histogram[31].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_0
+core/grouped_block_fwht_search.search_u/histogram[31].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_1
+core/grouped_block_fwht_search.search_u/histogram[31].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_3
+core/grouped_block_fwht_search.search_u/histogram[31].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_2
+core/grouped_block_fwht_search.search_u/histogram[31].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_0
+core/grouped_block_fwht_search.search_u/histogram[31].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_1
+core/grouped_block_fwht_search.search_u/histogram[31].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_0
+core/grouped_block_fwht_search.search_u/histogram[3].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_28
+core/grouped_block_fwht_search.search_u/histogram[3].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_57
+core/grouped_block_fwht_search.search_u/histogram[3].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_115
+core/grouped_block_fwht_search.search_u/histogram[3].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_231
+core/grouped_block_fwht_search.search_u/histogram[3].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_230
+core/grouped_block_fwht_search.search_u/histogram[3].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_114
+core/grouped_block_fwht_search.search_u/histogram[3].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_229
+core/grouped_block_fwht_search.search_u/histogram[3].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_228
+core/grouped_block_fwht_search.search_u/histogram[3].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_56
+core/grouped_block_fwht_search.search_u/histogram[3].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_113
+core/grouped_block_fwht_search.search_u/histogram[3].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_227
+core/grouped_block_fwht_search.search_u/histogram[3].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_226
+core/grouped_block_fwht_search.search_u/histogram[3].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_112
+core/grouped_block_fwht_search.search_u/histogram[3].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_225
+core/grouped_block_fwht_search.search_u/histogram[3].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_224
+core/grouped_block_fwht_search.search_u/histogram[4].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_27
+core/grouped_block_fwht_search.search_u/histogram[4].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_55
+core/grouped_block_fwht_search.search_u/histogram[4].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_111
+core/grouped_block_fwht_search.search_u/histogram[4].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_223
+core/grouped_block_fwht_search.search_u/histogram[4].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_222
+core/grouped_block_fwht_search.search_u/histogram[4].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_110
+core/grouped_block_fwht_search.search_u/histogram[4].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_221
+core/grouped_block_fwht_search.search_u/histogram[4].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_220
+core/grouped_block_fwht_search.search_u/histogram[4].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_54
+core/grouped_block_fwht_search.search_u/histogram[4].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_109
+core/grouped_block_fwht_search.search_u/histogram[4].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_219
+core/grouped_block_fwht_search.search_u/histogram[4].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_218
+core/grouped_block_fwht_search.search_u/histogram[4].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_108
+core/grouped_block_fwht_search.search_u/histogram[4].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_217
+core/grouped_block_fwht_search.search_u/histogram[4].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_216
+core/grouped_block_fwht_search.search_u/histogram[5].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_26
+core/grouped_block_fwht_search.search_u/histogram[5].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_53
+core/grouped_block_fwht_search.search_u/histogram[5].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_107
+core/grouped_block_fwht_search.search_u/histogram[5].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_215
+core/grouped_block_fwht_search.search_u/histogram[5].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_214
+core/grouped_block_fwht_search.search_u/histogram[5].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_106
+core/grouped_block_fwht_search.search_u/histogram[5].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_213
+core/grouped_block_fwht_search.search_u/histogram[5].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_212
+core/grouped_block_fwht_search.search_u/histogram[5].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_52
+core/grouped_block_fwht_search.search_u/histogram[5].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_105
+core/grouped_block_fwht_search.search_u/histogram[5].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_211
+core/grouped_block_fwht_search.search_u/histogram[5].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_210
+core/grouped_block_fwht_search.search_u/histogram[5].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_104
+core/grouped_block_fwht_search.search_u/histogram[5].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_209
+core/grouped_block_fwht_search.search_u/histogram[5].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_208
+core/grouped_block_fwht_search.search_u/histogram[6].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_25
+core/grouped_block_fwht_search.search_u/histogram[6].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_51
+core/grouped_block_fwht_search.search_u/histogram[6].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_103
+core/grouped_block_fwht_search.search_u/histogram[6].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_207
+core/grouped_block_fwht_search.search_u/histogram[6].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_206
+core/grouped_block_fwht_search.search_u/histogram[6].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_102
+core/grouped_block_fwht_search.search_u/histogram[6].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_205
+core/grouped_block_fwht_search.search_u/histogram[6].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_204
+core/grouped_block_fwht_search.search_u/histogram[6].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_50
+core/grouped_block_fwht_search.search_u/histogram[6].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_101
+core/grouped_block_fwht_search.search_u/histogram[6].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_203
+core/grouped_block_fwht_search.search_u/histogram[6].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_202
+core/grouped_block_fwht_search.search_u/histogram[6].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_100
+core/grouped_block_fwht_search.search_u/histogram[6].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_201
+core/grouped_block_fwht_search.search_u/histogram[6].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_200
+core/grouped_block_fwht_search.search_u/histogram[7].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_24
+core/grouped_block_fwht_search.search_u/histogram[7].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_49
+core/grouped_block_fwht_search.search_u/histogram[7].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_99
+core/grouped_block_fwht_search.search_u/histogram[7].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_199
+core/grouped_block_fwht_search.search_u/histogram[7].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_198
+core/grouped_block_fwht_search.search_u/histogram[7].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_98
+core/grouped_block_fwht_search.search_u/histogram[7].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_197
+core/grouped_block_fwht_search.search_u/histogram[7].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_196
+core/grouped_block_fwht_search.search_u/histogram[7].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_48
+core/grouped_block_fwht_search.search_u/histogram[7].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_97
+core/grouped_block_fwht_search.search_u/histogram[7].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_195
+core/grouped_block_fwht_search.search_u/histogram[7].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_194
+core/grouped_block_fwht_search.search_u/histogram[7].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_96
+core/grouped_block_fwht_search.search_u/histogram[7].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_193
+core/grouped_block_fwht_search.search_u/histogram[7].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_192
+core/grouped_block_fwht_search.search_u/histogram[8].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_23
+core/grouped_block_fwht_search.search_u/histogram[8].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_47
+core/grouped_block_fwht_search.search_u/histogram[8].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_95
+core/grouped_block_fwht_search.search_u/histogram[8].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_191
+core/grouped_block_fwht_search.search_u/histogram[8].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_190
+core/grouped_block_fwht_search.search_u/histogram[8].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_94
+core/grouped_block_fwht_search.search_u/histogram[8].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_189
+core/grouped_block_fwht_search.search_u/histogram[8].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_188
+core/grouped_block_fwht_search.search_u/histogram[8].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_46
+core/grouped_block_fwht_search.search_u/histogram[8].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_93
+core/grouped_block_fwht_search.search_u/histogram[8].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_187
+core/grouped_block_fwht_search.search_u/histogram[8].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_186
+core/grouped_block_fwht_search.search_u/histogram[8].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_92
+core/grouped_block_fwht_search.search_u/histogram[8].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_185
+core/grouped_block_fwht_search.search_u/histogram[8].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_184
+core/grouped_block_fwht_search.search_u/histogram[9].sum_u
+                                     46.0320      0.1      9.4080     0.0000  0.0000  sparse_signed_sum_tree_COUNT8_22
+core/grouped_block_fwht_search.search_u/histogram[9].sum_u/branch.left_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_45
+core/grouped_block_fwht_search.search_u/histogram[9].sum_u/branch.left_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_91
+core/grouped_block_fwht_search.search_u/histogram[9].sum_u/branch.left_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_183
+core/grouped_block_fwht_search.search_u/histogram[9].sum_u/branch.left_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_182
+core/grouped_block_fwht_search.search_u/histogram[9].sum_u/branch.left_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_90
+core/grouped_block_fwht_search.search_u/histogram[9].sum_u/branch.left_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_181
+core/grouped_block_fwht_search.search_u/histogram[9].sum_u/branch.left_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_180
+core/grouped_block_fwht_search.search_u/histogram[9].sum_u/branch.right_u
+                                     18.3120      0.1      7.2240     0.0000  0.0000  sparse_signed_sum_tree_COUNT4_44
+core/grouped_block_fwht_search.search_u/histogram[9].sum_u/branch.right_u/branch.left_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_89
+core/grouped_block_fwht_search.search_u/histogram[9].sum_u/branch.right_u/branch.left_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_179
+core/grouped_block_fwht_search.search_u/histogram[9].sum_u/branch.right_u/branch.left_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_178
+core/grouped_block_fwht_search.search_u/histogram[9].sum_u/branch.right_u/branch.right_u
+                                      5.5440      0.0      4.2000     0.0000  0.0000  sparse_signed_sum_tree_COUNT2_88
+core/grouped_block_fwht_search.search_u/histogram[9].sum_u/branch.right_u/branch.right_u/branch.left_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_177
+core/grouped_block_fwht_search.search_u/histogram[9].sum_u/branch.right_u/branch.right_u/branch.right_u
+                                      0.6720      0.0      0.6720     0.0000  0.0000  sparse_signed_sum_tree_COUNT1_176
+core/grouped_block_fwht_search.search_u/max_u
+                                    580.2720      1.9    580.2720     0.0000  0.0000  fht_max_tree_COUNT32_SCORE_W7_INDEX_W5
+core/label_u                       1646.9040      5.3   1646.9040     0.0000  0.0000  pbch_scan_label_b32
+core/mask_stream_u                 2339.7359      7.6   2259.0959    80.6400  0.0000  pbch_mask_stream_cse
+core/scan_u                        3609.1439     11.7   1942.5840  1666.5600  0.0000  probe_scan_N4213_W512
+--------------------------------  ----------  -------  ----------  ---------  ------  ----------------------------------------------------------------------
+Total                                                  23366.1117  7578.8159  0.0000
+
+1

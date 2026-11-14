@@ -1,0 +1,45 @@
+ 
+****************************************
+Report : area
+Design : bch_encoder_cse_t27
+Version: Q-2019.12-SP5-5
+Date   : Sat Nov 14 23:07:18 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    um28nchslogl35hsl140f_ssgwc0p9v125c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db)
+
+Number of ports:                         2269
+Number of nets:                         23917
+Number of cells:                        22168
+Number of combinational cells:          21800
+Number of sequential cells:               367
+Number of macros/black boxes:               0
+Number of buf/inv:                       2642
+Number of references:                      24
+
+Combinational area:              23484.383536
+Buf/Inv area:                      890.063988
+Noncombinational area:            1109.807974
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 24594.191510
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  ---------------------
+bch_encoder_cse_t27               24594.1915    100.0    896.1120  1109.8080  0.0000  bch_encoder_cse_t27
+map_u                             22588.2715     91.8  22588.2715     0.0000  0.0000  bch_remainder_cse_t27
+--------------------------------  ----------  -------  ----------  ---------  ------  ---------------------
+Total                                                  23484.3835  1109.8080  0.0000
+
+1

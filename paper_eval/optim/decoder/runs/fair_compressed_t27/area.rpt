@@ -1,0 +1,52 @@
+ 
+****************************************
+Report : area
+Design : pbch_dec_fair_compressed_t27
+Version: Q-2019.12-SP5-5
+Date   : Sat Nov 14 22:54:44 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'pbch_dec_fair_compressed_t27' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    um28nchslogl35hsl140f_ssgwc0p9v125c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db)
+
+Number of ports:                         3922
+Number of nets:                         81650
+Number of cells:                        77728
+Number of combinational cells:          72579
+Number of sequential cells:              5144
+Number of macros/black boxes:               0
+Number of buf/inv:                       9078
+Number of references:                       1
+
+Combinational area:              71485.510729
+Buf/Inv area:                     3085.991962
+Noncombinational area:           15555.455637
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 87040.966366
+Total area:                 undefined
+
+The above information was reported from the logical library. The following are from the physical library:
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  -------------------------------------------------
+pbch_dec_fair_compressed_t27      87040.9664    100.0      0.0000      0.0000  0.0000  pbch_dec_fair_compressed_t27
+core                              87040.9664    100.0    583.2960   1140.0480  0.0000  bch_dec_compressed_13_27_4096_4447_64_2_0_31_201b
+core/bm_lanes[0].bm_u             16029.2158     18.4  10498.3199   5530.8959  0.0000  bch_bm_compact_13_27_201b_1
+core/bm_lanes[1].bm_u             16025.0158     18.4  10494.1199   5530.8959  0.0000  bch_bm_compact_13_27_201b_0
+core/chien_u                      43115.3510     49.5  41932.9671   1182.3840  0.0000  bch_chien_13_27_4447_4096_64_0_31_201b
+core/syndrome_u                   10148.0398     11.7   7976.8078   2171.2319  0.0000  bch_syndrome_compact_13_27_4447_64_0_31_201b
+--------------------------------  ----------  -------  ----------  ----------  ------  -------------------------------------------------
+Total                                                  71485.5107  15555.4556  0.0000
+
+1

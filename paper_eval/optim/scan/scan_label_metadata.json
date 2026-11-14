@@ -1,0 +1,58 @@
+[
+  {
+    "block": 16,
+    "reverse": false,
+    "state_rom_bits": 8192,
+    "parity_rom_bits": 1352,
+    "jump_xor_operations": [
+      63,
+      110,
+      204,
+      213
+    ],
+    "all_payload_columns_exact": true
+  },
+  {
+    "block": 32,
+    "reverse": false,
+    "state_rom_bits": 4096,
+    "parity_rom_bits": 1352,
+    "jump_xor_operations": [
+      63,
+      110,
+      204,
+      213,
+      218
+    ],
+    "all_payload_columns_exact": true
+  },
+  {
+    "block": 64,
+    "reverse": false,
+    "state_rom_bits": 2048,
+    "parity_rom_bits": 1352,
+    "jump_xor_operations": [
+      63,
+      110,
+      204,
+      213,
+      218,
+      218
+    ],
+    "all_payload_columns_exact": true
+  },
+  {
+    "block": 32,
+    "reverse": true,
+    "state_rom_bits": 4096,
+    "parity_rom_bits": 1352,
+    "jump_xor_operations": [
+      218,
+      213,
+      204,
+      110,
+      63
+    ],
+    "all_payload_columns_exact": true
+  }
+]

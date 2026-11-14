@@ -1,0 +1,35 @@
+Command: /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/compactlinear_pipeline/simv +vcs+lic+wait +VEC_DIR=/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/vectors/study/pbch_paper/w64 -l /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/compactlinear_pipeline/run.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Nov 14 22:08 2026
+METRIC start_gap_1=70
+METRIC start_gap_2=70
+METRIC start_gap_3=70
+METRIC start_gap_4=70
+METRIC start_gap_5=70
+METRIC start_gap_6=70
+METRIC start_gap_7=70
+METRIC start_gap_8=70
+METRIC start_gap_9=70
+METRIC start_gap_10=70
+METRIC start_gap_11=70
+METRIC start_gap_12=70
+METRIC start_gap_13=70
+METRIC start_gap_14=70
+METRIC start_gap_15=70
+METRIC start_gap_16=70
+METRIC start_gap_17=70
+METRIC start_gap_18=70
+METRIC start_gap_19=70
+METRIC start_gap_20=70
+METRIC start_gap_21=70
+METRIC start_gap_22=70
+METRIC start_gap_23=70
+METRIC start_gap_24=70
+PASS pipeline frames=25 outputs=1600
+$finish called from file "/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/tb/study_decoder_pipeline_tb.sv", line 183.
+$finish at simulation time              7438000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 7438000 ps
+CPU Time:      0.900 seconds;       Data structure size:   0.0Mb
+Sat Nov 14 22:08:33 2026

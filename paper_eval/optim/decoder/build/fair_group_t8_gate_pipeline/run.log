@@ -1,0 +1,60 @@
+Command: /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/fair_group_t8_gate_pipeline/simv +vcs+lic+wait +VEC_DIR=/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/vectors/study/bch_base/w64 -l /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/fair_group_t8_gate_pipeline/run.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Nov 14 23:08 2026
+METRIC E2E_frame_0=202
+METRIC E2E_frame_1=202
+METRIC E2E_frame_2=202
+METRIC E2E_frame_3=202
+METRIC E2E_frame_4=202
+METRIC E2E_frame_5=202
+METRIC E2E_frame_6=202
+METRIC E2E_frame_7=202
+METRIC E2E_frame_8=202
+METRIC E2E_frame_9=202
+METRIC E2E_frame_10=202
+METRIC E2E_frame_11=202
+METRIC E2E_frame_12=202
+METRIC E2E_frame_13=202
+METRIC E2E_frame_14=202
+METRIC E2E_frame_15=202
+METRIC E2E_frame_16=202
+METRIC E2E_frame_17=202
+METRIC E2E_frame_18=202
+METRIC E2E_frame_19=202
+METRIC E2E_frame_20=202
+METRIC E2E_frame_21=202
+METRIC E2E_frame_22=202
+METRIC E2E_frame_23=202
+METRIC E2E_frame_24=202
+METRIC start_gap_1=69
+METRIC start_gap_2=69
+METRIC start_gap_3=69
+METRIC start_gap_4=69
+METRIC start_gap_5=69
+METRIC start_gap_6=69
+METRIC start_gap_7=69
+METRIC start_gap_8=69
+METRIC start_gap_9=69
+METRIC start_gap_10=69
+METRIC start_gap_11=69
+METRIC start_gap_12=69
+METRIC start_gap_13=69
+METRIC start_gap_14=69
+METRIC start_gap_15=69
+METRIC start_gap_16=69
+METRIC start_gap_17=69
+METRIC start_gap_18=69
+METRIC start_gap_19=69
+METRIC start_gap_20=69
+METRIC start_gap_21=69
+METRIC start_gap_22=69
+METRIC start_gap_23=69
+METRIC start_gap_24=69
+PASS pipeline frames=25 outputs=1600
+$finish called from file "/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/decoder_pipeline_metrics_tb.sv", line 224.
+$finish at simulation time              7462000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 7462000 ps
+CPU Time:      1.900 seconds;       Data structure size:   1.7Mb
+Sat Nov 14 23:08:48 2026

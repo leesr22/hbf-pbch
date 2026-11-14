@@ -1,0 +1,14 @@
+{
+  "profile": "bch_equal_r",
+  "t": 9,
+  "r": 117,
+  "width": 512,
+  "input_count": 629,
+  "naive_xor_count": 36847,
+  "factored_xor_count": 9619,
+  "shared_nodes": 4062,
+  "shared_max_depth": 7,
+  "max_output_terms": 57,
+  "symbolic_equivalence": true,
+  "generation_seconds": 33.59614706039429
+}

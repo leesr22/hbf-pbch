@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : area
+Design : pbch_dec_compressedchain8
+Version: Q-2019.12-SP5-5
+Date   : Sat Nov 14 22:47:51 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'pbch_dec_compressedchain8' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    um28nchslogl35hsl140f_ssgwc0p9v125c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db)
+
+Number of ports:                         1779
+Number of nets:                         21614
+Number of cells:                        19873
+Number of combinational cells:          18740
+Number of sequential cells:              1127
+Number of macros/black boxes:               0
+Number of buf/inv:                       2247
+Number of references:                       1
+
+Combinational area:              19009.367641
+Buf/Inv area:                      761.879990
+Noncombinational area:            3407.879920
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 22417.247561
+Total area:                 undefined
+
+The above information was reported from the logical library. The following are from the physical library:
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  --------------------------------------------------------
+pbch_dec_compressedchain8         22417.2476    100.0      0.0000     0.0000  0.0000  pbch_dec_compressedchain8
+core                              22417.2476    100.0     17.9760    42.1680  0.0000  pbch_dec_rec_compressedchain8_13_8_13_4096_104_64_1_201b
+core/bch_u                        21746.2556     97.0    151.2000   378.0000  0.0000  bch_dec_compressedchain8_13_8_4109_4213_64_1_13_40_201b
+core/bch_u/bm_lanes[0].bm_u        5151.7199     23.0   3367.5600  1784.1600  0.0000  bch_bm_compact_13_8_201b
+core/bch_u/chien_u                12230.2317     54.6  11800.8237   429.4080  0.0000  bch_chien_compressedchain8_13_8_4213_4109_64_13_40_201b
+core/bch_u/syndrome_u              3835.1039     17.1   3157.7279   677.3760  0.0000  bch_syndrome_compact_13_8_4213_64_13_40_201b
+core/unmask_u                       610.8480      2.7    514.0800    96.7680  0.0000  pbch_unmask_rec_cseload
+--------------------------------  ----------  -------  ----------  ---------  ------  --------------------------------------------------------
+Total                                                  19009.3676  3407.8799  0.0000
+
+1

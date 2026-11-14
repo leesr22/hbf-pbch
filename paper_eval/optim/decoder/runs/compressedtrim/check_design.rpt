@@ -1,0 +1,42 @@
+ 
+****************************************
+check_design summary:
+Version:     Q-2019.12-SP5-5
+Date:        Sat Nov 14 22:55:41 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     22
+    Unconnected ports (LINT-28)                                    13
+    Feedthrough (LINT-29)                                           9
+
+Cells                                                               1
+    Nets connected to multiple pins on same cell (LINT-33)          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'pbch_unmask_rec_cseload', port 'selector_i[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_unmask_rec_cseload', port 'selector_i[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_unmask_rec_cseload', port 'selector_i[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_unmask_rec_cseload', port 'selector_i[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_unmask_rec_cseload', port 'selector_i[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_unmask_rec_cseload', port 'selector_i[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_unmask_rec_cseload', port 'selector_i[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_unmask_rec_cseload', port 'selector_i[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_unmask_rec_cseload', port 'selector_i[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_unmask_rec_cseload', port 'selector_i[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_unmask_rec_cseload', port 'selector_i[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_unmask_rec_cseload', port 'selector_i[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_unmask_rec_cseload', port 'selector_i[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_unmask_rec_cseload', input port 'in_count_i[6]' is connected directly to output port 'out_count_o[6]'. (LINT-29)
+Warning: In design 'pbch_unmask_rec_cseload', input port 'in_count_i[5]' is connected directly to output port 'out_count_o[5]'. (LINT-29)
+Warning: In design 'pbch_unmask_rec_cseload', input port 'in_count_i[4]' is connected directly to output port 'out_count_o[4]'. (LINT-29)
+Warning: In design 'pbch_unmask_rec_cseload', input port 'in_count_i[3]' is connected directly to output port 'out_count_o[3]'. (LINT-29)
+Warning: In design 'pbch_unmask_rec_cseload', input port 'in_count_i[2]' is connected directly to output port 'out_count_o[2]'. (LINT-29)
+Warning: In design 'pbch_unmask_rec_cseload', input port 'in_count_i[1]' is connected directly to output port 'out_count_o[1]'. (LINT-29)
+Warning: In design 'pbch_unmask_rec_cseload', input port 'in_count_i[0]' is connected directly to output port 'out_count_o[0]'. (LINT-29)
+Warning: In design 'pbch_unmask_rec_cseload', input port 'in_valid_i' is connected directly to output port 'out_valid_o'. (LINT-29)
+Warning: In design 'pbch_unmask_rec_cseload', input port 'out_ready_i' is connected directly to output port 'in_ready_o'. (LINT-29)
+Warning: In design 'pbch_dec_rec_compressedtrim_13_8_13_4096_104_64_1_201b', the same net is connected to more than one pin on submodule 'unmask_u'. (LINT-33)
+   Net 'n1' is connected to pins 'selector_i[12]', 'selector_i[11]'', 'selector_i[10]', 'selector_i[9]', 'selector_i[8]', 'selector_i[7]', 'selector_i[6]', 'selector_i[5]', 'selector_i[4]', 'selector_i[3]', 'selector_i[2]', 'selector_i[1]', 'selector_i[0]'.
+1

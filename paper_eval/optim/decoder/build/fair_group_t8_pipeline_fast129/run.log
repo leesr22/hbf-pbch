@@ -1,0 +1,296 @@
+Command: /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/fair_group_t8_pipeline_fast129/simv +vcs+lic+wait +VEC_DIR=/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/vectors/study/bch_base/w64 -l /home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/build/fair_group_t8_pipeline_fast129/run.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Nov 14 23:22 2026
+TIMELINE frame=0 event=START cycle=4
+TIMELINE frame=0 event= input_first cycle=5
+TIMELINE frame=0 event= input_ last cycle=70
+TIMELINE frame=1 event=START cycle=72
+TIMELINE frame=1 event= input_first cycle=73
+TIMELINE frame=1 event= input_ last cycle=138
+TIMELINE frame=2 event=START cycle=141
+TIMELINE frame=2 event= input_first cycle=142
+TIMELINE frame=0 event=replay_first cycle=142
+TIMELINE frame=0 event=output_first cycle=142
+TIMELINE frame=0 event=output_ last cycle=205
+METRIC E2E_frame_0=201
+TIMELINE frame=2 event= input_ last cycle=207
+TIMELINE frame=0 event=replay_ last cycle=207
+TIMELINE frame=3 event=START cycle=209
+TIMELINE frame=3 event= input_first cycle=210
+TIMELINE frame=1 event=replay_first cycle=210
+TIMELINE frame=1 event=output_first cycle=210
+TIMELINE frame=1 event=output_ last cycle=273
+METRIC E2E_frame_1=201
+TIMELINE frame=3 event= input_ last cycle=275
+TIMELINE frame=1 event=replay_ last cycle=275
+TIMELINE frame=2 event=replay_first cycle=279
+TIMELINE frame=2 event=output_first cycle=279
+TIMELINE frame=2 event=output_ last cycle=342
+METRIC E2E_frame_2=201
+TIMELINE frame=2 event=replay_ last cycle=344
+TIMELINE frame=3 event=replay_first cycle=347
+TIMELINE frame=3 event=output_first cycle=347
+TIMELINE frame=3 event=output_ last cycle=410
+METRIC E2E_frame_3=201
+TIMELINE frame=3 event=replay_ last cycle=412
+METRIC E2E_frame_4=201
+METRIC E2E_frame_5=201
+METRIC E2E_frame_6=201
+METRIC E2E_frame_7=201
+METRIC E2E_frame_8=201
+METRIC E2E_frame_9=201
+METRIC E2E_frame_10=201
+METRIC E2E_frame_11=201
+METRIC E2E_frame_12=201
+METRIC E2E_frame_13=201
+METRIC E2E_frame_14=201
+METRIC E2E_frame_15=201
+METRIC E2E_frame_16=201
+METRIC E2E_frame_17=201
+METRIC E2E_frame_18=201
+METRIC E2E_frame_19=201
+METRIC E2E_frame_20=201
+METRIC E2E_frame_21=201
+METRIC E2E_frame_22=201
+METRIC E2E_frame_23=201
+METRIC E2E_frame_24=201
+METRIC E2E_frame_25=201
+METRIC E2E_frame_26=201
+METRIC E2E_frame_27=201
+METRIC E2E_frame_28=201
+METRIC E2E_frame_29=201
+METRIC E2E_frame_30=201
+METRIC E2E_frame_31=201
+METRIC E2E_frame_32=201
+METRIC E2E_frame_33=201
+METRIC E2E_frame_34=201
+METRIC E2E_frame_35=201
+METRIC E2E_frame_36=201
+METRIC E2E_frame_37=201
+METRIC E2E_frame_38=201
+METRIC E2E_frame_39=201
+METRIC E2E_frame_40=201
+METRIC E2E_frame_41=201
+METRIC E2E_frame_42=201
+METRIC E2E_frame_43=201
+METRIC E2E_frame_44=201
+METRIC E2E_frame_45=201
+METRIC E2E_frame_46=201
+METRIC E2E_frame_47=201
+METRIC E2E_frame_48=201
+METRIC E2E_frame_49=201
+METRIC E2E_frame_50=201
+METRIC E2E_frame_51=201
+METRIC E2E_frame_52=201
+METRIC E2E_frame_53=201
+METRIC E2E_frame_54=201
+METRIC E2E_frame_55=201
+METRIC E2E_frame_56=201
+METRIC E2E_frame_57=201
+METRIC E2E_frame_58=201
+METRIC E2E_frame_59=201
+METRIC E2E_frame_60=201
+METRIC E2E_frame_61=201
+METRIC E2E_frame_62=201
+METRIC E2E_frame_63=201
+METRIC E2E_frame_64=201
+METRIC E2E_frame_65=201
+METRIC E2E_frame_66=201
+METRIC E2E_frame_67=201
+METRIC E2E_frame_68=201
+METRIC E2E_frame_69=201
+METRIC E2E_frame_70=201
+METRIC E2E_frame_71=201
+METRIC E2E_frame_72=201
+METRIC E2E_frame_73=201
+METRIC E2E_frame_74=201
+METRIC E2E_frame_75=201
+METRIC E2E_frame_76=201
+METRIC E2E_frame_77=201
+METRIC E2E_frame_78=201
+METRIC E2E_frame_79=201
+METRIC E2E_frame_80=201
+METRIC E2E_frame_81=201
+METRIC E2E_frame_82=201
+METRIC E2E_frame_83=201
+METRIC E2E_frame_84=201
+METRIC E2E_frame_85=201
+METRIC E2E_frame_86=201
+METRIC E2E_frame_87=201
+METRIC E2E_frame_88=201
+METRIC E2E_frame_89=201
+METRIC E2E_frame_90=201
+METRIC E2E_frame_91=201
+METRIC E2E_frame_92=201
+METRIC E2E_frame_93=201
+METRIC E2E_frame_94=201
+METRIC E2E_frame_95=201
+METRIC E2E_frame_96=201
+METRIC E2E_frame_97=201
+METRIC E2E_frame_98=201
+METRIC E2E_frame_99=201
+METRIC E2E_frame_100=201
+METRIC E2E_frame_101=201
+METRIC E2E_frame_102=201
+METRIC E2E_frame_103=201
+METRIC E2E_frame_104=201
+METRIC E2E_frame_105=201
+METRIC E2E_frame_106=201
+METRIC E2E_frame_107=201
+METRIC E2E_frame_108=201
+METRIC E2E_frame_109=201
+METRIC E2E_frame_110=201
+METRIC E2E_frame_111=201
+METRIC E2E_frame_112=201
+METRIC E2E_frame_113=201
+METRIC E2E_frame_114=201
+METRIC E2E_frame_115=201
+METRIC E2E_frame_116=201
+METRIC E2E_frame_117=201
+METRIC E2E_frame_118=201
+METRIC E2E_frame_119=201
+METRIC E2E_frame_120=201
+METRIC E2E_frame_121=201
+METRIC E2E_frame_122=201
+METRIC E2E_frame_123=201
+METRIC E2E_frame_124=201
+METRIC E2E_frame_125=201
+METRIC E2E_frame_126=201
+METRIC E2E_frame_127=201
+METRIC E2E_frame_128=201
+METRIC start_gap_1=68
+METRIC start_gap_2=69
+METRIC start_gap_3=68
+METRIC start_gap_4=69
+METRIC start_gap_5=68
+METRIC start_gap_6=69
+METRIC start_gap_7=68
+METRIC start_gap_8=69
+METRIC start_gap_9=68
+METRIC start_gap_10=69
+METRIC start_gap_11=68
+METRIC start_gap_12=69
+METRIC start_gap_13=68
+METRIC start_gap_14=69
+METRIC start_gap_15=68
+METRIC start_gap_16=69
+METRIC start_gap_17=68
+METRIC start_gap_18=69
+METRIC start_gap_19=68
+METRIC start_gap_20=69
+METRIC start_gap_21=68
+METRIC start_gap_22=69
+METRIC start_gap_23=68
+METRIC start_gap_24=69
+METRIC start_gap_25=68
+METRIC start_gap_26=69
+METRIC start_gap_27=68
+METRIC start_gap_28=69
+METRIC start_gap_29=68
+METRIC start_gap_30=69
+METRIC start_gap_31=68
+METRIC start_gap_32=69
+METRIC start_gap_33=68
+METRIC start_gap_34=69
+METRIC start_gap_35=68
+METRIC start_gap_36=69
+METRIC start_gap_37=68
+METRIC start_gap_38=69
+METRIC start_gap_39=68
+METRIC start_gap_40=69
+METRIC start_gap_41=68
+METRIC start_gap_42=69
+METRIC start_gap_43=68
+METRIC start_gap_44=69
+METRIC start_gap_45=68
+METRIC start_gap_46=69
+METRIC start_gap_47=68
+METRIC start_gap_48=69
+METRIC start_gap_49=68
+METRIC start_gap_50=69
+METRIC start_gap_51=68
+METRIC start_gap_52=69
+METRIC start_gap_53=68
+METRIC start_gap_54=69
+METRIC start_gap_55=68
+METRIC start_gap_56=69
+METRIC start_gap_57=68
+METRIC start_gap_58=69
+METRIC start_gap_59=68
+METRIC start_gap_60=69
+METRIC start_gap_61=68
+METRIC start_gap_62=69
+METRIC start_gap_63=68
+METRIC start_gap_64=69
+METRIC start_gap_65=68
+METRIC start_gap_66=69
+METRIC start_gap_67=68
+METRIC start_gap_68=69
+METRIC start_gap_69=68
+METRIC start_gap_70=69
+METRIC start_gap_71=68
+METRIC start_gap_72=69
+METRIC start_gap_73=68
+METRIC start_gap_74=69
+METRIC start_gap_75=68
+METRIC start_gap_76=69
+METRIC start_gap_77=68
+METRIC start_gap_78=69
+METRIC start_gap_79=68
+METRIC start_gap_80=69
+METRIC start_gap_81=68
+METRIC start_gap_82=69
+METRIC start_gap_83=68
+METRIC start_gap_84=69
+METRIC start_gap_85=68
+METRIC start_gap_86=69
+METRIC start_gap_87=68
+METRIC start_gap_88=69
+METRIC start_gap_89=68
+METRIC start_gap_90=69
+METRIC start_gap_91=68
+METRIC start_gap_92=69
+METRIC start_gap_93=68
+METRIC start_gap_94=69
+METRIC start_gap_95=68
+METRIC start_gap_96=69
+METRIC start_gap_97=68
+METRIC start_gap_98=69
+METRIC start_gap_99=68
+METRIC start_gap_100=69
+METRIC start_gap_101=68
+METRIC start_gap_102=69
+METRIC start_gap_103=68
+METRIC start_gap_104=69
+METRIC start_gap_105=68
+METRIC start_gap_106=69
+METRIC start_gap_107=68
+METRIC start_gap_108=69
+METRIC start_gap_109=68
+METRIC start_gap_110=69
+METRIC start_gap_111=68
+METRIC start_gap_112=69
+METRIC start_gap_113=68
+METRIC start_gap_114=69
+METRIC start_gap_115=68
+METRIC start_gap_116=69
+METRIC start_gap_117=68
+METRIC start_gap_118=69
+METRIC start_gap_119=68
+METRIC start_gap_120=69
+METRIC start_gap_121=68
+METRIC start_gap_122=69
+METRIC start_gap_123=68
+METRIC start_gap_124=69
+METRIC start_gap_125=68
+METRIC start_gap_126=69
+METRIC start_gap_127=68
+METRIC start_gap_128=69
+PASS pipeline frames=129 outputs=8256
+$finish called from file "/home/leesr0222/hbf-pbch-paper-eval-publish/paper_eval/optim/decoder/decoder_pipeline_metrics_tb.sv", line 246.
+$finish at simulation time             35906000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 35906000 ps
+CPU Time:      2.610 seconds;       Data structure size:   0.1Mb
+Sat Nov 14 23:22:33 2026

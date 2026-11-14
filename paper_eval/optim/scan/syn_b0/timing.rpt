@@ -1,0 +1,269 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : pbch_scan_label_b0
+Version: Q-2019.12-SP5-5
+Date   : Sat Nov 14 21:59:36 2026
+****************************************
+
+Operating Conditions: SSGWC0P9V125C   Library: um28nchslogl35hsl140f_ssgwc0p9v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: position_i[5]
+              (input port clocked by clk)
+  Endpoint: label_o[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_scan_label_b0 ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.40       0.40 f
+  position_i[5] (in)                       0.00       0.40 f
+  U9179/X (STP_INV_S_0P65)                 0.09       0.49 r
+  U9180/X (STP_ND2_S_0P8)                  0.08       0.57 f
+  U9951/X (STP_NR2_G_0P5)                  0.13       0.71 r
+  U9952/X (STP_INV_S_0P65)                 0.08       0.79 f
+  U14688/X (STP_NR2_G_0P5)                 0.09       0.89 r
+  U14820/X (STP_INV_S_0P65)                0.06       0.94 f
+  U14926/X (STP_ND2_S_0P8)                 0.04       0.99 r
+  U14966/X (STP_INV_S_0P65)                0.03       1.01 f
+  U14967/X (STP_ND2_S_0P8)                 0.02       1.04 r
+  U17443/X (STP_NR2_G_0P5)                 0.02       1.06 f
+  U17761/X (STP_ND4_MM_1)                  0.02       1.08 r
+  U17762/X (STP_OAI31_G_0P5)               0.03       1.11 f
+  U17763/X (STP_OAI211_0P5)                0.02       1.14 r
+  U17764/X (STP_AOI211_0P5)                0.02       1.15 f
+  U17780/X (STP_AOAI211_0P5)               0.03       1.19 r
+  U17781/X (STP_OAI31_G_0P5)               0.03       1.21 f
+  U17782/X (STP_AOAI211_0P5)               0.02       1.23 r
+  U17783/X (STP_OAOI211_0P5)               0.01       1.25 f
+  U17784/X (STP_AOAI211_0P5)               0.01       1.26 r
+  label_o[1] (out)                         0.00       1.26 r
+  data arrival time                                   1.26
+
+  clock clk (rise edge)                    3.33       3.33
+  clock network delay (ideal)              0.00       3.33
+  clock uncertainty                       -0.20       3.13
+  output external delay                   -0.40       2.73
+  data required time                                  2.73
+  -----------------------------------------------------------
+  data required time                                  2.73
+  data arrival time                                  -1.26
+  -----------------------------------------------------------
+  slack (MET)                                         1.48
+
+
+  Startpoint: position_i[5]
+              (input port clocked by clk)
+  Endpoint: label_o[9] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_scan_label_b0 ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.40       0.40 f
+  position_i[5] (in)                       0.00       0.40 f
+  U9179/X (STP_INV_S_0P65)                 0.09       0.49 r
+  U9180/X (STP_ND2_S_0P8)                  0.08       0.57 f
+  U9951/X (STP_NR2_G_0P5)                  0.13       0.71 r
+  U9952/X (STP_INV_S_0P65)                 0.08       0.79 f
+  U14688/X (STP_NR2_G_0P5)                 0.09       0.89 r
+  U14820/X (STP_INV_S_0P65)                0.06       0.94 f
+  U14821/X (STP_ND2_S_0P8)                 0.03       0.98 r
+  U14822/X (STP_INV_S_0P65)                0.02       1.00 f
+  U14993/X (STP_ND2_S_0P8)                 0.02       1.02 r
+  U14994/X (STP_NR2_G_0P5)                 0.02       1.04 f
+  U14995/X (STP_ND4_MM_1)                  0.03       1.06 r
+  U14996/X (STP_AOI22_0P5)                 0.03       1.09 f
+  U15000/X (STP_OAI211_0P5)                0.02       1.12 r
+  U15001/X (STP_AOI211_0P5)                0.02       1.14 f
+  U15005/X (STP_OAI211_0P5)                0.02       1.16 r
+  U15006/X (STP_AOI22_0P5)                 0.03       1.18 f
+  U15007/X (STP_AOAI211_0P5)               0.02       1.20 r
+  U15227/X (STP_OAOI211_0P5)               0.02       1.23 f
+  U15458/X (STP_ND3_0P5)                   0.01       1.24 r
+  label_o[9] (out)                         0.00       1.24 r
+  data arrival time                                   1.24
+
+  clock clk (rise edge)                    3.33       3.33
+  clock network delay (ideal)              0.00       3.33
+  clock uncertainty                       -0.20       3.13
+  output external delay                   -0.40       2.73
+  data required time                                  2.73
+  -----------------------------------------------------------
+  data required time                                  2.73
+  data arrival time                                  -1.24
+  -----------------------------------------------------------
+  slack (MET)                                         1.49
+
+
+  Startpoint: position_i[12]
+              (input port clocked by clk)
+  Endpoint: label_o[4] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_scan_label_b0 ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.40       0.40 r
+  position_i[12] (in)                      0.00       0.40 r
+  U9160/X (STP_INV_S_0P65)                 0.05       0.45 f
+  U9161/X (STP_ND2_S_0P8)                  0.08       0.53 r
+  U9224/X (STP_INV_S_0P65)                 0.07       0.60 f
+  U16775/X (STP_ND2_S_0P8)                 0.06       0.67 r
+  U16776/X (STP_INV_S_0P65)                0.04       0.70 f
+  U16811/X (STP_ND2_S_0P8)                 0.04       0.74 r
+  U16955/X (STP_INV_S_0P65)                0.03       0.77 f
+  U17125/X (STP_NR2_G_0P5)                 0.03       0.81 r
+  U17130/X (STP_ND2_S_0P8)                 0.02       0.83 f
+  U17131/X (STP_NR4_0P5)                   0.05       0.88 r
+  U17132/X (STP_ND2_S_0P8)                 0.03       0.91 f
+  U17357/X (STP_NR2_G_0P5)                 0.03       0.94 r
+  U17362/X (STP_AN4B_0P5)                  0.05       0.99 r
+  U17368/X (STP_OAI211_0P5)                0.03       1.02 f
+  U17369/X (STP_AOI211_0P5)                0.03       1.05 r
+  U17372/X (STP_OAI211_0P5)                0.03       1.08 f
+  U17373/X (STP_OAOI211_0P5)               0.03       1.11 r
+  U17407/X (STP_OAI22_0P5)                 0.02       1.13 f
+  U17408/X (STP_AOAI211_0P5)               0.03       1.16 r
+  U17409/X (STP_AOAI211_0P5)               0.03       1.19 f
+  U17410/X (STP_OAOI211_0P5)               0.03       1.22 r
+  U17411/X (STP_AOAI211_0P5)               0.02       1.24 f
+  label_o[4] (out)                         0.00       1.24 f
+  data arrival time                                   1.24
+
+  clock clk (rise edge)                    3.33       3.33
+  clock network delay (ideal)              0.00       3.33
+  clock uncertainty                       -0.20       3.13
+  output external delay                   -0.40       2.73
+  data required time                                  2.73
+  -----------------------------------------------------------
+  data required time                                  2.73
+  data arrival time                                  -1.24
+  -----------------------------------------------------------
+  slack (MET)                                         1.49
+
+
+  Startpoint: position_i[5]
+              (input port clocked by clk)
+  Endpoint: label_o[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_scan_label_b0 ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.40       0.40 r
+  position_i[5] (in)                       0.00       0.40 r
+  U9179/X (STP_INV_S_0P65)                 0.09       0.49 f
+  U9180/X (STP_ND2_S_0P8)                  0.09       0.58 r
+  U9930/X (STP_NR2_G_0P5)                  0.08       0.66 f
+  U9931/X (STP_INV_S_0P65)                 0.07       0.72 r
+  U9934/X (STP_NR2_G_0P5)                  0.04       0.77 f
+  U9935/X (STP_INV_S_0P65)                 0.04       0.80 r
+  U9936/X (STP_ND2_S_0P8)                  0.03       0.83 f
+  U9939/X (STP_OR2_1)                      0.04       0.87 f
+  U9940/X (STP_NR2_G_0P5)                  0.03       0.90 r
+  U10555/X (STP_INV_S_0P65)                0.02       0.92 f
+  U10572/X (STP_NR4_0P5)                   0.04       0.96 r
+  U10573/X (STP_AOI31_0P5)                 0.03       0.99 f
+  U10574/X (STP_OAOI211_0P5)               0.03       1.02 r
+  U10577/X (STP_OAI211_0P5)                0.03       1.05 f
+  U10578/X (STP_NR4_0P5)                   0.04       1.09 r
+  U10579/X (STP_AOI31_0P5)                 0.02       1.11 f
+  U10607/X (STP_AOI22_0P5)                 0.03       1.15 r
+  U10608/X (STP_AOAI211_0P5)               0.03       1.17 f
+  U10609/X (STP_AOI22_0P5)                 0.03       1.20 r
+  U10610/X (STP_AOI22_0P5)                 0.02       1.23 f
+  label_o[3] (out)                         0.00       1.23 f
+  data arrival time                                   1.23
+
+  clock clk (rise edge)                    3.33       3.33
+  clock network delay (ideal)              0.00       3.33
+  clock uncertainty                       -0.20       3.13
+  output external delay                   -0.40       2.73
+  data required time                                  2.73
+  -----------------------------------------------------------
+  data required time                                  2.73
+  data arrival time                                  -1.23
+  -----------------------------------------------------------
+  slack (MET)                                         1.51
+
+
+  Startpoint: position_i[5]
+              (input port clocked by clk)
+  Endpoint: label_o[6] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_scan_label_b0 ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.40       0.40 r
+  position_i[5] (in)                       0.00       0.40 r
+  U9179/X (STP_INV_S_0P65)                 0.09       0.49 f
+  U9180/X (STP_ND2_S_0P8)                  0.09       0.58 r
+  U9951/X (STP_NR2_G_0P5)                  0.08       0.66 f
+  U9952/X (STP_INV_S_0P65)                 0.06       0.73 r
+  U16141/X (STP_NR2_G_0P5)                 0.04       0.77 f
+  U16142/X (STP_INV_S_0P65)                0.03       0.80 r
+  U16513/X (STP_ND2_S_0P8)                 0.03       0.83 f
+  U16563/X (STP_INV_S_0P65)                0.02       0.85 r
+  U16585/X (STP_OAI21_0P5)                 0.03       0.88 f
+  U16702/X (STP_NR2_G_0P5)                 0.03       0.91 r
+  U16703/X (STP_ND4B_1)                    0.04       0.95 f
+  U16704/X (STP_OAI31_G_0P5)               0.04       0.99 r
+  U16705/X (STP_AOAI211_0P5)               0.03       1.01 f
+  U16708/X (STP_AOI211_0P5)                0.03       1.05 r
+  U16710/X (STP_OAI211_0P5)                0.03       1.07 f
+  U16752/X (STP_OAOI211_0P5)               0.04       1.11 r
+  U16753/X (STP_OAOI211_0P5)               0.02       1.14 f
+  U16754/X (STP_AOI211_0P5)                0.03       1.17 r
+  U16755/X (STP_AOAI211_0P5)               0.02       1.19 f
+  label_o[6] (out)                         0.00       1.19 f
+  data arrival time                                   1.19
+
+  clock clk (rise edge)                    3.33       3.33
+  clock network delay (ideal)              0.00       3.33
+  clock uncertainty                       -0.20       3.13
+  output external delay                   -0.40       2.73
+  data required time                                  2.73
+  -----------------------------------------------------------
+  data required time                                  2.73
+  data arrival time                                  -1.19
+  -----------------------------------------------------------
+  slack (MET)                                         1.54
+
+
+1

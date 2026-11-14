@@ -1,0 +1,7 @@
+{
+  "inputs": 117,
+  "outputs": 1183,
+  "common_nodes": 3075,
+  "residual_xors": 9913,
+  "max_shared_depth": 4
+}
